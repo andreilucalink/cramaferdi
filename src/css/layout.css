@@ -1,0 +1,44 @@
+.ferdi-navbar {
+	background-color: #0f2027 !important;
+	border-bottom: 4px solid #62a9c7;
+}
+
+.ferdi-navbar * {
+	color: #f4f4f4 !important;
+	font-size: 16px;
+}
+
+.ferdi-navbar .nav-link:hover {
+	color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ferdi-navbar .navbar-brand {
+	font-size: 18px;
+}
+
+.ferdi-navbar .navbar-toggler:focus {
+	outline: none !important;
+}
+
+.footer {
+	background-color: #0f2027;
+	border-top: 4px solid #62a9c7;
+}
+
+.footer span {
+	color: #fff;
+	letter-spacing: 2px;
+	font-size: 16px;
+}
+
+@media (max-width: 900px) {
+	.ferdi-navbar .nav-link {
+		width: 80px;
+	}
+}
+
+@media (max-width: 568px) {
+	.ferdi-navbar .nav-link {
+		font-size: 14px;
+	}
+}
