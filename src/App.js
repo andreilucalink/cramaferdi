@@ -18,7 +18,7 @@ function App() {
 				<Route exact path="/products" component={Products} />
 				<Route exact path="/contact" component={Contact} />
 			</Switch>
-			{/* <Footer /> */}
+			<Footer />
 		</Router>
 	);
 }
