@@ -4,18 +4,29 @@ import AOS from 'aos';
 
 function Contact() {
 	useEffect(() => {
+		window.scroll(0, 0);
 		AOS.init({
 			once: true,
 			duration: 1300
 		});
 	});
+
+	let text1 = 'Membrii';
+	let text2 = 'Echipei';
+	let subtitle = 'Aveti nevoie de ajutor? Suntem aici pentru a va raspunde la intrebari!';
+	if (window.localStorage.getItem('language') === 'EN') {
+		text1 = 'Meet';
+		text2 = 'the team';
+		subtitle = "Have any questions? We're here to help!";
+	}
+
 	return (
 		<section id="contact-body">
 			<header className="contact-header">
 				<h1>
-					<span>Meet</span> the team
+					<span>{text1}</span> {text2}{' '}
 				</h1>
-				<p>Have any questions? We're here to help!</p>
+				<p>{subtitle}</p>
 			</header>
 			<div className="contact-wrapper">
 				<div className="contact-card" data-aos="zoom-in" data-aos-delay="200">

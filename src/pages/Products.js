@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import '../css/products.css';
 import AOS from 'aos';
+import SwitchLanguage from '../layout/SwitchLanguage';
 
 function Products() {
 	useEffect(() => {
+		window.scroll(0, 0);
 		if (window.innerWidth > 965 && window.innerWidth < 1401) {
 			document.getElementById('animation2').removeAttribute('data-aos');
 		}
@@ -12,12 +14,23 @@ function Products() {
 			duration: 1000
 		});
 	});
+	let view = 'Lista';
+	let products = 'Produse';
+	let details = 'Detalii';
+	if (window.localStorage.getItem('language') === 'EN') {
+		view = 'View';
+		products = 'Products';
+		details = 'View More';
+	}
 
 	return (
 		<div className="products-page">
+			<div className="prod-lg">
+				<SwitchLanguage route={'/products'} />
+			</div>
 			<header className="main-header">
 				<h1>
-					<span> View </span> Products
+					<span> {view} </span> {products}
 				</h1>
 				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, dolores!</p>
 			</header>
@@ -35,7 +48,7 @@ function Products() {
 								</p>
 							</section>
 							<a href="#start" className="btn">
-								View more
+								{details}
 							</a>
 						</div>
 					</section>
@@ -52,7 +65,7 @@ function Products() {
 								</p>
 							</section>
 							<a href="#start" className="btn">
-								View more
+								{details}
 							</a>
 						</div>
 					</section>
@@ -70,7 +83,7 @@ function Products() {
 								</p>
 							</section>
 							<a href="#start" className="btn">
-								View more
+								{details}
 							</a>
 						</div>
 					</section>
@@ -88,7 +101,7 @@ function Products() {
 								</p>
 							</section>
 							<a href="#start" className="btn">
-								View more
+								{details}
 							</a>
 						</div>
 					</section>
@@ -105,7 +118,7 @@ function Products() {
 								</p>
 							</section>
 							<a href="#start" className="btn">
-								View more
+								{details}
 							</a>
 						</div>
 					</section>
@@ -123,7 +136,7 @@ function Products() {
 								</p>
 							</section>
 							<a href="#start" className="btn">
-								View more
+								{details}
 							</a>
 						</div>
 					</section>

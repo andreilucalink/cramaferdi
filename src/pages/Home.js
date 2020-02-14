@@ -1,18 +1,23 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import '../css/home.css';
+import SwitchLanguage from '../layout/SwitchLanguage';
 
 function Home() {
 	useEffect(() => {
+		window.scroll(0, 0);
 		AOS.init({
 			once: true,
 			duration: 1000
 		});
-	}, []);
+	});
 
 	return (
 		<main id="home-page">
 			<div className="pimg1">
+				<div className="home-lg">
+					<SwitchLanguage route={'/'} />
+				</div>
 				<div className="ptext" id="intro-text">
 					<span className="border">Crama Ferdi </span>
 				</div>

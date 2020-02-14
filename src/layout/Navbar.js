@@ -7,6 +7,12 @@ function NavigationBar() {
 	const scrollRestoration = () => {
 		window.scrollTo(0, 0);
 	};
+	let home = 'Acasa';
+	let products = 'Produse';
+	if (window.localStorage.getItem('language') === 'EN') {
+		home = 'Home';
+		products = 'Products';
+	}
 
 	return (
 		<Navbar expand="lg" bg="light" sticky="top" className="p-3 ferdi-navbar navbar-dark" collapseOnSelect>
@@ -17,10 +23,10 @@ function NavigationBar() {
 			<Navbar.Collapse id="basic-navbar-nav" style={{ color: '#fff' }}>
 				<Nav className="ml-auto p-1">
 					<Nav.Link className="ml-1" as={Link} eventKey="0" to="/" onClick={scrollRestoration}>
-						Acasa
+						{home}
 					</Nav.Link>
 					<Nav.Link className="ml-1" as={Link} eventKey="1" to="/products" onClick={scrollRestoration}>
-						Produse
+						{products}
 					</Nav.Link>
 					<Nav.Link
 						style={{ WebkitBackfaceVisibility: 'hidden' }}
