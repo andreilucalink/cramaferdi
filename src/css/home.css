@@ -11,6 +11,8 @@ main {
 	position: absolute;
 	right: 3%;
 	bottom: 3%;
+	border-radius: 50%;
+	border: 2px #f4f4f4 solid;
 }
 
 .pimg1,
