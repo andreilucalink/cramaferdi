@@ -16,6 +16,7 @@
 		"react-router-dom": "^5.1.2",
 		"react-scripts": "3.3.1"
 	},
+	"homepage": "http://andreilucalink.github.io/crama-ferdi/",
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
@@ -30,6 +31,5 @@
 	"browserslist": {
 		"production": [ ">0.2%", "not dead", "not op_mini all" ],
 		"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
-	},
-	"homepage": "http://andreilucalink.github.io/crama-ferdi"
+	}
 }

@@ -16,24 +16,10 @@ function NavigationBar() {
 			<Navbar.Toggle aria-controls="basic-navbar-nav" className="ferdi-toggler" />
 			<Navbar.Collapse id="basic-navbar-nav" style={{ color: '#fff' }}>
 				<Nav className="ml-auto p-1">
-					<Nav.Link
-						style={{ WebkitBackfaceVisibility: 'hidden' }}
-						className="ml-1"
-						as={Link}
-						eventKey="0"
-						to="/"
-						onClick={scrollRestoration}
-					>
+					<Nav.Link className="ml-1" as={Link} eventKey="0" to="/" onClick={scrollRestoration}>
 						Acasa
 					</Nav.Link>
-					<Nav.Link
-						style={{ WebkitBackfaceVisibility: 'hidden' }}
-						className="ml-1"
-						as={Link}
-						eventKey="1"
-						to="/products"
-						onClick={scrollRestoration}
-					>
+					<Nav.Link className="ml-1" as={Link} eventKey="1" to="/products" onClick={scrollRestoration}>
 						Produse
 					</Nav.Link>
 					<Nav.Link
