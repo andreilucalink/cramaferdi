@@ -1,4 +1,5 @@
 {
+	"homepage": "https://andreilucalink.github.io/crama-ferdi/",
 	"name": "ferdi",
 	"version": "0.1.0",
 	"private": true,
@@ -16,7 +17,6 @@
 		"react-router-dom": "^5.1.2",
 		"react-scripts": "3.3.1"
 	},
-	"homepage": "http://andreilucalink.github.io/crama-ferdi/",
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
