@@ -119,6 +119,10 @@ main {
     font-size: 14px;
   }
 
+  #intro-text {
+    width: 180px;
+    height: 180px;
+  }
   .pimg1,
   .pimg2,
   .pimg3,
