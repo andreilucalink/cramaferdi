@@ -1,153 +1,159 @@
 .ferdi-navbar {
-	background-color: #0f2027 !important;
-	border-bottom: 4px solid #62a9c7;
+  background-color: #0f2027 !important;
+  border-bottom: 4px solid #62a9c7;
 }
 
 .ferdi-navbar * {
-	color: #f4f4f4 !important;
-	font-size: 16px;
+  color: #f4f4f4 !important;
+  font-size: 16px;
 }
 
 .ferdi-navbar .nav-link:hover {
-	color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .ferdi-navbar .navbar-brand {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 .ferdi-navbar .navbar-toggler:focus {
-	outline: none !important;
+  outline: none !important;
 }
 
 .footer {
-	background-color: #0f2027;
-	border-top: 4px solid #62a9c7;
+  background-color: #0f2027;
+  /* border-top: 4px solid #62a9c7; */
 }
 
 .footer span {
-	color: #fff;
-	letter-spacing: 2px;
-	font-size: 16px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 16px;
 }
 
 .not-found {
-	height: calc(100vh - 150px);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .not-found h1 {
-	text-align: center;
-	font-weight: 800;
+  margin-top: 180px;
+  text-align: center;
+  font-weight: 800;
 }
 
 .not-found h2 {
-	text-align: center;
+  text-align: center;
 }
 
 .not-found .logo {
-	height: 350px;
-	width: 350px;
-	border-radius: 50%;
-	background-image: url("../img/logo.jpg");
-	background-position: center;
-	background-size: cover;
-	margin-bottom: 50px;
-	margin-top: 50px;
-	-webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-	box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-image: url("../img/logo.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
 }
 
 .not-found .btn-404 {
-	text-decoration: none;
-	font-weight: 400;
-	font-size: 16px;
-	display: inline-block;
-	color: #f4f4f4;
-	border-radius: 20px;
-	border: 2px#1b262c solid;
-	background-color: #1b262c;
-	width: 110px;
-	padding: 7px 0px;
-	text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  display: inline-block;
+  color: #f4f4f4;
+  border-radius: 20px;
+  border: 2px#1b262c solid;
+  background-color: #1b262c;
+  width: 110px;
+  padding: 7px 0px;
+  text-align: center;
 }
 
 .not-found .btn-404:hover {
-	background-color: #f4f4f4;
-	border: 2px solid #1b262c;
-	font-weight: 600;
-	color: #1b262c;
+  background-color: #f4f4f4;
+  border: 2px solid #1b262c;
+  font-weight: 600;
+  color: #1b262c;
 }
 
 .switch-lg {
-	color: #fff;
-	font-size: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .switch-lg img {
-	height: 15px;
+  height: 15px;
 }
 .switch-lg .ro-lg {
-	color: #fff;
-	cursor: pointer;
-	font-weight: bold;
-	text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .switch-lg .ro-lg:hover {
-	color: #62a9c7;
+  color: #62a9c7;
 }
 
 .switch-lg .en-lg {
-	color: #fff;
-	cursor: pointer;
-	font-weight: bold;
-	text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .switch-lg .en-lg:hover {
-	color: #62a9c7;
+  color: #62a9c7;
 }
 
 .lg-active {
-	pointer-events: none;
-	cursor: default;
+  pointer-events: none;
+  cursor: default;
 }
 
+@media (max-width: 1600px) {
+  .not-found h1 {
+    margin-top: 80px;
+  }
+}
 @media (max-width: 992px) {
-	.not-found {
-		height: calc(100vh - 138px);
-	}
+  .not-found {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 900px) {
-	.ferdi-navbar .nav-link {
-		width: 80px;
-	}
+  .ferdi-navbar .nav-link {
+    width: 80px;
+  }
 }
 
 @media (max-width: 568px) {
-	.ferdi-navbar .nav-link {
-		font-size: 14px;
-	}
+  .ferdi-navbar .nav-link {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 500px) {
-	.not-found .btn-404 {
-		width: 80px;
-		padding: 3px 0;
-		font-size: 12px;
-	}
-	.not-found .logo {
-		margin-top: 30px;
-		width: 200px;
-		height: 200px;
-	}
+  .not-found .btn-404 {
+    width: 80px;
+    padding: 3px 0;
+    font-size: 12px;
+  }
+  .not-found .logo {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+  }
 }
