@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import '../css/layout.css';
 import { Link } from 'react-router-dom';
 
 function NavigationBar() {
+	const [open, setOpen] = useState();
 	const scrollRestoration = () => {
 		window.scrollTo(0, 0);
+		document.getElementById('bar3').classList.remove('hidden');
+		document.getElementById('bar2').classList.remove('rotate2');
+		document.getElementById('bar1').classList.remove('rotate1');
+		setOpen(false);
 	};
 
 	let home = 'Acasa';
@@ -14,13 +19,28 @@ function NavigationBar() {
 		home = 'Home';
 		products = 'Products';
 	}
+	
+
+	const rotateMenu = () => {
+		if(!open){
+			document.getElementById('bar3').classList.add('hidden');
+			document.getElementById('bar2').classList.add('rotate2');
+			document.getElementById('bar1').classList.add('rotate1');
+			setOpen(true);
+		} else {
+			document.getElementById('bar3').classList.remove('hidden');
+			document.getElementById('bar2').classList.remove('rotate2');
+			document.getElementById('bar1').classList.remove('rotate1');
+			setOpen(false);
+		}
+	}
 
 	return (
 		<Navbar expand="lg" bg="light" sticky="top" className="p-3 ferdi-navbar navbar-dark" collapseOnSelect>
 			<Navbar.Brand href="" className="ml-2" onClick={scrollRestoration}>
 				Crama Ferdi
 			</Navbar.Brand>
-			<Navbar.Toggle aria-controls="basic-navbar-nav" id="ferdi-toggler">
+			<Navbar.Toggle aria-controls="basic-navbar-nav" id="ferdi-toggler" onClick={rotateMenu}>
 				<div className="ferdi-bar" id="bar1" />
 				<div className="ferdi-bar" id="bar2" />
 				<div className="ferdi-bar" id="bar3" />

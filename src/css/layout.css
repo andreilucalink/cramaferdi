@@ -1,6 +1,7 @@
 .ferdi-navbar {
 	background-color: #0f2027 !important;
 	border-bottom: 4px solid #62a9c7;
+	overflow: hidden;
 }
 
 .ferdi-navbar * {
@@ -11,25 +12,49 @@
 #ferdi-toggler {
 	border: none !important;
 }
+
+#ferdi-toggler:hover .ferdi-bar {
+	background-color: #b3b3b3;
+}
 #ferdi-toggler .ferdi-bar {
 	display: block;
 	margin: 5px 0;
 	height: 2px;
 	background-color: #f4f4f4;
+	transition: ease background-color 0.4s;
 }
 
 #ferdi-toggler #bar1 {
+	transition: 0.4s all ease;
 	margin-left: auto;
 	width: 22px;
 }
 #ferdi-toggler #bar2 {
+	transition: 0.4s all ease;
 	margin-left: auto;
 	width: 25px;
 }
 #ferdi-toggler #bar3 {
+	transition: 0.4s all ease;
 	margin-left: auto;
 	width: 16px;
 }
+
+#bar3.hidden {
+	transform: translateX(80px);
+}
+
+#bar1.rotate1{
+	width: 25px !important;
+	transform: rotate(315deg) translate(-7px,5px);
+}
+
+#bar2.rotate2{
+	transform: rotate(-315deg) translate(1px,2px);
+}
+
+
+
 
 .ferdi-navbar .nav-link:hover {
 	color: rgba(255, 255, 255, 0.8) !important;
