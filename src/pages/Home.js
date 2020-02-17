@@ -84,9 +84,9 @@ function Home() {
 				</div>
 			</section>
 			<div className="pimg4">
-				<div className="ptext">
+				{/* <div className="ptext">
 					<span className="border">ENJOY!</span>
-				</div>
+				</div> */}
 				<a role="button" href="#start" data-scroll>
 					<img src={require('../img/up-ar.svg')} alt="Go Up" className="scroll-home" />
 				</a>
