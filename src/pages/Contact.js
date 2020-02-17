@@ -9,6 +9,10 @@ function Contact() {
 			once: true,
 			duration: 1300
 		});
+		if(window.innerWidth < 501) {
+			document.getElementById('first-card').removeAttribute('data-aos-delay')
+			document.getElementById('first-card').removeAttribute('data-aos')
+		}
 	});
 
 	let text1 = 'Membrii';
@@ -29,7 +33,7 @@ function Contact() {
 				<p>{subtitle}</p>
 			</header>
 			<div className="contact-wrapper">
-				<div className="contact-card" data-aos="zoom-in" data-aos-delay="200">
+				<div className="contact-card" id="first-card" data-aos="zoom-in" data-aos-delay="200">
 					<div className="profile-bg" />
 					<div className="profile-img" id="member1" />
 					<div className="contact-details">
