@@ -1,157 +1,168 @@
 /* DACA NU MERGE STICKY -> FIXED + MARGIN */
 main {
-  height: 100%;
-  /* margin-top: 65px; */
+	height: 100%;
 }
 
 .home-lg {
-  position: absolute;
-  right: 2%;
-  top: 2%;
+	position: absolute;
+	right: 2%;
+	top: 2%;
 }
 
 .scroll-home {
-  height: 45px;
-  width: 45px;
-  cursor: pointer;
-  position: absolute;
-  right: 3%;
-  bottom: 3%;
-  border-radius: 50%;
-  border: 2px #f4f4f4 solid;
+	height: 45px;
+	width: 45px;
+	cursor: pointer;
+	position: absolute;
+	right: 3%;
+	bottom: 3%;
+	border-radius: 50%;
+	border: 2px #f4f4f4 solid;
 }
 
 .pimg1,
 .pimg2,
 .pimg3,
 .pimg4 {
-  position: relative;
-  opacity: 0.8;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-position-x: 50%;
-  background-position-y: 0%;
+	position: relative;
+	opacity: 0.9;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-position-x: 50%;
+	background-position-y: 0%;
 }
 
 .ptext {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 25px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
 }
 
 #intro-text {
-  transform: translate(-50%, -50%) !important;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  background-image: url("../img/lf.png");
-  background-position: center;
-  background-size: cover;
+	transform: translate(-50%, -50%);
+	height: 255px;
+	width: 255px;
+	border-radius: 50%;
+	background-image: url("../img/lf.png");
+	background-position: center;
+	background-size: cover;
+}
+
+.pimg1 .scroll-icon {
+	height: 55px;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .ptext .border:hover {
-  cursor: pointer;
-  transition: ease 0.25s;
+	cursor: pointer;
+	transition: ease 0.25s;
 }
 
 .ptext .border {
-  background-color: #0f2027;
-  color: #fff;
-  text-align: center;
-  padding: 20px 25px;
+	background-color: #0f2027;
+	color: #fff;
+	text-align: center;
+	padding: 20px 25px;
 }
 
 .ptext .border.trans {
-  background-color: #f4f4f4;
-  border: 1px #0f2027 solid !important;
-  color: #0f2027;
-  font-weight: 500;
+	background-color: #f4f4f4;
+	border: 1px #0f2027 solid !important;
+	color: #0f2027;
 }
 
 .pimg1 {
-  background-image: url("../img/wine4.jpg");
-  height: 100vh;
+	background-image: url("../img/wine4.jpg");
+	height: 100vh;
 }
 
 .pimg2 {
-  background-image: url("../img/wine2.jpg");
-  min-height: 500px;
+	background-image: url("../img/wine2.jpg");
+	min-height: 100vh;
 }
 
 .pimg3 {
-  background-image: url("../img/wine3.jpg");
-  min-height: 500px;
+	background-image: url("../img/wine3.jpg");
+	min-height: 100vh;
 }
 
 .pimg4 {
-  background-image: url("../img/wine6.jpg");
-  height: 100vh;
-  position: relative;
+	background-image: url("../img/corks.png");
+	height: 100vh;
+	position: relative;
+	opacity: 0.8;
 }
 
 .section {
-  text-align: center;
-  padding: 50px 120px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.8;
+	padding: 50px 120px;
 }
 
 .section h2 {
-  margin-bottom: 30px;
+	margin-bottom: 50px;
+	font-size: 35px;
+	font-weight: 600;
 }
 
 .section-light {
-  background: #f4f4f4;
-  color: #555;
+	background: #f4f4f4;
+	color: #0f2027;
 }
 
 .section-dark {
-  background-color: #0f2027;
-  color: #f4f4f4;
+	background-color: #0f2027;
+	color: #f4f4f4;
 }
 
 @media (max-width: 568px) {
-  .ferdi-navbar .nav-link {
-    font-size: 14px;
-  }
+	.ferdi-navbar .nav-link {
+		font-size: 14px;
+	}
 
-  #intro-text {
-    width: 180px;
-    height: 180px;
-  }
-  .pimg1,
-  .pimg2,
-  .pimg3,
-  .pimg4 {
-    background-attachment: scroll;
-  }
+	#intro-text {
+		width: 180px;
+		height: 180px;
+	}
+	.pimg1,
+	.pimg2,
+	.pimg3,
+	.pimg4 {
+		background-attachment: scroll;
+	}
 
-  .pimg2,
-  .pimg3 {
-    min-height: 100vh;
-  }
+	.pimg2,
+	.pimg3 {
+		min-height: 100vh;
+	}
 
-  .scroll-home {
-    height: 35px;
-    width: 35px;
-  }
+	.scroll-home {
+		height: 35px;
+		width: 35px;
+	}
 }
 
 @media (max-width: 600px) {
-  .ptext {
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
+	.ptext {
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
 }
 
 @media (max-width: 900px) {
-  .section {
-    font-size: 0.9rem;
-    line-height: 1.9;
-    padding: 30px 30px;
-  }
+	.section {
+		font-size: 0.9rem;
+		line-height: 1.9;
+		padding: 30px 30px;
+	}
 }

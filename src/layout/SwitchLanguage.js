@@ -14,11 +14,11 @@ function SwitchLanguage(props) {
 		<div className="switch-lg">
 			<span>
 				<a href={props.route} id="ro-lg" className="ro-lg" onClick={setRomanian}>
-					<img src={require('../img/ro-lg.svg')} alt="" /> RO &nbsp;
+					<img src={require('../img/ro-lg.svg')} alt="/" /> RO &nbsp;
 				</a>
 				|
 				<a href={props.route} id="en-lg" className="en-lg" onClick={setEnglish}>
-					&nbsp; <img src={require('../img/uk.svg')} alt="" /> EN &nbsp;
+					&nbsp; <img src={require('../img/uk.svg')} alt="/" /> EN &nbsp;
 				</a>
 			</span>
 		</div>

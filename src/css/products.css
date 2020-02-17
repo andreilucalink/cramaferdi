@@ -163,6 +163,68 @@ a.btn:hover {
 
 /* Responsive */
 
+@media (min-width: 966px) and (max-width: 1400px) {
+	.products-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.card-cell {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+	}
+
+	.card-info {
+		max-width: 400px;
+		margin: 20px;
+		-webkit-border-radius: 25px;
+		-moz-border-radius: 25px;
+		border-radius: 25px;
+		-webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+		box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+	}
+
+	.card-cell:nth-child(even) .img {
+		order: 0;
+	}
+
+	.card-info .img {
+		height: 300px;
+		max-width: 400px;
+		-webkit-border-top-left-radius: 25px;
+		-webkit-border-top-right-radius: 25px;
+		-moz-border-radius-topleft: 25px;
+		-moz-border-radius-topright: 25px;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+	}
+
+	.card-info > div {
+		height: 370px;
+		max-width: 400px;
+		font-size: 14px;
+	}
+
+	.card-info {
+		display: flex;
+		flex-direction: column;
+		flex-flow: wrap;
+	}
+}
+
+@media (max-width: 1200px) {
+	.scroll-products {
+		bottom: -0.3%;
+		right: 2%;
+	}
+	.products-page {
+		margin-bottom: 30px;
+	}
+}
+
 @media (max-width: 965px) {
 	.prod-lg {
 		top: -2.75%;
@@ -226,68 +288,6 @@ a.btn:hover {
 		display: flex;
 		flex-direction: column;
 		flex-flow: wrap;
-	}
-}
-
-@media (min-width: 966px) and (max-width: 1400px) {
-	.products-container {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.card-cell {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0;
-	}
-
-	.card-info {
-		max-width: 400px;
-		margin: 20px;
-		-webkit-border-radius: 25px;
-		-moz-border-radius: 25px;
-		border-radius: 25px;
-		-webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-		-moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-		box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-	}
-
-	.card-cell:nth-child(even) .img {
-		order: 0;
-	}
-
-	.card-info .img {
-		height: 300px;
-		max-width: 400px;
-		-webkit-border-top-left-radius: 25px;
-		-webkit-border-top-right-radius: 25px;
-		-moz-border-radius-topleft: 25px;
-		-moz-border-radius-topright: 25px;
-		border-top-left-radius: 25px;
-		border-top-right-radius: 25px;
-	}
-
-	.card-info > div {
-		height: 370px;
-		max-width: 400px;
-		font-size: 14px;
-	}
-
-	.card-info {
-		display: flex;
-		flex-direction: column;
-		flex-flow: wrap;
-	}
-}
-
-@media (max-width: 1200px) {
-	.scroll-products {
-		bottom: -0.3%;
-		right: 2%;
-	}
-	.products-page {
-		margin-bottom: 30px;
 	}
 }
 

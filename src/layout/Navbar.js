@@ -7,6 +7,7 @@ function NavigationBar() {
 	const scrollRestoration = () => {
 		window.scrollTo(0, 0);
 	};
+
 	let home = 'Acasa';
 	let products = 'Produse';
 	if (window.localStorage.getItem('language') === 'EN') {
@@ -19,7 +20,11 @@ function NavigationBar() {
 			<Navbar.Brand href="" className="ml-2" onClick={scrollRestoration}>
 				Crama Ferdi
 			</Navbar.Brand>
-			<Navbar.Toggle aria-controls="basic-navbar-nav" className="ferdi-toggler" />
+			<Navbar.Toggle aria-controls="basic-navbar-nav" id="ferdi-toggler">
+				<div className="ferdi-bar" id="bar1" />
+				<div className="ferdi-bar" id="bar2" />
+				<div className="ferdi-bar" id="bar3" />
+			</Navbar.Toggle>
 			<Navbar.Collapse id="basic-navbar-nav" style={{ color: '#fff' }}>
 				<Nav className="ml-auto p-1">
 					<Nav.Link className="ml-1" as={Link} eventKey="0" to="/" onClick={scrollRestoration}>

@@ -36,14 +36,14 @@ function Contact() {
 						<h3>John Doe</h3>
 						<img src={require('../img/romania3.png')} alt="Country" className="country" />
 						<p>Product Manager</p>
-						<hr />
+						<div className="contact-bar" />
 						<div className="phone">
 							<a role="button" href="tel:+40-0735-796-273" className="phone-button">
 								<img className="phone-img" src={require('../img/call2.svg')} alt="Call" />
 								<span>+40-0711-222-333 </span>
 							</a>
 						</div>
-						<hr />
+						<div className="contact-bar" />
 						<div className="email">
 							<a role="button" href="mailto:test@gmail.com" className="email-button">
 								<img className="email-img" src={require('../img/gmail.svg')} alt="Call" />
@@ -59,14 +59,14 @@ function Contact() {
 						<h3>Michael Davis</h3>
 						<img src={require('../img/romania3.png')} alt="Country" className="country" />
 						<p>Sales Consultant</p>
-						<hr />
+						<div className="contact-bar" />
 						<div className="phone">
 							<a role="button" href="tel:+40-0735-796-273" className="phone-button">
 								<img className="phone-img" src={require('../img/call2.svg')} alt="Call" />
 								<span>+40-0711-222-333 </span>
 							</a>
 						</div>
-						<hr />
+						<div className="contact-bar" />
 						<div className="email">
 							<a role="button" href="mailto:test@gmail.com" className="email-button">
 								<img className="email-img" src={require('../img/gmail.svg')} alt="Call" />
