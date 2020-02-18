@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import '../css/products.css';
 import AOS from 'aos';
-import SwitchLanguage from '../layout/SwitchLanguage';
 
 function Products() {
 	useEffect(() => {
@@ -25,9 +24,6 @@ function Products() {
 
 	return (
 		<div className="products-page">
-			<div className="prod-lg">
-				<SwitchLanguage route={'/products'} />
-			</div>
 			<header className="main-header">
 				<h1>
 					<span> {view} </span> {products}

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import '../css/home.css';
-import SwitchLanguage from '../layout/SwitchLanguage';
 
 function Home() {
 	useEffect(() => {
@@ -15,12 +14,7 @@ function Home() {
 	return (
 		<main id="home-page">
 			<div className="pimg1">
-				<div className="home-lg">
-					<SwitchLanguage route={'/'} />
-				</div>
-				<div className="ptext" id="intro-text">
-					<div className="home-logo" />
-				</div>
+				<div className="ptext" id="home-logo" />
 			</div>
 			<section className="section section-dark">
 				<div className="section-text1" data-aos="fade-up">

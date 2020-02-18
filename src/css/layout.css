@@ -44,17 +44,14 @@
 	transform: translateX(80px);
 }
 
-#bar1.rotate1{
+#bar1.rotate1 {
 	width: 25px !important;
-	transform: rotate(315deg) translate(-7px,5px);
+	transform: rotate(315deg) translate(-7px, 5px);
 }
 
-#bar2.rotate2{
-	transform: rotate(-315deg) translate(1px,2px);
+#bar2.rotate2 {
+	transform: rotate(-315deg) translate(1px, 2px);
 }
-
-
-
 
 .ferdi-navbar .nav-link:hover {
 	color: rgba(255, 255, 255, 0.8) !important;
@@ -133,18 +130,24 @@
 }
 
 .switch-lg {
-	color: #fff;
+	color: #000;
 	font-size: 15px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 2px 5px;
+	border-radius: 7px;
+	position: absolute;
+	top: 100px;
+	z-index: 1;
+	right: 2%;
 }
 
 .switch-lg img {
 	height: 15px;
 }
 .switch-lg .ro-lg {
-	color: #fff;
+	color: #000;
 	cursor: pointer;
 	font-weight: bold;
 	text-decoration: none;
@@ -155,7 +158,7 @@
 }
 
 .switch-lg .en-lg {
-	color: #fff;
+	color: #000;
 	cursor: pointer;
 	font-weight: bold;
 	text-decoration: none;
@@ -171,6 +174,9 @@
 }
 
 @media (max-width: 1600px) {
+	.switch-lg {
+		top: 15%;
+	}
 	.not-found h1 {
 		margin-top: 80px;
 	}
@@ -194,6 +200,9 @@
 }
 
 @media (max-width: 500px) {
+	.switch-lg {
+		top: 70px;
+	}
 	.not-found .btn-404 {
 		width: 80px;
 		padding: 3px 0;
@@ -203,5 +212,11 @@
 		margin-top: 30px;
 		width: 200px;
 		height: 200px;
+	}
+}
+
+@media (max-height: 850) {
+	.switch-lg {
+		top: 20% !important;
 	}
 }

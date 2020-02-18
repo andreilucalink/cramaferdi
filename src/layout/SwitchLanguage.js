@@ -6,18 +6,18 @@ function SwitchLanguage(props) {
 		localStorage.setItem('language', 'RO');
 	};
 
-	const setEnglish = () => {
+	const setEnglish = (e) => {
 		localStorage.setItem('language', 'EN');
 	};
 
 	return (
 		<div className="switch-lg">
 			<span>
-				<a href={props.route} id="ro-lg" className="ro-lg" onClick={setRomanian}>
+				<a href="/" id="ro-lg" className="ro-lg" onClick={setRomanian}>
 					<img src={require('../img/ro-lg.svg')} alt="/" /> RO &nbsp;
 				</a>
 				|
-				<a href={props.route} id="en-lg" className="en-lg" onClick={setEnglish}>
+				<a href="/" id="en-lg" className="en-lg" onClick={setEnglish}>
 					&nbsp; <img src={require('../img/uk.svg')} alt="/" /> EN &nbsp;
 				</a>
 			</span>
