@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import '../css/layout.css';
 import { Link } from 'react-router-dom';
 
 function NavigationBar() {
-	const [open, setOpen] = useState();
+	const [ open, setOpen ] = useState();
 	const scrollRestoration = () => {
 		window.scrollTo(0, 0);
 		document.getElementById('bar3').classList.remove('hidden');
@@ -19,10 +19,9 @@ function NavigationBar() {
 		home = 'Home';
 		products = 'Products';
 	}
-	
 
 	const rotateMenu = () => {
-		if(!open){
+		if (!open) {
 			document.getElementById('bar3').classList.add('hidden');
 			document.getElementById('bar2').classList.add('rotate2');
 			document.getElementById('bar1').classList.add('rotate1');
@@ -33,11 +32,11 @@ function NavigationBar() {
 			document.getElementById('bar1').classList.remove('rotate1');
 			setOpen(false);
 		}
-	}
+	};
 
 	return (
 		<Navbar expand="lg" bg="light" sticky="top" className="p-3 ferdi-navbar navbar-dark" collapseOnSelect>
-			<Navbar.Brand href="" className="ml-2" onClick={scrollRestoration}>
+			<Navbar.Brand as={Link} to="/" className="ml-2" onClick={scrollRestoration}>
 				Crama Ferdi
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" id="ferdi-toggler" onClick={rotateMenu}>
@@ -47,20 +46,13 @@ function NavigationBar() {
 			</Navbar.Toggle>
 			<Navbar.Collapse id="basic-navbar-nav" style={{ color: '#fff' }}>
 				<Nav className="ml-auto p-1">
-					<Nav.Link className="ml-1" as={Link} eventKey="0" to="/" onClick={scrollRestoration}>
+					<Nav.Link className="ml-1 link1" as={Link} eventKey="0" to="/" onClick={scrollRestoration}>
 						{home}
 					</Nav.Link>
-					<Nav.Link className="ml-1" as={Link} eventKey="1" to="/products" onClick={scrollRestoration}>
+					<Nav.Link className="ml-1 link2" as={Link} eventKey="1" to="/products" onClick={scrollRestoration}>
 						{products}
 					</Nav.Link>
-					<Nav.Link
-						style={{ WebkitBackfaceVisibility: 'hidden' }}
-						className="ml-1"
-						as={Link}
-						eventKey="2"
-						to="/contact"
-						onClick={scrollRestoration}
-					>
+					<Nav.Link className="ml-1 link3" as={Link} eventKey="2" to="/contact" onClick={scrollRestoration}>
 						Contact
 					</Nav.Link>
 				</Nav>

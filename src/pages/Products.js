@@ -7,12 +7,16 @@ function Products() {
 		window.scroll(0, 0);
 		if (window.innerWidth > 965 && window.innerWidth < 1401) {
 			document.getElementById('animation2').removeAttribute('data-aos');
+			document.getElementById('animation3').setAttribute('data-aos', 'zoom-in');
+			document.getElementById('animation4').setAttribute('data-aos', 'zoom-in');
+			document.getElementById('animation5').setAttribute('data-aos', 'zoom-in');
+			document.getElementById('animation6').setAttribute('data-aos', 'zoom-in');
 		}
 		AOS.init({
 			once: true,
 			duration: 1000
 		});
-	});
+	}, []);
 	let view = 'Lista';
 	let products = 'Produse';
 	let details = 'Detalii';
@@ -67,7 +71,7 @@ function Products() {
 					</section>
 				</div>
 				<div className="card-cell">
-					<section className="card-info" data-aos="fade-left" data-aos-offset="150">
+					<section className="card-info" id="animation3" data-aos="fade-left" data-aos-offset="150">
 						<div className="img" id="product3" />
 						<div>
 							<section>
@@ -85,7 +89,7 @@ function Products() {
 					</section>
 				</div>
 				<div className="card-cell">
-					<section className="card-info" data-aos="fade-right" data-aos-offset="150">
+					<section className="card-info" id="animation4" data-aos="fade-right" data-aos-offset="150">
 						<div className="img" id="product4" />
 						<div>
 							<section>
@@ -103,7 +107,7 @@ function Products() {
 					</section>
 				</div>
 				<div className="card-cell">
-					<section className="card-info" data-aos="fade-left" data-aos-offset="150">
+					<section className="card-info" id="animation5" data-aos="fade-left" data-aos-offset="150">
 						<div className="img" id="product5" />
 						<div>
 							<section>
@@ -119,7 +123,7 @@ function Products() {
 						</div>
 					</section>
 				</div>
-				<div className="card-cell" data-aos="fade-right" data-aos-offset="150">
+				<div className="card-cell" id="animation6" data-aos="fade-right" data-aos-offset="150">
 					<section className="card-info">
 						<div className="img" id="product6" />
 						<div>

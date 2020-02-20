@@ -52,30 +52,48 @@
 #bar2.rotate2 {
 	transform: rotate(-315deg) translate(1px, 2px);
 }
-
-.ferdi-navbar .nav-link:hover {
-	color: rgba(255, 255, 255, 0.8) !important;
+.ferdi-navbar .nav-link {
+	position: relative;
 }
+.ferdi-navbar .link1::after,
+.ferdi-navbar .link2::after,
+.ferdi-navbar .link3::after {
+	content: '';
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	width: 0%;
+	height: 2px;
+	background: #8e9eab; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #eef2f3, #8e9eab); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#eef2f3,
+		#8e9eab
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+	transition: all 0.2s ease;
+}
+.ferdi-navbar .link1:hover::after,
+.ferdi-navbar .link2:hover::after,
+.ferdi-navbar .link3:hover::after {
+	width: 100%;
+	left: 0%;
+}
 .ferdi-navbar .navbar-brand {
 	font-size: 18px;
 }
-
 .ferdi-navbar .navbar-toggler:focus {
 	outline: none !important;
 }
-
 .footer {
-	background-color: #0f2027;
-	/* border-top: 4px solid #62a9c7; */
+	background-color: #0f2027; /* border-top: 4px solid #62a9c7; */
 }
-
 .footer span {
 	color: #fff;
 	letter-spacing: 2px;
 	font-size: 16px;
 }
-
 .not-found {
 	height: 100vh;
 	display: flex;
@@ -83,17 +101,14 @@
 	justify-content: flex-start;
 	align-items: center;
 }
-
 .not-found h1 {
 	margin-top: 180px;
 	text-align: center;
 	font-weight: 800;
 }
-
 .not-found h2 {
 	text-align: center;
 }
-
 .not-found .logo {
 	height: 250px;
 	width: 250px;
@@ -107,7 +122,6 @@
 	-moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
 	box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
 }
-
 .not-found .btn-404 {
 	text-decoration: none;
 	font-weight: 400;
@@ -121,14 +135,12 @@
 	padding: 7px 0px;
 	text-align: center;
 }
-
 .not-found .btn-404:hover {
 	background-color: #f4f4f4;
 	border: 2px solid #1b262c;
 	font-weight: 600;
 	color: #1b262c;
 }
-
 .switch-lg {
 	color: #000;
 	font-size: 15px;
@@ -142,7 +154,6 @@
 	z-index: 1;
 	right: 2%;
 }
-
 .switch-lg img {
 	height: 15px;
 }
@@ -152,27 +163,22 @@
 	font-weight: bold;
 	text-decoration: none;
 }
-
 .switch-lg .ro-lg:hover {
 	color: #62a9c7;
 }
-
 .switch-lg .en-lg {
 	color: #000;
 	cursor: pointer;
 	font-weight: bold;
 	text-decoration: none;
 }
-
 .switch-lg .en-lg:hover {
 	color: #62a9c7;
 }
-
 .lg-active {
 	pointer-events: none;
 	cursor: default;
 }
-
 @media (max-width: 1600px) {
 	.switch-lg {
 		top: 15%;
@@ -186,19 +192,16 @@
 		height: 100vh;
 	}
 }
-
-@media (max-width: 900px) {
+@media (max-width: 992px) {
 	.ferdi-navbar .nav-link {
 		width: 80px;
 	}
 }
-
 @media (max-width: 568px) {
 	.ferdi-navbar .nav-link {
 		font-size: 14px;
 	}
 }
-
 @media (max-width: 500px) {
 	.switch-lg {
 		top: 70px;
@@ -214,7 +217,6 @@
 		height: 200px;
 	}
 }
-
 @media (max-height: 850) {
 	.switch-lg {
 		top: 20% !important;
