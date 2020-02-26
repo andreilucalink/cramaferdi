@@ -158,6 +158,7 @@
 	height: 15px;
 }
 .switch-lg .ro-lg {
+	margin-left: 6px;
 	color: #000;
 	cursor: pointer;
 	font-weight: bold;
@@ -180,9 +181,6 @@
 	cursor: default;
 }
 @media (max-width: 1600px) {
-	.switch-lg {
-		top: 15%;
-	}
 	.not-found h1 {
 		margin-top: 80px;
 	}
@@ -204,7 +202,7 @@
 }
 @media (max-width: 500px) {
 	.switch-lg {
-		top: 70px;
+		top: 80px;
 	}
 	.not-found .btn-404 {
 		width: 80px;

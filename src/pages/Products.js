@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/products.css';
 import AOS from 'aos';
+import Img from 'react-image';
+import { Spinner } from 'react-bootstrap';
 
 function Products() {
 	useEffect(() => {
@@ -47,9 +50,9 @@ function Products() {
 									delectus, explicabo voluptatem quam pariatur veniam corporis fuga! Laudantium.
 								</p>
 							</section>
-							<a href="#start" className="btn">
+							<Link to='/products/wine1' className="btn">
 								{details}
-							</a>
+							</Link>
 						</div>
 					</section>
 				</div>

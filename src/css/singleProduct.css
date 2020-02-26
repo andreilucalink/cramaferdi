@@ -1,0 +1,25 @@
+.single-product-container {
+    min-height: 100vh;
+}
+
+.single-product-image {
+    width: 600px;
+    height: 800px;
+    /* background-color: thistle; */
+    position: relative;
+    margin-left: 200px;
+}
+
+.single-product-image img {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.single-product-image .product-spinner {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    height: 100px;
+    width: 100px;
+}
+ 

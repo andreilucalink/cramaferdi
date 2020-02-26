@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import '../css/home.css';
+import { Spinner } from 'react-bootstrap';
+import Img from 'react-image';
 
 function Home() {
 	useEffect(() => {
@@ -14,7 +16,12 @@ function Home() {
 	return (
 		<main id="home-page">
 			<div className="pimg1">
-				<div className="ptext" id="home-logo" />
+				<Img
+					className="ptext"
+					id="home-logo"
+					src={require('../img/lf.png')}
+					loader={<Spinner animation="grow" className="ptext logo-loader" />}
+				/>
 			</div>
 			<section className="section section-dark">
 				<div className="section-text1" data-aos="fade-up">

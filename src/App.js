@@ -11,6 +11,9 @@ import Products from './pages/Products';
 import Page404 from './pages/Page404';
 import SwitchLanguage from './layout/SwitchLanguage';
 
+/* wines */
+import Wine1 from './pages/wines/Wine1';
+
 function App() {
 	return (
 		<Router>
@@ -20,6 +23,7 @@ function App() {
 				<Route exact path="/" component={Home} />
 				<Route exact path="/products" component={Products} />
 				<Route exact path="/contact" component={Contact} />
+				<Route exact path="/products/wine1" component={Wine1} />
 				<Route component={Page404} />
 			</Switch>
 			<Footer />

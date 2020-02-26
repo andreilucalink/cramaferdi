@@ -43,9 +43,11 @@ main {
 	height: 255px;
 	width: 255px;
 	border-radius: 50%;
-	background-image: url("../img/lf.png");
-	background-position: center;
-	background-size: cover;
+}
+
+.logo-loader {
+	height: 255px;
+	width: 255px;
 }
 
 .pimg1 .scroll-icon {
@@ -120,6 +122,10 @@ main {
 }
 
 @media (max-width: 568px) {
+	.logo-loader {
+		height: 180px;
+		width: 180px;
+	}
 	.ferdi-navbar .nav-link {
 		font-size: 14px;
 	}
