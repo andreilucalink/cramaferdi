@@ -8,7 +8,7 @@ import { Spinner } from 'react-bootstrap';
 function Products() {
 	useEffect(() => {
 		window.scroll(0, 0);
-		if (window.innerWidth > 965 && window.innerWidth < 1401) {
+		if (window.innerWidth > 965 && window.innerWidth < 1201) {
 			document.getElementById('animation2').removeAttribute('data-aos');
 			document.getElementById('animation3').setAttribute('data-aos', 'zoom-in');
 			document.getElementById('animation4').setAttribute('data-aos', 'zoom-in');
