@@ -25,7 +25,7 @@ function App() {
 	return (
 		<Router>
 			<NavigationBar />
-			<SwitchLanguage />
+			{/* <SwitchLanguage /> */}
 			<Switch>
 				<Route exact path="/" component={Home} />
 				<Route exact path="/vinuri" component={Products} />

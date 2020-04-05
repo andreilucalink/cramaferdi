@@ -69,8 +69,8 @@ const RedKing = () => {
                 </ul>
                 </p>
             
-                <Link to="/products" className="desc-btn">Products</Link>
-                <Link to="/" className="desc-btn" >Home</Link>
+                <Link to="/vinuri" className="desc-btn">Vinuri</Link>
+                <Link to="/" className="desc-btn" >Acasă</Link>
             </div>
         </div>
     )

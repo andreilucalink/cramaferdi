@@ -169,7 +169,10 @@ a.btn:hover {
 }
 .desc-details-list li{
 	list-style: none;
+	font-size: 14px;
 }
+
+
 
 
 h3.rose-cosmina {
@@ -240,6 +243,9 @@ h3.rose-cosmina {
 	}
 	.products-page {
 		margin-bottom: 30px;
+	}
+	.desc-details-list li {
+		font-size: 12px;
 	}
 }
 
@@ -315,6 +321,9 @@ h3.rose-cosmina {
 }
 
 @media (max-width: 500px) {
+	.desc-details-list li {
+		font-size: 10px;
+	}
 	.main-header {
 		margin-top: 110px !important;
 		margin-bottom: 50px;

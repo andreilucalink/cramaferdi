@@ -77,6 +77,28 @@ function Contact() {
 						</div>
 					</div>
 				</div>
+				<div className="contact-card" data-aos="zoom-in" data-aos-delay="200">
+					<div className="profile-bg" />
+					<div className="profile-img" id="member3" />
+					<div className="contact-details">
+						<h3>Ofelia Marian</h3>
+						<img src={require('../img/romania3.png')} alt="Country" className="country" />
+						<div className="contact-bar paul-bar" />
+						<div className="phone">
+							<a role="button" href="tel:+40-0729-884-940" className="phone-button">
+								<img className="phone-img" src={require('../img/call2.svg')} alt="Call" />
+								<span>0723-768-322 </span>
+							</a>
+						</div>
+						<div className="contact-bar" />
+						<div className="email">
+							<a role="button" href="mailto:test@gmail.com" className="email-button">
+								<img className="email-img" src={require('../img/gmail.svg')} alt="Call" />
+								<span>cramaferdi@gmail.com</span>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	);

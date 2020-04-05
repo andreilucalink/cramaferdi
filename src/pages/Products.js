@@ -174,7 +174,7 @@ function Products() {
 									</li>
 									<li>
 									<i class="fas fa-caret-right list-arrow"></i>
-									Maturare – 6 luni, baric din stejar românesc
+									Maturare – 6 luni, baric din stejar românesc, american şi francez
 									</li>
 									<li>
 									<i class="fas fa-caret-right list-arrow"></i>
@@ -216,7 +216,7 @@ function Products() {
 									</li>
 									<li>
 									<i class="fas fa-caret-right list-arrow"></i>
-									Maturare – 18 luni, baric din stejar românesc
+									Maturare – 18 luni, baric din stejar românesc, american şi francez
 									</li>
 									<li>
 									<i class="fas fa-caret-right list-arrow"></i>
@@ -258,7 +258,7 @@ function Products() {
 									</li>
 									<li>
 									<i class="fas fa-caret-right list-arrow"></i>
-									Maturare – 22 luni, baric din stejar românesc
+									Maturare – 22 luni, baric din stejar românesc, american şi francez
 									</li>
 									<li>
 									<i class="fas fa-caret-right list-arrow"></i>
@@ -300,7 +300,7 @@ function Products() {
 									</li>
 									<li>
 									<i class="fas fa-caret-right list-arrow"></i>
-									Maturare – 20 luni, baric din stejar românesc
+									Maturare – 20 luni, baric din stejar românesc, american şi francez
 									</li>
 									<li>
 									<i class="fas fa-caret-right list-arrow"></i>
@@ -342,7 +342,7 @@ function Products() {
 									</li>
 									<li>
 									<i class="fas fa-caret-right list-arrow"></i>
-									Maturare – 24 luni, baric din stejar românesc
+									Maturare – 24 luni, baric din stejar românesc, american şi francez
 									</li>
 									<li>
 									<i class="fas fa-caret-right list-arrow"></i>

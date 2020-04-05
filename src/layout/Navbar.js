@@ -13,7 +13,7 @@ function NavigationBar() {
 		setOpen(false);
 	};
 
-	let home = 'Acasa';
+	let home = 'Acasă';
 	let products = 'Vinuri';
 	if (window.localStorage.getItem('language') === 'EN') {
 		home = 'Home';

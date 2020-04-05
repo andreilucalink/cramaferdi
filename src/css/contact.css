@@ -28,7 +28,7 @@
 	display: flex;
 	justify-content: space-around;
 	margin: 100px auto 100px auto;
-	max-width: 900px;
+	max-width: 1200px;
 	height: auto;
 }
 
@@ -65,7 +65,10 @@
 }
 
 #member2 {
-	background-image: url(../img/paul.jpg);
+	background-image: url(../img/paul2.jpg);
+}
+#member3 {
+	background-image: url(../img/ofelia.jpg);
 }
 
 .contact-card .profile-img {
@@ -167,7 +170,7 @@
 	}
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1015px) {
 	.contact-wrapper {
 		display: grid;
 		grid-template-columns: 1fr;

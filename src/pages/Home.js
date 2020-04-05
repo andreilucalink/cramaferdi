@@ -23,7 +23,7 @@ function Home() {
 					loader={<Spinner animation="grow" className="ptext logo-loader" />}
 				/>
 			</div>
-			<section className="section section-dark">
+			<section className="section section-light">
 				<div className="section-text1" data-aos="fade-up">
 					{/* <h2>Despre cramă</h2> */}
 					<p>
