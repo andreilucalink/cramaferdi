@@ -67,27 +67,35 @@
 }
 
 #product1 {
-	background-image: url(../img/1.jpeg);
+	background-image: url(../img/rcos.jpg);
 }
 
 #product2 {
-	background-image: url(../img/2.jpg);
+	background-image: url(../img/cale.jpg);
 }
 
 #product3 {
-	background-image: url(../img/3.jpg);
+	background-image: url(../img/mads.jpg);
 }
 
 #product4 {
-	background-image: url(../img/41.jfif);
+	background-image: url(../img/unp.jpg);
 }
 
 #product5 {
-	background-image: url(../img/5.jpg);
+	background-image: url(../img/cpp.jpg);
 }
 
 #product6 {
-	background-image: url(../img/6.jpg);
+	background-image: url(../img/rkr.jpg);
+}
+
+#product7 {
+	background-image: url(../img/ms.jpg);
+}
+
+#product8 {
+	background-image: url(../img/cpp.jpg);
 }
 
 .card-info .img {
@@ -151,6 +159,26 @@ a.btn:hover {
 	color: #f4f4f4;
 }
 
+
+.desc-details-list {
+	margin-top: 15px;
+}
+
+.desc-details-list .list-arrow {
+	margin-right: 8px;
+}
+.desc-details-list li{
+	list-style: none;
+}
+
+
+h3.rose-cosmina {
+	margin-bottom: 5px;
+}
+
+.limit-edit-span {
+	font-size: 18px;
+}
 /* Responsive */
 
 @media (min-width: 966px) and (max-width: 1200px) {
@@ -325,7 +353,7 @@ a.btn:hover {
 	.card-info > div {
 		width: 250px !important;
 		height: 310px !important;
-		font-size: 11px !important;
+		font-size: 9px !important;
 		font-weight: 400 !important;
 	}
 
@@ -342,5 +370,13 @@ a.btn:hover {
 		width: 90px;
 		background-color: rgba(0, 128, 128, 0.8);
 		color: white;
+	}
+
+	h3.rose-cosmina {
+		margin-bottom: 5px !important;
+	}
+
+	.limit-edit-span {
+		font-size: 11px;
 	}
 }

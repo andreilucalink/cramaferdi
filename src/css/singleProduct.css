@@ -22,7 +22,7 @@
     position: relative;
     padding: 25px;
     height: 700px;
-    width: 600px;
+    width: 630px;
     /* background: rgba(0,0,0,0.1); */
     margin-left: 50px;
 }
@@ -51,10 +51,23 @@
     margin-right: 5px;
 }
 .single-product-desc p {
-    margin-top: 150px;
+    font-weight: 600;
+    margin-top: 50px;
     font-size: 16px;
     line-height: 1.8;
     color: var(--dark-color);
+}
+
+.single-product-desc p ul {
+    margin-top: 35px;
+}
+.single-product-desc p ul li {
+    list-style: none;   
+}
+
+.swp-list .fa-caret-right {
+    color: #0f2027;
+    margin-right: 10px;
 }
 
 .single-product-image .product-spinner {

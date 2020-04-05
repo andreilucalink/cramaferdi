@@ -14,10 +14,10 @@ function NavigationBar() {
 	};
 
 	let home = 'Acasa';
-	let products = 'Produse';
+	let products = 'Vinuri';
 	if (window.localStorage.getItem('language') === 'EN') {
 		home = 'Home';
-		products = 'Products';
+		products = 'Wines';
 	}
 
 	const rotateMenu = () => {
@@ -49,11 +49,11 @@ function NavigationBar() {
 					<Nav.Link className="ml-1 link1" as={Link} eventKey="0" to="/" onClick={scrollRestoration}>
 						{home}
 					</Nav.Link>
-					<Nav.Link className="ml-1 link2" as={Link} eventKey="1" to="/products" onClick={scrollRestoration}>
+					<Nav.Link className="ml-1 link2" as={Link} eventKey="1" to="/vinuri" onClick={scrollRestoration}>
 						{products}
 					</Nav.Link>
 					<Nav.Link className="ml-1 link3" as={Link} eventKey="2" to="/contact" onClick={scrollRestoration}>
-						Contact
+						Contact şi comenzi
 					</Nav.Link>
 				</Nav>
 			</Navbar.Collapse>

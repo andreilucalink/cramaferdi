@@ -53,7 +53,7 @@
 	-moz-border-radius-topright: 5px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	background-image: url(../img/bg2.jpg);
+	background-image: url(../img/tst3.jpg);
 	background-position: center;
 	background-size: cover;
 	height: 260px;
@@ -61,11 +61,11 @@
 	clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
 }
 #member1 {
-	background-image: url(../img/profile1.jpg);
+	background-image: url(../img/fer5.jpg);
 }
 
 #member2 {
-	background-image: url(../img/man.jpg);
+	background-image: url(../img/paul.jpg);
 }
 
 .contact-card .profile-img {
@@ -117,8 +117,15 @@
 .phone-img {
 	margin-right: 15px;
 	display: block;
-	height: 30px;
-	width: 30px;
+	min-height: 30px;
+	min-width: 30px;
+}
+ .contact-details .ferdi-bar {
+	margin-top: 150px;;
+}
+
+.contact-details .paul-bar {
+	margin-top: 90px;
 }
 
 .contact-details p {
