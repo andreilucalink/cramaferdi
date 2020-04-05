@@ -15,12 +15,12 @@ function Contact() {
 		}
 	});
 
-	let text1 = 'Familia';
+	let text1 = 'Echipa';
 	let text2 = 'Noastră';
 	let subtitle = 'Pentru detalii şi comenzi ne puteţi contacta la numărul de telefon sau adresa de e-mail de mai jos';
 	if (window.localStorage.getItem('language') === 'EN') {
 		text1 = 'Our';
-		text2 = 'Family';
+		text2 = 'Team';
 		subtitle = "For orders or any questions you can find us at the following contact details";
 	}
 

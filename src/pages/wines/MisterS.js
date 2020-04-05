@@ -35,7 +35,7 @@ const MisterS = () => {
               
            </div>
            <div className="single-product-desc">
-                <h1>Mister S. Rezervă 2017</h1>
+                <h1>Mister S. Rezerva 2017</h1>
                 <div className="wine-comp-desc">
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
                     <span>{'(Shiraz)'}</span>

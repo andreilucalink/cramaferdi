@@ -245,7 +245,7 @@ function Products() {
 						<div>
 							<section>
 								<h3 className="rose-cosmina">Red King</h3>
-								<span className="limit-edit-span"><b><i>Rezervă 2017</i></b></span>
+								<span className="limit-edit-span"><b><i>Rezerva 2017</i></b></span>
 								<p>
 								<ul className="desc-details-list">
 									<li>
@@ -287,7 +287,7 @@ function Products() {
 						<div>
 							<section>
 								<h3 className="rose-cosmina">Mister S.</h3>
-								<span className="limit-edit-span"><b><i>Rezervă 2017</i></b></span>
+								<span className="limit-edit-span"><b><i>Rezerva 2017</i></b></span>
 								<p>
 								<ul className="desc-details-list">
 									<li>

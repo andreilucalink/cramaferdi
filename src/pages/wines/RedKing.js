@@ -35,7 +35,7 @@ const RedKing = () => {
               
            </div>
            <div className="single-product-desc">
-                <h1>Red King Rezervă 2017</h1>
+                <h1>Red King Rezerva 2017</h1>
                 <div className="wine-comp-desc">
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
                     <span>{'(Cabernet Sauvignon)'}</span>
