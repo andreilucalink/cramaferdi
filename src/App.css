@@ -8,6 +8,11 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--dark-color: #0f2027;
+	--light-color: #f4f4f4;
+}
+
 body,
 html {
 	scroll-behavior: auto;
