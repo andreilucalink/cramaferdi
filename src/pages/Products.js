@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/products.css';
 import AOS from 'aos';
-import Img from 'react-image';
-import { Spinner } from 'react-bootstrap';
+/* import Img from 'react-image';
+import { Spinner } from 'react-bootstrap'; */
 
 function Products() {
 	useEffect(() => {

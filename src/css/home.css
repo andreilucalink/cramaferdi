@@ -146,10 +146,10 @@ main {
 		min-height: 100vh;
 	}
 
-	.scroll-home {
+	/* .scroll-home {
 		height: 35px;
 		width: 35px;
-	}
+	} */
 }
 
 @media (max-width: 600px) {

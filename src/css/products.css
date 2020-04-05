@@ -280,7 +280,7 @@ a.btn:hover {
 
 @media (max-width: 567px) {
 	.scroll-products {
-		height: 32px;
+		/* height: 32px; */
 		bottom: -0.3%;
 		right: 2.5%;
 	}
