@@ -25,62 +25,38 @@ function Home() {
 			</div>
 			<section className="section section-dark">
 				<div className="section-text1" data-aos="fade-up">
-					<h2>Section 1</h2>
+					{/* <h2>Despre cramă</h2> */}
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos provident quo qui minus
-						necessitatibus voluptas sit, minima nulla saepe tempore non, labore molestiae modi accusantium
-						illum. Saepe exercitationem similique fuga minima nihil, aut qui quam sint, eveniet nobis harum
-						eaque necessitatibus neque! Optio consequatur incidunt quia, nobis expedita in perferendis omnis
-						culpa nesciunt, officia, saepe necessitatibus nulla ipsa fuga iste quaerat error. Voluptates
-						ipsa nihil nemo. Minima quia voluptatum tempora dolor iure ea sequi dignissimos non vitae, est
-						exercitationem suscipit natus ab cupiditate doloremque. Harum inventore deserunt hic enim, est
-						facilis maxime. Recusandae dolor minus culpa voluptas nemo! Odit!
+					<b>Crama Ferdi</b> este o cramă de tip boutique – premium care oferă iubitorului de vin privilegiul de a degusta un vin lucrat exclusiv manual și în ediții foarte limitate. Sistemul de vinificație este unul de perspectivă îndelungată, având în vedere că vinurile roșii sunt maturate, de la 1 la 2 ani, în butoaie de stejar american, francez și românesc, reînnoite la fiecare 3 - 4 ani.
 					</p>
 				</div>
 			</section>
 			<div className="pimg2">
 				<div className="ptext">
-					<span className="border trans">Image 2 Text</span>
+					{/* <span className="border trans">Locaţie</span> */}
 				</div>
 			</div>
 			<section className="section section-light">
 				<div className="section-text2" data-aos="fade-up">
-					<h2>Section 2</h2>
+					<h2>Locaţie</h2>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos provident quo qui minus
-						necessitatibus voluptas sit, minima nulla saepe tempore non, labore molestiae modi accusantium
-						illum. Saepe exercitationem similique fuga minima nihil, aut qui quam sint, eveniet nobis harum
-						eaque necessitatibus neque! Optio consequatur incidunt quia, nobis expedita in perferendis omnis
-						culpa nesciunt, officia, saepe necessitatibus nulla ipsa fuga iste quaerat error. Voluptates
-						ipsa nihil nemo. Minima quia voluptatum tempora dolor iure ea sequi dignissimos non vitae, est
-						exercitationem suscipit natus ab cupiditate doloremque. Lorem, ipsum dolor sit amet consectetur
-						adipisicing elit. Est laudantium perferendis alias ab explicabo eius sint fugiat dolorum
-						voluptatum natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem nihil
-						earum doloribus, ad deleniti id ipsa nulla. Excepturi, dignissimos. Suscipit odit ipsam
-						reprehenderit, vel fugiat earum dolor velit aspernatur distinctio!
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti neque officiis odio excepturi
-						incidunt et doloribus nam nesciunt at corrupti minus voluptatibus explicabo, voluptatem
-						molestiae blanditiis. Omnis nulla ut voluptas numquam possimus nisi tenetur ullam eius optio,
-						ducimus, minus iste beatae dolores non nihil voluptates suscipit, quisquam facere a inventore.
+					Via se află în însorita regiune viticolă Dealu Mare, pe o suprafață de 3 hectare și are o vechime de 10 ani. Proprietarul cramei este și cel care face vinul, ghidându-se după deviza că vinul de calitate își are obârșia în vie, de unde începe și selecția strugurilor.
 					</p>
 				</div>
 			</section>
 			<div className="pimg3">
 				<div className="ptext">
-					<span className="border trans">Image 3 Text</span>
+					{/* <span className="border trans">Image 3 Text</span> */}
 				</div>
 			</div>
 			<section className="section section-light">
 				<div className="section-text3" data-aos="fade-up">
-					<h2>Section 3</h2>
+					<h2>Producţie</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptates velit incidunt
-						magnam ipsum in accusantium, dolorem sequi temporibus pariatur iusto et blanditiis id fuga
-						asperiores voluptatibus ex modi laboriosam fugiat ipsam autem a quo nulla vel. Dolorem tenetur,
-						facere voluptatibus maiores, quis quaerat quam nam sit porro fugit dicta necessitatibus
-						consequatur ullam voluptates reiciendis. Reprehenderit, cumque! Magni, ducimus soluta.
+					Ca urmare, crama produce vin din 10 soiuri de struguri, dintre care 7 roșii: Fetească Neagră, Cabernet Sauvignon, Cabernet Franc, Shiraz, Merlot, Burgund Mare, Pinot Noir și 3 albe: Sauvignon Blanc, Tămâioasa Românească și Riesling Italian, producția anuală totală fiind aproximativ de 10.000 de sticle. 
+					</p>
+					<p>
+					Vinurile Cramei Ferdi se disting prin naturalețe, consistență, aciditate și eleganță. Utilizarea metodei tradiționale de făcut vinul are ca rezultat o gamă de vinuri echilibrate și rafinate.
 					</p>
 				</div>
 			</section>

@@ -19,7 +19,6 @@ main {
 .pimg3,
 .pimg4 {
 	position: relative;
-	opacity: 0.9;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -76,18 +75,30 @@ main {
 	color: #0f2027;
 }
 
+.section-text1 p {
+	display: inline-block;
+	width: 80%;
+	font-size: 18px;
+}
+
+.section-text2 p {
+	display: inline-block;
+	width: 80%;
+	font-size: 18px;
+}
+
 .pimg1 {
 	background-image: url("../img/t4.jpg");
 	height: 100vh;
 }
 
 .pimg2 {
-	background-image: url("../img/wine2.jpg");
+	background-image: url("../img/strg.jpg");
 	min-height: 100vh;
 }
 
 .pimg3 {
-	background-image: url("../img/wine3.jpg");
+	background-image: url("../img/butoaie.jpg");
 	min-height: 100vh;
 }
 
