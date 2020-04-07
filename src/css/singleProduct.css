@@ -89,9 +89,16 @@ span#grp {
     font-size: 40px;
 }
 
-.single-product-desc .grape-comp {
+
+ 
+.single-product-desc .wine-comp-desc .grape-comp {
     margin-right: 8px;
     height: 35px;
+}
+
+.single-product-desc .wine-comp-desc {
+    /* background: teal; */
+    height: 40px;
 }
 
 .single-product-desc .wine-comp-desc {

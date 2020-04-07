@@ -101,7 +101,7 @@ main {
 
 .pimg1 {
 	background-image: url("../img/t4.jpg");
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .pimg2 {
@@ -116,7 +116,7 @@ main {
 
 .pimg4 {
 	background-image: url("../img/corks.png");
-	height: 500px;
+	min-height: 500px;
 	position: relative;
 	opacity: 0.8;
 }
@@ -171,11 +171,15 @@ main {
 	.pimg3,
 	.pimg4 {
 		background-attachment: scroll;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	.pimg2,
-	.pimg3 {
-		min-height: 100vh;
+	.pimg3,
+	.pimg4 {
+		min-height: 300px !important;
 	}
 
 	/* .scroll-home {
