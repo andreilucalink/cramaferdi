@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom';
 const CuveeFrancisc = () => {
     useEffect(()=> {
         window.scrollTo(0,0);
+        const age = window.sessionStorage.getItem('clientAge');
+		if(!age || age === 'invalid'){
+			window.location.href = "/";
+		}
     },[]);
 
     const override = `
@@ -20,10 +24,10 @@ const CuveeFrancisc = () => {
             width: 200px;
             `;
     return (
-        <div className="single-product-container">
+        <div className="single-product-container bg-francisc">
            <div className="single-product-image">
             <Img        className="spimg"
-                        src={require('../../img/rkr.png')}
+                        src={require('../../img/cuvf.png')}
                         loader={ 
                         <DotLoader
                             css={override}
@@ -42,34 +46,34 @@ const CuveeFrancisc = () => {
                     <span>{'(Cabernet Franc și Merlot)'}</span>
 
                 </div>
-                <p>
-              
+                
+                <div className="text-desc">
                 Cabernet Franc și Merlot, două soiuri de struguri care se completează perfect într-un blend ce oferă un caracter unic, un potențial bun de învechire și o comoară artizanală. Vinul este plăcut pentru aromele sale intense, aciditatea medie spre înaltă și gustul ierbos. Anul recoltei este 2017 iar maturarea a avut loc timp de 18 luni în butoaie de stejar. Gradul alcoolic este 14,9%.
                 <br/>
                 <b><i>Recomandare decantare: minim 1h.</i></b>
-               <ul className="swp-list">
+                <ul className="swp-list">
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Tip Vin - Sec
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Maturare – 18 luni, baric din stejar românesc
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Volum - 0,75L
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Conţinut de alcool - 14,9%
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Culoare – Roşu
                     </li>
                 </ul>
-                </p>
+                </div>
             
                 <Link to="/vinuri" className="desc-btn">Vinuri</Link>
                 <Link to="/" className="desc-btn" >Acasă</Link>

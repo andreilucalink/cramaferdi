@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom';
 const MisterS = () => {
     useEffect(()=> {
         window.scrollTo(0,0);
+        const age = window.sessionStorage.getItem('clientAge');
+		if(!age || age === 'invalid'){
+			window.location.href = "/";
+		}
     },[]);
 
     const override = `
@@ -20,7 +24,7 @@ const MisterS = () => {
             width: 200px;
             `;
     return (
-        <div className="single-product-container">
+        <div className="single-product-container bg-misterS">
            <div className="single-product-image">
             <Img        className="spimg"
                         src={require('../../img/ms.png')}
@@ -41,34 +45,35 @@ const MisterS = () => {
                     <span>{'(Shiraz)'}</span>
 
                 </div>
-                <p>
+                
+                <div className="text-desc">
                 Un Shiraz îndrăzneț, bogat și complex, dar în același timp elegant, care are un corp amplu, de culoare rubiniu-violet intens cu arome concentrate de afine și prune, unde taninurile și aciditatea se îmbină frumos. Carnea roșie și condimentele exotice evidențiază notele fructate ale acestui Shiraz. Sunt de asemenea caracteristice notele de carne afumată și piper. Anul recoltei este 2017 iar maturarea a avut loc timp de 20 luni în butoaie de stejar. Gradul alcoolic este 14,4%. 
                 <br/>
                 <b><i>Recomandare decantare: minim 1h.</i></b>  
 
-               <ul className="swp-list">
+                <ul className="swp-list">
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Tip Vin - Sec
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Maturare – 20 luni, baric din stejar românesc
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Volum - 0,75L
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Conţinut de alcool - 14,4%
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Culoare – Roşu
                     </li>
                 </ul>
-                </p>
+                </div>
             
                 <Link to="/vinuri" className="desc-btn">Vinuri</Link>
                 <Link to="/" className="desc-btn" >Acasă</Link>

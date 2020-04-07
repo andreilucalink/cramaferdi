@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 function Page404() {
 	return (
 		<div className="not-found">
-			<h1>Oops! </h1>
-			<h2>Page not found!</h2>
+			<h1 style={{color: '#0F2027'}}>Oops! </h1>
+			<h2>Aţi accesat o cale inexistentă <br/>în site</h2>
 			<div className="logo" />
 			<div className="buttons">
 				<Link to="/" className="btn-404">

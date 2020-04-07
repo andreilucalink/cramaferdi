@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import Page404 from './pages/Page404';
-import SwitchLanguage from './layout/SwitchLanguage';
+// import SwitchLanguage from './layout/SwitchLanguage';
 
 /* wines */
 import RoseCos from './pages/wines/RoseCos';
@@ -25,7 +25,6 @@ function App() {
 	return (
 		<Router>
 			<NavigationBar />
-			{/* <SwitchLanguage /> */}
 			<Switch>
 				<Route exact path="/" component={Home} />
 				<Route exact path="/vinuri" component={Products} />

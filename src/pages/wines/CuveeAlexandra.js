@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom';
 const CuveeAlexandra = () => {
     useEffect(()=> {
         window.scrollTo(0,0);
+        const age = window.sessionStorage.getItem('clientAge');
+		if(!age || age === 'invalid'){
+			window.location.href = "/";
+		}
     },[]);
 
     const override = `
@@ -20,7 +24,7 @@ const CuveeAlexandra = () => {
             width: 200px;
             `;
     return (
-        <div className="single-product-container">
+        <div className="single-product-container bg-alexandra">
            <div className="single-product-image">
             <Img        className="spimg"
                         src={require('../../img/cale.png')}
@@ -43,29 +47,29 @@ const CuveeAlexandra = () => {
                     <span>{'(Tămâioasă Românească, Riesling Italian și Sauvignon Blanc)'}</span>
 
                 </div>
-                <p>
                 
+                <div className="text-desc">
                 Cupajul alb bazat pe Tămâioasă Românească, Riesling Italian și Sauvignon Blanc ne oferă un curcubeu de arome unde Tămâioasa, după cum îi spune și numele vine cu accente de tămâie combinată cu fagure, busuioc și lămâie verde. Una dintre cele mai puternice arome de vin alb le dă acest soi, chiar dacă acest cupaj este sec, iar Riesling-ul Italian îl completează frumos cu note minerale și Sauvignon-ul Blanc cu note fructoase.
-               <ul className="swp-list">
+                <ul className="swp-list">
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Tip Vin - Sec
                     </li>
                 
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Volum - 0,75L
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Conţinut de alcool - 13,9%
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Culoare – Alb
                     </li>
                 </ul>
-                </p>
+                </div>
             
                 <Link to="/vinuri" className="desc-btn">Vinuri</Link>
                 <Link to="/" className="desc-btn" >Acasă</Link>

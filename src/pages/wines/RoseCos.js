@@ -11,6 +11,10 @@ const RoseCos = () => {
 
     useEffect(()=> {
         window.scrollTo(0,0);
+        const age = window.sessionStorage.getItem('clientAge');
+		if(!age || age === 'invalid'){
+			window.location.href = "/";
+		}
     },[]);
 
     const override = `
@@ -21,7 +25,7 @@ const RoseCos = () => {
             width: 200px;
             `;
     return (
-        <div className="single-product-container">
+        <div className="single-product-container bg-cosmina">
            <div className="single-product-image">
             <Img        className="spimg"
                         src={require('../../img/rcos.png')}
@@ -44,30 +48,29 @@ const RoseCos = () => {
                     <span>{'(Shiraz, Blaufränkisch și Pinot Noir)'}</span>
 
                 </div>
-                <p>
-                    
-               Un cupaj din trei soiuri deosebite: Pinot Noir, Shiraz și Blaufränkisch ne aduce în prezența unui rosé de culoarea somonului cu miros îmbătător de căpșuni proaspete. Secretului acestui rosé sec stă în combinația îndrăzneață a acestor soiuri, unde Shiraz-ul oferă corp vinului, Pinot Noir-ul este responsabil cu aciditatea ridicată și Blaufränkisch condimentează cu succes blend-ul. 
-               <ul className="swp-list">
+                <div className="text-desc">    
+                Un cupaj din trei soiuri deosebite: Pinot Noir, Shiraz și Blaufränkisch ne aduce în prezența unui rosé de culoarea somonului cu miros îmbătător de căpșuni proaspete. Secretului acestui rosé sec stă în combinația îndrăzneață a acestor soiuri, unde Shiraz-ul oferă corp vinului, Pinot Noir-ul este responsabil cu aciditatea ridicată și Blaufränkisch condimentează cu succes blend-ul. 
+                <ul className="swp-list">
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Tip Vin - Sec
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Volum - 0,75 L
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Conţinut de alcool - 13,7%
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Culoare - Rosé
                     </li>
                     
                 </ul>
-                </p>
-            
+                </div>
+                                
                 <Link to="/vinuri" className="desc-btn">Vinuri</Link>
                 <Link to="/" className="desc-btn" >Acasă</Link>
             </div>

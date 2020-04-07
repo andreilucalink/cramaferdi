@@ -13,7 +13,11 @@ function Contact() {
 			document.getElementById('first-card').removeAttribute('data-aos-delay')
 			document.getElementById('first-card').removeAttribute('data-aos')
 		}
-	});
+		const age = window.sessionStorage.getItem('clientAge');
+		if(!age || age === 'invalid'){
+			window.location.href = "/";
+		}
+	},[]);
 
 	let text1 = 'Echipa';
 	let text2 = 'Noastră';

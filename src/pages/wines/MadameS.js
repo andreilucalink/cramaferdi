@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom';
 const MadameS = () => {
     useEffect(()=> {
         window.scrollTo(0,0);
+        const age = window.sessionStorage.getItem('clientAge');
+		if(!age || age === 'invalid'){
+			window.location.href = "/";
+		}
     },[]);
 
     const override = `
@@ -20,7 +24,7 @@ const MadameS = () => {
             width: 200px;
             `;
     return (
-        <div className="single-product-container">
+        <div className="single-product-container bg-madameS">
            <div className="single-product-image">
             <Img        className="spimg"
                         src={require('../../img/mads.png')}
@@ -41,28 +45,28 @@ const MadameS = () => {
                     <span>{'(Sauvignon Blanc)'}</span>
 
                 </div>
-                <p>
                 
+                <div className="text-desc">
                 Acest Sauvignon Blanc te transpune instantaneu într-o grădină cu piersici înfloriți. Aciditatea ridicată, gustul de citrice și plante ierboase date de pirazină și senzația crocantă conferă unicitate acestui vin. 
-               <ul className="swp-list">
-               <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                <ul className="swp-list">
+                    <li>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Tip Vin - Sec
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Volum - 0,75L
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Conţinut de alcool - 12,9%
                     </li>
                     <li>
-                    <i class="fas fa-caret-right list-arrow"></i>
+                    <i className="fas fa-caret-right list-arrow"></i>
                     Culoare – Alb
                     </li>
                 </ul>
-                </p>
+                </div>
             
                 <Link to="/vinuri" className="desc-btn">Vinuri</Link>
                 <Link to="/" className="desc-btn" >Acasă</Link>

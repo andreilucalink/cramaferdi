@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/products.css';
 import AOS from 'aos';
-/* import Img from 'react-image';
-import { Spinner } from 'react-bootstrap'; */
+
 
 function Products() {
 	useEffect(() => {
@@ -21,6 +20,11 @@ function Products() {
 			once: true,
 			duration: 1000
 		});
+		const age = window.sessionStorage.getItem('clientAge');
+		if(!age || age === 'invalid'){
+			window.location.href = "/";
+		}
+		
 	}, []);
 	let view = 'Vinurile';
 	let products = 'Noastre';
@@ -47,30 +51,30 @@ function Products() {
 							<section>
 								<h3 className="rose-cosmina">Rosé Cosmina</h3>
 								<span className="limit-edit-span"><b><i>Ediție Limitată 2019</i></b></span> {/* MODIFICARE PENTRU TELEFON */}
-								<p>
+								<div>
 								<ul className="desc-details-list">
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Tip Vin - Sec
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Soi – Shiraz, Blaufränkisch și Pinot Noir
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Volum - 0,75L
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Conţinut de alcool - 13,7%
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Culoare – Rosé
 									</li>
 								</ul>
-								</p>
+								</div>
 							</section>
 							<Link to='/vinuri/rose-cosmina' className="btn" >
 								{details}
@@ -85,30 +89,30 @@ function Products() {
 							<section>
 								<h3 className="rose-cosmina">Cuvée Alexandra </h3>
 								<span className="limit-edit-span"><b><i>Ediție Limitată 2019</i></b></span>
-								<p>
+								<div>
 								<ul className="desc-details-list">
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Tip Vin - Sec
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Soi – Tămâioasă Românească, Riesling Italian și Sauvignon Blanc 
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Volum - 0,75L
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Conţinut de alcool - 13,9%
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Culoare – Alb
 									</li>
 								</ul>
-								</p>
+								</div>
 							</section>
 							<Link to='/vinuri/cuvee-alexandra' className="btn" >
 								{details}
@@ -123,30 +127,30 @@ function Products() {
 							<section>
 								<h3 className="rose-cosmina">Madame S. </h3>
 								<span className="limit-edit-span"><b><i>Ediție Limitată 2019</i></b></span>
-								<p>
+								<div>
 								<ul className="desc-details-list">
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Tip Vin - Sec
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Soi – Sauvignon Blanc 
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Volum - 0,75L
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Conţinut de alcool - 12,9%
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Culoare – Alb
 									</li>
 								</ul>
-								</p>
+								</div>
 							</section>
 							<Link to='/vinuri/madame-s' className="btn" >
 								{details}
@@ -162,34 +166,34 @@ function Products() {
 								
 								<h3 className="rose-cosmina">Cuvée Unchiu Puiu</h3>
 								<span className="limit-edit-span"><b><i> 2018</i></b></span>
-								<p>
+								<div>
 								<ul className="desc-details-list">
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Tip Vin - Sec
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Soi – Merlot, Shiraz și Blaufränkisch 
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Maturare – 6 luni, baric din stejar românesc, american şi francez
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Volum - 0,75L
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Conţinut de alcool - 14,5%
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Culoare – Roşu
 									</li>
 								</ul>
-								</p>
+								</div>
 							</section>
 							<Link to='/vinuri/unchiu-puiu' className="btn" >
 								{details}
@@ -204,34 +208,34 @@ function Products() {
 							<section>
 								<h3 className="rose-cosmina">Cuvée Francisc</h3>
 								<span className="limit-edit-span"><b><i> 2017</i></b></span>
-								<p>
+								<div>
 								<ul className="desc-details-list">
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Tip Vin - Sec
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Soi – Cabernet Franc și Merlot 
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Maturare – 18 luni, baric din stejar românesc, american şi francez
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Volum - 0,75L
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Conţinut de alcool - 14,9%
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Culoare – Roşu
 									</li>
 								</ul>
-								</p>
+								</div>
 							</section>
 							<Link to='/vinuri/cuvee-francisc' className="btn" >
 								{details}
@@ -246,34 +250,34 @@ function Products() {
 							<section>
 								<h3 className="rose-cosmina">Red King</h3>
 								<span className="limit-edit-span"><b><i>Rezerva 2017</i></b></span>
-								<p>
+								<div>
 								<ul className="desc-details-list">
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Tip Vin - Sec
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Soi – Cabernet Sauvignon
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Maturare – 22 luni, baric din stejar românesc, american şi francez
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Volum - 0,75L
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Conţinut de alcool - 14,5%
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Culoare – Roşu
 									</li>
 								</ul>
-								</p>
+								</div>
 							</section>
 							<Link to='/vinuri/red-king' className="btn" >
 								{details}
@@ -288,34 +292,34 @@ function Products() {
 							<section>
 								<h3 className="rose-cosmina">Mister S.</h3>
 								<span className="limit-edit-span"><b><i>Rezerva 2017</i></b></span>
-								<p>
+								<div>
 								<ul className="desc-details-list">
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Tip Vin - Sec
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Soi – Shiraz
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Maturare – 20 luni, baric din stejar românesc, american şi francez
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Volum - 0,75L
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Conţinut de alcool - 14,4%
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Culoare – Roşu
 									</li>
 								</ul>
-								</p>
+								</div>
 							</section>
 							<Link to='/vinuri/mister-s' className="btn" >
 								{details}
@@ -330,34 +334,34 @@ function Products() {
 							<section>
 								<h3 className="rose-cosmina">Cuvée Paul Port </h3>
 								<span className="limit-edit-span"><b><i>2016</i></b></span>
-								<p>
+								<div>
 								<ul className="desc-details-list">
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Tip Vin - Demidulce
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Soi – Fetească Neagră şi Cabernet Sauvignon
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Maturare – 24 luni, baric din stejar românesc, american şi francez
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Volum - 0,75L
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Conţinut de alcool - 14,9%
 									</li>
 									<li>
-									<i class="fas fa-caret-right list-arrow"></i>
+									<i className="fas fa-caret-right list-arrow"></i>
 									Culoare – Roşu
 									</li>
 								</ul>
-								</p>
+								</div>
 							</section>
 							<Link to='/vinuri/cuvee-paul-port' className="btn" >
 								{details}
