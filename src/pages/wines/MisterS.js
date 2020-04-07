@@ -42,9 +42,9 @@ const MisterS = () => {
                 <h1>Mister S. Rezerva 2017</h1>
                 <div className="wine-comp-desc">
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
-                    <span>{'(Shiraz)'}</span>
 
                 </div>
+                    <span id="grp">{'(Shiraz)'}</span>
                 
                 <div className="text-desc">
                 Un Shiraz îndrăzneț, bogat și complex, dar în același timp elegant, care are un corp amplu, de culoare rubiniu-violet intens cu arome concentrate de afine și prune, unde taninurile și aciditatea se îmbină frumos. Carnea roșie și condimentele exotice evidențiază notele fructate ale acestui Shiraz. Sunt de asemenea caracteristice notele de carne afumată și piper. Anul recoltei este 2017 iar maturarea a avut loc timp de 20 luni în butoaie de stejar. Gradul alcoolic este 14,4%. 
@@ -74,9 +74,10 @@ const MisterS = () => {
                     </li>
                 </ul>
                 </div>
-            
-                <Link to="/vinuri" className="desc-btn">Vinuri</Link>
-                <Link to="/" className="desc-btn" >Acasă</Link>
+                <div className="desc-buttons">
+                    <Link to="/vinuri" className="desc-btn desc-btn-left">Vinuri</Link>
+                    <Link to="/" className="desc-btn btn-desc-right" >Acasă</Link>
+                </div>       
             </div>
         </div>
     )

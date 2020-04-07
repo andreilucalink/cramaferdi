@@ -44,9 +44,9 @@ const CuveeAlexandra = () => {
                     <Img className="grape-comp" src={require('../../img/whg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
                     <Img className="grape-comp" src={require('../../img/whg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
                     <Img className="grape-comp" src={require('../../img/whg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
-                    <span>{'(Tămâioasă Românească, Riesling Italian și Sauvignon Blanc)'}</span>
 
                 </div>
+                    <span id="grp">{'(Tămâioasă Românească, Riesling Italian și Sauvignon Blanc)'}</span>
                 
                 <div className="text-desc">
                 Cupajul alb bazat pe Tămâioasă Românească, Riesling Italian și Sauvignon Blanc ne oferă un curcubeu de arome unde Tămâioasa, după cum îi spune și numele vine cu accente de tămâie combinată cu fagure, busuioc și lămâie verde. Una dintre cele mai puternice arome de vin alb le dă acest soi, chiar dacă acest cupaj este sec, iar Riesling-ul Italian îl completează frumos cu note minerale și Sauvignon-ul Blanc cu note fructoase.
@@ -70,9 +70,10 @@ const CuveeAlexandra = () => {
                     </li>
                 </ul>
                 </div>
-            
-                <Link to="/vinuri" className="desc-btn">Vinuri</Link>
-                <Link to="/" className="desc-btn" >Acasă</Link>
+                <div className="desc-buttons">
+                    <Link to="/vinuri" className="desc-btn desc-btn-left">Vinuri</Link>
+                    <Link to="/" className="desc-btn btn-desc-right" >Acasă</Link>
+                </div>       
             </div>
         </div>
     )

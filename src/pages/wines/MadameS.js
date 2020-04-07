@@ -42,9 +42,9 @@ const MadameS = () => {
                 <h1>Madame S. Ediţie Limitată 2019</h1>
                 <div className="wine-comp-desc">
                     <Img className="grape-comp" src={require('../../img/whg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
-                    <span>{'(Sauvignon Blanc)'}</span>
 
                 </div>
+                    <span id="grp">{'(Sauvignon Blanc)'}</span>
                 
                 <div className="text-desc">
                 Acest Sauvignon Blanc te transpune instantaneu într-o grădină cu piersici înfloriți. Aciditatea ridicată, gustul de citrice și plante ierboase date de pirazină și senzația crocantă conferă unicitate acestui vin. 
@@ -67,9 +67,10 @@ const MadameS = () => {
                     </li>
                 </ul>
                 </div>
-            
-                <Link to="/vinuri" className="desc-btn">Vinuri</Link>
-                <Link to="/" className="desc-btn" >Acasă</Link>
+                <div className="desc-buttons">
+                    <Link to="/vinuri" className="desc-btn desc-btn-left">Vinuri</Link>
+                    <Link to="/" className="desc-btn btn-desc-right" >Acasă</Link>
+                </div>       
             </div>
         </div>
     )

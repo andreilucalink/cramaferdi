@@ -43,9 +43,9 @@ const CuveeFrancisc = () => {
                 <div className="wine-comp-desc">
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
-                    <span>{'(Cabernet Franc și Merlot)'}</span>
 
                 </div>
+                    <span id="grp">{'(Cabernet Franc și Merlot)'}</span>
                 
                 <div className="text-desc">
                 Cabernet Franc și Merlot, două soiuri de struguri care se completează perfect într-un blend ce oferă un caracter unic, un potențial bun de învechire și o comoară artizanală. Vinul este plăcut pentru aromele sale intense, aciditatea medie spre înaltă și gustul ierbos. Anul recoltei este 2017 iar maturarea a avut loc timp de 18 luni în butoaie de stejar. Gradul alcoolic este 14,9%.
@@ -74,9 +74,10 @@ const CuveeFrancisc = () => {
                     </li>
                 </ul>
                 </div>
-            
-                <Link to="/vinuri" className="desc-btn">Vinuri</Link>
-                <Link to="/" className="desc-btn" >Acasă</Link>
+                <div className="desc-buttons">
+                    <Link to="/vinuri" className="desc-btn desc-btn-left">Vinuri</Link>
+                    <Link to="/" className="desc-btn btn-desc-right" >Acasă</Link>
+                </div>       
             </div>
         </div>
     )

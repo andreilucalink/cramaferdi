@@ -45,9 +45,9 @@ const RoseCos = () => {
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
-                    <span>{'(Shiraz, Blaufränkisch și Pinot Noir)'}</span>
 
                 </div>
+                <span id="grp">{'(Shiraz, Blaufränkisch și Pinot Noir)'}</span>
                 <div className="text-desc">    
                 Un cupaj din trei soiuri deosebite: Pinot Noir, Shiraz și Blaufränkisch ne aduce în prezența unui rosé de culoarea somonului cu miros îmbătător de căpșuni proaspete. Secretului acestui rosé sec stă în combinația îndrăzneață a acestor soiuri, unde Shiraz-ul oferă corp vinului, Pinot Noir-ul este responsabil cu aciditatea ridicată și Blaufränkisch condimentează cu succes blend-ul. 
                 <ul className="swp-list">
@@ -70,9 +70,10 @@ const RoseCos = () => {
                     
                 </ul>
                 </div>
-                                
-                <Link to="/vinuri" className="desc-btn">Vinuri</Link>
-                <Link to="/" className="desc-btn" >Acasă</Link>
+                <div className="desc-buttons">
+                    <Link to="/vinuri" className="desc-btn desc-btn-left">Vinuri</Link>
+                    <Link to="/" className="desc-btn btn-desc-right" >Acasă</Link>
+                </div>       
             </div>
         </div>
     )

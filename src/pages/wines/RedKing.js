@@ -42,9 +42,9 @@ const RedKing = () => {
                 <h1>Red King Rezerva 2017</h1>
                 <div className="wine-comp-desc">
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
-                    <span>{'(Cabernet Sauvignon)'}</span>
 
                 </div>
+                    <span id="grp">{'(Cabernet Sauvignon)'}</span>
 
                 <div className="text-desc">
                 Un Cabernet Sauvignon dominant, concentrat și cu un mare potențial de învechire. Un vin super-premium, corpolent, unde gustul de coacăze negre condimentate dau tonul și unde aciditatea atinge nivelul corect. Taninii bogați fac din acest Cabernet un partener perfect pentru carnea la grill și sosurile piperate. Cele 22 de luni petrecute la baric îi rotunjesc aroma într-o ciocolată neagră. Roșul regal este culoarea capișonului de ceară cu sigiliul cramei. Anul recoltei este 2017 iar gradul alcoolic este 14.5%.<br/>
@@ -72,9 +72,10 @@ const RedKing = () => {
                     </li>
                 </ul>
                 </div>
-            
-                <Link to="/vinuri" className="desc-btn">Vinuri</Link>
-                <Link to="/" className="desc-btn" >Acasă</Link>
+                <div className="desc-buttons">
+                    <Link to="/vinuri" className="desc-btn desc-btn-left">Vinuri</Link>
+                    <Link to="/" className="desc-btn btn-desc-right" >Acasă</Link>
+                </div>       
             </div>
         </div>
     )

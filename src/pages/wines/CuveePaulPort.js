@@ -43,9 +43,9 @@ const MisterS = () => {
                 <div className="wine-comp-desc">
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
-                    <span>{'(Fetească Neagră şi Cabernet Sauvignon)'}</span>
 
                 </div>
+                    <span id="grp">{'(Fetească Neagră şi Cabernet Sauvignon)'}</span>
                 
                 <div className="text-desc">
                 Singurul vin demidulce al Cramei Ferdi, este un cupaj format din Fetească Neagră și Cabernet Sauvignon. Prin alăturarea celor două soiuri, bineînțeles că s-a obținut un vin premium, căruia nu îi lipsesc nici corpul si nici culoarea bine conturate de Cabernet, dar nici gustul desăvârșit de fructele de pădure specifice Feteștii Negre. Cele 24 de luni petrecute în baric încununează cu succes calitatea acestui vin. Albastrul regal este culoarea capisonului de ceara cu sigiliul cramei. Anul recoltei este 2016 iar gradul alcoolic este 14,9%.
@@ -72,9 +72,10 @@ const MisterS = () => {
                     </li>
                 </ul>
                 </div>
-            
-                <Link to="/vinuri" className="desc-btn">Vinuri</Link>
-                <Link to="/" className="desc-btn" >Acasă</Link>
+                <div className="desc-buttons">
+                    <Link to="/vinuri" className="desc-btn desc-btn-left">Vinuri</Link>
+                    <Link to="/" className="desc-btn btn-desc-right" >Acasă</Link>
+                </div>       
             </div>
         </div>
     )

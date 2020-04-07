@@ -44,10 +44,8 @@ const UnchiuPwyw = () => {
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
                     <Img className="grape-comp" src={require('../../img/dkg.svg')} loader={<Spinner className="grape-spinner" animation="border" />}/>
-                    <span>{'(Merlot, Shiraz și Blaufränkisch)'}</span>
-
                 </div>
-
+                <span id="grp">{'(Merlot, Shiraz și Blaufränkisch)'}</span>
                 <div className="text-desc">
                 În acest cupaj am alăturat trei soiuri cu note diferite dar care împreună oferă o senzație unică: Merlot, Shiraz și Blaufränkisch ne aduc în prezența unui vin spectaculos de culoarea purpurei cu miros îmbătător de ierburi aromate. Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea ridicată și Blaufränkisch condimentează cu succes blend-ul. Maturat 6 luni în butoaie de stejar românesc. 
                 <ul className="swp-list">
@@ -74,9 +72,10 @@ const UnchiuPwyw = () => {
                     </li>
                 </ul>
                 </div>
-            
-                <Link to="/vinuri" className="desc-btn">Vinuri</Link>
-                <Link to="/" className="desc-btn" >Acasă</Link>
+                <div className="desc-buttons">
+                    <Link to="/vinuri" className="desc-btn desc-btn-left">Vinuri</Link>
+                    <Link to="/" className="desc-btn btn-desc-right" >Acasă</Link>
+                </div>           
             </div>
         </div>
     )
