@@ -210,6 +210,10 @@ main {
 	.section-text3 p, .section-text2 p, .section-text1 p {
 		font-size: 12px;
 	}
+
+	.section {
+		padding: 25px 0px;
+	}
 	.productionLogos img {
 		width: 60px;
 		margin-right: 5px;

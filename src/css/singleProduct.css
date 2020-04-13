@@ -97,11 +97,6 @@ span#grp {
 }
 
 .single-product-desc .wine-comp-desc {
-    /* background: teal; */
-    height: 40px;
-}
-
-.single-product-desc .wine-comp-desc {
     color: var(--dark-color);
     font-weight: 600;
     display: flex;
@@ -140,6 +135,7 @@ span#grp {
 }
 
 .single-product-desc .desc-buttons {
+    opacity: 0.85;
     position: absolute;
     bottom: 3%;
 }
@@ -182,7 +178,7 @@ span#grp {
     }
     .single-product-desc  {
         margin-top: 20px;
-        height: 600px;
+        height: 650px;
     }
     .single-product-desc h1{
         font-size: 22px;
@@ -191,9 +187,11 @@ span#grp {
         height: 25px;
     }
     
-
     .single-product-desc div.text-desc, .single-product-desc ul  {
         font-size: 14px;
+    }
+    .single-product-desc .desc-buttons {
+        bottom: 5%;
     }
 }
 
@@ -215,7 +213,7 @@ span#grp {
     .single-product-desc  {
         margin-left: 80px;
         margin-top: 40px;
-        height: 450px;
+        height: 550px;
         max-width: 450px;
     }
     .single-product-desc h1{
@@ -225,8 +223,9 @@ span#grp {
     .single-product-desc .grape-comp {
         height: 20px;
     }
-    
-
+    .single-product-desc .desc-buttons {
+        bottom: 5%;
+    }
     .single-product-desc div.text-desc {
         margin-top: 15px;
         margin-bottom: 5px;
