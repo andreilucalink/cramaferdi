@@ -8,11 +8,11 @@ function Page404() {
 			<h2>Aţi accesat o cale inexistentă <br/>în site</h2>
 			<div className="logo" />
 			<div className="buttons">
-				<Link to="/" className="btn-404">
+				<Link to="/" className="btn-404 ">
 					{' '}
 					Acasa
 				</Link>
-				<Link to="/contact" className="btn-404 ml-4">
+				<Link to="/contact" className="btn-404 ml-5">
 					{' '}
 					Contact
 				</Link>

@@ -21,9 +21,9 @@ function noScroll() {
 useEffect(() => {
 	const age = sessionStorage.getItem('clientAge');
 	if(!age || age === 'invalid'){
+		window.addEventListener('scroll', noScroll);
 		document.getElementById("confirmModal").classList.remove('hide-confModal');
 		document.getElementById("home-page").classList.add('hide-home');
-		window.addEventListener('scroll', noScroll);
 	}
 },[])
 
@@ -35,7 +35,7 @@ useEffect(() => {
 				<Img
 					className="ptext"
 					id="home-logo"
-					src={require('../img/lf.png')}
+					src={require('../img/logo-ferdi.png')}
 					loader={<Spinner animation="grow" className="ptext logo-loader" />}
 				/>
 			</div>

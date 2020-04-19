@@ -19,19 +19,21 @@ function ConfirmAgeModal(props) {
     }
 
     return (
-        <div className="confirmModal hide-confModal" id="confirmModal">
-			<h2>Trebuie să aveţi împliniţi <b>18 ani</b> pentru a accesa acest site</h2>
-			{/* <img src={require('../img/lf.png')} alt="logo" className="modalLogo"/> */}
-            <Img
-					className="modalLogo"
-					src={require('../img/lf.png')}
-					loader={<Spinner animation="grow" className="modalLogoLoader" />}
-			/>
-			<div className="confirmButtons">
-				<button className="ageConfirm" onClick={()=> acceptAgeReq()}>Accept</button>
-				<button className="ageDeny" onClick={()=> denyAgeReq()}>Refuz</button>
-			</div>
-		</div>
+       <div className="hide-confModal" id="confirmModal">
+           <div  className="modalBackground"></div>
+            <div className="confirmModal " /* id="confirmModal" */>
+                <h2>Trebuie să aveţi împliniţi <b>18 ani</b> pentru a accesa acest site</h2>
+                <Img
+                        className="modalLogo"
+                        src={require('../img/logo-ferdi.png')}
+                        loader={<Spinner animation="grow" className="modalLogoLoader" />}
+                />
+                <div className="confirmButtons">
+                    <button className="ageConfirm" onClick={()=> acceptAgeReq()}>Accept</button>
+                    <button className="ageDeny" onClick={()=> denyAgeReq()}>Refuz</button>
+                </div>
+		    </div>
+       </div>
     )
 }
 

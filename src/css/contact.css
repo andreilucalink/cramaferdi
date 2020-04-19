@@ -3,6 +3,10 @@
 	margin-top: 130px;
 } */
 
+#contact-body {
+	min-height: 100%;
+}
+
 .contact-header h1 {
 	text-align: center;
 	padding: 20px;
@@ -29,7 +33,7 @@
 	justify-content: space-around;
 	margin: 100px auto 100px auto;
 	max-width: 1200px;
-	height: auto;
+	min-height: 100%;
 }
 
 .contact-wrapper .contact-card {
@@ -53,7 +57,7 @@
 	-moz-border-radius-topright: 5px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	background-image: url(../img/tst3.jpg);
+	background-image: url(../img/tst4.jpg);
 	background-position: center;
 	background-size: cover;
 	height: 260px;
@@ -61,11 +65,11 @@
 	clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
 }
 #member1 {
-	background-image: url(../img/fer5.jpg);
+	background-image: url(../img/ferdi.jpg);
 }
 
 #member2 {
-	background-image: url(../img/paul2.jpg);
+	background-image: url(../img/paul.jpg);
 }
 #member3 {
 	background-image: url(../img/ofelia.jpg);
@@ -155,6 +159,12 @@
 	width: 200px;
 	display: flex;
 	align-items: center;
+}
+
+@media (max-width: 1023px) {
+	#contact-body {
+		height: 100%;
+	}
 }
 
 @media (max-width: 965px) {
