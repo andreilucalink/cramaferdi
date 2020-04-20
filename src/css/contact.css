@@ -1,12 +1,14 @@
-/* DACA NU MERGE STICKY -> FIXED + MARGIN */
-/* #contact-body {
-	margin-top: 130px;
-} */
 
+
+/* ------------------ Contact Page Body ------------------ */
 #contact-body {
 	min-height: 100%;
+	position: relative;
 }
+/* ------------------------------------------------------ */
 
+
+/* ------------------ Contact Header ------------------ */
 .contact-header h1 {
 	text-align: center;
 	padding: 20px;
@@ -27,6 +29,11 @@
 	font-weight: 600;
 	padding: 0px 20px;
 }
+
+/* ------------------------------------------------------ */
+
+
+/* ------------------ Contact Wrapper + Cards + Profile img + Details------------------ */
 
 .contact-wrapper {
 	display: flex;
@@ -64,6 +71,7 @@
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
 }
+
 #member1 {
 	background-image: url(../img/ferdi.jpg);
 }
@@ -71,6 +79,7 @@
 #member2 {
 	background-image: url(../img/paul.jpg);
 }
+
 #member3 {
 	background-image: url(../img/ofelia.jpg);
 }
@@ -109,6 +118,7 @@
 .contact-details .phone {
 	margin: 15px 0;
 }
+
 .contact-details .email {
 	margin-top: 15px;
 }
@@ -127,6 +137,7 @@
 	min-height: 30px;
 	min-width: 30px;
 }
+
  .contact-details .ferdi-bar {
 	margin-top: 150px;;
 }
@@ -161,6 +172,10 @@
 	align-items: center;
 }
 
+/* ------------------------------------------------------ */
+
+
+/* ------------------ Media queries ------------------ */
 @media (max-width: 1023px) {
 	#contact-body {
 		height: 100%;
@@ -264,3 +279,5 @@
 		margin-left: 8px;
 	}
 }
+
+/* ------------------------------------------------------ */

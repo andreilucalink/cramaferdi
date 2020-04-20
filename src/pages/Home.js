@@ -12,24 +12,37 @@ function Home() {
 			once: true,
 			duration: 1000
 		});
-	});
+	},[]);
 
-function noScroll() {
-	window.scrollTo(0, 0);
-}
-
-useEffect(() => {
-	const age = sessionStorage.getItem('clientAge');
-	if(!age || age === 'invalid'){
-		window.addEventListener('scroll', noScroll);
-		document.getElementById("confirmModal").classList.remove('hide-confModal');
-		document.getElementById("home-page").classList.add('hide-home');
+	function noScroll() {
+		window.scrollTo(0, 0);
 	}
-},[])
+
+	let innerHeigth = window.innerHeight;
+	function getHeigth() {
+		if (document.getElementById('home-scroll-up') === null) return;
+		if(window.scrollY > (innerHeigth/1.5))
+			document.getElementById('home-scroll-up').classList.add('show-home-sroll-btn');	
+		else 
+			document.getElementById('home-scroll-up').classList.remove('show-home-sroll-btn');	
+	}
+	window.addEventListener("scroll", getHeigth);
+
+	useEffect(() => {
+		const age = sessionStorage.getItem('clientAge');
+		if(!age || age === 'invalid'){
+			window.addEventListener('scroll', noScroll);
+			document.getElementById("confirmModal").classList.remove('hide-confModal');
+			document.getElementById("home-page").classList.add('hide-home');
+		}
+	},[])
 
 	return (
 		<div className="home-body" id="home-body">
 		<ConfirmAgeModal scrollListener={noScroll}/>
+		<a role="button" href="#start" data-scroll >
+			<img src={require('../img/up-ar.svg')} alt="Go Up" className="back-to-top-btn" id="home-scroll-up" />
+		</a>
 		<main id="home-page">
 			<div className="pimg1">
 				<Img
@@ -52,7 +65,7 @@ useEffect(() => {
 					{/* <span className="border trans">Locaţie</span> */}
 				</div>
 			</div>
-			<section className="section section-light">
+			<section className="section section-light" id="trigger-home-scroll">
 				<div className="section-text2" data-aos="fade-up">
 					<h2 style={{marginBottom: "20px"}}>Locaţie</h2>
 					<div className="productionLogos">
@@ -78,7 +91,7 @@ useEffect(() => {
 					</div>
 					<p>
 					Ca urmare, crama produce vin din 10 soiuri de struguri, dintre care 7 roșii: Fetească Neagră, Cabernet Sauvignon, Cabernet Franc, Shiraz, Merlot, Burgund Mare, Pinot Noir și 3 albe: Sauvignon Blanc, Tămâioasa Românească și Riesling Italian, producția anuală totală fiind aproximativ de 10.000 de sticle. 
-					<br/>
+					<br/><br/>
 					Vinurile Cramei Ferdi se disting prin naturalețe, consistență, aciditate și eleganță. Utilizarea metodei tradiționale de făcut vinul are ca rezultat o gamă de vinuri echilibrate și rafinate.
 					</p>	
 				</div>
@@ -87,10 +100,11 @@ useEffect(() => {
 				{/* <div className="ptext">
 					<span className="border">ENJOY!</span>
 				</div> */}
-				<a role="button" href="#start" data-scroll>
+				{/* <a role="button" href="#start" data-scroll>
 					<img src={require('../img/up-ar.svg')} alt="Go Up" className="scroll-home" />
-				</a>
+				</a> */}
 			</div>
+	
 		</main>
 		</div>
 	);

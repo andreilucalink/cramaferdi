@@ -35,7 +35,7 @@ function NavigationBar() {
 	};
 
 	return (
-		<Navbar expand="lg" bg="light" sticky="top" className="p-3 ferdi-navbar navbar-dark" collapseOnSelect>
+		<Navbar expand="lg" bg="light" sticky="top" className="p-3 ferdi-navbar navbar-dark" id="ferdi-navbar" collapseOnSelect>
 			<Navbar.Brand as={Link} to="/" className="ml-2" onClick={scrollRestoration}>
 				Crama Ferdi
 			</Navbar.Brand>

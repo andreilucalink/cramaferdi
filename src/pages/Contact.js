@@ -28,8 +28,21 @@ function Contact() {
 		subtitle = "For orders or any questions you can find us at the following contact details";
 	}
 
+	let innerHeigth = window.innerHeight;
+	function getHeigth() {
+		if (document.getElementById('home-scroll-up') === null) return;
+		if(window.scrollY > (innerHeigth/1.5))
+			document.getElementById('home-scroll-up').classList.add('show-home-sroll-btn');	
+		else 
+			document.getElementById('home-scroll-up').classList.remove('show-home-sroll-btn');	
+	}
+	window.addEventListener("scroll", getHeigth);
+
 	return (
 		<section id="contact-body">
+			<a role="button" href="#start" data-scroll>
+				<img src={require('../img/up-ar.svg')} alt="Go Up" className="back-to-top-btn" id="home-scroll-up" />
+			</a>
 			<header className="contact-header">
 				<h1>
 					<span>{text1}</span> {text2}{' '}

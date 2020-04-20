@@ -1,8 +1,12 @@
+/* ------------------ Product Container ------------------ */
 .single-product-container {
     min-height: 95vh;
     display: flex;
-    /* margin-top: 50px; */
 }
+
+/* ------------------------------------------------------ */
+
+/* ------------------ Backgrounds ------------------ */
 
 .bg-cosmina {
     background-image: url(../img/bg_cos.svg);
@@ -52,11 +56,15 @@
     background-size: cover;
 }
 
+/* ------------------------------------------------------ */
+
+/* ------------------ Product details ------------------ */
 
 span#grp {
     color: var(--dark-color);
     font-weight: 600;
 }
+
 .single-product-image {
     margin-top: 50px;
     width: 500px;
@@ -89,8 +97,6 @@ span#grp {
     font-size: 40px;
 }
 
-
- 
 .single-product-desc .wine-comp-desc .grape-comp {
     margin-right: 8px;
     height: 35px;
@@ -106,6 +112,7 @@ span#grp {
 .wine-comp-desc .grape-spinner {
     margin-right: 5px;
 }
+
 .single-product-desc div.text-desc {
     font-weight: 600;
     margin-top: 50px;
@@ -117,6 +124,7 @@ span#grp {
 .single-product-desc .text-desc ul {
     margin-top: 35px;
 }
+
 .single-product-desc .text-desc ul li {
     list-style: none;   
 }
@@ -144,7 +152,6 @@ span#grp {
     margin-right: 20px;
 }
 
-
 .single-product-desc .desc-btn {
     text-decoration: none;
     display: inline-block;
@@ -164,6 +171,9 @@ span#grp {
     font-weight: 600;
 }
 
+/* ------------------------------------------------------  */
+
+/* ------------------ Media queries ------------------ */
 
 @media (max-width: 1600px){
     .single-product-image {
@@ -237,6 +247,7 @@ span#grp {
     }
     
 }
+
 @media (max-width: 920px) {
 
     .single-product-container {
@@ -285,3 +296,5 @@ span#grp {
     }
     
 }
+
+/* ------------------------------------------------------ */

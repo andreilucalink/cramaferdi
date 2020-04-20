@@ -1,4 +1,4 @@
-/* DACA NU MERGE STICKY -> FIXED + MARGIN */
+/* ------------------ Home Body ------------------ */
 main {
 	height: 100%;
 }
@@ -8,6 +8,10 @@ main {
 	height: 100%;
 }
 
+/* ------------------------------------------------------ */
+
+
+/* ------------------ Scroll Up Home Btn ------------------ */
 .scroll-home {
 	height: 45px;
 	width: 45px;
@@ -18,6 +22,10 @@ main {
 	border-radius: 50%;
 	border: 2px #f4f4f4 solid;
 }
+
+/* ------------------------------------------------------ */
+
+/* ------------------ Section Images + Section Texts + Logo ------------------ */
 
 .pimg1,
 .pimg2,
@@ -30,7 +38,7 @@ main {
 	background-attachment: fixed;
 	background-position-x: 50%;
 	background-position-y: 0%;
-}
+}  
 
 .ptext {
 	position: absolute;
@@ -107,11 +115,15 @@ main {
 .pimg2 {
 	background-image: url("../img/strg.jpg");
 	min-height: 600px;
+	width: 80%;
+	margin: auto;
 }
 
 .pimg3 {
 	background-image: url("../img/butoaie2.jpg");
 	min-height: 600px;
+	width: 80%;
+	margin: auto;
 }
 
 .pimg4 {
@@ -119,6 +131,9 @@ main {
 	min-height: 500px;
 	position: relative;
 	opacity: 0.8;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 60px;
 }
 
 .section {
@@ -149,8 +164,45 @@ main {
 	width: 80px;
 	margin-right: 5px;
 }
+
 .productionLogos {
 	margin-bottom: 30px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+
+/* ------------------ Media queries ------------------ */
+
+
+@media (max-width: 900px) {
+	.section {
+		font-size: 0.9rem;
+		line-height: 1.9;
+		padding: 30px 30px;
+	}
+	.section-text3 p, .section-text2 p, .section-text1 p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 600px) {
+	.ptext {
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+
+	.section-text3 p, .section-text2 p, .section-text1 p {
+		font-size: 12px;
+	}
+
+	.section {
+		padding: 25px 10px;
+	}
+	.productionLogos img {
+		width: 60px;
+		margin-right: 5px;
+	}
 }
 
 @media (max-width: 568px) {
@@ -188,34 +240,4 @@ main {
 	} */
 }
 
-
-
-@media (max-width: 900px) {
-	.section {
-		font-size: 0.9rem;
-		line-height: 1.9;
-		padding: 30px 30px;
-	}
-	.section-text3 p, .section-text2 p, .section-text1 p {
-		font-size: 14px;
-	}
-}
-
-@media (max-width: 600px) {
-	.ptext {
-		font-size: 12px;
-		letter-spacing: 1px;
-	}
-
-	.section-text3 p, .section-text2 p, .section-text1 p {
-		font-size: 12px;
-	}
-
-	.section {
-		padding: 25px 0px;
-	}
-	.productionLogos img {
-		width: 60px;
-		margin-right: 5px;
-	}
-}
+/* ------------------------------------------------------ */
