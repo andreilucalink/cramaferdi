@@ -6,7 +6,7 @@ function ConfirmAgeModal(props) {
   const acceptAgeReq = () => {
     window.removeEventListener("scroll", props.scrollListener);
     sessionStorage.setItem("clientAge", "valid");
-    /*  document.getElementById('ferdi-navbar').classList.remove('disable-nav-link'); */
+     document.getElementById('ferdi-navbar').classList.remove('hide-nav');
     document.getElementById("home-page").classList.remove("hide-home");
     document.getElementById("confirmModal").classList.add("hide-confModal");
     document.getElementById("home-body").classList.add("home-body");
@@ -14,13 +14,14 @@ function ConfirmAgeModal(props) {
 
   const denyAgeReq = () => {
     sessionStorage.setItem("clientAge", "invalid");
+    document.getElementById("modal-header").classList.add("red-header");
   };
 
   return (
     <div className="hide-confModal" id="confirmModal">
       <div className="modalBackground"></div>
       <div className="confirmModal " /* id="confirmModal" */>
-        <h2>
+        <h2 id="modal-header">
           Trebuie să aveţi împliniţi <b> 18 ani</b> pentru a accesa acest site
         </h2>
         <Img

@@ -32,6 +32,7 @@ function Home() {
 		const age = sessionStorage.getItem('clientAge');
 		if(!age || age === 'invalid'){
 			window.addEventListener('scroll', noScroll);
+			document.getElementById('ferdi-navbar').classList.add('hide-nav');
 			document.getElementById("confirmModal").classList.remove('hide-confModal');
 			document.getElementById("home-page").classList.add('hide-home');
 		}

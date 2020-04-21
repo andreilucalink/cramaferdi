@@ -13,9 +13,46 @@
   display: none;
 }
 
-/* ------------------------------------------------------*/
+.hide-nav {
+  display: none;
+}
+
+/* ------------------------------------------------------ */
 
 /*------------------ Confirm age modal ------------------*/
+
+.red-header {
+ color: indianred;
+ position: relative;
+ font-weight: 600;
+ -webkit-animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+ animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+ 
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
 
 .modalBackground {
   background-color: teal;
@@ -121,19 +158,18 @@
 
 /* ------------------------------------------------------ */
 
-
 /* ----------------- Scroll btn --------------- */
 .back-to-top-btn {
-	position: fixed;
-	z-index: 999;
-	height: 35px;
-	top: 93%;
-	right: -50px;
-	transition: ease 0.3s right;
+  position: fixed;
+  z-index: 999;
+  height: 35px;
+  top: 93%;
+  right: -50px;
+  transition: ease 0.3s right;
 }
 
 .show-home-sroll-btn {
-	right: 15px;
+  right: 15px;
 }
 
 /*------------------ Navbar ------------------*/
@@ -255,14 +291,14 @@
 }
 
 .footer .footer-links {
-	width: 200px;
-	margin: auto;
+  width: 200px;
+  margin: auto;
 }
 
 .footer .footer-link:hover {
-	transition: 0.1s ease;
-	background-color: #2c5364;
-	font-size: 18px;
+  transition: 0.1s ease;
+  background-color: #2c5364;
+  font-size: 18px;
 }
 
 /* ------------------------------------------------------ */
@@ -405,11 +441,11 @@
 
 @media (max-width: 568px) {
   .back-to-top-btn {
-	height: 25px;
-	/* right: 4px; */
+    height: 25px;
+    /* right: 4px; */
   }
   .show-home-sroll-btn {
-	  right: 4px;
+    right: 4px;
   }
   .ferdi-navbar .nav-link {
     font-size: 14px;
