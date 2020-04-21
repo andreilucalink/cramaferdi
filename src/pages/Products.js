@@ -302,8 +302,60 @@ function Products() {
         <div className="card-cell">
           <section
             className="card-info"
-            id="animation6"
+            id="animation5"
             data-aos="fade-right"
+            data-aos-offset="150"
+          >
+            <div className="img" id="product9" />
+            <div>
+              <section>
+                <h3 className="rose-cosmina">Cuvée Piţigaia</h3>
+                <span className="limit-edit-span">
+                  <b>
+                    <i> 2017</i>
+                  </b>
+                </span>
+                <div>
+                  <ul className="desc-details-list">
+                    <li>
+                      <i className="fas fa-caret-right list-arrow"></i>
+                      Tip Vin - Sec
+                    </li>
+                    <li>
+                      <i className="fas fa-caret-right list-arrow"></i>
+                      Soi – Merlot si Cabernet Sauvignon
+                    </li>
+                    <li>
+                      <i className="fas fa-caret-right list-arrow"></i>
+                      Maturare – 24 luni, baric din stejar românesc, american şi
+                      francez
+                    </li>
+                    <li>
+                      <i className="fas fa-caret-right list-arrow"></i>
+                      Volum - 0,75L
+                    </li>
+                    <li>
+                      <i className="fas fa-caret-right list-arrow"></i>
+                      Conţinut de alcool - 14,5%
+                    </li>
+                    <li>
+                      <i className="fas fa-caret-right list-arrow"></i>
+                      Culoare – Roşu
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <Link to="/vinuri/cuvee-pitigaia" className="btn">
+                {details}
+              </Link>
+            </div>
+          </section>
+        </div>
+        <div className="card-cell">
+          <section
+            className="card-info"
+            id="animation6"
+            data-aos="fade-left"
             data-aos-offset="150"
           >
             <div className="img" id="product6" />
@@ -355,7 +407,7 @@ function Products() {
           <section
             className="card-info"
             id="animation7"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-offset="150"
           >
             <div className="img" id="product7" />
@@ -407,7 +459,7 @@ function Products() {
           <section
             className="card-info"
             id="animation8"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-offset="150"
           >
             <div className="img" id="product8" />

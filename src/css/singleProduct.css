@@ -32,6 +32,12 @@
     background-size: cover;
 }
 
+.bg-cuvpit {
+    background-image: url(../img/bg_cuvpit.svg);
+    background-position: center;
+    background-size: cover;
+}
+
 .bg-paulPort {
     background-image: url(../img/bg_cpp.svg);
     background-position: center;
