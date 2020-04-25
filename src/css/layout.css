@@ -17,6 +17,49 @@
   display: none;
 }
 
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); 
+    border-top: 7px #f4f4f4 solid;
+    border-bottom: 7px #f4f4f4 solid;
+}
+
+::-webkit-scrollbar-button:single-button {
+  background-color: #f4f4f4;
+  display: block;
+  border-style: solid;
+  height: 12px;
+  width: 12px;
+}
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #0F2027 transparent;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #2193b0 transparent;
+}
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 6px 6px 0 6px;
+  border-color: #0F2027 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #2193b0 transparent transparent transparent;
+}
+
+
 /* ------------------------------------------------------ */
 
 /*------------------ Confirm age modal ------------------*/
