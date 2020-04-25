@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="page-footer footer">
+    <footer className="page-footer footer" id="ferdi-footer">
       <div className="footer-copyright text-center">
         <h4>&copy; Crama Ferdi</h4>
       </div>

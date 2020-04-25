@@ -34,7 +34,8 @@ function Home() {
 			window.addEventListener('scroll', noScroll);
 			document.getElementById('ferdi-navbar').classList.add('hide-nav');
 			document.getElementById("confirmModal").classList.remove('hide-confModal');
-			document.getElementById("home-page").classList.add('hide-home');
+			document.getElementById("home-page").classList.add('hide-element');
+			document.getElementById("ferdi-footer").classList.add('hide-element');
 		}
 	},[])
 

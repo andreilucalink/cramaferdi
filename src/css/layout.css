@@ -9,6 +9,10 @@
   height: 100vh;
 }
 
+.hide-element {
+  display: none;
+}
+
 .hide-confModal {
   display: none;
 }
@@ -17,6 +21,9 @@
   display: none;
 }
 
+/* ------------------------------------------------------ */
+
+/*------------------ Scrollbar customization ------------------ */
 ::-webkit-scrollbar
 {
 	width: 12px;
@@ -59,8 +66,7 @@
   border-color: #2193b0 transparent transparent transparent;
 }
 
-
-/* ------------------------------------------------------ */
+/* ------------------------------------------------------  */
 
 /*------------------ Confirm age modal ------------------*/
 
@@ -72,6 +78,7 @@
  animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
  
 }
+
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -84,6 +91,7 @@
     opacity: 1;
   }
 }
+
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -138,9 +146,9 @@
     #0f2027
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: absolute;
-  top: 10%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -50%);
   z-index: 999;
 }
 
@@ -494,7 +502,6 @@
     font-size: 14px;
   }
   .confirmModal {
-    top: 5%;
     height: 440px;
     width: 300px;
     padding-right: 10px;
