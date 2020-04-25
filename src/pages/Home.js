@@ -14,10 +14,6 @@ function Home() {
 		});
 	},[]);
 
-	function noScroll() {
-		window.scrollTo(0, 0);
-	}
-
 	let innerHeigth = window.innerHeight;
 	function getHeigth() {
 		if (document.getElementById('home-scroll-up') === null) return;
@@ -30,8 +26,7 @@ function Home() {
 
 	useEffect(() => {
 		const age = sessionStorage.getItem('clientAge');
-		if(!age || age === 'invalid'){
-			window.addEventListener('scroll', noScroll);
+		if(!age || age === 'invalid') {
 			document.getElementById('ferdi-navbar').classList.add('hide-nav');
 			document.getElementById("confirmModal").classList.remove('hide-confModal');
 			document.getElementById("home-page").classList.add('hide-element');
@@ -41,7 +36,7 @@ function Home() {
 
 	return (
 		<div className="home-body" id="home-body">
-		<ConfirmAgeModal scrollListener={noScroll}/>
+		<ConfirmAgeModal/>
 		<a role="button" href="#start" data-scroll >
 			<img src={require('../img/up-ar.svg')} alt="Go Up" className="back-to-top-btn" id="home-scroll-up" />
 		</a>

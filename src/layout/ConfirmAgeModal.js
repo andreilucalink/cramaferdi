@@ -12,7 +12,6 @@ function ConfirmAgeModal(props) {
   }, [])
 
   const acceptAgeReq = () => {
-    window.removeEventListener("scroll", props.scrollListener);
     sessionStorage.setItem("clientAge", "valid");
      document.getElementById('ferdi-navbar').classList.remove('hide-nav');
     document.getElementById("home-page").classList.remove("hide-element");
