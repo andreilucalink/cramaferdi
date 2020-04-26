@@ -49,7 +49,7 @@
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	display: inline-block;
-	height: 600px;
+	height: 500px;
 	width: 300px;
 	position: relative;
 	-webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
@@ -67,7 +67,7 @@
 	background-image: url(../img/tst4.jpg);
 	background-position: center;
 	background-size: cover;
-	height: 260px;
+	height: 240px;
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
 }
@@ -94,7 +94,7 @@
 	border-radius: 50%;
 	border: 5px solid #f4f4f4;
 	position: absolute;
-	top: 18%;
+	top: 20%;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
@@ -103,7 +103,7 @@
 .contact-details h3 {
 	color: #0f2027;
 	text-align: center;
-	margin-top: 45px;
+	margin-top: 50px;
 	font-weight: 600;
 }
 
@@ -139,11 +139,11 @@
 }
 
  .contact-details .ferdi-bar {
-	margin-top: 150px;;
+	margin-top: 80px;
 }
 
 .contact-details .paul-bar {
-	margin-top: 90px;
+	margin-top: 80px;
 }
 
 .contact-details p {
@@ -165,11 +165,17 @@
 }
 
 .contact-details .phone-button,
-.email-button {
+.contact-details .email-button {
 	margin: auto;
-	width: 200px;
 	display: flex;
 	align-items: center;
+}
+
+.contact-details .phone-button {
+	width: 150px;
+}
+.contact-details .email-button {
+	width: 200px;
 }
 
 /* ------------------------------------------------------ */
@@ -192,6 +198,7 @@
 
 	.contact-header p {
 		font-size: 18px;
+		padding: 0 30px;
 	}
 }
 
@@ -240,7 +247,7 @@
 
 	.contact-card {
 		max-width: 260px;
-		max-height: 515px;
+		max-height: 450px;
 	}
 
 	.contact-details h3 {

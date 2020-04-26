@@ -67,7 +67,7 @@ function Contact() {
 						<div className="email ferdi-mail">
 							<a role="button" href="mailto:test@gmail.com" className="email-button">
 								<img className="email-img" src={require('../img/gmail.svg')} alt="Call" />
-								<span>cramaferdi@gmail.com</span>
+								<span>office@cramaferdi.ro</span>
 							</a>
 						</div>
 					</div>
@@ -85,13 +85,6 @@ function Contact() {
 								<span>0729-884-940 </span>
 							</a>
 						</div>
-						<div className="contact-bar" />
-						<div className="email">
-							<a role="button" href="mailto:test@gmail.com" className="email-button">
-								<img className="email-img" src={require('../img/gmail.svg')} alt="Call" />
-								<span>cramaferdi@gmail.com</span>
-							</a>
-						</div>
 					</div>
 				</div>
 				<div className="contact-card" data-aos="zoom-in" data-aos-delay="200">
@@ -105,13 +98,6 @@ function Contact() {
 							<a role="button" href="tel:+40-0729-884-940" className="phone-button">
 								<img className="phone-img" src={require('../img/call2.svg')} alt="Call" />
 								<span>0723-768-322 </span>
-							</a>
-						</div>
-						<div className="contact-bar" />
-						<div className="email">
-							<a role="button" href="mailto:test@gmail.com" className="email-button">
-								<img className="email-img" src={require('../img/gmail.svg')} alt="Call" />
-								<span>cramaferdi@gmail.com</span>
 							</a>
 						</div>
 					</div>
