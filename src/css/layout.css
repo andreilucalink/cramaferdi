@@ -324,6 +324,7 @@
 .footer {
   background: #0f2027;
   padding: 30px 0;
+  position: relative;
 }
 
 .footer h4 {
@@ -349,6 +350,15 @@
   transition: 0.1s ease;
   background-color: #2c5364;
   font-size: 18px;
+}
+
+.footer .social-media-btns{
+  position: absolute;
+  left: 20px;
+  bottom: 25px;
+}
+.footer .ig-logo {
+  margin-left: 12px;
 }
 
 /* ------------------------------------------------------ */

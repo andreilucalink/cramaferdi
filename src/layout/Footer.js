@@ -3,7 +3,10 @@ import "../css/layout.css";
 import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+
+
 function Footer() {
+  console.log(navigator)
   return (
     <footer className="page-footer footer" id="ferdi-footer">
       <div className="footer-copyright text-center">
@@ -13,6 +16,14 @@ function Footer() {
         <Nav.Link className="footer-link" as={Link} eventKey="1" to="/">Acasa</Nav.Link>
         <Nav.Link className="footer-link" as={Link} eventKey="1" to="/vinuri">Vinuri</Nav.Link>
         <Nav.Link className="footer-link" as={Link} eventKey="1" to="/contact">Contact</Nav.Link>
+      </div>
+      <div className="social-media-btns">
+        <a href="https://www.facebook.com/Crama-Ferdi-492360557613539" target="_blank" rel="noopener noreferrer" className="fb-logo">
+          <img src={require('../img/facebook.png')}  alt="FB"/>
+        </a>
+        <a href="https://www.instagram.com/ferdi_winery/" target="_blank"  rel="noopener noreferrer" className="ig-logo">
+        <img src={require('../img/instagram.png')}  alt="FB"/>
+        </a>
       </div>
     </footer>
   );

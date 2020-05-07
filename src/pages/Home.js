@@ -58,9 +58,9 @@ function Home() {
 				</div>
 			</section>
 			<div className="pimg2">
-				<div className="ptext">
-					{/* <span className="border trans">Locaţie</span> */}
-				</div>
+				{/* <div className="ptext">
+					<span className="border trans">Locaţie</span>
+				</div> */}
 			</div>
 			<section className="section section-light" id="trigger-home-scroll">
 				<div className="section-text2" data-aos="fade-up">
@@ -74,9 +74,9 @@ function Home() {
 				</div>
 			</section>
 			<div className="pimg3">
-				<div className="ptext">
-					{/* <span className="border trans">Image 3 Text</span> */}
-				</div>
+				{/* <div className="ptext">
+					<span className="border trans">Image 3 Text</span>
+				</div> */}
 			</div>
 			<section className="section section-light">
 				<div className="section-text3" data-aos="fade-up">
@@ -93,15 +93,7 @@ function Home() {
 					</p>	
 				</div>
 			</section>
-			<div className="pimg4">
-				{/* <div className="ptext">
-					<span className="border">ENJOY!</span>
-				</div> */}
-				{/* <a role="button" href="#start" data-scroll>
-					<img src={require('../img/up-ar.svg')} alt="Go Up" className="scroll-home" />
-				</a> */}
-			</div>
-	
+			<div className="pimg4"></div>
 		</main>
 		</div>
 	);

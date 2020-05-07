@@ -508,13 +508,6 @@ function Products() {
           </section>
         </div>
       </main>
-      {/* <a role="button" href="#start" data-scroll>
-        <img
-          src={require("../img/up-ar.svg")}
-          alt="Go Up"
-          className="scroll-products"
-        />
-      </a> */}
     </div>
   );
 }

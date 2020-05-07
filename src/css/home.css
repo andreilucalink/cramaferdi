@@ -184,6 +184,20 @@ main {
 	.section-text3 p, .section-text2 p, .section-text1 p {
 		font-size: 14px;
 	}
+	.pimg1,
+	.pimg2,
+	.pimg3,
+	.pimg4 {
+		background-attachment: scroll;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#home-logo {
+		width: 200px;
+		height: 200px;
+	}
+
 }
 
 @media (max-width: 600px) {
