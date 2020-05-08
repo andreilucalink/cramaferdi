@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import "../css/layout.css";
 import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -6,7 +6,11 @@ import { Link } from 'react-router-dom';
 
 
 function Footer() {
-  console.log(navigator)
+  let isAndroid = /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent);
+  let isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  
+  const [facebookLink, setFacebookLink] = useState();
+
   return (
     <footer className="page-footer footer" id="ferdi-footer">
       <div className="footer-copyright text-center">

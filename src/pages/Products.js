@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import "../css/products.css";
 import AOS from "aos";
@@ -24,6 +25,20 @@ function Products() {
       window.location.href = "/";
     }
   }, []);
+
+  useEffect(() => {
+    const displayStyle = window.sessionStorage.getItem('display');
+    if(displayStyle === 'grid'){
+      document.getElementById('grid-view').classList.add('hide-element');
+      document.getElementById('list-view').classList.remove('hide-element');
+      document.getElementById('products-display-list').classList.add('hide-element');
+      document.getElementById('products-display-grid').classList.remove('hide-element');
+    }
+    if(displayStyle === 'list') {
+      document.getElementById('products-display-list').classList.remove('hide-element');
+      document.getElementById('products-display-grid').classList.add('hide-element');
+    }
+  },[])
   
   let view = "Vinurile";
   let products = "Noastre";
@@ -44,19 +59,56 @@ function Products() {
   }
   window.addEventListener("scroll", getHeigth);
 
+  const displayAsGrid = () => {
+    window.sessionStorage.setItem('display', 'grid');
+    document.getElementById('grid-view').classList.add('hide-element');
+    document.getElementById('list-view').classList.remove('hide-element');
+    document.getElementById('products-display-list').classList.add('hide-element');
+    document.getElementById('products-display-grid').classList.remove('hide-element');
+  }
+
+  const displayAsList = () => {
+    window.sessionStorage.setItem('display', 'list');
+    document.getElementById('list-view').classList.add('hide-element');
+    document.getElementById('grid-view').classList.remove('hide-element');
+    document.getElementById('products-display-list').classList.remove('hide-element');
+    document.getElementById('products-display-grid').classList.add('hide-element');
+  }
 
   return (
     <div className="products-page">
       <a role="button" href="#start" data-scroll>
 				<img src={require('../img/up-ar.svg')} alt="Go Up" className="back-to-top-btn" id="home-scroll-up" />
 			</a>
+      <OverlayTrigger
+        placement="right"
+        delay={{ show: 250, hide: 0 }}
+        overlay={
+          <Tooltip>
+           Grilă
+          </Tooltip>
+        }
+      >
+        <i className="fas fa-th fa-2x" id="grid-view"  onClick={() => displayAsGrid()}></i>
+      </OverlayTrigger>
+      <OverlayTrigger
+        placement="right"
+        delay={{ show: 250, hide: 0 }}
+        overlay={
+          <Tooltip>
+            Listă
+          </Tooltip>
+        }
+      >
+      <i className="fas fa-stream fa-2x hide-element" id="list-view"  onClick={() => displayAsList()}></i>
+      </OverlayTrigger>
       <header className="main-header">
         <h1>
           <span> {view} </span> {products}
         </h1>
         <p> Vinuri cu rădăcini in pasiune, curaj și dăruire.</p>
       </header>
-      <main className="products-container">
+      <div className="products-container" id="products-display-list">
         <div className="card-cell">
           <section className="card-info">
             <div className="img" id="product1" />
@@ -507,7 +559,84 @@ function Products() {
             </div>
           </section>
         </div>
-      </main>
+      </div>
+      <div className="hide-element" id="products-display-grid">
+          <div className="products-container-grid">
+            <div className="grid-card">
+                <div className="grid-layer"></div>
+                <div className="grid-img-wrapper">
+                  <div className="grid-rcos grid-img"/>
+                </div>
+                <div className="grid-header">Rosé Cosmina</div>
+                <Link to="/vinuri/rose-cosmina" className="grid-btn">Detalii</Link>
+            </div>
+            <div className="grid-card">
+                <div className="grid-layer"></div>
+                <div className="grid-img-wrapper">
+                  <div className="grid-cale grid-img"/>
+                </div>
+                <div className="grid-header">Cuveé Alexandra</div>
+                <Link to="/vinuri/cuvee-alexandra" className="grid-btn">Detalii</Link>
+            </div>
+            <div className="grid-card">
+            <div className="grid-layer"></div>
+                <div className="grid-img-wrapper">
+                  <div className="grid-mads grid-img"/>
+                </div>
+                <div className="grid-header">Madame S.</div>
+                <Link to="/vinuri/madame-s" className="grid-btn">Detalii</Link>
+            </div>
+            <div className="grid-card">
+            <div className="grid-layer"></div>
+            <div className="grid-img-wrapper">
+                <div className="grid-unchiu grid-img"/>
+                </div>
+                <div className="grid-header">Unchiu Puiu</div>
+                <Link to="/vinuri/unchiu-puiu" className="grid-btn">Detalii</Link>
+            </div>
+            <div className="grid-card">
+            <div className="grid-layer"></div>
+            <div className="grid-img-wrapper">
+                <div className="grid-francisc grid-img"/>
+                </div>
+                <div className="grid-header">Cuveé Francisc</div>
+                <Link to="/vinuri/cuvee-francisc" className="grid-btn">Detalii</Link>
+            </div>
+            <div className="grid-card">
+            <div className="grid-layer"></div>
+            <div className="grid-img-wrapper">
+                <div className="grid-pitigaia grid-img"/>
+                </div>
+                <div className="grid-header">Cuveé Piţigaia</div>
+                <Link to="/vinuri/cuvee-pitigaia" className="grid-btn">Detalii</Link>
+            </div>
+            <div className="grid-card">
+            <div className="grid-layer"></div>
+            <div className="grid-img-wrapper">
+                <div className="grid-redking grid-img"/>
+                </div>
+                <div className="grid-header">Red King</div>
+                <Link to="/vinuri/red-king" className="grid-btn">Detalii</Link>
+            </div>
+            <div className="grid-card">
+            <div className="grid-layer"></div>
+            <div className="grid-img-wrapper">
+                <div className="grid-misterS grid-img"/>
+                </div>
+                <div className="grid-header">Mister S</div>
+                <Link to="/vinuri/mister-s" className="grid-btn">Detalii</Link>
+            </div>
+            <div className="grid-card">
+            <div className="grid-layer"></div>
+            <div className="grid-img-wrapper">
+                <div className="grid-paul grid-img"/>
+                </div>
+                <div className="grid-header">Cuveé Paul Port</div>
+                <Link to="/vinuri/cuvee-paul-port" className="grid-btn">Detalii</Link>
+            </div>
+            
+        </div>
+      </div>
     </div>
   );
 }

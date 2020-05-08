@@ -37,6 +37,7 @@ function NavigationBar() {
 	return (
 		<Navbar expand="lg" bg="light" sticky="top" className="p-3 ferdi-navbar navbar-dark" id="ferdi-navbar" collapseOnSelect>
 			<Navbar.Brand as={Link} to="/" className="ml-2" onClick={scrollRestoration}>
+				<img src={require('../img/logo_navbar.svg')} alt="logo" className="logo-navbar"/>
 				Crama Ferdi
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" id="ferdi-toggler" onClick={rotateMenu}>
