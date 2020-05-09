@@ -32,10 +32,10 @@ function Footer() {
         <Nav.Link className="footer-link" as={Link} eventKey="1" to="/contact">Contact</Nav.Link>
       </div>
       <div className="social-media-btns">
-        <a href="www.test.com" target="_blank" rel="noopener noreferrer" className="fb-logo">
+        <a href={fbLink} target="_blank" rel="noopener noreferrer" className="fb-logo">
           <img src={require('../img/facebook.png')}  alt="FB"/>
         </a>
-        <a href="www.test.com" target="_blank"  rel="noopener noreferrer" className="ig-logo">
+        <a href={igLink} target="_blank"  rel="noopener noreferrer" className="ig-logo">
         <img src={require('../img/instagram.png')}  alt="FB"/>
         </a>
       </div>
