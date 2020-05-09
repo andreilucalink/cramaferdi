@@ -567,7 +567,7 @@ function Products() {
                 <div className="grid-img-wrapper">
                   <div className="grid-rcos grid-img"/>
                 </div>
-                <div className="grid-header">Rosé Cosmina</div>
+                <div className="grid-header">Rosé Cosmina 2019</div>
                 <Link to="/vinuri/rose-cosmina" className="grid-btn">Detalii</Link>
             </div>
             <div className="grid-card">
@@ -575,7 +575,7 @@ function Products() {
                 <div className="grid-img-wrapper">
                   <div className="grid-cale grid-img"/>
                 </div>
-                <div className="grid-header">Cuveé Alexandra</div>
+                <div className="grid-header">Cuveé Alexandra 2019</div>
                 <Link to="/vinuri/cuvee-alexandra" className="grid-btn">Detalii</Link>
             </div>
             <div className="grid-card">
@@ -583,7 +583,7 @@ function Products() {
                 <div className="grid-img-wrapper">
                   <div className="grid-mads grid-img"/>
                 </div>
-                <div className="grid-header">Madame S.</div>
+                <div className="grid-header">Madame S. 2019</div>
                 <Link to="/vinuri/madame-s" className="grid-btn">Detalii</Link>
             </div>
             <div className="grid-card">
@@ -591,7 +591,7 @@ function Products() {
             <div className="grid-img-wrapper">
                 <div className="grid-unchiu grid-img"/>
                 </div>
-                <div className="grid-header">Unchiu Puiu</div>
+                <div className="grid-header">Cuveé Unchiu Puiu 2018</div>
                 <Link to="/vinuri/unchiu-puiu" className="grid-btn">Detalii</Link>
             </div>
             <div className="grid-card">
@@ -599,7 +599,7 @@ function Products() {
             <div className="grid-img-wrapper">
                 <div className="grid-francisc grid-img"/>
                 </div>
-                <div className="grid-header">Cuveé Francisc</div>
+                <div className="grid-header">Cuveé Francisc 2017</div>
                 <Link to="/vinuri/cuvee-francisc" className="grid-btn">Detalii</Link>
             </div>
             <div className="grid-card">
@@ -607,7 +607,7 @@ function Products() {
             <div className="grid-img-wrapper">
                 <div className="grid-pitigaia grid-img"/>
                 </div>
-                <div className="grid-header">Cuveé Piţigaia</div>
+                <div className="grid-header">Cuveé Piţigaia 2017</div>
                 <Link to="/vinuri/cuvee-pitigaia" className="grid-btn">Detalii</Link>
             </div>
             <div className="grid-card">
@@ -615,7 +615,7 @@ function Products() {
             <div className="grid-img-wrapper">
                 <div className="grid-redking grid-img"/>
                 </div>
-                <div className="grid-header">Red King</div>
+                <div className="grid-header">Red King Rezerva 2017</div>
                 <Link to="/vinuri/red-king" className="grid-btn">Detalii</Link>
             </div>
             <div className="grid-card">
@@ -623,7 +623,7 @@ function Products() {
             <div className="grid-img-wrapper">
                 <div className="grid-misterS grid-img"/>
                 </div>
-                <div className="grid-header">Mister S</div>
+                <div className="grid-header">Mister S. Rezerva 2017</div>
                 <Link to="/vinuri/mister-s" className="grid-btn">Detalii</Link>
             </div>
             <div className="grid-card">
@@ -631,7 +631,7 @@ function Products() {
             <div className="grid-img-wrapper">
                 <div className="grid-paul grid-img"/>
                 </div>
-                <div className="grid-header">Cuveé Paul Port</div>
+                <div className="grid-header">Cuveé Paul Port 2016</div>
                 <Link to="/vinuri/cuvee-paul-port" className="grid-btn">Detalii</Link>
             </div>
             

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-products_bg">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="products_bg" clip-path="url(#clip-products_bg)">
+    <rect id="Image_1" data-name="Image 1" width="1920" height="257" transform="translate(0 86)" fill="none"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1920" height="336" transform="translate(0 744)" fill="#62a9c7" opacity="0.61"/>
+    <path id="Path_1" data-name="Path 1" d="M1920,165.789S1498.421,9.474,1026.316,210,0,175.263,0,175.263V341.053H1920Z" transform="translate(0 403)" fill="#62a9c7" opacity="0.61"/>
+  </g>
+</svg>

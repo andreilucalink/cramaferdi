@@ -25,11 +25,15 @@
 
 
 /* ---------------------- Logo Navbar ------------------- */
+
 .logo-navbar {
   height: 35px;
   margin-right: 10px;
 }
+
 /* ------------------------------------------------------ */
+
+
 /*------------------ Scrollbar customization ------------------ */
 ::-webkit-scrollbar
 {
@@ -81,8 +85,8 @@
  color: indianred;
  position: relative;
  font-weight: 600;
- -webkit-animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
- animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+ -webkit-animation: text-focus-in 0.3s ease;
+ animation: text-focus-in 0.3s ease;
  
 }
 
@@ -114,8 +118,8 @@
 
 .modalBackground {
   height: 100vh;
-  opacity: 0.6;
-  background-image: url("../img/tst3.jpg");
+  opacity: 0.8;
+  background-image: url("../img/poza_vita.jpg");
   background-position: center;
   background-size: cover;
 }
