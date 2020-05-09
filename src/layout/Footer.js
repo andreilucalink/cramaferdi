@@ -4,8 +4,11 @@ import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import {isAndroid, isIOS, isMobile} from 'react-device-detect';
 
-const [facebookLink, setFacebookLink] = useState("https://www.facebook.com/cramaferdi");
-const [instagramLink, setInstagramLink] = useState("https://www.instagram.com/ferdi_winery/")
+
+
+function Footer() {
+  const [facebookLink, setFacebookLink] = useState("https://www.facebook.com/cramaferdi");
+  const [instagramLink, setInstagramLink] = useState("https://www.instagram.com/ferdi_winery/")
 
   if(isMobile){
     if (isAndroid) {
@@ -18,8 +21,8 @@ const [instagramLink, setInstagramLink] = useState("https://www.instagram.com/fe
     }
   }
 
-function Footer() {
 
+  
   return (
     <footer className="page-footer footer" id="ferdi-footer">
       <div className="footer-copyright text-center">
