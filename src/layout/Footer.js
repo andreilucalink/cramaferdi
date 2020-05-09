@@ -2,26 +2,30 @@ import React , {useState} from "react";
 import "../css/layout.css";
 import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import {isAndroid, isIOS, isMobile} from 'react-device-detect';
+
+
 
 
 
 function Footer() {
-  
-  /* let isAndroid = /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent);
-  let isiOS = /iPad|iPhone|iPod/i.test(navigator.userAgent);
 
+  
+  
   const [facebookLink, setFacebookLink] = useState("https://www.facebook.com/cramaferdi");
   const [instagramLink, setInstagramLink] = useState("https://www.instagram.com/ferdi_winery/")
 
-  if (isAndroid) {
-    setFacebookLink("fb://page/492360557613539");
-    setInstagramLink("instagram://user?username=ferdi_winery");
-  }
+  if(isMobile){
+    if (isAndroid) {
+      setFacebookLink("fb://page/492360557613539");
+      setInstagramLink("instagram://user?username=ferdi_winery");
+    }
 
-  if (isiOS) {
-    setFacebookLink("fb://profile/492360557613539");
-    setInstagramLink("instagram://user?username=ferdi_winery");
-  } */
+    if (isIOS) {
+      setFacebookLink("fb://profile/492360557613539");
+      setInstagramLink("instagram://user?username=ferdi_winery");
+    }
+  }
 
   return (
     <footer className="page-footer footer" id="ferdi-footer">
@@ -34,10 +38,10 @@ function Footer() {
         <Nav.Link className="footer-link" as={Link} eventKey="1" to="/contact">Contact</Nav.Link>
       </div>
       <div className="social-media-btns">
-        <a href="https://www.facebook.com/cramaferdi" target="_blank" rel="noopener noreferrer" className="fb-logo">
+        <a href={facebookLink} target="_blank" rel="noopener noreferrer" className="fb-logo">
           <img src={require('../img/facebook.png')}  alt="FB"/>
         </a>
-        <a href="https://www.instagram.com/ferdi_winery/" target="_blank"  rel="noopener noreferrer" className="ig-logo">
+        <a href={{instagramLink}} target="_blank"  rel="noopener noreferrer" className="ig-logo">
         <img src={require('../img/instagram.png')}  alt="FB"/>
         </a>
       </div>
