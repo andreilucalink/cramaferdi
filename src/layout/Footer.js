@@ -8,14 +8,16 @@ import { Link } from 'react-router-dom';
 function Footer() {
   
   let isAndroid = /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent);
-  let isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  let isiOS = /iPad|iPhone|iPod/i.test(navigator.userAgent);
 
   const [facebookLink, setFacebookLink] = useState("https://www.facebook.com/Crama-Ferdi-492360557613539");
   const [instagramLink, setInstagramLink] = useState("https://www.instagram.com/ferdi_winery/")
+
   if (isAndroid) {
     setFacebookLink("fb://page/492360557613539");
     setInstagramLink("instagram://user?username=ferdi_winery");
   }
+
   if (isiOS) {
     setFacebookLink("fb://profile/492360557613539");
     setInstagramLink("instagram://user?username=ferdi_winery");
