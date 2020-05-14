@@ -14,7 +14,6 @@ import Page404 from "./pages/Page404";
 /* Wines */
 import RoseCos from "./pages/wines/RoseCos";
 import CuveeAlexandra from "./pages/wines/CuveeAlexandra";
-import MadameS from "./pages/wines/MadameS";
 import UnchiuPwyw from "./pages/wines/UnchiuPwyw";
 import CuveeFrancisc from "./pages/wines/CuveeFrancisc";
 import CuveePitigaia from "./pages/wines/CuveePitigaia";
@@ -32,7 +31,7 @@ function App() {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/vinuri/rose-cosmina" component={RoseCos} />
         <Route exact path="/vinuri/cuvee-alexandra" component={CuveeAlexandra}/>
-        <Route exact path="/vinuri/madame-s" component={MadameS} />
+        {/* <Route exact path="/vinuri/madame-s" component={MadameS} /> */}
         <Route exact path="/vinuri/unchiu-puiu" component={UnchiuPwyw} />
         <Route exact path="/vinuri/cuvee-francisc" component={CuveeFrancisc} />
         <Route exact path="/vinuri/cuvee-pitigaia" component={CuveePitigaia} />

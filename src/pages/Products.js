@@ -200,7 +200,7 @@ function Products() {
             </div>
           </section>
         </div>
-        <div className="card-cell">
+        {/* <div className="card-cell">
           <section
             className="card-info"
             id="animation3"
@@ -246,12 +246,12 @@ function Products() {
               </Link>
             </div>
           </section>
-        </div>
+        </div> */}
         <div className="card-cell">
           <section
             className="card-info"
             id="animation4"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-offset="150"
           >
             <div className="img" id="product4" />
@@ -303,7 +303,7 @@ function Products() {
           <section
             className="card-info"
             id="animation5"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-offset="150"
           >
             <div className="img" id="product5" />
@@ -355,7 +355,7 @@ function Products() {
           <section
             className="card-info"
             id="animation5"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-offset="150"
           >
             <div className="img" id="product9" />
@@ -407,7 +407,7 @@ function Products() {
           <section
             className="card-info"
             id="animation6"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-offset="150"
           >
             <div className="img" id="product6" />
@@ -459,7 +459,7 @@ function Products() {
           <section
             className="card-info"
             id="animation7"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-offset="150"
           >
             <div className="img" id="product7" />
@@ -511,7 +511,7 @@ function Products() {
           <section
             className="card-info"
             id="animation8"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-offset="150"
           >
             <div className="img" id="product8" />
@@ -578,14 +578,14 @@ function Products() {
                 <div className="grid-header">Cuveé Alexandra 2019</div>
                 <Link to="/vinuri/cuvee-alexandra" className="grid-btn">Detalii</Link>
             </div>
-            <div className="grid-card">
+            {/* <div className="grid-card">
             <div className="grid-layer"></div>
                 <div className="grid-img-wrapper">
                   <div className="grid-mads grid-img"/>
                 </div>
                 <div className="grid-header">Madame S. 2019</div>
                 <Link to="/vinuri/madame-s" className="grid-btn">Detalii</Link>
-            </div>
+            </div> */}
             <div className="grid-card">
             <div className="grid-layer"></div>
             <div className="grid-img-wrapper">
