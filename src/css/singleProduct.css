@@ -62,6 +62,12 @@
     background-size: cover;
 }
 
+.bg-blauburg {
+    background-image: url(../img/bg_bbrg.svg);
+    background-position: center;
+    background-size: cover;
+}
+
 /* ------------------------------------------------------ */
 
 /* ------------------ Product details ------------------ */

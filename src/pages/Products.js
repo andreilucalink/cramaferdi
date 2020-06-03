@@ -200,7 +200,7 @@ function Products() {
             </div>
           </section>
         </div>
-        {/* <div className="card-cell">
+        <div className="card-cell">
           <section
             className="card-info"
             id="animation3"
@@ -210,10 +210,10 @@ function Products() {
             <div className="img" id="product3" />
             <div>
               <section>
-                <h3 className="rose-cosmina">Madame S. </h3>
+                <h3 className="rose-cosmina">Blau Burg </h3>
                 <span className="limit-edit-span">
                   <b>
-                    <i>Ediție Limitată 2019</i>
+                    <i>2018</i>
                   </b>
                 </span>
                 <div>
@@ -224,7 +224,7 @@ function Products() {
                     </li>
                     <li>
                       <i className="fas fa-caret-right list-arrow"></i>
-                      Soi – Sauvignon Blanc
+                      Soi – Blaufränkisch 
                     </li>
                     <li>
                       <i className="fas fa-caret-right list-arrow"></i>
@@ -232,26 +232,26 @@ function Products() {
                     </li>
                     <li>
                       <i className="fas fa-caret-right list-arrow"></i>
-                      Conţinut de alcool - 12,9%
+                      Conţinut de alcool - 14,5%
                     </li>
                     <li>
                       <i className="fas fa-caret-right list-arrow"></i>
-                      Culoare – Alb
+                      Culoare – Roșu
                     </li>
                   </ul>
                 </div>
               </section>
-              <Link to="/vinuri/madame-s" className="btn">
+              <Link to="/vinuri/blau-burg" className="btn">
                 {details}
               </Link>
             </div>
           </section>
-        </div> */}
+        </div>
         <div className="card-cell">
           <section
             className="card-info"
             id="animation4"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-offset="150"
           >
             <div className="img" id="product4" />
@@ -303,7 +303,7 @@ function Products() {
           <section
             className="card-info"
             id="animation5"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-offset="150"
           >
             <div className="img" id="product5" />
@@ -355,7 +355,7 @@ function Products() {
           <section
             className="card-info"
             id="animation5"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-offset="150"
           >
             <div className="img" id="product9" />
@@ -407,7 +407,7 @@ function Products() {
           <section
             className="card-info"
             id="animation6"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-offset="150"
           >
             <div className="img" id="product6" />
@@ -459,7 +459,7 @@ function Products() {
           <section
             className="card-info"
             id="animation7"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-offset="150"
           >
             <div className="img" id="product7" />
@@ -511,7 +511,7 @@ function Products() {
           <section
             className="card-info"
             id="animation8"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-offset="150"
           >
             <div className="img" id="product8" />
@@ -578,14 +578,14 @@ function Products() {
                 <div className="grid-header">Cuveé Alexandra 2019</div>
                 <Link to="/vinuri/cuvee-alexandra" className="grid-btn">Detalii</Link>
             </div>
-            {/* <div className="grid-card">
+            <div className="grid-card">
             <div className="grid-layer"></div>
                 <div className="grid-img-wrapper">
-                  <div className="grid-mads grid-img"/>
+                  <div className="grid-bbrg grid-img"/>
                 </div>
-                <div className="grid-header">Madame S. 2019</div>
-                <Link to="/vinuri/madame-s" className="grid-btn">Detalii</Link>
-            </div> */}
+                <div className="grid-header">Blau Burg 2018</div>
+                <Link to="/vinuri/blau-burg" className="grid-btn">Detalii</Link>
+            </div>
             <div className="grid-card">
             <div className="grid-layer"></div>
             <div className="grid-img-wrapper">

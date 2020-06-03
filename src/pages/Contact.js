@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import '../css/contact.css';
 import AOS from 'aos';
+import Img from 'react-image';
+import { Spinner } from 'react-bootstrap';
 
 function Contact() {
 	useEffect(() => {
@@ -52,17 +54,14 @@ function Contact() {
 			<div className="contact-wrapper">
 				<div className="contact-card" id="first-card" data-aos="zoom-in" data-aos-delay="200">
 					<div className="profile-bg" />
-					<div className="profile-img" id="member1" />
+					<Img 
+						className="profile-img" 
+						src={require('../img/ferdi.jpg')}
+						loader={<Spinner animation="grow" className="profile-img-loader" />}
+					/>
 					<div className="contact-details">
 						<h3>Fernando Mihăilescu</h3>
 						<img src={require('../img/romania3.png')} alt="Country" className="country" />
-						
-					{/* 	<div className="phone">
-							<a role="button" href="tel:+40-0735-796-273" className="phone-button">
-								<img className="phone-img" src={require('../img/call2.svg')} alt="Call" />
-								<span>+40-0711-222-333 </span>
-							</a>
-						</div> */}
 						<div className="contact-bar ferdi-bar" />
 						<div className="email ferdi-mail">
 							<a role="button" href="mailto:test@gmail.com" className="email-button">
@@ -74,7 +73,11 @@ function Contact() {
 				</div>
 				<div className="contact-card" data-aos="zoom-in" data-aos-delay="200">
 					<div className="profile-bg" />
-					<div className="profile-img" id="member2" />
+					<Img 
+						className="profile-img" 
+						src={require('../img/paul.jpg')}
+						loader={<Spinner animation="grow" className="profile-img-loader" />}
+					/>
 					<div className="contact-details">
 						<h3>Paul Mihăilescu</h3>
 						<img src={require('../img/romania3.png')} alt="Country" className="country" />
@@ -89,7 +92,11 @@ function Contact() {
 				</div>
 				<div className="contact-card" data-aos="zoom-in" data-aos-delay="200">
 					<div className="profile-bg" />
-					<div className="profile-img" id="member3" />
+					<Img 
+						className="profile-img" 
+						src={require('../img/ofelia.jpg')}
+						loader={<Spinner animation="grow" className="profile-img-loader" />}
+					/>
 					<div className="contact-details">
 						<h3>Ofelia Marian</h3>
 						<img src={require('../img/romania3.png')} alt="Country" className="country" />

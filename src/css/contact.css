@@ -64,7 +64,7 @@
 	-moz-border-radius-topright: 5px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	background-image: url(../img/tst4.jpg);
+	background-image: url(../img/card_background.jpg);
 	background-position: center;
 	background-size: cover;
 	height: 240px;
@@ -84,9 +84,20 @@
 	background-image: url(../img/ofelia.jpg);
 }
 
+.contact-card .profile-img-loader {
+	height: 180px;
+	width: 180px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border: 5px solid #f4f4f4;
+}
+
 .contact-card .profile-img {
-	background-position: center;
-	background-size: cover;
+	object-fit: cover;
+	object-position: center;
 	height: 180px;
 	width: 180px;
 	-webkit-border-radius: 50%;

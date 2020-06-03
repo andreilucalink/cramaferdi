@@ -13,13 +13,6 @@ function NavigationBar() {
 		setOpen(false);
 	};
 
-	let home = 'Acasă';
-	let products = 'Vinuri';
-	if (window.localStorage.getItem('language') === 'EN') {
-		home = 'Home';
-		products = 'Wines';
-	}
-
 	const rotateMenu = () => {
 		if (!open) {
 			document.getElementById('bar3').classList.add('hidden');
@@ -48,14 +41,17 @@ function NavigationBar() {
 			<Navbar.Collapse id="basic-navbar-nav" style={{ color: '#fff' }}>
 				<Nav className="ml-auto p-1">
 					<Nav.Link className="ml-1 link1" as={Link} eventKey="0" to="/" onClick={scrollRestoration}>
-						{home}
+						Acasă
 					</Nav.Link>
 					<Nav.Link className="ml-1 link2" as={Link} eventKey="1" to="/vinuri" onClick={scrollRestoration}>
-						{products}
+						Vinuri
 					</Nav.Link>
 					<Nav.Link className="ml-1 link3" as={Link} eventKey="2" to="/contact" onClick={scrollRestoration}>
 						Contact şi comenzi
 					</Nav.Link>
+					{/* <Nav.Link className="ml-1 link4" as={Link} eventKey="3" to="/galerie" onClick={scrollRestoration}>
+						Galerie
+					</Nav.Link> */}
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>

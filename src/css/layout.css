@@ -299,12 +299,13 @@
 
 .ferdi-navbar .link1::after,
 .ferdi-navbar .link2::after,
-.ferdi-navbar .link3::after {
+.ferdi-navbar .link3::after,
+.ferdi-navbar .link4::after  {
   content: "";
   position: absolute;
   bottom: 5%;
-  left: 50%;
-  width: 0%;
+  left: 51%;
+  width: 0;
   height: 2px;
   background: #8e9eab;
   background: -webkit-linear-gradient(to left, #eef2f3, #8e9eab);
@@ -315,7 +316,8 @@
 
 .ferdi-navbar .link1:hover::after,
 .ferdi-navbar .link2:hover::after,
-.ferdi-navbar .link3:hover::after {
+.ferdi-navbar .link3:hover::after,
+.ferdi-navbar .link4:hover::after {
   width: 100%;
   left: 0%;
 }
@@ -510,6 +512,9 @@
   }
   .ferdi-navbar .nav-link:nth-child(3) {
     width: 160px;
+  }
+  .ferdi-navbar .nav-link:nth-child(4){
+    width: 60px;
   }
 }
 
