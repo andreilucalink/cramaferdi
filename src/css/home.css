@@ -270,6 +270,16 @@ img.ferdi-modal-logo {
 }
 
 @media (max-width: 568px) {
+	
+	h2.ferdi-modal-header-text {
+		font-size: 18px;
+	}
+
+	img.ferdi-modal-logo {
+		width: 150px;
+		height: 150px;
+	}
+
 	.logo-loader {
 		height: 180px;
 		width: 180px;
