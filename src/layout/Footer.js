@@ -9,15 +9,15 @@ import {isAndroid, isIOS, isMobile} from 'react-device-detect';
 function Footer() {
 
   let fbLink = "https://www.facebook.com/cramaferdi";
-  let igLink = "https://www.instagram.com/ferdi_winery/";
+  let igLink = "https://www.instagram.com/crama_ferdi/";
   if(isMobile){
     if (isAndroid) {
       fbLink = "fb://page/492360557613539";
-      igLink = "instagram://user?username=ferdi_winery";
+      igLink = "instagram://user?username=crama_ferdi";
     }
     if (isIOS) {
       fbLink = "fb://profile/492360557613539";
-      igLink = "instagram://user?username=ferdi_winery";
+      igLink = "instagram://user?username=crama_ferdi";
     }
   }
 

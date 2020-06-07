@@ -116,11 +116,12 @@
 	background-image: url(../img/cuvpit.jpg);
 }
 
-
 .card-info .img {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	/* object-fit: cover;
+	object-position: center; */
 	height: 400px;
 	max-width: 500px;
 }

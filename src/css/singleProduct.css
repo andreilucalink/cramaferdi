@@ -102,8 +102,8 @@ span#grp {
 }
 
 .single-product-desc h1 {
-    font-weight: 600;
-    font-style: italic;
+    font-weight: bold;
+    /* font-style: italic; */
     color: var(--dark-color);
     margin-bottom: 10px;
     font-size: 40px;
@@ -156,8 +156,7 @@ span#grp {
 
 .single-product-desc .desc-buttons {
     opacity: 0.85;
-    position: absolute;
-    bottom: 3%;
+    padding-top: 20px;
 }
 
 .single-product-desc .desc-btn-left {
@@ -212,9 +211,6 @@ span#grp {
     .single-product-desc div.text-desc, .single-product-desc ul  {
         font-size: 14px;
     }
-    .single-product-desc .desc-buttons {
-        bottom: 5%;
-    }
 }
 
 @media (max-width: 1120px) {
@@ -245,9 +241,7 @@ span#grp {
     .single-product-desc .grape-comp {
         height: 20px;
     }
-    .single-product-desc .desc-buttons {
-        bottom: 5%;
-    }
+
     .single-product-desc div.text-desc {
         margin-top: 15px;
         margin-bottom: 5px;
@@ -282,7 +276,7 @@ span#grp {
     }
 
     .single-product-desc {
-        height: 600px;
+        height: 550px;
         width: auto;
         padding: 0 40px;
         margin: 20px auto 120px auto;
@@ -303,10 +297,13 @@ span#grp {
         margin-top: 10px;
         font-size: 10px;
     }
-    .single-product-desc .desc-buttons {
-        bottom: 60px;
-    }
     
+}
+
+@media (max-width: 400px) {
+    .single-product-desc {
+        height: 610px;
+    }
 }
 
 /* ------------------------------------------------------ */

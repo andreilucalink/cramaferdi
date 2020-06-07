@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import "../css/products.css";
 import AOS from "aos";
+import {OverlayTrigger, Tooltip} from 'react-bootstrap';
+
 
 function Products() {
   useEffect(() => {
@@ -15,6 +16,7 @@ function Products() {
       document.getElementById("animation6").setAttribute("data-aos", "zoom-in");
       document.getElementById("animation7").setAttribute("data-aos", "zoom-in");
       document.getElementById("animation8").setAttribute("data-aos", "zoom-in");
+      document.getElementById("animation9").setAttribute("data-aos", "zoom-in");
     }
     AOS.init({
       once: true,
@@ -111,7 +113,7 @@ function Products() {
       <div className="products-container" id="products-display-list">
         <div className="card-cell">
           <section className="card-info">
-            <div className="img" id="product1" />
+            <div className="img" id="product1"/>
             <div>
               <section>
                 <h3 className="rose-cosmina">Rosé Cosmina</h3>
@@ -354,7 +356,7 @@ function Products() {
         <div className="card-cell">
           <section
             className="card-info"
-            id="animation5"
+            id="animation6"
             data-aos="fade-right"
             data-aos-offset="150"
           >
@@ -406,7 +408,7 @@ function Products() {
         <div className="card-cell">
           <section
             className="card-info"
-            id="animation6"
+            id="animation7"
             data-aos="fade-left"
             data-aos-offset="150"
           >
@@ -458,7 +460,7 @@ function Products() {
         <div className="card-cell">
           <section
             className="card-info"
-            id="animation7"
+            id="animation8"
             data-aos="fade-right"
             data-aos-offset="150"
           >
@@ -510,7 +512,7 @@ function Products() {
         <div className="card-cell">
           <section
             className="card-info"
-            id="animation8"
+            id="animation9"
             data-aos="fade-left"
             data-aos-offset="150"
           >

@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import '../../css/singleProduct.css';
 import Img from 'react-image';
 import {Spinner} from 'react-bootstrap';
-import {DotLoader} from 'react-spinners'
+import {DotLoader} from 'react-spinners';
 import { Link } from 'react-router-dom';
 
 const BlauBurg = () => {
