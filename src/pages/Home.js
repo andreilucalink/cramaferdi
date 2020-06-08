@@ -49,7 +49,7 @@ function Home() {
   
   return (
     <div className="home-body" id="home-body">
-      <Modal show={show} backdrop="static" keyboard={false} centered size="md">
+      <Modal show={show} backdrop="static" keyboard={false} centered size="md" /* scrollable={false} */ style={{overflow:'hidden', maxHeight: '90vh'}}>
         <Modal.Header className="ferdi-modal-header">
           <Modal.Title>
             <h2 className="ferdi-modal-header-text">

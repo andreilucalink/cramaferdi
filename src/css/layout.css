@@ -241,7 +241,7 @@
 
 .ferdi-navbar {
   background-color: #0f2027 !important;
-  border-bottom: 4px solid #62a9c7;
+  border-bottom: 4px solid rgb(0, 143, 143);
   overflow: hidden;
 }
 
