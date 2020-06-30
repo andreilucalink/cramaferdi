@@ -9,9 +9,9 @@ function Products() {
   useEffect(() => {
     window.scroll(0, 0);
     if (window.innerWidth > 965 && window.innerWidth < 1201) {
-      document.getElementById("animation2").removeAttribute("data-aos");
-      document.getElementById("animation3").setAttribute("data-aos", "zoom-in");
-      document.getElementById("animation4").setAttribute("data-aos", "zoom-in");
+      // document.getElementById("animation2").removeAttribute("data-aos");
+      document.getElementById("animation3").removeAttribute("data-aos");
+      document.getElementById("animation4").removeAttribute("data-aos");
       document.getElementById("animation5").setAttribute("data-aos", "zoom-in");
       document.getElementById("animation6").setAttribute("data-aos", "zoom-in");
       document.getElementById("animation7").setAttribute("data-aos", "zoom-in");
@@ -111,7 +111,7 @@ function Products() {
         <p> Vinuri cu rădăcini in pasiune, curaj și dăruire.</p>
       </header>
       <div className="products-container" id="products-display-list">
-        <div className="card-cell">
+        {/* <div className="card-cell">
           <section className="card-info">
             <div className="img" id="product1"/>
             <div>
@@ -122,7 +122,6 @@ function Products() {
                     <i>Ediție Limitată 2019</i>
                   </b>
                 </span>{" "}
-                {/* MODIFICARE PENTRU TELEFON */}
                 <div>
                   <ul className="desc-details-list">
                     <li>
@@ -153,7 +152,7 @@ function Products() {
               </Link>
             </div>
           </section>
-        </div>
+        </div> */}
         {/* <div className="card-cell">
           <section
             className="card-info"
@@ -564,14 +563,14 @@ function Products() {
       </div>
       <div className="hide-element" id="products-display-grid">
           <div className="products-container-grid">
-            <div className="grid-card">
+            {/* <div className="grid-card">
                 <div className="grid-layer"></div>
                 <div className="grid-img-wrapper">
                   <div className="grid-rcos grid-img"/>
                 </div>
                 <div className="grid-header">Rosé Cosmina 2019</div>
                 <Link to="/vinuri/rose-cosmina" className="grid-btn">Detalii</Link>
-            </div>
+            </div> */}
             {/* <div className="grid-card">
                 <div className="grid-layer"></div>
                 <div className="grid-img-wrapper">

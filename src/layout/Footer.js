@@ -33,10 +33,10 @@ function Footer() {
       </div>
       <div className="social-media-btns">
         <a href={fbLink} target="_blank" rel="noopener noreferrer" className="fb-logo">
-          <img src={require('../img/facebook.png')}  alt="FB"/>
+          <img src={require('../img/facebook.svg')}  alt="FB"/>
         </a>
         <a href={igLink} target="_blank"  rel="noopener noreferrer" className="ig-logo">
-        <img src={require('../img/instagram.png')}  alt="FB"/>
+        <img src={require('../img/insta.svg')}  alt="FB"/>
         </a>
       </div>
     </footer>

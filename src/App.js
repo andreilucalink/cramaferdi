@@ -13,7 +13,7 @@ import Page404 from "./pages/Page404";
 // import SwitchLanguage from './layout/SwitchLanguage';
 
 /* Wines */
-import RoseCos from "./pages/wines/RoseCos";
+// import RoseCos from "./pages/wines/RoseCos";
 import UnchiuPwyw from "./pages/wines/UnchiuPwyw";
 import CuveeFrancisc from "./pages/wines/CuveeFrancisc";
 import CuveePitigaia from "./pages/wines/CuveePitigaia";
@@ -31,7 +31,7 @@ function App() {
         <Route exact path="/vinuri" component={Products} />
         <Route exact path="/contact" component={Contact} />
         {/* <Route exact path="/galerie" component={Gallery} /> */}
-        <Route exact path="/vinuri/rose-cosmina" component={RoseCos} />
+        {/* <Route exact path="/vinuri/rose-cosmina" component={RoseCos} /> */}
         <Route exact path="/vinuri/blau-burg" component={BlauBurg}/>
         <Route exact path="/vinuri/unchiu-puiu" component={UnchiuPwyw} />
         <Route exact path="/vinuri/cuvee-francisc" component={CuveeFrancisc} />

@@ -305,7 +305,8 @@ img.ferdi-modal-logo {
 	.pimg2,
 	.pimg3,
 	.pimg4 {
-		min-height: 300px !important;
+		min-height: 300px;
+		width: 85%;
 	}
 
 	/* .scroll-home {
