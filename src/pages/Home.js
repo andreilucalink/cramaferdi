@@ -131,7 +131,7 @@ function Home() {
               <img src={require("../img/barrel.svg")} alt="wine" />
             </div>
             <p>
-              Ca urmare, crama produce vin din 10 soiuri de struguri, dintre
+              Crama produce vin din 10 soiuri de struguri, dintre
               care 7 roșii: Fetească Neagră, Cabernet Sauvignon, Cabernet Franc,
               Shiraz, Merlot, Burgund Mare, Pinot Noir și 3 albe: Sauvignon
               Blanc, Tămâioasa Românească și Riesling Italian, producția anuală

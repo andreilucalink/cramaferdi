@@ -47,7 +47,7 @@ function NavigationBar() {
 						Vinuri
 					</Nav.Link>
 					<Nav.Link className="ml-1 link3" as={Link} eventKey="2" to="/contact" onClick={scrollRestoration}>
-						Contact şi comenzi
+						Vizite şi comenzi
 					</Nav.Link>
 					{/* <Nav.Link className="ml-1 link4" as={Link} eventKey="3" to="/galerie" onClick={scrollRestoration}>
 						Galerie

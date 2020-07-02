@@ -19,16 +19,11 @@ function Contact() {
 		if(!age || age === 'invalid'){
 			window.location.href = "/";
 		}
-	},[]);
+		/* setTimeout(() => {
+			document.getElementById("contact-body").style.visibility = 'visible';
+		}, 1000) */
 
-	let text1 = 'Echipa';
-	let text2 = 'Noastră';
-	let subtitle = 'Pentru detalii şi comenzi ne puteţi contacta la numărul de telefon sau adresa de e-mail de mai jos';
-	if (window.localStorage.getItem('language') === 'EN') {
-		text1 = 'Our';
-		text2 = 'Team';
-		subtitle = "For orders or any questions you can find us at the following contact details";
-	}
+	},[]);
 
 	let innerHeigth = window.innerHeight;
 	function getHeigth() {
@@ -41,16 +36,36 @@ function Contact() {
 	window.addEventListener("scroll", getHeigth);
 
 	return (
-		<section id="contact-body">
+		<section id="contact-body" /* className="hidden" */>
 			<a role="button" href="#start" data-scroll>
 				<img src={require('../img/up-ar.svg')} alt="Go Up" className="back-to-top-btn" id="home-scroll-up" />
 			</a>
-			<header className="contact-header">
-				<h1>
-					<span>{text1}</span> {text2}{' '}
-				</h1>
-				<p>{subtitle}</p>
+			<header className="programari-header">
+				<div className="programari-bg-wrapper">
+					<Img 
+						className="programari-bg"
+						src={require('../img/poza_split.jpg')}
+					/>
+					<div className="programari-text-bg">
+						<h1>
+							Degustări şi vizite la cramă
+						</h1>
+					</div>
+				</div>
+			<h4 className="programari-descriere">
+				<span>Vă aşteptăm cu drag să ne vizitaţi şi să degustăm împreună vinurile cramei Ferdi în locul unde, în urmă cu 10 ani, a luat naştere pasiunea noastră pentru vin.</span>
+				<br/><br/>
+				<span>Vizitele se fac organizat, în grupuri de <strong>6-12</strong> persoane, în baza unei programări prealabile prin metodele de contact de mai jos.</span>
+				<div className="programari-line"></div>
+				<div className="contacte"><b>Contacte pentru programări şi comenzi:</b></div>
+			</h4>
 			</header>
+			{/* <header className="contact-header">
+				<h1>
+					<span>Echipa</span> Noastră
+				</h1>
+				<p>Pentru vizite şi comenzi ne puteţi contacta la numărul de telefon sau adresa de e-mail de mai jos</p>
+			</header> */}
 			<div className="contact-wrapper">
 				<div className="contact-card" id="first-card" data-aos="zoom-in" data-aos-delay="200">
 					<div className="profile-bg" />

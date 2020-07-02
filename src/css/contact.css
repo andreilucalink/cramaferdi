@@ -30,6 +30,77 @@
 	padding: 0px 20px;
 }
 
+.programari-header {
+	padding-top: 30px;
+}
+
+.programari-bg-wrapper {
+	position: relative;
+	width: 1100px;
+	height: 460px;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.programari-bg {
+	-webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+	border-radius: 15px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.programari-text-bg {
+	background-color: white;
+	border-radius: 50px;
+	width: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.programari-text-bg h1 {
+	background: -webkit-linear-gradient(bottom,#0f2027, #45819b);
+	background-clip: text;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.programari-header h2 {
+	text-align: center;
+	color: #0f2027;
+	font-weight: 600;
+	padding: 30px;
+}
+
+.programari-header h4.programari-descriere {
+	color: #0f2027;
+	width: 1100px;
+	padding: 30px;
+	margin: auto;
+	text-align: center;
+}
+
+.programari-header h4.programari-descriere .contacte {
+	font-size: 1.8rem;
+}
+
+.programari-line {
+	width: 60%;
+	margin: 25px auto 25px auto;
+	height: 1px;
+	background-color: black;
+}
+
 /* ------------------------------------------------------ */
 
 
@@ -38,7 +109,7 @@
 .contact-wrapper {
 	display: flex;
 	justify-content: space-around;
-	margin: 100px auto 100px auto;
+	margin: 30px auto 100px auto;
 	max-width: 1200px;
 	min-height: 100%;
 }
@@ -193,23 +264,19 @@
 
 
 /* ------------------ Media queries ------------------ */
-@media (max-width: 1023px) {
-	#contact-body {
-		height: 100%;
+
+@media (max-width: 1150px) {
+	.programari-bg-wrapper {
+		width: 95%;
+	}
+	.programari-header h4.programari-descriere {
+		width: 95%;
 	}
 }
 
-@media (max-width: 965px) {
-	.contact-header h1 {
-		width: 400px;
-		text-align: center;
-		margin: 60px auto auto auto;
-		font-size: 60px;
-	}
-
-	.contact-header p {
-		font-size: 18px;
-		padding: 0 30px;
+@media (max-width: 1023px) {
+	#contact-body {
+		height: 100%;
 	}
 }
 
@@ -227,6 +294,45 @@
 
 	.contact-card .contact-details .email-button {
 		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 965px) {
+	.contact-header h1 {
+		width: 400px;
+		text-align: center;
+		margin: 60px auto auto auto;
+		font-size: 60px;
+	}
+
+	.contact-header p {
+		font-size: 18px;
+		padding: 0 30px;
+	}
+}
+
+@media (max-width: 900px){
+	.programari-bg-wrapper {
+		height: 400px;
+	}
+
+	.programari-text-bg {
+		width: 450px;
+	}
+	.programari-text-bg h1 {
+		font-size: 27px;
+	}
+}
+
+@media (max-width: 700px){
+	.programari-bg-wrapper {
+		height: 350px;
+	}
+	.programari-text-bg {
+		width: 350px;
+	}
+	.programari-text-bg h1 {
+		font-size: 20px;
 	}
 }
 
@@ -295,6 +401,47 @@
 		height: 25px;
 		width: 25px;
 		margin-left: 8px;
+	}
+
+	.contact-wrapper {
+		margin-bottom: 30px;
+		margin-top: 10px;
+	}
+
+	.programari-bg-wrapper {
+		height: 300px;
+	}
+	.programari-text-bg {
+		width: 270px;
+	}
+	.programari-text-bg h1 {
+		padding: 15px;
+		font-size: 17px;
+	}
+
+	.programari-bg-wrapper {
+		width: 90%;
+	}
+	.programari-header h4.programari-descriere {
+		width: 90%;
+	}
+
+	.programari-header h4.programari-descriere span {
+		font-size: 1.2rem;
+	}
+
+	.programari-header h4.programari-descriere .contacte {
+		font-size: 1.5rem;
+	}
+
+	.programari-line {
+		width: 60%;
+	}
+}
+
+@media (max-width: 400px){
+	.programari-bg-wrapper {
+		height: 250px;
 	}
 }
 
