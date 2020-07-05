@@ -74,15 +74,6 @@ function Home() {
   ///////////////////////////////////////
   
   return (
-    isLoading? (
-      <div className="loading-body">
-        <SyncLoader 
-          css={spinnerCSS}
-          size={12}
-          color={"#008f8f"}
-          />
-      </div>
-    ) : (
       <div className="home-body" id="home-body">
         <Modal show={show} backdrop="static" keyboard={false} centered size="md" /* scrollable={false} */ style={{overflow:'hidden', maxHeight: '90vh'}}>
           <Modal.Header className="ferdi-modal-header">
@@ -185,7 +176,7 @@ function Home() {
           </section>
           <div className="pimg4"></div>
         </main>
-      </div>) 
+      </div>
   );
 }
 

@@ -62,7 +62,7 @@ function Contact() {
 	///////////////////////////////////////
 
 	return (
-		isLoading? (
+		/* isLoading? (
 			<div className="loading-body">
 			  <SyncLoader 
 				css={spinnerCSS}
@@ -70,7 +70,7 @@ function Contact() {
 				color={"#008f8f"}
 				/>
 			</div>
-		  ) : (
+		  ) : ( */
 		<section id="contact-body" /* className="hidden" */>
 			<a role="button" href="#start" data-scroll>
 				<img src={require('../img/up-ar.svg')} alt="Go Up" className="back-to-top-btn" id="home-scroll-up" />
@@ -160,7 +160,7 @@ function Contact() {
 					</div>
 				</div>
 			</div>
-		</section>)
+		</section>
 	);
 }
 
