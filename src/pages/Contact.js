@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import '../css/contact.css';
 import AOS from 'aos';
 import Img from 'react-image';
