@@ -27,6 +27,14 @@
 
 /* ------------------------------------------------------ */
 
+/* ----------------- Loading --------------- */
+.loading-body {
+  min-height: 100vh;
+  position: relative;
+}
+
+
+/* ------------------------------------------------------ */
 
 /* ---------------------- Logo Navbar ------------------- */
 
@@ -238,7 +246,7 @@
 }
 
 .show-home-sroll-btn {
-  right: 15px;
+  right: 30px;
 }
 
 /*------------------ Navbar ------------------*/
@@ -560,11 +568,12 @@
 
 @media (max-width: 568px) {
   .back-to-top-btn {
-    height: 25px;
+    height: 40px;
+    top: 91%;
     /* right: 4px; */
   }
   .show-home-sroll-btn {
-    right: 4px;
+    right: 10px;
   }
   .ferdi-navbar .nav-link {
     font-size: 14px;

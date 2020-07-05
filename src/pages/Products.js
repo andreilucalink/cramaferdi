@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect} from "react";
 import { Link } from "react-router-dom";
 import "../css/products.css";
 import AOS from "aos";
@@ -6,11 +6,13 @@ import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
 
 function Products() {
+
+  // Hooks
   useEffect(() => {
+    
     window.scroll(0, 0);
+
     if (window.innerWidth > 965 && window.innerWidth < 1201) {
-      // document.getElementById("animation2").removeAttribute("data-aos");
-      document.getElementById("animation3").removeAttribute("data-aos");
       document.getElementById("animation4").removeAttribute("data-aos");
       document.getElementById("animation5").setAttribute("data-aos", "zoom-in");
       document.getElementById("animation6").setAttribute("data-aos", "zoom-in");
@@ -18,10 +20,12 @@ function Products() {
       document.getElementById("animation8").setAttribute("data-aos", "zoom-in");
       document.getElementById("animation9").setAttribute("data-aos", "zoom-in");
     }
+
     AOS.init({
       once: true,
       duration: 1000,
     });
+
     const age = window.sessionStorage.getItem("clientAge");
     if (!age || age === "invalid") {
       window.location.href = "/";
@@ -29,28 +33,25 @@ function Products() {
   }, []);
 
   useEffect(() => {
+
     const displayStyle = window.sessionStorage.getItem('display');
+
     if(displayStyle === 'grid'){
       document.getElementById('grid-view').classList.add('hide-element');
       document.getElementById('list-view').classList.remove('hide-element');
       document.getElementById('products-display-list').classList.add('hide-element');
       document.getElementById('products-display-grid').classList.remove('hide-element');
     }
+
     if(displayStyle === 'list') {
       document.getElementById('products-display-list').classList.remove('hide-element');
       document.getElementById('products-display-grid').classList.add('hide-element');
     }
-  },[])
-  
-  let view = "Vinurile";
-  let products = "Noastre";
-  let details = "Detalii";
-  if (window.localStorage.getItem("language") === "EN") {
-    view = "Our";
-    products = "Wines";
-    details = "View More";
-  }
 
+  },[])
+  ///////////////////////////////////////
+  
+  // Scroll stuff
   let innerHeigth = window.innerHeight;
 	function getHeigth() {
 		if (document.getElementById('home-scroll-up') === null) return;
@@ -60,7 +61,10 @@ function Products() {
 			document.getElementById('home-scroll-up').classList.remove('show-home-sroll-btn');	
   }
   window.addEventListener("scroll", getHeigth);
+  ///////////////////////////////////////
 
+
+// Display stuff
   const displayAsGrid = () => {
     window.sessionStorage.setItem('display', 'grid');
     document.getElementById('grid-view').classList.add('hide-element');
@@ -76,13 +80,21 @@ function Products() {
     document.getElementById('products-display-list').classList.remove('hide-element');
     document.getElementById('products-display-grid').classList.add('hide-element');
   }
+  ///////////////////////////////////////
 
   return (
     <div className="products-page">
       <a role="button" href="#start" data-scroll>
 				<img src={require('../img/up-ar.svg')} alt="Go Up" className="back-to-top-btn" id="home-scroll-up" />
 			</a>
-      <OverlayTrigger
+    
+      <header className="main-header">
+        <h1>
+          <span> Vinurile </span> Noastre
+        </h1>
+        <div className="products-header-line"/>
+        <p> Vinuri cu rădăcini in pasiune, curaj și dăruire.</p>
+        <OverlayTrigger
         placement="right"
         delay={{ show: 250, hide: 0 }}
         overlay={
@@ -93,7 +105,7 @@ function Products() {
       >
         <i className="fas fa-th fa-2x" id="grid-view"  onClick={() => displayAsGrid()}></i>
       </OverlayTrigger>
-      <OverlayTrigger
+        <OverlayTrigger
         placement="right"
         delay={{ show: 250, hide: 0 }}
         overlay={
@@ -104,109 +116,14 @@ function Products() {
       >
       <i className="fas fa-stream fa-2x hide-element" id="list-view"  onClick={() => displayAsList()}></i>
       </OverlayTrigger>
-      <header className="main-header">
-        <h1>
-          <span> {view} </span> {products}
-        </h1>
-        <p> Vinuri cu rădăcini in pasiune, curaj și dăruire.</p>
       </header>
       <div className="products-container" id="products-display-list">
-        {/* <div className="card-cell">
-          <section className="card-info">
-            <div className="img" id="product1"/>
-            <div>
-              <section>
-                <h3 className="rose-cosmina">Rosé Cosmina</h3>
-                <span className="limit-edit-span">
-                  <b>
-                    <i>Ediție Limitată 2019</i>
-                  </b>
-                </span>{" "}
-                <div>
-                  <ul className="desc-details-list">
-                    <li>
-                      <i className="fas fa-caret-right list-arrow"></i>
-                      Tip Vin - Sec
-                    </li>
-                    <li>
-                      <i className="fas fa-caret-right list-arrow"></i>
-                      Soi – Shiraz, Blaufränkisch și Pinot Noir
-                    </li>
-                    <li>
-                      <i className="fas fa-caret-right list-arrow"></i>
-                      Volum - 0,75L
-                    </li>
-                    <li>
-                      <i className="fas fa-caret-right list-arrow"></i>
-                      Conţinut de alcool - 13,7%
-                    </li>
-                    <li>
-                      <i className="fas fa-caret-right list-arrow"></i>
-                      Culoare – Rosé
-                    </li>
-                  </ul>
-                </div>
-              </section>
-              <Link to="/vinuri/rose-cosmina" className="btn">
-                {details}
-              </Link>
-            </div>
-          </section>
-        </div> */}
-        {/* <div className="card-cell">
-          <section
-            className="card-info"
-            id="animation2"
-            data-aos="fade-right"
-            data-aos-offset="150"
-          >
-            <div className="img" id="product2" />
-            <div>
-              <section>
-                <h3 className="rose-cosmina">Cuvée Alexandra </h3>
-                <span className="limit-edit-span">
-                  <b>
-                    <i>Ediție Limitată 2019</i>
-                  </b>
-                </span>
-                <div>
-                  <ul className="desc-details-list">
-                    <li>
-                      <i className="fas fa-caret-right list-arrow"></i>
-                      Tip Vin - Sec
-                    </li>
-                    <li>
-                      <i className="fas fa-caret-right list-arrow"></i>
-                      Soi – Tămâioasă Românească, Riesling Italian și Sauvignon
-                      Blanc
-                    </li>
-                    <li>
-                      <i className="fas fa-caret-right list-arrow"></i>
-                      Volum - 0,75L
-                    </li>
-                    <li>
-                      <i className="fas fa-caret-right list-arrow"></i>
-                      Conţinut de alcool - 13,9%
-                    </li>
-                    <li>
-                      <i className="fas fa-caret-right list-arrow"></i>
-                      Culoare – Alb
-                    </li>
-                  </ul>
-                </div>
-              </section>
-              <Link to="/vinuri/cuvee-alexandra" className="btn">
-                {details}
-              </Link>
-            </div>
-          </section>
-        </div> */}
         <div className="card-cell">
           <section
             className="card-info"
             id="animation3"
-            data-aos="fade-left"
-            data-aos-offset="150"
+            // data-aos="fade-left"
+            // data-aos-offset="150"
           >
             <div className="img" id="product3" />
             <div>
@@ -243,7 +160,7 @@ function Products() {
                 </div>
               </section>
               <Link to="/vinuri/blau-burg" className="btn">
-                {details}
+                Detalii
               </Link>
             </div>
           </section>
@@ -295,7 +212,7 @@ function Products() {
                 </div>
               </section>
               <Link to="/vinuri/unchiu-puiu" className="btn">
-                {details}
+                Detalii
               </Link>
             </div>
           </section>
@@ -347,7 +264,7 @@ function Products() {
                 </div>
               </section>
               <Link to="/vinuri/cuvee-francisc" className="btn">
-                {details}
+                Detalii
               </Link>
             </div>
           </section>
@@ -399,7 +316,7 @@ function Products() {
                 </div>
               </section>
               <Link to="/vinuri/cuvee-pitigaia" className="btn">
-                {details}
+                Detalii
               </Link>
             </div>
           </section>
@@ -451,7 +368,7 @@ function Products() {
                 </div>
               </section>
               <Link to="/vinuri/red-king" className="btn">
-                {details}
+                Detalii
               </Link>
             </div>
           </section>
@@ -503,7 +420,7 @@ function Products() {
                 </div>
               </section>
               <Link to="/vinuri/mister-s" className="btn">
-                {details}
+                Detalii
               </Link>
             </div>
           </section>
@@ -555,7 +472,7 @@ function Products() {
                 </div>
               </section>
               <Link to="/vinuri/cuvee-paul-port" className="btn">
-                {details}
+                Detalii
               </Link>
             </div>
           </section>

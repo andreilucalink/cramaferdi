@@ -2,6 +2,7 @@
 /* ------------------ Products Body ------------------ */
 .products-page {
 	position: relative;
+	padding-top: 120px;
 	/* background-image: url('../img/homeimg.jpg');
 	background-repeat: no-repeat;
 	background-position: top;
@@ -37,33 +38,41 @@
 
 .main-header {
 	font-size: 18px;
-	margin-top: 120px;
-	margin-bottom: 140px;
-	height: 15vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	padding: 1.5rem;
+	margin-bottom: 30px;
 }
 
 .main-header h1 {
-	width: 400px;
+	width: 600px;
 	font-size: 4em;
-	margin-bottom: 2rem;
-	line-height: 1.2;
+	margin: 0px;
 	font-weight: 600;
-	color: #0f2027;
+	background: -webkit-linear-gradient(bottom,#0f2027, #45819b);
+	background-clip: text;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
-.main-header h1 span {
+/* .main-header h1 span {
 	color: rgba(0, 128, 128, 0.8);
-}
+} */
 
 .main-header p {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 600;
+}
+
+.main-header .products-header-line {
+	width: 650px;
+	min-height: 1px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	background-color: #0f2027;
 }
 
 .card-info {
@@ -205,18 +214,17 @@ h3.rose-cosmina {
 /* ------------------ Grid View ------------------ */
 
 #grid-view, #list-view {
-	position: absolute;
-	top: 220px;
-	right: 50%;
+	margin-top: 40px;
 	transform: translate(50%);
-	color: rgba(0, 128, 128, 0.8);
-	transition: 0.3s ease color;
+	/* color: rgba(0, 128, 128, 0.8); */
+	color: #2c5364;
+	transition: 0.4s ease color;
 }
 
 #grid-view:hover, #list-view:hover {
 	cursor: pointer;
-	color: teal;
-	transition: 0.3s ease color;
+	color:#45819b ;
+	transition: 0.4s ease color;
 }
 
 .products-container-grid {
@@ -438,12 +446,15 @@ h3.rose-cosmina {
 	.main-header {
 		font-size: 15px;
 		padding: 15px;
-		margin-top: 150px;
 	}
 
 	.main-header p {
 		width: 400px;
 		font-size: 18px;
+	}
+
+	.main-header .products-header-line{
+		width: 550px;
 	}
 
 	.products-container {
@@ -503,26 +514,47 @@ h3.rose-cosmina {
 	}
 }
 
+@media (max-width: 650px) {
+	.main-header {
+		font-size: 12px;
+		padding: 15px;
+	}
+
+	.main-header .products-header-line {
+		width: 450px;
+	}
+}
+
 @media (max-width: 500px) {
+	.products-page {
+		padding-top: 50px;
+	}
+
+	.main-header .products-header-line {
+		width: 270px;
+		margin-bottom: 0px;
+	}
+
 	.desc-details-list li {
 		font-size: 10px;
 	}
-	.main-header {
-		margin-top: 110px !important;
-		margin-bottom: 50px;
-		line-height: 1.5;
-	}
 
+	.main-header {
+		margin-bottom: 0px;
+	}
+	
 	.main-header h1 {
 		line-height: 1.1;
-		font-size: 48px;
-		width: 250px !important;
+		font-size: 32px;
+		width: 300px;
 	}
 
 	.main-header p {
-		font-weight: 400;
-		font-size: 16px !important;
-		width: 270px !important;
+		line-height: 1.1;
+		margin-top: 10px;
+		font-weight: 600;
+		font-size: 13px;
+		width: 200px;
 	}
 
 	.products-container {

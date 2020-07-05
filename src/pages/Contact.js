@@ -1,20 +1,32 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../css/contact.css';
 import AOS from 'aos';
 import Img from 'react-image';
 import { Spinner } from 'react-bootstrap';
+import SyncLoader from 'react-spinners/SyncLoader';
 
 function Contact() {
+	
 	useEffect(() => {
 		window.scroll(0, 0);
+
 		AOS.init({
 			once: true,
 			duration: 1300
 		});
-		if(window.innerWidth < 501) {
-			document.getElementById('first-card').removeAttribute('data-aos-delay')
-			document.getElementById('first-card').removeAttribute('data-aos')
-		}
+
+		if(window.sessionStorage.getItem('isContactCached') && window.sessionStorage.getItem('isContactCached') === 'true')
+      		setLoading(false);
+    	else 
+			setTimeout(() => {
+				finishLoading();
+				if(window.innerWidth < 501) {
+					document.getElementById('first-card').removeAttribute('data-aos-delay')
+					document.getElementById('first-card').removeAttribute('data-aos')
+				}
+				window.sessionStorage.setItem('isContactCached','true');
+			},1500)
+
 		const age = window.sessionStorage.getItem('clientAge');
 		if(!age || age === 'invalid'){
 			window.location.href = "/";
@@ -35,7 +47,30 @@ function Contact() {
 	}
 	window.addEventListener("scroll", getHeigth);
 
+	// Loading stuff 
+	const [isLoading, setLoading] = useState(true);
+	const finishLoading = () => {
+	  setLoading(false);
+	}
+  
+	const spinnerCSS =`
+	  position: absolute;
+	  top: 45%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	  `;
+	///////////////////////////////////////
+
 	return (
+		isLoading? (
+			<div className="loading-body">
+			  <SyncLoader 
+				css={spinnerCSS}
+				size={12}
+				color={"#008f8f"}
+				/>
+			</div>
+		  ) : (
 		<section id="contact-body" /* className="hidden" */>
 			<a role="button" href="#start" data-scroll>
 				<img src={require('../img/up-ar.svg')} alt="Go Up" className="back-to-top-btn" id="home-scroll-up" />
@@ -125,7 +160,7 @@ function Contact() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>)
 	);
 }
 
