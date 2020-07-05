@@ -24,13 +24,13 @@ function Home() {
 		  setShow(true);
     }
     
-    if(window.sessionStorage.getItem('isHomeCached') && window.sessionStorage.getItem('isHomeCached') === 'true')
+    /* if(window.sessionStorage.getItem('isHomeCached') && window.sessionStorage.getItem('isHomeCached') === 'true')
       setLoading(false);
     else 
       setTimeout(() => {
         finishLoading();
         window.sessionStorage.setItem('isHomeCached', 'true');
-      },2000)
+      },2000) */
     
   }, []);
   ////////////////////////////////////////
@@ -60,7 +60,7 @@ function Home() {
   ////////////////////////////////////////
 
   // Loading stuff 
-  const [isLoading, setLoading] = useState(true);
+  /* const [isLoading, setLoading] = useState(true);
   const finishLoading = () => {
     setLoading(false);
   }
@@ -70,7 +70,7 @@ function Home() {
     top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
-    `;
+    `; */
   ///////////////////////////////////////
   
   return (

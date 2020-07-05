@@ -15,17 +15,17 @@ function Contact() {
 			duration: 1300
 		});
 
-		if(window.sessionStorage.getItem('isContactCached') && window.sessionStorage.getItem('isContactCached') === 'true')
+		/* if(window.sessionStorage.getItem('isContactCached') && window.sessionStorage.getItem('isContactCached') === 'true')
       		setLoading(false);
     	else 
 			setTimeout(() => {
-				finishLoading();
+				finishLoading(); */
 				if(window.innerWidth < 501) {
 					document.getElementById('first-card').removeAttribute('data-aos-delay')
 					document.getElementById('first-card').removeAttribute('data-aos')
 				}
-				window.sessionStorage.setItem('isContactCached','true');
-			},1500)
+				/* window.sessionStorage.setItem('isContactCached','true');
+			},1500) */
 
 		const age = window.sessionStorage.getItem('clientAge');
 		if(!age || age === 'invalid'){
@@ -48,7 +48,7 @@ function Contact() {
 	window.addEventListener("scroll", getHeigth);
 
 	// Loading stuff 
-	const [isLoading, setLoading] = useState(true);
+	/* const [isLoading, setLoading] = useState(true);
 	const finishLoading = () => {
 	  setLoading(false);
 	}
@@ -58,7 +58,7 @@ function Contact() {
 	  top: 45%;
 	  left: 50%;
 	  transform: translate(-50%,-50%);
-	  `;
+	  `; */
 	///////////////////////////////////////
 
 	return (
