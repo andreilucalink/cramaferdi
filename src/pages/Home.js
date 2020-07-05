@@ -3,7 +3,7 @@ import AOS from "aos";
 import Img from "react-image";
 import { Spinner, Modal } from "react-bootstrap";
 import "../css/home.css";
-import SyncLoader from 'react-spinners/SyncLoader';
+// import SyncLoader from 'react-spinners/SyncLoader';
 
 function Home() {
 
@@ -55,7 +55,8 @@ function Home() {
   const [show, setShow] = useState(false);
   const closeModal = () => {
 	sessionStorage.setItem("clientAge", "valid");
-	setShow(false);
+  setShow(false);
+  
   }
   ////////////////////////////////////////
 

@@ -3,11 +3,12 @@ import '../css/contact.css';
 import AOS from 'aos';
 import Img from 'react-image';
 import { Spinner } from 'react-bootstrap';
-import SyncLoader from 'react-spinners/SyncLoader';
+// import SyncLoader from 'react-spinners/SyncLoader';
 
 function Contact() {
 	
 	useEffect(() => {
+
 		window.scroll(0, 0);
 
 		AOS.init({
