@@ -53,16 +53,18 @@ function Products() {
 
   useEffect(() => {
 	  const isWinesCached= sessionStorage.getItem("isWinesCached");
-	  let body = document.getElementById('start');
+	  const body = document.getElementById('start');
+    const loaderPage = document.getElementById("loader-page2");
 	  if(isWinesCached === 'true'){
-		  document.getElementById("loader-page").style.display = 'none'; 
+      loaderPage.parentNode.removeChild(loaderPage);
 	  } else {
-		body.style.height = '100vh';
-		body.style.overflow = 'hidden';
+    body.style.height = '100vh';
+    body.style.overflow = 'hidden';
 		window.setTimeout(() => {
-			body.style.height = '100%';
-			body.style.overflow = 'auto';
-		  }, 1000);
+      body.style.height = '100%';
+      body.style.overflow = 'visible';
+      loaderPage.parentNode.removeChild(loaderPage);
+		  }, 2000);
 		}
 		sessionStorage.setItem('isWinesCached', 'true');
   }, []);
@@ -113,7 +115,7 @@ function Products() {
 
   return (
     <div>
-      <div id="loader-page" className="loader-page animation-2">
+      <div id="loader-page2" className="loader-page2 animation-2">
         <HashLoader css={spinnerCSS} size={55} color={"#f4f4f4"} />
       </div>
       <div className="products-page">

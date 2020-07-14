@@ -28,16 +28,16 @@ function Home() {
 
   useEffect(() => {
 	  const isHomeCached= sessionStorage.getItem("isHomeCached");
-	  let body = document.getElementById('root');
+    const body = document.getElementById('start');
+    const loaderPage = document.getElementById("loader-page1");
 	  if(isHomeCached === 'true'){
-		  document.getElementById("loader-page").style.display = 'none'; 
+      loaderPage.parentNode.removeChild(loaderPage);
 	  } else {
 		body.style.height = '100vh';
-		body.style.overflow = 'hidden';
 		window.setTimeout(() => {
 			body.style.height = '100%';
-			body.style.overflow = 'visible';
-		  }, 2000);
+			loaderPage.parentNode.removeChild(loaderPage);
+		  }, 3500);
 		}
 		sessionStorage.setItem('isHomeCached', 'true');
   }, []);
@@ -77,7 +77,7 @@ function Home() {
 
   return (
     <div>
-      <div id="loader-page" className="loader-page animation-3">
+      <div id="loader-page1" className="loader-page1 animation-3">
         <HashLoader css={spinnerCSS} size={55} color={"#f4f4f4"} />
       </div>
       <div className="home-body" id="home-body">

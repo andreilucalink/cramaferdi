@@ -25,20 +25,23 @@ function Contact() {
   }, []);
 
   useEffect(() => {
-	  const isContactCached= sessionStorage.getItem("isContactCached");
-	  let body = document.getElementById('start');
-	  if(isContactCached === 'true'){
-		  document.getElementById("loader-page").style.display = 'none'; 
-	  } else {
-		body.style.height = '100vh';
-		body.style.overflow = 'hidden';
-		window.setTimeout(() => {
-			body.style.height = '100%';
-			body.style.overflow = 'auto';
-		  }, 2000);
-		}
-		sessionStorage.setItem('isContactCached', 'true');
-  }, []);
+	debugger;
+	const isContactCached= sessionStorage.getItem("isContactCached");
+	const body = document.getElementById('start');
+  	const loaderPage = document.getElementById("loader-page3");
+	if(isContactCached === 'true'){
+		loaderPage.parentNode.removeChild(loaderPage);
+	} else {
+  	body.style.height = '100vh';
+  	body.style.overflow = 'hidden';
+	window.setTimeout(() => {
+		body.style.height = '100%';
+		body.style.overflow = 'visible';
+		loaderPage.parentNode.removeChild(loaderPage);
+		}, 3500);
+	}
+	sessionStorage.setItem('isContactCached', 'true');
+  },[]);
 
   let innerHeigth = window.innerHeight;
   function getHeigth() {
@@ -65,7 +68,7 @@ function Contact() {
 
   return (
     <div>
-      <div id="loader-page" className="loader-page animation-2">
+      <div id="loader-page3" className="loader-page3 animation-3">
         <HashLoader css={spinnerCSS} size={55} color={"#f4f4f4"} />
       </div>
       <section id="contact-body" /* className="hidden" */>
