@@ -3,7 +3,8 @@ import AOS from "aos";
 import Img from "react-image";
 import { Spinner, Modal } from "react-bootstrap";
 import "../css/home.css";
-// import SyncLoader from 'react-spinners/SyncLoader';
+// import "../css/layout.css";
+import HashLoader from "react-spinners/HashLoader";
 
 function Home() {
 
@@ -22,16 +23,23 @@ function Home() {
     const age = sessionStorage.getItem("clientAge", "invalid");
     if(!age || age === 'invalid') {
 		  setShow(true);
-    }
-    
-    /* if(window.sessionStorage.getItem('isHomeCached') && window.sessionStorage.getItem('isHomeCached') === 'true')
-      setLoading(false);
-    else 
-      setTimeout(() => {
-        finishLoading();
-        window.sessionStorage.setItem('isHomeCached', 'true');
-      },2000) */
-    
+    }    
+  }, []);
+
+  useEffect(() => {
+	  const isHomeCached= sessionStorage.getItem("isHomeCached");
+	  let body = document.getElementById('start');
+	  if(isHomeCached === 'true'){
+		  document.getElementById("loader-page").style.display = 'none'; 
+	  } else {
+		body.style.height = '100vh';
+		body.style.overflow = 'hidden';
+		window.setTimeout(() => {
+			body.style.height = '100%';
+			body.style.overflow = 'auto';
+		  }, 2000);
+		}
+		sessionStorage.setItem('isHomeCached', 'true');
   }, []);
   ////////////////////////////////////////
 
@@ -54,27 +62,24 @@ function Home() {
   // Modal stuff
   const [show, setShow] = useState(false);
   const closeModal = () => {
-	sessionStorage.setItem("clientAge", "valid");
-  setShow(false);
-  
-  }
-  ////////////////////////////////////////
-
-  // Loading stuff 
-  /* const [isLoading, setLoading] = useState(true);
-  const finishLoading = () => {
-    setLoading(false);
+    sessionStorage.setItem("clientAge", "valid");
+    setShow(false);
   }
 
-  const spinnerCSS =`
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    `; */
+  // Loading stuff
+  const spinnerCSS = `
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	  `;
   ///////////////////////////////////////
-  
+
   return (
+    <div>
+      <div id="loader-page" className="loader-page animation-2">
+        <HashLoader css={spinnerCSS} size={55} color={"#f4f4f4"} />
+      </div>
       <div className="home-body" id="home-body">
         <Modal show={show} backdrop="static" keyboard={false} centered size="md" /* scrollable={false} */ style={{overflow:'hidden', maxHeight: '90vh'}}>
           <Modal.Header className="ferdi-modal-header">
@@ -178,6 +183,7 @@ function Home() {
           <div className="pimg4"></div>
         </main>
       </div>
+    </div>
   );
 }
 
