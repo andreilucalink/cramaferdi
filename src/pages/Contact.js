@@ -6,37 +6,7 @@ import { Spinner } from "react-bootstrap";
 import HashLoader from "react-spinners/HashLoader";
 
 function Contact() {
-  const preventDefault = (e) => {
-    e = e || window.event;
-    if (e.preventDefault) {
-      e.preventDefault();
-    }
-    e.returnValue = false;
-  };
-
-  const preventScrollingSafari = () => {
-    const ua = navigator.userAgent.toLowerCase();
-    if (ua.indexOf("safari") != -1 && ua.indexOf("chrome") <= -1) {
-      if (window.addEventListener) {
-        window.addEventListener("DOMMouseScroll", preventDefault, false);
-      }
-      window.onwheel = preventDefault;
-      window.onmousewheel = document.onmousewheel = preventDefault;
-      window.ontouchmove = preventDefault;
-    }
-  };
-
-  const enableScrollingSafari = () => {
-    const ua = navigator.userAgent.toLowerCase();
-    if (ua.indexOf("safari") != -1 && ua.indexOf("chrome") <= -1) {
-      if (window.removeEventListener) {
-        window.removeEventListener("DOMMouseScroll", preventDefault, false);
-      }
-      window.onmousewheel = document.onmousewheel = null;
-      window.onwheel = null;
-      window.ontouchmove = null;
-    }
-  };
+  
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -57,6 +27,37 @@ function Contact() {
   }, []);
 
   useEffect(() => {
+	const preventDefault = (e) => {
+		e = e || window.event;
+		if (e.preventDefault) {
+		  e.preventDefault();
+		}
+		e.returnValue = false;
+	  };
+	
+	  const preventScrollingSafari = () => {
+		const ua = navigator.userAgent.toLowerCase();
+		if (ua.indexOf("safari") !== -1 && ua.indexOf("chrome") <= -1) {
+		  if (window.addEventListener) {
+			window.addEventListener("DOMMouseScroll", preventDefault, false);
+		  }
+		  window.onwheel = preventDefault;
+		  window.onmousewheel = document.onmousewheel = preventDefault;
+		  window.ontouchmove = preventDefault;
+		}
+	  };
+	
+	  const enableScrollingSafari = () => {
+		const ua = navigator.userAgent.toLowerCase();
+		if (ua.indexOf("safari") !== -1 && ua.indexOf("chrome") <= -1) {
+		  if (window.removeEventListener) {
+			window.removeEventListener("DOMMouseScroll", preventDefault, false);
+		  }
+		  window.onmousewheel = document.onmousewheel = null;
+		  window.onwheel = null;
+		  window.ontouchmove = null;
+		}
+	  };  
     const isContactCached = sessionStorage.getItem("isContactCached");
     const body = document.getElementById("start");
     const loaderPage = document.getElementById("loader-page3");
