@@ -52,15 +52,20 @@ function Products() {
   },[])
 
   useEffect(() => {
+    const disableScroll = () => {
+      window.scrollTo(0,0);
+    }
 	  const isWinesCached= sessionStorage.getItem("isWinesCached");
 	  const body = document.getElementById('start');
     const loaderPage = document.getElementById("loader-page2");
 	  if(isWinesCached === 'true'){
       loaderPage.parentNode.removeChild(loaderPage);
 	  } else {
+    window.addEventListener('scroll', disableScroll);
     body.style.height = '100vh';
     body.style.overflow = 'hidden';
 		window.setTimeout(() => {
+      window.removeEventListener('scroll', disableScroll);
       body.style.height = '100%';
       body.style.overflow = 'visible';
       loaderPage.parentNode.removeChild(loaderPage);

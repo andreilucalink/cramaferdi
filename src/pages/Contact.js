@@ -25,16 +25,20 @@ function Contact() {
   }, []);
 
   useEffect(() => {
-	debugger;
+	const disableScroll = () => {
+		window.scrollTo(0,0);
+	}
 	const isContactCached= sessionStorage.getItem("isContactCached");
 	const body = document.getElementById('start');
   	const loaderPage = document.getElementById("loader-page3");
 	if(isContactCached === 'true'){
 		loaderPage.parentNode.removeChild(loaderPage);
 	} else {
+	window.addEventListener('scroll', disableScroll);
   	body.style.height = '100vh';
-  	body.style.overflow = 'hidden';
+	body.style.overflow = 'hidden';
 	window.setTimeout(() => {
+		window.removeEventListener('scroll', disableScroll);
 		body.style.height = '100%';
 		body.style.overflow = 'visible';
 		loaderPage.parentNode.removeChild(loaderPage);

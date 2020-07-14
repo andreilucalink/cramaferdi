@@ -22,14 +22,14 @@ html {
 	line-height: 1.8em;
 	color: #666;
 	background-color: var(--light-color);
-	position: relative;
-
 }
 
 html {
 	height: 100%;
+	
 }
 
 body {
 	height: 100%;
+	position:relative;
 }

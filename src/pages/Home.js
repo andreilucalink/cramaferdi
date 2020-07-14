@@ -27,15 +27,20 @@ function Home() {
   }, []);
 
   useEffect(() => {
+    const disableScroll = () => {
+      window.scrollTo(0,0);
+    }
 	  const isHomeCached= sessionStorage.getItem("isHomeCached");
     const body = document.getElementById('start');
     const loaderPage = document.getElementById("loader-page1");
 	  if(isHomeCached === 'true'){
       loaderPage.parentNode.removeChild(loaderPage);
 	  } else {
-		body.style.height = '100vh';
+    window.addEventListener('scroll', disableScroll);
+    body.style.height = '100vh';
 		window.setTimeout(() => {
-			body.style.height = '100%';
+      window.removeEventListener('scroll', disableScroll);
+      body.style.height = '100%';
 			loaderPage.parentNode.removeChild(loaderPage);
 		  }, 3500);
 		}
