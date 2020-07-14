@@ -44,13 +44,14 @@
   /* animation: cssAnimation 0s ease-in 2s forwards; */
 }
 
+.animation-3 {
+  animation: cssAnimation 0s ease-in 3.5s forwards;
+}
+
 .animation-2 {
   animation: cssAnimation 0s ease-in 2s forwards;
 }
 
-.animation-1 {
-  animation: cssAnimation 0s ease-in 1s forwards;
-}
 
 @keyframes cssAnimation {
   to {
