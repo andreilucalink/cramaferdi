@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../css/contact.css";
 import AOS from "aos";
 import Img from "react-image";
@@ -27,54 +27,22 @@ function Contact() {
   }, []);
 
   useEffect(() => {
-	const preventDefault = (e) => {
-		e = e || window.event;
-		if (e.preventDefault) {
-		  e.preventDefault();
-		}
-		e.returnValue = false;
-	  };
-	
-	  const preventScrollingSafari = () => {
-		const ua = navigator.userAgent.toLowerCase();
-		if (ua.indexOf("safari") !== -1 && ua.indexOf("chrome") <= -1) {
-		  if (window.addEventListener) {
-			window.addEventListener("DOMMouseScroll", preventDefault, false);
-		  }
-		  window.onwheel = preventDefault;
-		  window.onmousewheel = document.onmousewheel = preventDefault;
-		  window.ontouchmove = preventDefault;
-		}
-	  };
-	
-	  const enableScrollingSafari = () => {
-		const ua = navigator.userAgent.toLowerCase();
-		if (ua.indexOf("safari") !== -1 && ua.indexOf("chrome") <= -1) {
-		  if (window.removeEventListener) {
-			window.removeEventListener("DOMMouseScroll", preventDefault, false);
-		  }
-		  window.onmousewheel = document.onmousewheel = null;
-		  window.onwheel = null;
-		  window.ontouchmove = null;
-		}
-	  };  
+
     const isContactCached = sessionStorage.getItem("isContactCached");
     const body = document.getElementById("start");
-    const loaderPage = document.getElementById("loader-page3");
     if (isContactCached === "true") {
-      loaderPage.parentNode.removeChild(loaderPage);
+      setLoaded(true);
     } else {
-	  preventScrollingSafari();
       body.style.height = "100vh";
       body.style.overflow = "hidden";
       window.setTimeout(() => {
-        enableScrollingSafari();
         body.style.height = "100%";
         body.style.overflow = "visible";
-        loaderPage.parentNode.removeChild(loaderPage);
+        setLoaded(true);
+        sessionStorage.setItem("isContactCached", "true");
       }, 3500);
     }
-    sessionStorage.setItem("isContactCached", "true");
+    
   }, []);
 
   let innerHeigth = window.innerHeight;
@@ -92,6 +60,7 @@ function Contact() {
   window.addEventListener("scroll", getHeigth);
 
   // Loading stuff
+  const [isLoaded, setLoaded] = useState(false);
   const spinnerCSS = `
 	  position: absolute;
 	  top: 50%;
@@ -101,10 +70,12 @@ function Contact() {
   ///////////////////////////////////////
 
   return (
-    <div>
-      <div id="loader-page3" className="loader-page3 animation-3">
-        <HashLoader css={spinnerCSS} size={55} color={"#f4f4f4"} />
-      </div>
+    <div id="contact-page-loader">
+      {!isLoaded && 
+        <div id="loader-page3" className="loader-page3 animation-3">
+          <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+        </div>
+      }
       <section id="contact-body" /* className="hidden" */>
         <a role="button" href="#start" data-scroll>
           <img

@@ -49,9 +49,9 @@ function NavigationBar() {
 					<Nav.Link className="ml-1 link3" as={Link} eventKey="2" to="/contact" onClick={scrollRestoration}>
 						Vizite şi comenzi
 					</Nav.Link>
-					{/* <Nav.Link className="ml-1 link4" as={Link} eventKey="3" to="/galerie" onClick={scrollRestoration}>
+					<Nav.Link className="ml-1 link4" as={Link} eventKey="3" to="/galerie" onClick={scrollRestoration}>
 						Galerie
-					</Nav.Link> */}
+					</Nav.Link>
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>

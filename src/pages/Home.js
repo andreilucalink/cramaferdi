@@ -3,7 +3,6 @@ import AOS from "aos";
 import Img from "react-image";
 import { Spinner, Modal } from "react-bootstrap";
 import "../css/home.css";
-// import "../css/layout.css";
 import HashLoader from "react-spinners/HashLoader";
 
 function Home() {
@@ -27,53 +26,21 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    const preventDefault = (e) => {
-      e = e || window.event;
-      if (e.preventDefault) {
-        e.preventDefault();
-      }
-      e.returnValue = false;  
-    }
-    
-    const preventScrollingSafari = () => {
-      const ua = navigator.userAgent.toLowerCase(); 
-      if (ua.indexOf('safari') !== -1 && ua.indexOf('chrome') <= -1) {
-        if (window.addEventListener) {
-          window.addEventListener('DOMMouseScroll', preventDefault, false);
-        }
-        window.onwheel = preventDefault;
-        window.onmousewheel = document.onmousewheel = preventDefault;
-        window.ontouchmove  = preventDefault;
-      }
-    };
-  
-    const enableScrollingSafari = () => {
-      const ua = navigator.userAgent.toLowerCase(); 
-      if (ua.indexOf('safari') !== -1 && ua.indexOf('chrome') <= -1) {
-        if (window.removeEventListener) {
-          window.removeEventListener('DOMMouseScroll', preventDefault, false);
-        }
-        window.onmousewheel = document.onmousewheel = null; 
-        window.onwheel = null; 
-        window.ontouchmove = null;
-      }
-    };
-    
 	  const isHomeCached= sessionStorage.getItem("isHomeCached");
     const body = document.getElementById('start');
-    const loaderPage = document.getElementById("loader-page1");
 	  if(isHomeCached === 'true'){
-      loaderPage.parentNode.removeChild(loaderPage);
+      setLoaded(true);
 	  } else {
-    preventScrollingSafari();
     body.style.height = '100vh';
+    body.style.position = 'fixed';
 		window.setTimeout(() => {
-      enableScrollingSafari();
+      setLoaded(true);
       body.style.height = '100%';
-			loaderPage.parentNode.removeChild(loaderPage);
+      body.style.position = 'relative';
+      sessionStorage.setItem('isHomeCached', 'true');
 		  }, 3500);
 		}
-		sessionStorage.setItem('isHomeCached', 'true');
+		
   }, []);
   ////////////////////////////////////////
 
@@ -101,19 +68,24 @@ function Home() {
   }
 
   // Loading stuff
+  const [isLoaded, setLoaded] = useState(false);
   const spinnerCSS = `
 	  position: absolute;
 	  top: 50%;
 	  left: 50%;
 	  transform: translate(-50%,-50%);
-	  `;
+    `;
+    
+    const showLoader = !isLoaded ? (
+      <div id="loader-page1" className="loader-page1 animation-3">
+        <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+      </div>
+    ) : null
   ///////////////////////////////////////
 
   return (
-    <div>
-      <div id="loader-page1" className="loader-page1 animation-3">
-        <HashLoader css={spinnerCSS} size={55} color={"#f4f4f4"} />
-      </div>
+    <div id="home-page-loader">
+     {showLoader}
       <div className="home-body" id="home-body">
         <Modal show={show} backdrop="static" keyboard={false} centered size="md" /* scrollable={false} */ style={{overflow:'hidden', maxHeight: '90vh'}}>
           <Modal.Header className="ferdi-modal-header">

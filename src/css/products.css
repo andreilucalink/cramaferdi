@@ -50,8 +50,7 @@
 }
 
 .main-header h1 {
-	width: 600px;
-	font-size: 4em;
+	font-size: 72px;
 	margin: 0px;
 	font-weight: 600;
 	background: -webkit-linear-gradient(bottom,#0f2027, #45819b);

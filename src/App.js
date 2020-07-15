@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Page404 from "./pages/Page404";
-// import Gallery from "./pages/Gallery";
+import Gallery from "./pages/Gallery";
 // import SwitchLanguage from './layout/SwitchLanguage';
 
 /* Wines */
@@ -30,7 +30,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/vinuri" component={Products} />
         <Route exact path="/contact" component={Contact} />
-        {/* <Route exact path="/galerie" component={Gallery} /> */}
+        <Route exact path="/galerie" component={Gallery} />
         {/* <Route exact path="/vinuri/rose-cosmina" component={RoseCos} /> */}
         <Route exact path="/vinuri/blau-burg" component={BlauBurg}/>
         <Route exact path="/vinuri/unchiu-puiu" component={UnchiuPwyw} />
