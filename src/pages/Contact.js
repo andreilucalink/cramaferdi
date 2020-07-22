@@ -104,7 +104,7 @@ function Contact() {
             <br />
             <br />
             <span>
-              Vizitele se fac organizat, în grupuri de <strong>6-12</strong>{" "}
+              Vizitele se fac organizat în aer liber, în grupuri de <strong>4-12</strong>{" "}
               persoane, în baza unei programări prealabile prin metodele de
               contact de mai jos.
             </span>
