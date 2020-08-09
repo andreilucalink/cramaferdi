@@ -6,7 +6,6 @@ import "../css/home.css";
 import HashLoader from "react-spinners/HashLoader";
 
 function Home() {
-
   //Hooks
   useEffect(() => {
     window.scroll(0, 0);
@@ -15,34 +14,46 @@ function Home() {
       once: true,
       duration: 1000,
     });
-
   }, []);
 
   useEffect(() => {
     const age = sessionStorage.getItem("clientAge", "invalid");
-    if(!age || age === 'invalid') {
-		  setShow(true);
-    }    
+    if (!age || age === "invalid") {
+      setShow(true);
+    }
   }, []);
 
   useEffect(() => {
-	  const isHomeCached= sessionStorage.getItem("isHomeCached");
-    const body = document.getElementById('start');
-	  if(isHomeCached === 'true'){
+    const isHomeCached = sessionStorage.getItem("isHomeCached");
+    const body = document.getElementById("start");
+    if (isHomeCached === "true") {
       setLoaded(true);
-	  } else {
-    body.style.height = '100vh';
-    body.style.position = 'fixed';
-		window.setTimeout(() => {
-      setLoaded(true);
-      body.style.height = '100%';
-      body.style.position = 'relative';
-      sessionStorage.setItem('isHomeCached', 'true');
-		  }, 3500);
-		}
-		
+    } else {
+      body.style.height = "100vh";
+      window.setTimeout(() => {
+        setLoaded(true);
+        body.style.height = "100%";
+        sessionStorage.setItem("isHomeCached", "true");
+      }, 2500);
+    }
   }, []);
   ////////////////////////////////////////
+
+  // Loading stuff
+  const [isLoaded, setLoaded] = useState(false);
+  const spinnerCSS = `
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+    `;
+
+  let showLoader = !isLoaded ? (
+    <div id="loader-page1" className="loader-page1 animation-2">
+      <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+    </div>
+  ) : null;
+  ///////////////////////////////////////
 
   // Trigger scroll-up button
   let innerHeigth = window.innerHeight;
@@ -65,34 +76,29 @@ function Home() {
   const closeModal = () => {
     sessionStorage.setItem("clientAge", "valid");
     setShow(false);
-  }
-
-  // Loading stuff
-  const [isLoaded, setLoaded] = useState(false);
-  const spinnerCSS = `
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%,-50%);
-    `;
-    
-    const showLoader = !isLoaded ? (
-      <div id="loader-page1" className="loader-page1 animation-3">
-        <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
-      </div>
-    ) : null
-  ///////////////////////////////////////
+  };
 
   return (
     <div id="home-page-loader">
-     {showLoader}
+      {showLoader}
       <div className="home-body" id="home-body">
-        <Modal show={show} backdrop="static" keyboard={false} centered size="md" /* scrollable={false} */ style={{overflow:'hidden', maxHeight: '90vh'}}>
+        <Modal
+          show={show}
+          backdrop="static"
+          keyboard={false}
+          centered
+          size="md"
+          /* scrollable={false} */ style={{
+            overflow: "hidden",
+            maxHeight: "90vh",
+          }}
+        >
           <Modal.Header className="ferdi-modal-header">
             <Modal.Title>
               <h2 className="ferdi-modal-header-text">
-                Trebuie să aveţi împliniţi <b style={{color: 'indianred'}}> 18 ani</b> pentru a accesa acest
-                site
+                Trebuie să aveţi împliniţi{" "}
+                <b style={{ color: "indianred" }}> 18 ani</b> pentru a accesa
+                acest site
               </h2>
             </Modal.Title>
           </Modal.Header>
@@ -107,8 +113,10 @@ function Home() {
             />
           </Modal.Body>
           <Modal.Footer className="ferdi-modal-footer">
-          <div className="modal-line"></div>
-            <button className="ferdi-accept-btn" onClick={closeModal}>Accept</button>
+            <div className="modal-line"></div>
+            <button className="ferdi-accept-btn" onClick={closeModal}>
+              Accept
+            </button>
           </Modal.Footer>
         </Modal>
 
@@ -130,30 +138,40 @@ function Home() {
               loader={<Spinner animation="grow" className="ferdi-center-logo logo-loader"/>}
             />
           </div>
+          {/* <div className="video-bg">
+            <iframe
+              title="Crama Ferdi Video"
+              src="https://www.youtube.com/embed/Zs9tJ7_UaYU?autoplay=1&mute=1&controls=0&loop=1&playlist=Zs9tJ7_UaYU"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+            <div className="video-overlay"></div>
+          </div>
+ */}
           <section className="section section-light">
             <div className="section-text1" data-aos="fade-up">
               <h2>Despre cramă</h2>
-              <div className="productionLogos">
+              {/* <div className="productionLogos">
                 <img src={require("../img/glass.svg")} alt="wine" />
-              </div>
+              </div> */}
               <p>
                 <b>Crama Ferdi</b> este o cramă de tip boutique – premium care
                 oferă iubitorului de vin privilegiul de a degusta un vin lucrat
                 exclusiv manual și în ediții foarte limitate. Sistemul de
-                vinificație este unul de perspectivă îndelungată, având în vedere
-                că vinurile roșii sunt maturate, de la 1 la 2 ani, în butoaie de
-                stejar american, francez și românesc, reînnoite la fiecare 3 - 4
-                ani.
+                vinificație este unul de perspectivă îndelungată, având în
+                vedere că vinurile roșii sunt maturate, de la 1 la 2 ani, în
+                butoaie de stejar american, francez și românesc, reînnoite la
+                fiecare 3 - 4 ani.
               </p>
             </div>
           </section>
           <div className="pimg2"></div>
           <section className="section section-light" id="trigger-home-scroll">
             <div className="section-text2" data-aos="fade-up">
-              <h2 style={{ marginBottom: "20px" }}>Locaţie</h2>
-              <div className="productionLogos">
+              <h2>Locaţie</h2>
+              {/* <div className="productionLogos">
                 <img src={require("../img/map.svg")} alt="wine" />
-              </div>
+              </div> */}
               <p>
                 Via se află în însorita regiune viticolă Dealu Mare, pe o
                 suprafață de 3 hectare și are o vechime de 10 ani. Proprietarul
@@ -167,17 +185,17 @@ function Home() {
           <section className="section section-light">
             <div className="section-text3" data-aos="fade-up">
               <h2>Producţie</h2>
-              <div className="productionLogos">
+              {/* <div className="productionLogos">
                 <img src={require("../img/cork.svg")} alt="wine" />
                 <img src={require("../img/wine.svg")} alt="wine" />
                 <img src={require("../img/barrel.svg")} alt="wine" />
-              </div>
+              </div> */}
               <p>
-                Crama produce vin din 10 soiuri de struguri, dintre
-                care 7 roșii: Fetească Neagră, Cabernet Sauvignon, Cabernet Franc,
+                Crama produce vin din 10 soiuri de struguri, dintre care 7
+                roșii: Fetească Neagră, Cabernet Sauvignon, Cabernet Franc,
                 Shiraz, Merlot, Burgund Mare, Pinot Noir și 3 albe: Sauvignon
-                Blanc, Tămâioasa Românească și Riesling Italian, producția anuală
-                totală fiind aproximativ de 10.000 de sticle.
+                Blanc, Tămâioasa Românească și Riesling Italian, producția
+                anuală totală fiind aproximativ de 10.000 de sticle.
                 <br />
                 <br />
                 Vinurile Cramei Ferdi se disting prin naturalețe, consistență,
