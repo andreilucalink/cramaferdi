@@ -172,7 +172,7 @@ function Products() {
           </OverlayTrigger>
         </header>
         <div className="products-container" id="products-display-list">
-          <div className="card-cell">
+          {/* <div className="card-cell">
             <section
               className="card-info"
               id="animation3"
@@ -218,7 +218,7 @@ function Products() {
                 </Link>
               </div>
             </section>
-          </div>
+          </div> */}
           <div className="card-cell">
             <section
               className="card-info"
@@ -550,7 +550,7 @@ function Products() {
                   <div className="grid-header">Cuveé Alexandra 2019</div>
                   <Link to="/vinuri/cuvee-alexandra" className="grid-btn">Detalii</Link>
               </div> */}
-            <div className="grid-card">
+            {/* <div className="grid-card">
               <div className="grid-layer"></div>
               <div className="grid-img-wrapper">
                 <div className="grid-bbrg grid-img" />
@@ -559,7 +559,7 @@ function Products() {
               <Link to="/vinuri/blau-burg" className="grid-btn">
                 Detalii
               </Link>
-            </div>
+            </div> */}
             <div className="grid-card">
               <div className="grid-layer"></div>
               <div className="grid-img-wrapper">
