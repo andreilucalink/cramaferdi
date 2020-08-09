@@ -49,11 +49,11 @@ const Gallery = () => {
       setLoaded(true);
     } else {
       body.style.height = "100vh";
-      body.style.position = "fixed";
+      body.style.overflow = 'hidden';
       window.setTimeout(() => {
         setLoaded(true);
         body.style.height = "100%";
-        body.style.position = "relative";
+        body.style.overflow = "visible";
         sessionStorage.setItem("isGalleryCached", "true");
       }, 3500);
     }
