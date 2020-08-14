@@ -44,16 +44,11 @@ const Gallery = () => {
   
   useEffect(() => {
     const isGalleryCached = sessionStorage.getItem("isGalleryCached");
-    const body = document.getElementById("start");
     if (isGalleryCached === "true") {
       setLoaded(true);
     } else {
-      body.style.height = "100vh";
-      body.style.overflow = 'hidden';
       window.setTimeout(() => {
         setLoaded(true);
-        body.style.height = "100%";
-        body.style.overflow = "visible";
         sessionStorage.setItem("isGalleryCached", "true");
       }, 3500);
     }
@@ -69,8 +64,10 @@ const Gallery = () => {
     `;
 
   const showLoader = !isLoaded ? (
-    <div id="loader-page1" className="loader-page1 animation-3">
-      <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+    <div className="loader-page">
+      <div className="hash-loader">
+        <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+      </div>
     </div>
   ) : null;
   ///////////////////////////////////////

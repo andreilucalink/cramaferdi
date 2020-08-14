@@ -6,7 +6,6 @@ import { Spinner } from "react-bootstrap";
 import HashLoader from "react-spinners/HashLoader";
 
 function Contact() {
-  
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -27,22 +26,15 @@ function Contact() {
   }, []);
 
   useEffect(() => {
-
     const isContactCached = sessionStorage.getItem("isContactCached");
-    const body = document.getElementById("start");
     if (isContactCached === "true") {
       setLoaded(true);
     } else {
-      body.style.height = "100vh";
-      body.style.overflow = "hidden";
       window.setTimeout(() => {
-        body.style.height = "100%";
-        body.style.overflow = "visible";
         setLoaded(true);
         sessionStorage.setItem("isContactCached", "true");
       }, 3500);
     }
-    
   }, []);
 
   let innerHeigth = window.innerHeight;
@@ -72,8 +64,10 @@ function Contact() {
   return (
     <div id="contact-page-loader">
       {!isLoaded && 
-        <div id="loader-page3" className="loader-page3 animation-3">
-          <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+        <div className="loader-page">
+          <div className="hash-loader">
+            <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+          </div>
         </div>
       }
       <section id="contact-body" /* className="hidden" */>

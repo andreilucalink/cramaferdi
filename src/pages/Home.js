@@ -25,14 +25,11 @@ function Home() {
 
   useEffect(() => {
     const isHomeCached = sessionStorage.getItem("isHomeCached");
-    const body = document.getElementById("start");
     if (isHomeCached === "true") {
       setLoaded(true);
     } else {
-      body.style.height = "100vh";
       window.setTimeout(() => {
         setLoaded(true);
-        body.style.height = "100%";
         sessionStorage.setItem("isHomeCached", "true");
       }, 2500);
     }
@@ -49,8 +46,10 @@ function Home() {
     `;
 
   let showLoader = !isLoaded ? (
-    <div id="loader-page1" className="loader-page1 animation-2">
-      <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+    <div className="loader-page">
+      <div className="hash-loader">
+            <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+      </div>
     </div>
   ) : null;
   ///////////////////////////////////////
@@ -130,15 +129,15 @@ function Home() {
         </a>
 
         <main id="home-page">
-          <div className="pimg1">
+          {/* <div className="pimg1">
             <Img
               className="ferdi-center-logo"
               id="home-logo"
               src={require("../img/logo-ferdi.png")}
               loader={<Spinner animation="grow" className="ferdi-center-logo logo-loader"/>}
             />
-          </div>
-          {/* <div className="video-bg">
+          </div> */}
+          <div className="video-bg">
             <iframe
               title="Crama Ferdi Video"
               src="https://www.youtube.com/embed/Zs9tJ7_UaYU?autoplay=1&mute=1&controls=0&loop=1&playlist=Zs9tJ7_UaYU"
@@ -147,7 +146,7 @@ function Home() {
             ></iframe>
             <div className="video-overlay"></div>
           </div>
- */}
+
           <section className="section section-light">
             <div className="section-text1" data-aos="fade-up">
               <h2>Despre cramă</h2>

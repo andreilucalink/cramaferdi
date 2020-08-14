@@ -25,55 +25,25 @@
   visibility: hidden;
 }
 
-.display-none {
-  display: none;
-}
-
-.height100vh {
-  height: calc(100vh - 78px);
-  overflow: hidden;
-  position: relative;
-}
-
 /* ------------------------------------------------------ */
 
 /* ----------------- Loading --------------- */
-.loader-page1, .loader-page2, .loader-page3 {
+.loader-page {
   position: absolute;
   top: 0px;
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   z-index: 1111;
   background: #ECE9E6;  
   background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  
   background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); 
 }
 
-.animation-3 {
-  animation: cssAnimation 0s ease-in 3.5s forwards;
+.loader-page .hash-loader {
+  position: fixed;
+  top: 50vh;
+  left: 50%;
 }
-
-.animation-2 {
-  animation: cssAnimation 0s ease-in 55s forwards;
-}
-
-
-@keyframes cssAnimation {
-  to {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-}
-@-webkit-keyframes cssAnimation {
-  to {
-      width:0;
-      height:0;
-      display:none;
-      visibility:hidden;
-  }
-}
-
 
 /* ------------------------------------------------------ */
 
@@ -523,47 +493,6 @@
 }
 
 /* ------------------------------------------------------ */
-
-/*------------------ Switch Language Button ------------------*/
-/* .switch-lg {
-	color: #000;
-	font-size: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 2px 5px;
-	border-radius: 7px;
-	position: absolute;
-	top: 100px;
-	z-index: 1;
-	right: 2%;
-}
-.switch-lg img {
-	height: 15px;
-}
-.switch-lg .ro-lg {
-	margin-left: 6px;
-	color: #000;
-	cursor: pointer;
-	font-weight: bold;
-	text-decoration: none;
-}
-.switch-lg .ro-lg:hover {
-	color: #62a9c7;
-}
-.switch-lg .en-lg {
-	color: #000;
-	cursor: pointer;
-	font-weight: bold;
-	text-decoration: none;
-}
-.switch-lg .en-lg:hover {
-	color: #62a9c7;
-}
-.lg-active {
-	pointer-events: none;
-	cursor: default;
-} */
 
 /* ------------------------------------------------------ */
 

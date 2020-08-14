@@ -56,15 +56,10 @@ function Products() {
 
   useEffect(() => {
     const isWinesCached = sessionStorage.getItem("isWinesCached");
-    const body = document.getElementById("start");
     if (isWinesCached === "true") {
       setLoaded(true);
     } else {
-      body.style.height = "100vh";
-      body.style.overflow = "hidden";
       window.setTimeout(() => {
-        body.style.height = "100%";
-        body.style.overflow = "visible";
         setLoaded(true);
       }, 2000);
     }
@@ -128,8 +123,10 @@ function Products() {
   return (
     <div id="wine-page-loader">
       {!isLoaded && (
-        <div id="loader-page2" className="loader-page2 animation-2">
-          <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+        <div className="loader-page">
+          <div className="hash-loader">
+            <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+          </div>
         </div>
       )}
       <div className="products-page">
