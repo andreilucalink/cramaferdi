@@ -4,10 +4,11 @@ import Img from "react-image";
 import { Spinner, Modal } from "react-bootstrap";
 import "../css/home.css";
 import HashLoader from "react-spinners/HashLoader";
+// import YouTube from '@u-wave/react-youtube';
 
 function Home() {
   //Hooks
-  useEffect(() => {
+  useEffect(() => { 
     window.scroll(0, 0);
 
     AOS.init({
@@ -76,6 +77,12 @@ function Home() {
     sessionStorage.setItem("clientAge", "valid");
     setShow(false);
   };
+  ///////////////////////////////////////
+
+
+  // Video-player stuff 
+
+  ///////////////////////////////////////
 
   return (
     <div id="home-page-loader">
@@ -129,23 +136,24 @@ function Home() {
         </a>
 
         <main id="home-page">
-          {/* <div className="pimg1">
+          <div className="pimg1">
             <Img
               className="ferdi-center-logo"
               id="home-logo"
               src={require("../img/logo-ferdi.png")}
               loader={<Spinner animation="grow" className="ferdi-center-logo logo-loader"/>}
             />
-          </div> */}
-          <div className="video-bg">
+          </div>
+          {/* <div className="video-bg">
             <iframe
               title="Crama Ferdi Video"
               src="https://www.youtube.com/embed/Zs9tJ7_UaYU?autoplay=1&mute=1&controls=0&loop=1&playlist=Zs9tJ7_UaYU"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             ></iframe>
+            <YouTube video = "Zs9tJ7_UaYU" autoplay={true} muted={true} controls={false} modestBranding={true} className="video-player" allowFullscreen={false} playsInline={true}/>
             <div className="video-overlay"></div>
-          </div>
+          </div> */}
 
           <section className="section section-light">
             <div className="section-text1" data-aos="fade-up">
