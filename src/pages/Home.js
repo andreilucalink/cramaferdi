@@ -8,7 +8,7 @@ import HashLoader from "react-spinners/HashLoader";
 
 function Home() {
   //Hooks
-  useEffect(() => { 
+  useEffect(() => {
     window.scroll(0, 0);
 
     AOS.init({
@@ -49,7 +49,7 @@ function Home() {
   let showLoader = !isLoaded ? (
     <div className="loader-page">
       <div className="hash-loader">
-            <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+        <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
       </div>
     </div>
   ) : null;
@@ -79,8 +79,7 @@ function Home() {
   };
   ///////////////////////////////////////
 
-
-  // Video-player stuff 
+  // Video-player stuff
 
   ///////////////////////////////////////
 
@@ -141,7 +140,12 @@ function Home() {
               className="ferdi-center-logo"
               id="home-logo"
               src={require("../img/logo-ferdi.png")}
-              loader={<Spinner animation="grow" className="ferdi-center-logo logo-loader"/>}
+              loader={
+                <Spinner
+                  animation="grow"
+                  className="ferdi-center-logo logo-loader"
+                />
+              }
             />
           </div>
           {/* <div className="video-bg">

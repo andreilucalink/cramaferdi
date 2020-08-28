@@ -6,7 +6,6 @@ import { Spinner } from "react-bootstrap";
 import HashLoader from "react-spinners/HashLoader";
 
 function Contact() {
-
   useEffect(() => {
     window.scroll(0, 0);
     AOS.init({
@@ -63,13 +62,13 @@ function Contact() {
 
   return (
     <div id="contact-page-loader">
-      {!isLoaded && 
+      {!isLoaded && (
         <div className="loader-page">
           <div className="hash-loader">
             <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
           </div>
         </div>
-      }
+      )}
       <section id="contact-body" /* className="hidden" */>
         <a role="button" href="#start" data-scroll>
           <img
@@ -98,9 +97,9 @@ function Contact() {
             <br />
             <br />
             <span>
-              Vizitele se fac organizat în aer liber, în grupuri de <strong>4-12</strong>{" "}
-              persoane, în baza unei programări prealabile prin metodele de
-              contact de mai jos.
+              Vizitele se fac organizat în aer liber, în grupuri de{" "}
+              <strong>4-12</strong> persoane, în baza unei programări prealabile
+              prin metodele de contact de mai jos.
             </span>
             <div className="programari-line"></div>
             <div className="contacte">
@@ -108,12 +107,6 @@ function Contact() {
             </div>
           </h4>
         </header>
-        {/* <header className="contact-header">
-				<h1>
-					<span>Echipa</span> Noastră
-				</h1>
-				<p>Pentru vizite şi comenzi ne puteţi contacta la numărul de telefon sau adresa de e-mail de mai jos</p>
-			</header> */}
         <div className="contact-wrapper">
           <div
             className="contact-card"
@@ -121,7 +114,7 @@ function Contact() {
             data-aos="zoom-in"
             data-aos-delay="200"
           >
-            <div className="profile-bg" />
+            <div className="profile-bg profile-bg-fr" />
             <Img
               className="profile-img"
               src={require("../img/ferdi.jpg")}
@@ -154,7 +147,7 @@ function Contact() {
             </div>
           </div>
           <div className="contact-card" data-aos="zoom-in" data-aos-delay="200">
-            <div className="profile-bg" />
+            <div className="profile-bg profile-bg-paul" />
             <Img
               className="profile-img"
               src={require("../img/paul.jpg")}

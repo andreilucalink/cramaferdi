@@ -8,6 +8,7 @@ import NavigationBar from "./layout/Navbar";
 import Footer from "./layout/Footer";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+// import HomeNew from "./pages/HomeNew";
 import Products from "./pages/Products";
 import Page404 from "./pages/Page404";
 import Gallery from "./pages/Gallery";
@@ -20,7 +21,7 @@ import CuveePitigaia from "./pages/wines/CuveePitigaia";
 import RedKing from "./pages/wines/RedKing";
 import MisterS from "./pages/wines/MisterS";
 import CuveePaulPort from "./pages/wines/CuveePaulPort";
-// import BlauBurg from "./pages/wines/BlauBurg";
+import LadyBlack from "./pages/wines/LadyBlack";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/galerie" component={Gallery} />
         {/* <Route exact path="/vinuri/rose-cosmina" component={RoseCos} /> */}
-        {/* <Route exact path="/vinuri/blau-burg" component={BlauBurg}/> */}
+        <Route exact path="/vinuri/lady-black" component={LadyBlack} />
         <Route exact path="/vinuri/unchiu-puiu" component={UnchiuPwyw} />
         <Route exact path="/vinuri/cuvee-francisc" component={CuveeFrancisc} />
         <Route exact path="/vinuri/cuvee-pitigaia" component={CuveePitigaia} />

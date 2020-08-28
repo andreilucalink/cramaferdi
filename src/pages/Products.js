@@ -169,59 +169,12 @@ function Products() {
           </OverlayTrigger>
         </header>
         <div className="products-container" id="products-display-list">
-          {/* <div className="card-cell">
-            <section
-              className="card-info"
-              id="animation3"
-              // data-aos="fade-left"
-              // data-aos-offset="150"
-            >
-              <div className="img" id="product3" />
-              <div>
-                <section>
-                  <h3 className="rose-cosmina">Blau Burg </h3>
-                  <span className="limit-edit-span">
-                    <b>
-                      <i>2018</i>
-                    </b>
-                  </span>
-                  <div>
-                    <ul className="desc-details-list">
-                      <li>
-                        <i className="fas fa-caret-right list-arrow"></i>
-                        Tip Vin - Sec
-                      </li>
-                      <li>
-                        <i className="fas fa-caret-right list-arrow"></i>
-                        Soi – Blaufränkisch
-                      </li>
-                      <li>
-                        <i className="fas fa-caret-right list-arrow"></i>
-                        Volum - 0,75L
-                      </li>
-                      <li>
-                        <i className="fas fa-caret-right list-arrow"></i>
-                        Conţinut de alcool - 14,5%
-                      </li>
-                      <li>
-                        <i className="fas fa-caret-right list-arrow"></i>
-                        Culoare – Roșu
-                      </li>
-                    </ul>
-                  </div>
-                </section>
-                <Link to="/vinuri/blau-burg" className="btn">
-                  Detalii
-                </Link>
-              </div>
-            </section>
-          </div> */}
           <div className="card-cell">
             <section
               className="card-info"
               id="animation4"
-              data-aos="fade-right"
-              data-aos-offset="150"
+              // data-aos="fade-right"
+              // data-aos-offset="150"
             >
               <div className="img" id="product4" />
               <div>
@@ -263,6 +216,58 @@ function Products() {
                   </div>
                 </section>
                 <Link to="/vinuri/unchiu-puiu" className="btn">
+                  Detalii
+                </Link>
+              </div>
+            </section>
+          </div>
+          <div className="card-cell">
+            <section
+              className="card-info"
+              id="animation3"
+              data-aos="fade-right"
+              data-aos-offset="150"
+            >
+              <div className="img" id="product3" />
+              <div>
+                <section>
+                  <h3 className="rose-cosmina">Lady Black</h3>
+                  <span className="limit-edit-span">
+                    <b>
+                      <i>2018</i>
+                    </b>
+                  </span>
+                  <div>
+                    <ul className="desc-details-list">
+                      <li>
+                        <i className="fas fa-caret-right list-arrow"></i>
+                        Tip Vin - Sec
+                      </li>
+                      <li>
+                        <i className="fas fa-caret-right list-arrow"></i>
+                        Soi - Fetească Neagră
+                      </li>
+                      <li>
+                        <i className="fas fa-caret-right list-arrow"></i>
+                        Maturare – 14 luni, baric din stejar românesc, american
+                        şi francez
+                      </li>
+                      <li>
+                        <i className="fas fa-caret-right list-arrow"></i>
+                        Volum - 0,75L
+                      </li>
+                      <li>
+                        <i className="fas fa-caret-right list-arrow"></i>
+                        Conţinut de alcool - 14,5%
+                      </li>
+                      <li>
+                        <i className="fas fa-caret-right list-arrow"></i>
+                        Culoare – Roșu
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+                <Link to="/vinuri/lady-black" className="btn">
                   Detalii
                 </Link>
               </div>
@@ -547,16 +552,6 @@ function Products() {
                   <div className="grid-header">Cuveé Alexandra 2019</div>
                   <Link to="/vinuri/cuvee-alexandra" className="grid-btn">Detalii</Link>
               </div> */}
-            {/* <div className="grid-card">
-              <div className="grid-layer"></div>
-              <div className="grid-img-wrapper">
-                <div className="grid-bbrg grid-img" />
-              </div>
-              <div className="grid-header">Blau Burg 2018</div>
-              <Link to="/vinuri/blau-burg" className="grid-btn">
-                Detalii
-              </Link>
-            </div> */}
             <div className="grid-card">
               <div className="grid-layer"></div>
               <div className="grid-img-wrapper">
@@ -564,6 +559,16 @@ function Products() {
               </div>
               <div className="grid-header">Cuveé Unchiu Puiu 2018</div>
               <Link to="/vinuri/unchiu-puiu" className="grid-btn">
+                Detalii
+              </Link>
+            </div>
+            <div className="grid-card">
+              <div className="grid-layer"></div>
+              <div className="grid-img-wrapper">
+                <div className="grid-ladybk grid-img" />
+              </div>
+              <div className="grid-header">Lady Black 2018</div>
+              <Link to="/vinuri/lady-black" className="grid-btn">
                 Detalii
               </Link>
             </div>
