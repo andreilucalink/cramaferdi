@@ -52,7 +52,6 @@
 
 .programari-text-bg {
   background-color: white;
-  border-radius: 50px;
   width: 600px;
   position: absolute;
   top: 50%;
@@ -87,7 +86,85 @@
 }
 
 .programari-header h4.programari-descriere .contacte {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  padding-top: 50px;
+}
+
+.programari-pachete-degustari .pachete-header {
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 60px;
+}
+
+.programari-pachete-degustari .pachete-cards {
+  padding-top: 60px;
+  width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.programari-pachete-degustari .pachete-cards .pachet-dark {
+  position: relative;
+  padding-top: 20px;
+  height: 550px;
+  width: 400px;
+  background: #0f2027;
+  color: white;
+  -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+}
+
+.programari-pachete-degustari .pachete-cards .pachet-dark h3,
+.programari-pachete-degustari .pachete-cards .pachet-light h3 {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  padding: 0px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.programari-pachete-degustari .pachete-cards .pachet-dark li,
+.programari-pachete-degustari .pachete-cards .pachet-light li {
+  width: 90%;
+  font-size: 16px;
+  list-style: none;
+  text-align: left;
+  padding: 10px 0px 10px 30px;
+}
+
+.programari-pachete-degustari .pachete-cards .pachet-dark li i,
+.programari-pachete-degustari .pachete-cards .pachet-light li i {
+  margin-right: 10px;
+}
+
+.programari-pachete-degustari .pachete-cards .pachet-light {
+  position: relative;
+  padding-top: 20px;
+  height: 550px;
+  width: 400px;
+  background: #f4f4f4;
+  color: #0f2027;
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+}
+
+.programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-price,
+.programari-pachete-degustari .pachete-cards .pachet-light li.pachet-price {
+  text-align: center;
+  position: absolute;
+  bottom: 80px;
+}
+
+.programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-tax,
+.programari-pachete-degustari .pachete-cards .pachet-light li.pachet-tax {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
 }
 
 .programari-line {
@@ -272,6 +349,17 @@
   #contact-body {
     height: 100%;
   }
+
+  .programari-pachete-degustari .pachete-cards {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .programari-pachete-degustari .pachete-cards .pachet-light {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 1015px) {
@@ -341,6 +429,35 @@
 }
 
 @media (max-width: 500px) {
+  .programari-pachete-degustari .pachete-cards {
+    padding-top: 20px;
+  }
+  .programari-pachete-degustari .pachete-cards .pachet-light,
+  .programari-pachete-degustari .pachete-cards .pachet-dark {
+    width: 330px;
+  }
+
+  .programari-pachete-degustari .pachete-cards .pachet-dark .pachet-price h3,
+  .programari-pachete-degustari .pachete-cards .pachet-light .pachet-price h3 {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  .programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-price,
+  .programari-pachete-degustari .pachete-cards .pachet-light li.pachet-price {
+    bottom: 90px;
+  }
+
+  .programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-tax,
+  .programari-pachete-degustari .pachete-cards .pachet-light li.pachet-tax {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .programari-pachete-degustari .pachete-header {
+    font-size: 1.5rem;
+  }
+
   .contact-header h1 {
     margin-top: 40px;
     width: 280px;
@@ -405,9 +522,11 @@
   .programari-bg-wrapper {
     height: 300px;
   }
+
   .programari-text-bg {
     width: 270px;
   }
+
   .programari-text-bg h1 {
     padding: 15px;
     font-size: 17px;
@@ -416,8 +535,9 @@
   .programari-bg-wrapper {
     width: 90%;
   }
+
   .programari-header h4.programari-descriere {
-    width: 90%;
+    width: 100%;
   }
 
   .programari-header h4.programari-descriere span {
