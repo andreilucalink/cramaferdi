@@ -1,3 +1,3 @@
-### Wine presentation site created using React & React Bootstrap
+### Crama Ferdi
 
 Andrei Luca 2020

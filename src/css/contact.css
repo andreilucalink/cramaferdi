@@ -160,6 +160,17 @@
   bottom: 80px;
 }
 
+.programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-price h3 p,
+.programari-pachete-degustari
+  .pachete-cards
+  .pachet-light
+  li.pachet-price
+  h3
+  p {
+  display: flex;
+  justify-content: center;
+}
+
 .programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-tax,
 .programari-pachete-degustari .pachete-cards .pachet-light li.pachet-tax {
   position: absolute;

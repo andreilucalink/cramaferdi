@@ -95,7 +95,7 @@
 }
 
 #product3 {
-  background-image: url(../img/ladybknew.jpg);
+  background-image: url(../img/ladybk.jpg);
 }
 
 #product4 {
@@ -120,6 +120,10 @@
 
 #product9 {
   background-image: url(../img/cuvpit.jpg);
+}
+
+#misterS_image {
+  background-image: url(../img/misterS_limited.jpg);
 }
 
 .card-info .img {
@@ -195,7 +199,7 @@ a.btn:hover {
   font-size: 14px;
 }
 
-h3.rose-cosmina {
+h3.wine-title {
   margin-bottom: 5px;
 }
 
@@ -314,39 +318,43 @@ h3.rose-cosmina {
 }
 
 .grid-rcos {
-  background-image: url("../img/rcos.jpg");
+  background-image: url('../img/rcos.jpg');
 }
 
 .grid-cale {
-  background-image: url("../img/cale.jpg");
+  background-image: url('../img/cale.jpg');
 }
 
 .grid-ladybk {
-  background-image: url("../img/ladybknew.jpg");
+  background-image: url('../img/ladybk.jpg');
+}
+
+.grid-misterS-limited {
+  background-image: url('../img/misterS_limited.jpg');
 }
 
 .grid-unchiu {
-  background-image: url("../img/unp.jpg");
+  background-image: url('../img/unp.jpg');
 }
 
 .grid-francisc {
-  background-image: url("../img/cuvf.jpg");
+  background-image: url('../img/cuvf.jpg');
 }
 
 .grid-pitigaia {
-  background-image: url("../img/cuvpit.jpg");
+  background-image: url('../img/cuvpit.jpg');
 }
 
 .grid-redking {
-  background-image: url("../img/rkr.jpg");
+  background-image: url('../img/rkr.jpg');
 }
 
 .grid-misterS {
-  background-image: url("../img/ms.jpg");
+  background-image: url('../img/ms.jpg');
 }
 
 .grid-paul {
-  background-image: url("../img/cpp.jpg");
+  background-image: url('../img/cpp.jpg');
 }
 
 /* ------------------------------------------------------ */
@@ -587,7 +595,7 @@ h3.rose-cosmina {
     color: white;
   }
 
-  h3.rose-cosmina {
+  h3.wine-title {
     margin-bottom: 5px !important;
   }
 

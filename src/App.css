@@ -1,36 +1,35 @@
 /* Global Styling */
 
 * {
-	margin: 0;
-	padding: 0;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-	--dark-color: #0f2027;
-	--light-color: #f4f4f4;
+  --dark-color: #0f2027;
+  --light-color: #f4f4f4;
 }
 
 body,
 html {
-	scroll-behavior: auto;
-	font-family: "Montserrat", sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.8em;
-	color: #666;
-	background-color: var(--light-color);
+  scroll-behavior: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: var(--dark-color);
+  background-color: var(--light-color);
 }
 
 html {
-	min-height: 100%;
-	
+  min-height: 100%;
 }
 
 body {
-	min-height: 100%;
-	position:relative;
-	overflow-x: hidden;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
 }

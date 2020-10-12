@@ -26,6 +26,12 @@
   background-size: cover;
 }
 
+.bg-misterS-limited {
+  background-image: url(../img/bg_ladybk.svg);
+  background-position: center;
+  background-size: cover;
+}
+
 .bg-francisc {
   background-image: url(../img/bg_cuvf.svg);
   background-position: center;

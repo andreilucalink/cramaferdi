@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import "../css/contact.css";
-import AOS from "aos";
-import Img from "react-image";
-import { Spinner } from "react-bootstrap";
-import HashLoader from "react-spinners/HashLoader";
+import React, { useEffect, useState } from 'react';
+import '../css/contact.css';
+import AOS from 'aos';
+import Img from 'react-image';
+import { Spinner } from 'react-bootstrap';
+import HashLoader from 'react-spinners/HashLoader';
 
 function Contact() {
   useEffect(() => {
@@ -14,41 +14,41 @@ function Contact() {
     });
 
     if (window.innerWidth < 501) {
-      document.getElementById("first-card").removeAttribute("data-aos-delay");
-      document.getElementById("first-card").removeAttribute("data-aos");
+      document.getElementById('first-card').removeAttribute('data-aos-delay');
+      document.getElementById('first-card').removeAttribute('data-aos');
     }
 
-    const age = window.sessionStorage.getItem("clientAge");
-    if (!age || age === "invalid") {
-      window.location.href = "/";
+    const age = window.sessionStorage.getItem('clientAge');
+    if (!age || age === 'invalid') {
+      window.location.href = '/';
     }
   }, []);
 
   useEffect(() => {
-    const isContactCached = sessionStorage.getItem("isContactCached");
-    if (isContactCached === "true") {
+    const isContactCached = sessionStorage.getItem('isContactCached');
+    if (isContactCached === 'true') {
       setLoaded(true);
     } else {
       window.setTimeout(() => {
         setLoaded(true);
-        sessionStorage.setItem("isContactCached", "true");
+        sessionStorage.setItem('isContactCached', 'true');
       }, 3500);
     }
   }, []);
 
   let innerHeigth = window.innerHeight;
   function getHeigth() {
-    if (document.getElementById("home-scroll-up") === null) return;
+    if (document.getElementById('home-scroll-up') === null) return;
     if (window.scrollY > innerHeigth / 1.5)
       document
-        .getElementById("home-scroll-up")
-        .classList.add("show-home-sroll-btn");
+        .getElementById('home-scroll-up')
+        .classList.add('show-home-sroll-btn');
     else
       document
-        .getElementById("home-scroll-up")
-        .classList.remove("show-home-sroll-btn");
+        .getElementById('home-scroll-up')
+        .classList.remove('show-home-sroll-btn');
   }
-  window.addEventListener("scroll", getHeigth);
+  window.addEventListener('scroll', getHeigth);
 
   // Loading stuff
   const [isLoaded, setLoaded] = useState(false);
@@ -61,34 +61,34 @@ function Contact() {
   ///////////////////////////////////////
 
   return (
-    <div id="contact-page-loader">
+    <div id='contact-page-loader'>
       {!isLoaded && (
-        <div className="loader-page">
-          <div className="hash-loader">
-            <HashLoader css={spinnerCSS} size={55} color={"#0F2027"} />
+        <div className='loader-page'>
+          <div className='hash-loader'>
+            <HashLoader css={spinnerCSS} size={55} color={'#0F2027'} />
           </div>
         </div>
       )}
-      <section id="contact-body" /* className="hidden" */>
-        <a role="button" href="#start" data-scroll>
+      <section id='contact-body' /* className="hidden" */>
+        <a role='button' href='#start' data-scroll>
           <img
-            src={require("../img/up-ar.svg")}
-            alt="Go Up"
-            className="back-to-top-btn"
-            id="home-scroll-up"
+            src={require('../img/up-ar.svg')}
+            alt='Go Up'
+            className='back-to-top-btn'
+            id='home-scroll-up'
           />
         </a>
-        <header className="programari-header">
-          <div className="programari-bg-wrapper">
+        <header className='programari-header'>
+          <div className='programari-bg-wrapper'>
             <Img
-              className="programari-bg"
-              src={require("../img/poza_split.jpg")}
+              className='programari-bg'
+              src={require('../img/poza_split.jpg')}
             />
-            <div className="programari-text-bg">
+            <div className='programari-text-bg'>
               <h1>Degustări şi vizite la cramă</h1>
             </div>
           </div>
-          <h4 className="programari-descriere">
+          <h4 className='programari-descriere'>
             <span>
               Vă aşteptăm cu drag să ne vizitaţi şi să degustăm împreună
               vinurile cramei Ferdi în locul unde, în urmă cu 10 ani, a luat
@@ -97,68 +97,68 @@ function Contact() {
             <br />
             <br />
             <span>
-              Vizitele se fac organizat în aer liber, în grupuri de{" "}
+              Vizitele se fac organizat în aer liber, în grupuri de{' '}
               <strong>4-12</strong> persoane, în baza unei programări prealabile
               prin metodele de contact de mai jos.
             </span>
-            <div className="programari-pachete-degustari">
-              <div className="pachete-header">Pachete degustari</div>
-              <div className="programari-line"></div>
-              <div className="pachete-cards">
-                <div className="pachet-light">
+            <div className='programari-pachete-degustari'>
+              <div className='pachete-header'>Pachete degustari</div>
+              <div className='programari-line'></div>
+              <div className='pachete-cards'>
+                <div className='pachet-light'>
                   <h3>STANDARD</h3>
                   <ul>
                     <li>
-                      <i className="fas fa-check-circle"></i>Tur al cramei
+                      <i className='fas fa-check-circle'></i>Tur al cramei
                     </li>
                     <li>
-                      <i className="fas fa-check-circle"></i>Degustare 5 vinuri
+                      <i className='fas fa-check-circle'></i>Degustare 5 vinuri
                     </li>
                     <li>
-                      <i className="fas fa-check-circle"></i>Timp alocat - 1 oră
+                      <i className='fas fa-check-circle'></i>Timp alocat - 1 oră
                     </li>
                     <li>
-                      <i className="fas fa-check-circle"></i>Apă şi grisine
+                      <i className='fas fa-check-circle'></i>Apă şi grisine
                     </li>
-                    <li className="pachet-price">
+                    <li className='pachet-price'>
                       <h3>
-                        <p>50 RON/Persoana</p>
+                        <p>&nbsp;&nbsp;50 RON/Persoana</p>
                         <p>- 10 EURO -</p>
                       </h3>
                     </li>
-                    <li className="pachet-tax">
+                    <li className='pachet-tax'>
                       La achiziționarea a <b>6 sticle</b> de vin nu se mai
                       percepe taxă de degustare.
                     </li>
                   </ul>
                 </div>
-                <div className="pachet-dark">
+                <div className='pachet-dark'>
                   <h3>PREMIUM</h3>
                   <ul>
                     <li>
-                      <i className="fas fa-check-circle"></i>Tur al cramei
+                      <i className='fas fa-check-circle'></i>Tur al cramei
                     </li>
                     <li>
-                      <i className="fas fa-check-circle"></i>Degustare 7 vinuri
+                      <i className='fas fa-check-circle'></i>Degustare 7 vinuri
                     </li>
                     <li>
-                      <i className="fas fa-check-circle"></i>Timp alocat - 1 oră
+                      <i className='fas fa-check-circle'></i>Timp alocat - 1 oră
                       şi 45 min
                     </li>
                     <li>
-                      <i className="fas fa-check-circle"></i>Platou ham & cheese
+                      <i className='fas fa-check-circle'></i>Platou ham & cheese
                     </li>
 
                     <li>
-                      <i className="fas fa-check-circle"></i>Apă şi grisine
+                      <i className='fas fa-check-circle'></i>Apă şi grisine
                     </li>
-                    <li className="pachet-price">
+                    <li className='pachet-price'>
                       <h3>
-                        <p>100 RON/Persoana</p>
+                        <p>&nbsp;100 RON/Persoana</p>
                         <p>- 20 EURO -</p>
                       </h3>
                     </li>
-                    <li className="pachet-tax">
+                    <li className='pachet-tax'>
                       La achiziționarea a <b>12 sticle</b> de vin nu se mai
                       percepe taxă de degustare.
                     </li>
@@ -167,111 +167,111 @@ function Contact() {
               </div>
             </div>
 
-            <div className="contacte">
+            <div className='contacte'>
               <b>Contacte pentru programări şi comenzi:</b>
             </div>
-            <div className="programari-line"></div>
+            <div className='programari-line'></div>
           </h4>
         </header>
-        <div className="contact-wrapper">
+        <div className='contact-wrapper'>
           <div
-            className="contact-card"
-            id="first-card"
-            data-aos="zoom-in"
-            data-aos-delay="200"
+            className='contact-card'
+            id='first-card'
+            data-aos='zoom-in'
+            data-aos-delay='200'
           >
-            <div className="profile-bg profile-bg-fr" />
+            <div className='profile-bg profile-bg-fr' />
             <Img
-              className="profile-img"
-              src={require("../img/ferdi.jpg")}
+              className='profile-img'
+              src={require('../img/ferdi.jpg')}
               loader={
-                <Spinner animation="grow" className="profile-img-loader" />
+                <Spinner animation='grow' className='profile-img-loader' />
               }
             />
-            <div className="contact-details">
+            <div className='contact-details'>
               <h3>Fernando Mihăilescu</h3>
               <img
-                src={require("../img/romania3.png")}
-                alt="Country"
-                className="country"
+                src={require('../img/romania3.png')}
+                alt='Country'
+                className='country'
               />
-              <div className="contact-bar ferdi-bar" />
-              <div className="email ferdi-mail">
+              <div className='contact-bar ferdi-bar' />
+              <div className='email ferdi-mail'>
                 <a
-                  role="button"
-                  href="mailto:test@gmail.com"
-                  className="email-button"
+                  role='button'
+                  href='mailto:test@gmail.com'
+                  className='email-button'
                 >
                   <img
-                    className="email-img"
-                    src={require("../img/gmail.svg")}
-                    alt="Call"
+                    className='email-img'
+                    src={require('../img/gmail.svg')}
+                    alt='Call'
                   />
                   <span>office@cramaferdi.ro</span>
                 </a>
               </div>
             </div>
           </div>
-          <div className="contact-card" data-aos="zoom-in" data-aos-delay="200">
-            <div className="profile-bg profile-bg-paul" />
+          <div className='contact-card' data-aos='zoom-in' data-aos-delay='200'>
+            <div className='profile-bg profile-bg-paul' />
             <Img
-              className="profile-img"
-              src={require("../img/paul.jpg")}
+              className='profile-img'
+              src={require('../img/paul.jpg')}
               loader={
-                <Spinner animation="grow" className="profile-img-loader" />
+                <Spinner animation='grow' className='profile-img-loader' />
               }
             />
-            <div className="contact-details">
+            <div className='contact-details'>
               <h3>Paul Mihăilescu</h3>
               <img
-                src={require("../img/romania3.png")}
-                alt="Country"
-                className="country"
+                src={require('../img/romania3.png')}
+                alt='Country'
+                className='country'
               />
-              <div className="contact-bar paul-bar" />
-              <div className="phone">
+              <div className='contact-bar paul-bar' />
+              <div className='phone'>
                 <a
-                  role="button"
-                  href="tel:+40-0729-884-940"
-                  className="phone-button"
+                  role='button'
+                  href='tel:+40-0729-884-940'
+                  className='phone-button'
                 >
                   <img
-                    className="phone-img"
-                    src={require("../img/call2.svg")}
-                    alt="Call"
+                    className='phone-img'
+                    src={require('../img/call2.svg')}
+                    alt='Call'
                   />
                   <span>0729-884-940 </span>
                 </a>
               </div>
             </div>
           </div>
-          <div className="contact-card" data-aos="zoom-in" data-aos-delay="200">
-            <div className="profile-bg" />
+          <div className='contact-card' data-aos='zoom-in' data-aos-delay='200'>
+            <div className='profile-bg' />
             <Img
-              className="profile-img"
-              src={require("../img/ofelia.jpg")}
+              className='profile-img'
+              src={require('../img/ofelia.jpg')}
               loader={
-                <Spinner animation="grow" className="profile-img-loader" />
+                <Spinner animation='grow' className='profile-img-loader' />
               }
             />
-            <div className="contact-details">
+            <div className='contact-details'>
               <h3>Ofelia Marian</h3>
               <img
-                src={require("../img/romania3.png")}
-                alt="Country"
-                className="country"
+                src={require('../img/romania3.png')}
+                alt='Country'
+                className='country'
               />
-              <div className="contact-bar paul-bar" />
-              <div className="phone">
+              <div className='contact-bar paul-bar' />
+              <div className='phone'>
                 <a
-                  role="button"
-                  href="tel:+40-0729-884-940"
-                  className="phone-button"
+                  role='button'
+                  href='tel:+40-0729-884-940'
+                  className='phone-button'
                 >
                   <img
-                    className="phone-img"
-                    src={require("../img/call2.svg")}
-                    alt="Call"
+                    className='phone-img'
+                    src={require('../img/call2.svg')}
+                    alt='Call'
                   />
                   <span>0723-768-322 </span>
                 </a>
