@@ -49,13 +49,12 @@ const MisterS = () => {
         </div>
 
         <div className='text-desc'>
-          Un Shiraz îndrăzneț, bogat și complex, dar în același timp elegant,
-          care are un corp amplu, de culoare rubiniu-violet intens cu arome
-          concentrate de afine și prune, unde taninurile și aciditatea se îmbină
-          frumos. Carnea roșie și condimentele exotice evidențiază notele
-          fructate ale acestui Shiraz. Sunt de asemenea caracteristice notele de
-          carne afumată și piper. Anul recoltei este 2018 iar maturarea a avut
-          loc timp de 14 luni în butoaie de stejar. Gradul alcoolic este 14,7%. 
+          Noul Shiraz al Cramei Ferdi, lucrat cu multă grijă și atenție la
+          detalii, dezvăluie un vin românesc cu mult caracter, corp și eleganță.
+          Maturat in butoaie de stejar timp de 14 luni, vinul a căpătat arome de
+          vanilie si condimente, cu aciditate revigorantă si taninuri care se
+          imbină frumos. Shiraz este considerat a fi unul dintre cele mai
+          sănătoase vinuri, datorită dozei mai mari de antioxidanți. 
           <br />
           <b>
             <i>Recomandare decantare: minim 1h.</i>
