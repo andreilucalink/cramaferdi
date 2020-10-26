@@ -7,23 +7,16 @@ import HashLoader from 'react-spinners/HashLoader';
 
 function Products() {
   // Hooks
+
+  // remove animation for tablet
+  // aos init
+  // check if user clicked ok in modal - else redirect
   useEffect(() => {
     window.scroll(0, 0);
 
-    if (window.innerWidth > 965 && window.innerWidth < 1201) {
+    if (window.innerWidth >= 768 && window.innerWidth <= 1200) {
       document.getElementById('cuvee-unchiu-puiu').removeAttribute('data-aos');
-      document.getElementById('lady-black').setAttribute('data-aos', 'zoom-in');
-      document
-        .getElementById('cuvee-francisc')
-        .setAttribute('data-aos', 'zoom-in');
-      document.getElementById('red-king').setAttribute('data-aos', 'zoom-in');
-      document.getElementById('mister-s').setAttribute('data-aos', 'zoom-in');
-      document
-        .getElementById('mister-s-limited')
-        .setAttribute('data-aos', 'zoom-in');
-      document
-        .getElementById('cuvee-paul-port')
-        .setAttribute('data-aos', 'zoom-in');
+      document.getElementById('mister-s-limited').removeAttribute('data-aos');
     }
 
     AOS.init({
@@ -37,12 +30,14 @@ function Products() {
     }
   }, []);
 
+  // check for display style
   useEffect(() => {
+    window.sessionStorage.setItem('display', 'list');
     const displayStyle = window.sessionStorage.getItem('display');
 
     if (displayStyle === 'grid') {
-      document.getElementById('grid-view').classList.add('hide-element');
-      document.getElementById('list-view').classList.remove('hide-element');
+      document.getElementById('grid-view').style.display = 'none';
+      document.getElementById('list-view').style.display = 'block';
       document
         .getElementById('products-display-list')
         .classList.add('hide-element');
@@ -52,6 +47,8 @@ function Products() {
     }
 
     if (displayStyle === 'list') {
+      document.getElementById('list-view').style.display = 'none';
+      document.getElementById('grid-view').style.display = 'block';
       document
         .getElementById('products-display-list')
         .classList.remove('hide-element');
@@ -59,8 +56,14 @@ function Products() {
         .getElementById('products-display-grid')
         .classList.add('hide-element');
     }
+
+    if (window.innerWidth < 1280) {
+      document.getElementById('grid-view').style.display = 'none';
+      document.getElementById('list-view').style.display = 'none';
+    }
   }, []);
 
+  // check if page is cached - otherwise show loader
   useEffect(() => {
     const isWinesCached = sessionStorage.getItem('isWinesCached');
     if (isWinesCached === 'true') {
@@ -72,8 +75,6 @@ function Products() {
     }
     sessionStorage.setItem('isWinesCached', 'true');
   }, []);
-
-  ///////////////////////////////////////
 
   // Scroll stuff
   let innerHeigth = window.innerHeight;
@@ -89,13 +90,12 @@ function Products() {
         .classList.remove('show-home-sroll-btn');
   }
   window.addEventListener('scroll', getHeigth);
-  ///////////////////////////////////////
 
-  // Display stuff
+  // Display functions
   const displayAsGrid = () => {
     window.sessionStorage.setItem('display', 'grid');
-    document.getElementById('grid-view').classList.add('hide-element');
-    document.getElementById('list-view').classList.remove('hide-element');
+    document.getElementById('grid-view').style.display = 'none';
+    document.getElementById('list-view').style.display = 'block';
     document
       .getElementById('products-display-list')
       .classList.add('hide-element');
@@ -106,8 +106,8 @@ function Products() {
 
   const displayAsList = () => {
     window.sessionStorage.setItem('display', 'list');
-    document.getElementById('list-view').classList.add('hide-element');
-    document.getElementById('grid-view').classList.remove('hide-element');
+    document.getElementById('list-view').style.display = 'none';
+    document.getElementById('grid-view').style.display = 'block';
     document
       .getElementById('products-display-list')
       .classList.remove('hide-element');
@@ -115,7 +115,6 @@ function Products() {
       .getElementById('products-display-grid')
       .classList.add('hide-element');
   };
-  ///////////////////////////////////////
 
   // Loading stuff
   const [isLoaded, setLoaded] = useState(false);
@@ -125,7 +124,6 @@ function Products() {
 	  left: 50%;
 	  transform: translate(-50%,-50%);
 	  `;
-  ///////////////////////////////////////
 
   return (
     <div id='wine-page-loader'>
@@ -178,7 +176,7 @@ function Products() {
         <div className='products-container' id='products-display-list'>
           <div className='card-cell'>
             <section className='card-info' id='cuvee-unchiu-puiu'>
-              <div className='img' id='product4' />
+              <div className='img' id='cuvee_unchiu_image' />
               <div>
                 <section>
                   <h3 className='wine-title'>Cuvée Unchiu Puiu</h3>
@@ -227,7 +225,7 @@ function Products() {
             <section
               className='card-info'
               id='mister-s-limited'
-              data-aos='fade-left'
+              data-aos='fade-right'
               data-aos-offset='150'
             >
               <div className='img' id='misterS_image' />
@@ -278,63 +276,11 @@ function Products() {
           <div className='card-cell'>
             <section
               className='card-info'
-              id='animation3'
-              data-aos='fade-right'
-              data-aos-offset='150'
-            >
-              <div className='img' id='product3' />
-              <div>
-                <section>
-                  <h3 className='wine-title'>Lady Black</h3>
-                  <span className='limit-edit-span'>
-                    <b>
-                      <i>Ediţie limitată - 2018</i>
-                    </b>
-                  </span>
-                  <div>
-                    <ul className='desc-details-list'>
-                      <li>
-                        <i className='fas fa-caret-right list-arrow'></i>
-                        Tip Vin - Sec
-                      </li>
-                      <li>
-                        <i className='fas fa-caret-right list-arrow'></i>
-                        Soi - Fetească Neagră
-                      </li>
-                      <li>
-                        <i className='fas fa-caret-right list-arrow'></i>
-                        Maturare – 14 luni, baric din stejar românesc, american
-                        şi francez
-                      </li>
-                      <li>
-                        <i className='fas fa-caret-right list-arrow'></i>
-                        Volum - 0,75L
-                      </li>
-                      <li>
-                        <i className='fas fa-caret-right list-arrow'></i>
-                        Conţinut de alcool - 14,5%
-                      </li>
-                      <li>
-                        <i className='fas fa-caret-right list-arrow'></i>
-                        Culoare – Roșu
-                      </li>
-                    </ul>
-                  </div>
-                </section>
-                <Link to='/vinuri/lady-black' className='btn'>
-                  Detalii
-                </Link>
-              </div>
-            </section>
-          </div>
-          <div className='card-cell'>
-            <section
-              className='card-info'
               id='cuvee-francisc'
               data-aos='fade-left'
               data-aos-offset='150'
             >
-              <div className='img' id='product5' />
+              <div className='img' id='cuvee_francisc_image' />
               <div>
                 <section>
                   <h3 className='wine-title'>Cuvée Francisc</h3>
@@ -386,7 +332,7 @@ function Products() {
               data-aos='fade-right'
               data-aos-offset='150'
             >
-              <div className='img' id='product6' />
+              <div className='img' id='red_king_image' />
               <div>
                 <section>
                   <h3 className='wine-title'>Red King</h3>
@@ -434,63 +380,11 @@ function Products() {
           <div className='card-cell'>
             <section
               className='card-info'
-              id='mister-s'
+              id='cuvee-paul-port'
               data-aos='fade-left'
               data-aos-offset='150'
             >
-              <div className='img' id='product7' />
-              <div>
-                <section>
-                  <h3 className='wine-title'>Mister S.</h3>
-                  <span className='limit-edit-span'>
-                    <b>
-                      <i>Rezerva 2017</i>
-                    </b>
-                  </span>
-                  <div>
-                    <ul className='desc-details-list'>
-                      <li>
-                        <i className='fas fa-caret-right list-arrow'></i>
-                        Tip Vin - Sec
-                      </li>
-                      <li>
-                        <i className='fas fa-caret-right list-arrow'></i>
-                        Soi – Shiraz
-                      </li>
-                      <li>
-                        <i className='fas fa-caret-right list-arrow'></i>
-                        Maturare – 20 luni, baric din stejar românesc, american
-                        şi francez
-                      </li>
-                      <li>
-                        <i className='fas fa-caret-right list-arrow'></i>
-                        Volum - 0,75L
-                      </li>
-                      <li>
-                        <i className='fas fa-caret-right list-arrow'></i>
-                        Conţinut de alcool - 14,4%
-                      </li>
-                      <li>
-                        <i className='fas fa-caret-right list-arrow'></i>
-                        Culoare – Roşu
-                      </li>
-                    </ul>
-                  </div>
-                </section>
-                <Link to='/vinuri/mister-s' className='btn'>
-                  Detalii
-                </Link>
-              </div>
-            </section>
-          </div>
-          <div className='card-cell'>
-            <section
-              className='card-info'
-              id='cuvee-paul-port'
-              data-aos='fade-right'
-              data-aos-offset='150'
-            >
-              <div className='img' id='product8' />
+              <div className='img' id='cuvee_paul_image' />
               <div>
                 <section>
                   <h3 className='wine-title'>Cuvée Paul Port </h3>
@@ -561,18 +455,6 @@ function Products() {
             <div className='grid-card'>
               <div className='grid-layer'></div>
               <div className='grid-img-wrapper'>
-                <div className='grid-ladybk grid-img' />
-              </div>
-              <div className='grid-header'>
-                Lady Black - Ediţie limitată 2018
-              </div>
-              <Link to='/vinuri/lady-black' className='grid-btn'>
-                Detalii
-              </Link>
-            </div>
-            <div className='grid-card'>
-              <div className='grid-layer'></div>
-              <div className='grid-img-wrapper'>
                 <div className='grid-francisc grid-img' />
               </div>
               <div className='grid-header'>Cuveé Francisc 2017</div>
@@ -587,16 +469,6 @@ function Products() {
               </div>
               <div className='grid-header'>Red King Rezerva 2017</div>
               <Link to='/vinuri/red-king' className='grid-btn'>
-                Detalii
-              </Link>
-            </div>
-            <div className='grid-card'>
-              <div className='grid-layer'></div>
-              <div className='grid-img-wrapper'>
-                <div className='grid-misterS grid-img' />
-              </div>
-              <div className='grid-header'>Mister S. Rezerva 2017</div>
-              <Link to='/vinuri/mister-s' className='grid-btn'>
                 Detalii
               </Link>
             </div>

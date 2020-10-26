@@ -86,40 +86,20 @@
   -moz-box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
-#product1 {
-  background-image: url(../img/rcos.jpg);
-}
-
-#product2 {
-  background-image: url(../img/cale.jpg);
-}
-
-#product3 {
-  background-image: url(../img/ladybk.jpg);
-}
-
-#product4 {
+#cuvee_unchiu_image {
   background-image: url(../img/unp.jpg);
 }
 
-#product5 {
+#cuvee_francisc_image {
   background-image: url(../img/cuvf.jpg);
 }
 
-#product6 {
+#red_king_image {
   background-image: url(../img/rkr.jpg);
 }
 
-#product7 {
-  background-image: url(../img/ms.jpg);
-}
-
-#product8 {
+#cuvee_paul_image {
   background-image: url(../img/cpp.jpg);
-}
-
-#product9 {
-  background-image: url(../img/cuvpit.jpg);
 }
 
 #misterS_image {
@@ -317,18 +297,6 @@ h3.wine-title {
   background-repeat: no-repeat;
 }
 
-.grid-rcos {
-  background-image: url('../img/rcos.jpg');
-}
-
-.grid-cale {
-  background-image: url('../img/cale.jpg');
-}
-
-.grid-ladybk {
-  background-image: url('../img/ladybk.jpg');
-}
-
 .grid-misterS-limited {
   background-image: url('../img/misterS_limited.jpg');
 }
@@ -339,10 +307,6 @@ h3.wine-title {
 
 .grid-francisc {
   background-image: url('../img/cuvf.jpg');
-}
-
-.grid-pitigaia {
-  background-image: url('../img/cuvpit.jpg');
 }
 
 .grid-redking {
@@ -359,7 +323,6 @@ h3.wine-title {
 
 /* ------------------------------------------------------ */
 
-/*  TODO: SA NU SE MAI VADA COLTU URAT PUI BORDER LA CARD TOP-RIGHT/LEFT MAI MULT CA LA IMAGINE */
 /* ------------------ Media queries ------------------ */
 
 @media (min-width: 966px) and (max-width: 1200px) {
