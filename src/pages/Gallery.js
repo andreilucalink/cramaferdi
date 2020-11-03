@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/gallery.css';
 import FsLightbox from 'fslightbox-react';
-// import HashLoader from 'react-spinners/HashLoader';
 import AOS from 'aos';
 import Img from 'react-image';
 
@@ -44,6 +43,8 @@ const Gallery = () => {
     AOS.init({
       once: true,
     });
+
+    window.scroll(0, 0);
   }, []);
 
   return (
