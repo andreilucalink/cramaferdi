@@ -1,287 +1,62 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import '../css/contact.css';
 import AOS from 'aos';
-import Img from 'react-image';
-import { Spinner } from 'react-bootstrap';
-import HashLoader from 'react-spinners/HashLoader';
 
-function Contact() {
+// Components
+import ConfirmAgeModal from './pagesComponents/ConfirmAgeModal';
+
+const Contact = () => {
   useEffect(() => {
     window.scroll(0, 0);
     AOS.init({
       once: true,
-      duration: 1300,
+      duration: 700,
     });
-
-    if (window.innerWidth < 501) {
-      document.getElementById('first-card').removeAttribute('data-aos-delay');
-      document.getElementById('first-card').removeAttribute('data-aos');
-    }
-
-    const age = window.sessionStorage.getItem('clientAge');
-    if (!age || age === 'invalid') {
-      window.location.href = '/';
-    }
-  }, []);
-
-  useEffect(() => {
-    const isContactCached = sessionStorage.getItem('isContactCached');
-    if (isContactCached === 'true') {
-      setLoaded(true);
-    } else {
-      window.setTimeout(() => {
-        setLoaded(true);
-        sessionStorage.setItem('isContactCached', 'true');
-      }, 3500);
-    }
-  }, []);
-
-  let innerHeigth = window.innerHeight;
-  function getHeigth() {
-    if (document.getElementById('home-scroll-up') === null) return;
-    if (window.scrollY > innerHeigth / 1.5)
-      document
-        .getElementById('home-scroll-up')
-        .classList.add('show-home-sroll-btn');
-    else
-      document
-        .getElementById('home-scroll-up')
-        .classList.remove('show-home-sroll-btn');
-  }
-  window.addEventListener('scroll', getHeigth);
-
-  // Loading stuff
-  const [isLoaded, setLoaded] = useState(false);
-  const spinnerCSS = `
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%,-50%);
-	  `;
-  ///////////////////////////////////////
-
+  });
   return (
-    <div id='contact-page-loader'>
-      {!isLoaded && (
-        <div className='loader-page'>
-          <div className='hash-loader'>
-            <HashLoader css={spinnerCSS} size={55} color={'#0F2027'} />
-          </div>
-        </div>
-      )}
-      <section id='contact-body' /* className="hidden" */>
-        <a role='button' href='#start' data-scroll>
-          <img
-            src={require('../img/up-ar.svg')}
-            alt='Go Up'
-            className='back-to-top-btn'
-            id='home-scroll-up'
-          />
+    <div className='contact-page-body'>
+      <ConfirmAgeModal />
+      <div className='contact-intro'>
+        <h1 data-aos='fade-up' data-aos-duration='700' data-aos-anchor='#start'>
+          CONTACT
+        </h1>
+        <a href='#paul' className='scroll-down'>
+          <img src={require('../img/dwn-light.svg')} alt='Scroll Down' />
         </a>
-        <header className='programari-header'>
-          <div className='programari-bg-wrapper'>
-            <Img
-              className='programari-bg'
-              src={require('../img/poza_split.jpg')}
-            />
-            <div className='programari-text-bg'>
-              <h1>Degustări şi vizite la cramă</h1>
-            </div>
-          </div>
-          <h4 className='programari-descriere'>
-            <span>
-              Vă aşteptăm cu drag să ne vizitaţi şi să degustăm împreună
-              vinurile cramei Ferdi în locul unde, în urmă cu 10 ani, a luat
-              naştere pasiunea noastră pentru vin.
-            </span>
-            <br />
-            <br />
-            <span>
-              Vizitele se fac organizat în aer liber, în grupuri de{' '}
-              <strong>4-12</strong> persoane, în baza unei programări prealabile
-              prin metodele de contact de mai jos.
-            </span>
-            <div className='programari-pachete-degustari'>
-              <div className='pachete-header'>Pachete degustari</div>
-              <div className='programari-line'></div>
-              <div className='pachete-cards'>
-                <div className='pachet-light'>
-                  <h3>STANDARD</h3>
-                  <ul>
-                    <li>
-                      <i className='fas fa-check-circle'></i>Tur al cramei
-                    </li>
-                    <li>
-                      <i className='fas fa-check-circle'></i>Degustare 5 vinuri
-                    </li>
-                    <li>
-                      <i className='fas fa-check-circle'></i>Timp alocat - 1 oră
-                    </li>
-                    <li>
-                      <i className='fas fa-check-circle'></i>Apă şi grisine
-                    </li>
-                    <li className='pachet-price'>
-                      <h3>
-                        <p>&nbsp;&nbsp;50 RON/Persoana</p>
-                        <p>- 10 EURO -</p>
-                      </h3>
-                    </li>
-                    <li className='pachet-tax'>
-                      La achiziționarea a <b>6 sticle</b> de vin nu se mai
-                      percepe taxă de degustare.
-                    </li>
-                  </ul>
-                </div>
-                <div className='pachet-dark'>
-                  <h3>PREMIUM</h3>
-                  <ul>
-                    <li>
-                      <i className='fas fa-check-circle'></i>Tur al cramei
-                    </li>
-                    <li>
-                      <i className='fas fa-check-circle'></i>Degustare 7 vinuri
-                    </li>
-                    <li>
-                      <i className='fas fa-check-circle'></i>Timp alocat - 1 oră
-                      şi 45 min
-                    </li>
-                    <li>
-                      <i className='fas fa-check-circle'></i>Platou ham & cheese
-                    </li>
-
-                    <li>
-                      <i className='fas fa-check-circle'></i>Apă şi grisine
-                    </li>
-                    <li className='pachet-price'>
-                      <h3>
-                        <p>&nbsp;100 RON/Persoana</p>
-                        <p>- 20 EURO -</p>
-                      </h3>
-                    </li>
-                    <li className='pachet-tax'>
-                      La achiziționarea a <b>12 sticle</b> de vin nu se mai
-                      percepe taxă de degustare.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div className='contacte'>
-              <b>Contacte pentru programări şi comenzi:</b>
-            </div>
-            <div className='programari-line'></div>
-          </h4>
-        </header>
-        <div className='contact-wrapper'>
-          <div
-            className='contact-card'
-            id='first-card'
-            data-aos='zoom-in'
-            data-aos-delay='200'
-          >
-            <div className='profile-bg profile-bg-fr' />
-            <Img
-              className='profile-img'
-              src={require('../img/ferdi.jpg')}
-              loader={
-                <Spinner animation='grow' className='profile-img-loader' />
-              }
-            />
-            <div className='contact-details'>
-              <h3>Fernando Mihăilescu</h3>
-              <img
-                src={require('../img/romania3.png')}
-                alt='Country'
-                className='country'
-              />
-              <div className='contact-bar ferdi-bar' />
-              <div className='email ferdi-mail'>
-                <a
-                  role='button'
-                  href='mailto:test@gmail.com'
-                  className='email-button'
-                >
-                  <img
-                    className='email-img'
-                    src={require('../img/gmail.svg')}
-                    alt='Call'
-                  />
-                  <span>office@cramaferdi.ro</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='contact-card' data-aos='zoom-in' data-aos-delay='200'>
-            <div className='profile-bg profile-bg-paul' />
-            <Img
-              className='profile-img'
-              src={require('../img/paul.jpg')}
-              loader={
-                <Spinner animation='grow' className='profile-img-loader' />
-              }
-            />
-            <div className='contact-details'>
-              <h3>Paul Mihăilescu</h3>
-              <img
-                src={require('../img/romania3.png')}
-                alt='Country'
-                className='country'
-              />
-              <div className='contact-bar paul-bar' />
-              <div className='phone'>
-                <a
-                  role='button'
-                  href='tel:+40-0729-884-940'
-                  className='phone-button'
-                >
-                  <img
-                    className='phone-img'
-                    src={require('../img/call2.svg')}
-                    alt='Call'
-                  />
-                  <span>0729-884-940 </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='contact-card' data-aos='zoom-in' data-aos-delay='200'>
-            <div className='profile-bg' />
-            <Img
-              className='profile-img'
-              src={require('../img/ofelia.jpg')}
-              loader={
-                <Spinner animation='grow' className='profile-img-loader' />
-              }
-            />
-            <div className='contact-details'>
-              <h3>Ofelia Marian</h3>
-              <img
-                src={require('../img/romania3.png')}
-                alt='Country'
-                className='country'
-              />
-              <div className='contact-bar paul-bar' />
-              <div className='phone'>
-                <a
-                  role='button'
-                  href='tel:+40-0729-884-940'
-                  className='phone-button'
-                >
-                  <img
-                    className='phone-img'
-                    src={require('../img/call2.svg')}
-                    alt='Call'
-                  />
-                  <span>0723-768-322 </span>
-                </a>
-              </div>
-            </div>
-          </div>
+        <div id='paul'></div>
+      </div>
+      <div className='contact-1'>
+        <h3> PAUL MIHĂILESCU</h3>
+        <div className='profile-info'>
+          <a role='button' href='tel:+40-0729-884-940'>
+            <img src={require('../img/contact_phone.svg')} alt=' ' />
+            0729-884-940
+          </a>
+          <div className='profile-img paul-img'></div>
         </div>
-      </section>
+      </div>
+      <div className='contact-2'>
+        <div className='profile-info'>
+          <div className='profile-img fernando-img'></div>
+          <a role='button' href='mailto:office@cramaferdi.ro'>
+            <span>office@cramaferdi.ro</span>
+            <img src={require('../img/contact_email.svg')} alt=' ' />
+          </a>
+        </div>
+        <h3>FERNANDO MIHĂILESCU</h3>
+      </div>
+      <div className='contact-1'>
+        <h3>OFELIA MARIAN</h3>
+        <div className='profile-info'>
+          <a role='button' href='tel:+40-0729-884-940'>
+            <img src={require('../img/contact_phone.svg')} alt=' ' />
+            0723-768-322
+          </a>
+          <div className='profile-img ofelia-img'></div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default Contact;

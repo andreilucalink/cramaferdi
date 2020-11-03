@@ -1,573 +1,231 @@
-/* ------------------ Contact Page Body ------------------ */
-#contact-body {
-  min-height: 100%;
+.contact-page-body {
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.contact-intro {
+  background-color: #7fcec5;
+  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  overflow: hidden;
   position: relative;
-}
-/* ------------------------------------------------------ */
-
-/* ------------------ Contact Header ------------------ */
-.contact-header h1 {
-  text-align: center;
-  padding: 20px;
-  margin-top: 60px;
-  font-size: 72px;
-  margin-bottom: 15px;
-  font-weight: bolder;
-  color: #0f2027;
-}
-
-.contact-header span {
-  color: rgba(0, 128, 128, 0.8);
-}
-
-.contact-header p {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 600;
-  padding: 0px 20px;
-}
-
-.programari-header {
-  padding-top: 30px;
-}
-
-.programari-bg-wrapper {
-  position: relative;
-  width: 1100px;
-  height: 460px;
-  margin: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.programari-bg {
-  -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.programari-text-bg {
-  background-color: white;
-  width: 600px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.programari-text-bg h1 {
-  background: -webkit-linear-gradient(bottom, #0f2027, #45819b);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  padding: 20px;
-  font-weight: bold;
-  margin: 0px;
-}
-
-.programari-header h2 {
-  text-align: center;
-  color: #0f2027;
-  font-weight: 600;
-  padding: 30px;
-}
-
-.programari-header h4.programari-descriere {
-  color: #0f2027;
-  width: 1100px;
-  padding: 30px;
-  margin: auto;
-  text-align: center;
-}
-
-.programari-header h4.programari-descriere .contacte {
-  font-size: 2.5rem;
-  padding-top: 50px;
-}
-
-.programari-pachete-degustari .pachete-header {
-  font-size: 35px;
-  font-weight: 600;
-  margin-top: 60px;
-}
-
-.programari-pachete-degustari .pachete-cards {
-  padding-top: 60px;
-  width: 900px;
-  margin: auto;
+  min-height: calc(100vh - 75px);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.programari-pachete-degustari .pachete-cards .pachet-dark {
-  position: relative;
-  padding-top: 20px;
-  height: 550px;
-  width: 400px;
-  background: #0f2027;
-  color: white;
-  -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-}
-
-.programari-pachete-degustari .pachete-cards .pachet-dark h3,
-.programari-pachete-degustari .pachete-cards .pachet-light h3 {
-  margin-bottom: 40px;
-  margin-top: 20px;
-  padding: 0px;
-  font-weight: 600;
-  letter-spacing: 5px;
-}
-
-.programari-pachete-degustari .pachete-cards .pachet-dark li,
-.programari-pachete-degustari .pachete-cards .pachet-light li {
-  width: 90%;
-  font-size: 16px;
-  list-style: none;
-  text-align: left;
-  padding: 10px 0px 10px 30px;
-}
-
-.programari-pachete-degustari .pachete-cards .pachet-dark li i,
-.programari-pachete-degustari .pachete-cards .pachet-light li i {
-  margin-right: 10px;
-}
-
-.programari-pachete-degustari .pachete-cards .pachet-light {
-  position: relative;
-  padding-top: 20px;
-  height: 550px;
-  width: 400px;
-  background: #f4f4f4;
-  color: #0f2027;
-  text-align: center;
-  -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-}
-
-.programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-price,
-.programari-pachete-degustari .pachete-cards .pachet-light li.pachet-price {
-  text-align: center;
-  position: absolute;
-  bottom: 80px;
-}
-
-.programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-price h3 p,
-.programari-pachete-degustari
-  .pachete-cards
-  .pachet-light
-  li.pachet-price
-  h3
-  p {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-tax,
-.programari-pachete-degustari .pachete-cards .pachet-light li.pachet-tax {
+.contact-intro #paul {
+  position: absolute;
+  bottom: 70px;
+}
+
+.contact-intro h1 {
+  text-align: center;
+  padding: 30px 40px 30px 40px;
+  font-size: 60px;
+  border: 2px solid white;
+  letter-spacing: 8px;
+  color: white;
+}
+
+.contact-intro .scroll-down {
   position: absolute;
   bottom: 30px;
-  text-align: center;
+  animation: MoveUpDown 0.8s linear infinite;
+  animation-delay: 0.7s;
 }
 
-.programari-line {
-  width: 60%;
-  margin: 25px auto 25px auto;
-  height: 1px;
-  background-color: black;
+.contact-intro .scroll-down img {
+  height: 35px;
 }
 
-/* ------------------------------------------------------ */
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 45px;
+  }
+}
 
-/* ------------------ Contact Wrapper + Cards + Profile img + Details------------------ */
-
-.contact-wrapper {
+.contact-1 {
+  min-height: 33vh;
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  margin: 30px auto 100px auto;
-  max-width: 1200px;
-  min-height: 100%;
+  background-color: #eeeeee;
 }
 
-.contact-wrapper .contact-card {
-  background: #f4f4f4;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  display: inline-block;
-  height: 500px;
-  width: 300px;
-  position: relative;
-  -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-}
-
-.contact-card .profile-bg {
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-top-right-radius: 5px;
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  background-image: url(../img/profile_bg.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 240px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
-}
-
-#member1 {
-  background-image: url(../img/ferdi.jpg);
-}
-
-#member2 {
-  background-image: url(../img/paul.jpg);
-}
-
-#member3 {
-  background-image: url(../img/ofelia.jpg);
-}
-
-.contact-card .profile-img-loader {
-  height: 180px;
-  width: 180px;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border: 5px solid #f4f4f4;
-}
-
-.contact-card .profile-img {
-  object-fit: cover;
-  object-position: center;
-  height: 180px;
-  width: 180px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: 5px solid #f4f4f4;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.contact-details h3 {
-  color: #0f2027;
-  text-align: center;
-  margin-top: 50px;
-  font-weight: 600;
-}
-
-.contact-details .contact-bar {
-  width: 250px;
-  margin: 0 auto;
-  height: 1px;
-  background-color: #0f2027;
-  opacity: 0.8;
-}
-
-.contact-details .phone {
-  margin: 15px 0;
-}
-
-.contact-details .email {
-  margin-top: 15px;
-}
-
-.contact-details img.country {
-  display: block;
-  height: 30px;
-  width: 30px;
-  margin: auto;
-}
-
-.contact-details .email-img,
-.phone-img {
-  margin-right: 8px;
-  display: block;
-  min-height: 30px;
-  min-width: 30px;
-}
-
-.contact-details .ferdi-bar {
-  margin-top: 80px;
-}
-
-.contact-details .paul-bar {
-  margin-top: 80px;
-}
-
-.contact-details p {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 75px;
-}
-
-.contact-details .email a {
-  text-decoration: none;
-  color: #0f2027;
-  font-weight: 600;
-}
-
-.contact-details .phone a {
-  text-decoration: none;
-  color: #0f2027;
-  font-weight: 600;
-}
-
-.contact-details .phone-button,
-.contact-details .email-button {
-  margin: auto;
+.contact-2 {
+  background-color: #028090;
+  color: white;
+  min-height: 33vh;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-1 .profile-img {
+  margin-left: 30px;
+  height: 150px;
+  width: 150px;
+  background-color: #373a40;
+  border-radius: 50%;
+}
+
+.contact-2 .profile-img {
+  margin-right: 30px;
+  height: 150px;
+  width: 150px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+}
+
+.contact-1 .profile-img.paul-img {
+  background-image: url('../img/paul.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-1 .profile-img.ofelia-img {
+  background-image: url('../img/ofelia.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-2 .profile-img.fernando-img {
+  background-image: url('../img/ferdi.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-1 h3,
+.contact-2 h3 {
+  letter-spacing: 3px;
+}
+
+.contact-1 .profile-info,
+.contact-2 .profile-info {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.contact-details .phone-button {
-  width: 150px;
-}
-.contact-details .email-button {
-  width: 200px;
+.contact-1 .profile-info a {
+  text-decoration: none;
+  color: #373a40;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
-/* ------------------------------------------------------ */
+.contact-2 .profile-info a {
+  text-decoration: none;
+  color: #eeeeee;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
 
-/* ------------------ Media queries ------------------ */
+.contact-1 .profile-info a img {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.contact-2 .profile-info a img {
+  height: 30px;
+  margin-left: 5px;
+}
 
 @media (max-width: 1150px) {
-  .programari-bg-wrapper {
-    width: 95%;
-  }
-  .programari-header h4.programari-descriere {
-    width: 95%;
-  }
-}
-
-@media (max-width: 1023px) {
-  #contact-body {
-    height: 100%;
+  .contact-intro h1 {
+    font-size: 30px;
   }
 
-  .programari-pachete-degustari .pachete-cards {
-    width: 100%;
-    flex-direction: column;
+  .contact-1,
+  .contact-2 {
+    min-height: auto;
+    padding: 35px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 
-  .programari-pachete-degustari .pachete-cards .pachet-light {
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 1015px) {
-  .contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
+  .contact-1 h3,
+  .contact-2 h3 {
+    margin-bottom: 35px;
+    text-align: center;
   }
 
-  .contact-card {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+  .contact-1 .profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-  .contact-card .contact-details .email-button {
+  .contact-1 .profile-info .profile-img {
+    margin: 0px 0px 35px 0px;
+  }
+  .contact-1 .profile-info a {
+    order: 1;
+  }
+
+  .contact-2 .profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    order: 1;
+  }
+
+  .contact-2 .profile-info .profile-img {
+    margin: 0px 0px 35px 0px;
+  }
+
+  .contact-1 .profile-info a,
+  .contact-2 .profile-info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-2 .profile-info a img {
+    margin-left: 0px;
+    margin-right: 5px;
     margin-bottom: 10px;
   }
-}
 
-@media (max-width: 965px) {
-  .contact-header h1 {
-    width: 400px;
-    text-align: center;
-    margin: 60px auto auto auto;
-    font-size: 60px;
+  .contact-1 .profile-info a img {
+    margin-bottom: 10px;
   }
 
-  .contact-header p {
-    font-size: 18px;
-    padding: 0 30px;
+  .contact-2 .profile-info a span {
+    display: inline-block;
+    order: 1;
   }
 }
 
-@media (max-width: 900px) {
-  .programari-bg-wrapper {
-    height: 400px;
+@media (max-width: 650px) {
+  .contact-intro {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-
-  .programari-text-bg {
-    width: 450px;
+  .contact-intro h1 {
+    font-size: 20px;
+    padding: 20px;
+    letter-spacing: 5px;
   }
-  .programari-text-bg h1 {
-    font-size: 27px;
-  }
-}
-
-@media (max-width: 700px) {
-  .programari-bg-wrapper {
-    height: 350px;
-  }
-  .programari-text-bg {
-    width: 350px;
-  }
-  .programari-text-bg h1 {
+  .contact-1 h3,
+  .contact-2 h3 {
     font-size: 20px;
   }
 }
 
-@media (min-width: 501) and (max-width: 568px) {
-  .contact-.contact-header {
-    padding: 5px;
-  }
-
-  .contact-box {
-    margin-top: 50px;
+@media (max-width: 380px) {
+  .contact-1 h3,
+  .contact-2 h3 {
+    font-size: 15px;
   }
 }
-
-@media (max-width: 500px) {
-  .programari-pachete-degustari .pachete-cards {
-    padding-top: 20px;
-  }
-  .programari-pachete-degustari .pachete-cards .pachet-light,
-  .programari-pachete-degustari .pachete-cards .pachet-dark {
-    width: 330px;
-  }
-
-  .programari-pachete-degustari .pachete-cards .pachet-dark .pachet-price h3,
-  .programari-pachete-degustari .pachete-cards .pachet-light .pachet-price h3 {
-    font-size: 20px;
-    letter-spacing: 3px;
-  }
-
-  .programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-price,
-  .programari-pachete-degustari .pachete-cards .pachet-light li.pachet-price {
-    bottom: 90px;
-  }
-
-  .programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-tax,
-  .programari-pachete-degustari .pachete-cards .pachet-light li.pachet-tax {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .programari-pachete-degustari .pachete-header {
-    font-size: 1.5rem;
-  }
-
-  .contact-header h1 {
-    margin-top: 40px;
-    width: 280px;
-    font-size: 48px;
-  }
-
-  .contact-header p {
-    font-weight: normal;
-    width: 250px;
-    text-align: center;
-    margin: auto;
-    font-size: 16px;
-    padding: 3px;
-  }
-
-  .contact-card {
-    max-width: 260px;
-    max-height: 450px;
-  }
-
-  .contact-details h3 {
-    margin-top: 35px;
-    font-size: 20px;
-  }
-
-  .contact-details .contact-bar {
-    width: 210px;
-  }
-
-  .contact-details p {
-    font-size: 13px;
-    margin-bottom: 60px;
-  }
-
-  .contact-card .profile-img {
-    top: 15%;
-    width: 150px;
-    height: 150px;
-  }
-
-  .contact-card .profile-bg {
-    height: 210px;
-  }
-
-  .phone-button span,
-  .email-button span {
-    font-size: 12px;
-  }
-
-  .contact-details .email-img,
-  .phone-img {
-    height: 25px;
-    width: 25px;
-    margin-left: 8px;
-  }
-
-  .contact-wrapper {
-    margin-bottom: 30px;
-    margin-top: 10px;
-  }
-
-  .programari-bg-wrapper {
-    height: 300px;
-  }
-
-  .programari-text-bg {
-    width: 270px;
-  }
-
-  .programari-text-bg h1 {
-    padding: 15px;
-    font-size: 17px;
-  }
-
-  .programari-bg-wrapper {
-    width: 90%;
-  }
-
-  .programari-header h4.programari-descriere {
-    width: 100%;
-  }
-
-  .programari-header h4.programari-descriere span {
-    font-size: 1.2rem;
-  }
-
-  .programari-header h4.programari-descriere .contacte {
-    font-size: 1.5rem;
-  }
-
-  .programari-line {
-    width: 60%;
-  }
-}
-
-@media (max-width: 400px) {
-  .programari-bg-wrapper {
-    height: 250px;
-  }
-}
-
-/* ------------------------------------------------------ */

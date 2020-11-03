@@ -2,12 +2,58 @@
   position: relative;
 }
 
+.gallery-intro {
+  position: relative;
+  min-height: calc(100vh - 75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #134e5e;
+  background: -webkit-linear-gradient(315deg, #71b280, #134e5e);
+  background: linear-gradient(315deg, #71b280, #134e5e);
+}
+
+.gallery-intro h1 {
+  text-align: center;
+  padding: 30px 40px 30px 40px;
+  font-size: 60px;
+  border: 2px solid white;
+  letter-spacing: 8px;
+  color: white;
+}
+
+.gallery-intro .scroll-down {
+  position: absolute;
+  bottom: 30px;
+  animation: MoveUpDown 0.8s linear infinite;
+  animation-delay: 0.7s;
+}
+
+.gallery-intro .scroll-down img {
+  height: 35px;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 45px;
+  }
+}
+
+.gallery-intro #galerie {
+  position: absolute;
+  bottom: 70px;
+}
+
 .gallery-body {
-  width: 90%;
+  /* width: 95%; */
   height: 100%;
   margin: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px; */
+  /* padding-bottom: 100px; */
 }
 
 .gallery-body img {
@@ -97,10 +143,9 @@
   opacity: 1;
 }
 
-
 .gallery-header {
-    padding-top: 120px;
-    padding-bottom: 50px;
+  padding-top: 120px;
+  padding-bottom: 50px;
 }
 
 .gallery-header h1 {
@@ -116,10 +161,24 @@
 }
 
 .gallery-header-line {
-    height: 1px;
-    width: 350px;
-    background: #0f2027;
-    margin: auto;
+  height: 1px;
+  width: 350px;
+  background: #0f2027;
+  margin: auto;
+}
+
+@media (max-width: 1150px) {
+  .gallery-intro h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .gallery-intro h1 {
+    font-size: 20px;
+    padding: 20px;
+    letter-spacing: 5px;
+  }
 }
 
 @media (max-width: 501px) {
@@ -130,32 +189,28 @@
   } */
 
   .gallery-header-line {
-      width: 150px;
+    width: 150px;
   }
 
   .gallery-header {
-      padding-top:50px;
-      padding-bottom: 0px;
-      margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   .gallery-header h1 {
-      font-size: 32px;
-  }
-
-  .gallery-body {
-      padding-top: 70px;
+    font-size: 32px;
   }
 
   .position1 {
-      height: 250px ;
+    height: 250px;
   }
-   .position2{
-      height: 500px ;
-   }
-   .border-layer .inside-layer:hover, .border-layer .inside-layer:hover.layer-high:hover {
-      height: 100%;
-      width: 100%;
-   }
-
+  .position2 {
+    height: 500px;
+  }
+  .border-layer .inside-layer:hover,
+  .border-layer .inside-layer:hover.layer-high:hover {
+    height: 100%;
+    width: 100%;
+  }
 }

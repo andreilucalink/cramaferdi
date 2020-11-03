@@ -21,7 +21,7 @@
   display: none;
 }
 
-.hidden{
+.hidden {
   visibility: hidden;
 }
 
@@ -34,9 +34,9 @@
   width: 100%;
   min-height: 100%;
   z-index: 1111;
-  background: #ECE9E6;  
-  background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  
-  background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); 
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to bottom, #ffffff, #ece9e6);
+  background: linear-gradient(to bottom, #ffffff, #ece9e6);
 }
 
 .loader-page .hash-loader {
@@ -56,21 +56,18 @@
 
 /* ------------------------------------------------------ */
 
-
 /*------------------ Scrollbar customization ------------------ */
-::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #f4f4f4;
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f4f4f4;
 }
 
-::-webkit-scrollbar-thumb
-{
-    background: #0F2027;  
-    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  
-    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); 
-    border-top: 7px #f4f4f4 solid;
-    border-bottom: 7px #f4f4f4 solid;
+::-webkit-scrollbar-thumb {
+  background: #0f2027;
+  background: -webkit-linear-gradient(to bottom, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to bottom, #2c5364, #203a43, #0f2027);
+  border-top: 7px #f4f4f4 solid;
+  border-bottom: 7px #f4f4f4 solid;
 }
 
 ::-webkit-scrollbar-button:single-button {
@@ -84,7 +81,7 @@
 /* Up */
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
   border-width: 0 6px 6px 6px;
-  border-color: transparent transparent #0F2027 transparent;
+  border-color: transparent transparent #0f2027 transparent;
 }
 
 ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
@@ -93,7 +90,7 @@
 /* Down */
 ::-webkit-scrollbar-button:single-button:vertical:increment {
   border-width: 6px 6px 0 6px;
-  border-color: #0F2027 transparent transparent transparent;
+  border-color: #0f2027 transparent transparent transparent;
 }
 
 ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
@@ -109,23 +106,22 @@
 }
 
 .red-header {
- color: indianred;
- position: relative;
- font-weight: 600;
- -webkit-animation: text-focus-in 0.3s ease;
- animation: text-focus-in 0.3s ease;
- 
+  color: indianred;
+  position: relative;
+  font-weight: 600;
+  -webkit-animation: text-focus-in 0.3s ease;
+  animation: text-focus-in 0.3s ease;
 }
 
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
@@ -133,115 +129,14 @@
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
-}
-
-.modalBackground {
-  height: 100vh;
-  opacity: 0.8;
-  background-image: url("../img/poza_vita.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.confirmModal img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  margin-top: 20px;
-}
-
-.confirmModal {
-  border: 5px white solid;
-  -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  text-align: center;
-  padding: 50px 70px;
-  height: 450px;
-  width: 600px;
-  color: white;
-  border-radius: 7px;
-  background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-}
-
-.ageConfirm,
-.ageDeny {
-  transition: ease-in 0.2s all;
-  font-size: 18px;
-  color: white;
-  width: 150px;
-  padding: 12px 35px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.ageConfirm {
-  background: #45a247b3;
-  margin-right: 70px;
-  border: 2px solid #45a247b3;
-}
-
-.ageDeny {
-  background-color: #93291eb3;
-  border: 2px solid #93291eb3;
-}
-
-.ageConfirm:hover {
-  background: #45a247;
-  border: 2px white solid;
-}
-
-.ageDeny:hover {
-  background-color: #93291e;
-  border: 2px white solid;
-}
-
-.ageConfirm:focus,
-.ageDeny:focus {
-  outline: none;
-}
-
-.modalLogoLoader {
-  width: 180px;
-  height: 180px;
-  margin-top: 20px;
-}
-
-.confirmButtons {
-  position: absolute;
-  bottom: 8%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* ------------------------------------------------------ */
@@ -327,8 +222,10 @@
 .ferdi-navbar .link1::after,
 .ferdi-navbar .link2::after,
 .ferdi-navbar .link3::after,
-.ferdi-navbar .link4::after  {
-  content: "";
+.ferdi-navbar .link4::after,
+.ferdi-navbar .link5::after,
+.ferdi-navbar .link6::after {
+  content: '';
   position: absolute;
   bottom: 5%;
   left: 51%;
@@ -344,7 +241,9 @@
 .ferdi-navbar .link1:hover::after,
 .ferdi-navbar .link2:hover::after,
 .ferdi-navbar .link3:hover::after,
-.ferdi-navbar .link4:hover::after {
+.ferdi-navbar .link4:hover::after,
+.ferdi-navbar .link5:hover::after,
+.ferdi-navbar .link6:hover::after {
   width: 100%;
   left: 0%;
 }
@@ -390,7 +289,7 @@
 }
 
 .footer .footer-link::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 5%;
   left: 51%;
@@ -407,12 +306,12 @@
   transform: scale(1.1);
 }
 
-.footer .footer-link:hover::after{
+.footer .footer-link:hover::after {
   width: 100%;
   left: 0%;
 }
 
-.footer .social-media-btns{
+.footer .social-media-btns {
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -457,18 +356,10 @@
   text-align: center;
 }
 
-.not-found .logo {
+.not-found .logo-not-found {
   height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  background-image: url("../img/logo.jpg");
-  background-position: center;
-  background-size: cover;
   margin-bottom: 50px;
   margin-top: 50px;
-  -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
 }
 
 .not-found .btn-404 {
@@ -477,12 +368,12 @@
   font-size: 16px;
   display: inline-block;
   color: #f4f4f4;
-  border-radius: 20px;
   border: 2px#1b262c solid;
   background-color: #1b262c;
   width: 110px;
   padding: 7px 0px;
   text-align: center;
+  transition: ease 0.3s all;
 }
 
 .not-found .btn-404:hover {
@@ -529,9 +420,15 @@
     width: 55px;
   }
   .ferdi-navbar .nav-link:nth-child(3) {
-    width: 160px;
+    width: 130px;
   }
-  .ferdi-navbar .nav-link:nth-child(4){
+  .ferdi-navbar .nav-link:nth-child(4) {
+    width: 45px;
+  }
+  .ferdi-navbar .nav-link:nth-child(5) {
+    width: 60px;
+  }
+  .ferdi-navbar .nav-link:nth-child(6) {
     width: 60px;
   }
 }
@@ -598,10 +495,9 @@
     padding: 3px 0;
     font-size: 12px;
   }
-  .not-found .logo {
+  .not-found .logo-not-found {
     margin-top: 30px;
-    width: 150px;
-    height: 150px;
+    height: 200px;
   }
 }
 
