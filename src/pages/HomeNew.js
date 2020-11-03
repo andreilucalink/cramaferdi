@@ -96,7 +96,7 @@ const HomeNew = () => {
             <p>VIZITE</p>
           </Link>
           <Link
-            to='/vizite-si-degustari'
+            to='/vinuri'
             data-aos='zoom-in'
             data-aos-duration='700'
             data-aos-delay='200'

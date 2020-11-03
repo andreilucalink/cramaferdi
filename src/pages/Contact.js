@@ -48,7 +48,7 @@ const Contact = () => {
       <div className='contact-1'>
         <h3>OFELIA MARIAN</h3>
         <div className='profile-info'>
-          <a role='button' href='tel:+40-0729-884-940'>
+          <a role='button' href='tel:+40-0723-768-322'>
             <img src={require('../img/contact_phone.svg')} alt=' ' />
             0723-768-322
           </a>
