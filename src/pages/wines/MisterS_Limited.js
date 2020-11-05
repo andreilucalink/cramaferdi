@@ -63,6 +63,10 @@ const MisterS = () => {
           <ul className='swp-list'>
             <li>
               <i className='fas fa-caret-right list-arrow'></i>
+              Pret - 90 RON
+            </li>
+            <li>
+              <i className='fas fa-caret-right list-arrow'></i>
               Tip Vin - Sec
             </li>
             <li>
