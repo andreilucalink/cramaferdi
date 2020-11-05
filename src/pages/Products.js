@@ -150,11 +150,15 @@ function Products() {
                 <h3 className='wine-title'>Cuvée Unchiu Puiu</h3>
                 <span className='limit-edit-span'>
                   <b>
-                    <i> 2018</i>
+                    <i>2018</i>
                   </b>
                 </span>
                 <div>
                   <ul className='desc-details-list'>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Pret - 60 RON
+                    </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
                       Tip Vin - Sec
@@ -209,6 +213,10 @@ function Products() {
                   <ul className='desc-details-list'>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
+                      Pret - 90 RON
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
                       Tip Vin - Sec
                     </li>
                     <li>
@@ -259,6 +267,10 @@ function Products() {
                 </span>
                 <div>
                   <ul className='desc-details-list'>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Pret - 100 RON
+                    </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
                       Tip Vin - Sec
@@ -313,6 +325,10 @@ function Products() {
                   <ul className='desc-details-list'>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
+                      Pret - 130 RON
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
                       Tip Vin - Sec
                     </li>
                     <li>
@@ -363,6 +379,10 @@ function Products() {
                 </span>
                 <div>
                   <ul className='desc-details-list'>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Pret - 90 RON
+                    </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
                       Tip Vin - Demidulce
