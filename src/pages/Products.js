@@ -165,11 +165,11 @@ function Products() {
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Soi – Merlot, Shiraz și Blaufränkisch
+                      Soi - Merlot, Shiraz și Blaufränkisch
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Maturare – 6 luni, baric din stejar românesc, american şi
+                      Maturare - 6 luni, baric din stejar românesc, american şi
                       francez
                     </li>
                     <li>
@@ -182,7 +182,7 @@ function Products() {
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Culoare – Roşu
+                      Culoare - Roşu
                     </li>
                   </ul>
                 </div>
@@ -221,11 +221,11 @@ function Products() {
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Soi – Shiraz
+                      Soi - Shiraz
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Maturare – 14 luni, baric din stejar românesc, american şi
+                      Maturare - 14 luni, baric din stejar românesc, american şi
                       francez
                     </li>
                     <li>
@@ -238,7 +238,7 @@ function Products() {
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Culoare – Roşu
+                      Culoare - Roşu
                     </li>
                   </ul>
                 </div>
@@ -277,11 +277,11 @@ function Products() {
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Soi – Cabernet Franc și Merlot
+                      Soi - Cabernet Franc și Merlot
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Maturare – 18 luni, baric din stejar românesc, american şi
+                      Maturare - 18 luni, baric din stejar românesc, american şi
                       francez
                     </li>
                     <li>
@@ -294,12 +294,124 @@ function Products() {
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Culoare – Roşu
+                      Culoare - Roşu
                     </li>
                   </ul>
                 </div>
               </section>
               <Link to='/vinuri/cuvee-francisc' className='btn'>
+                Detalii
+              </Link>
+            </div>
+          </section>
+        </div>
+        <div className='card-cell'>
+          <section
+            className='card-info'
+            id='cuvee-francisc'
+            data-aos='fade-right'
+            data-aos-offset='150'
+          >
+            <div className='img' id='cuvee_paul_image' />
+            <div>
+              <section>
+                <h3 className='wine-title'>Cuvée Paul</h3>
+                <span className='limit-edit-span'>
+                  <b>
+                    <i> 2018</i>
+                  </b>
+                </span>
+                <div>
+                  <ul className='desc-details-list'>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Pret - 90 RON
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Tip Vin - Sec
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Soi - Fetească Neagră și Cabernet Sauvignon
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Maturare - 16 luni, baric din stejar românesc, american şi
+                      francez
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Volum - 0,75L
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Conţinut de alcool - 14,5%
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Culoare - Roşu
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <Link to='/vinuri/cuvee-paul' className='btn'>
+                Detalii
+              </Link>
+            </div>
+          </section>
+        </div>
+        <div className='card-cell'>
+          <section
+            className='card-info'
+            id='mister-m-rezerva'
+            data-aos='fade-left'
+            data-aos-offset='150'
+          >
+            <div className='img' id='mister_m_rez_image' />
+            <div>
+              <section>
+                <h3 className='wine-title'>Mister M </h3>
+                <span className='limit-edit-span'>
+                  <b>
+                    <i>Rezerva 2018</i>
+                  </b>
+                </span>
+                <div>
+                  <ul className='desc-details-list'>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Pret - 120 RON
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Tip Vin - Sec
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Soi - Merlot
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Maturare - 16 luni, baric din stejar românesc, american şi
+                      francez
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Volum - 0,75L
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Conţinut de alcool - 15%
+                    </li>
+                    <li>
+                      <i className='fas fa-caret-right list-arrow'></i>
+                      Culoare - Roşu
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <Link to='/vinuri/mister-m-rezerva' className='btn'>
                 Detalii
               </Link>
             </div>
@@ -333,11 +445,11 @@ function Products() {
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Soi – Cabernet Sauvignon
+                      Soi - Cabernet Sauvignon
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Maturare – 22 luni, baric din stejar românesc, american şi
+                      Maturare - 22 luni, baric din stejar românesc, american şi
                       francez
                     </li>
                     <li>
@@ -350,7 +462,7 @@ function Products() {
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Culoare – Roşu
+                      Culoare - Roşu
                     </li>
                   </ul>
                 </div>
@@ -368,7 +480,7 @@ function Products() {
             data-aos='fade-left'
             data-aos-offset='150'
           >
-            <div className='img' id='cuvee_paul_image' />
+            <div className='img' id='cuvee_paul_port_image' />
             <div>
               <section>
                 <h3 className='wine-title'>Cuvée Paul Port </h3>
@@ -389,11 +501,11 @@ function Products() {
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Soi – Fetească Neagră şi Cabernet Sauvignon
+                      Soi - Fetească Neagră şi Cabernet Sauvignon
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Maturare – 24 luni, baric din stejar românesc, american şi
+                      Maturare - 24 luni, baric din stejar românesc, american şi
                       francez
                     </li>
                     <li>
@@ -406,7 +518,7 @@ function Products() {
                     </li>
                     <li>
                       <i className='fas fa-caret-right list-arrow'></i>
-                      Culoare – Roşu
+                      Culoare - Roşu
                     </li>
                   </ul>
                 </div>
@@ -447,6 +559,26 @@ function Products() {
             </div>
             <div className='grid-header'>Cuveé Francisc 2017</div>
             <Link to='/vinuri/cuvee-francisc' className='grid-btn'>
+              Detalii
+            </Link>
+          </div>
+          <div className='grid-card'>
+            <div className='grid-layer'></div>
+            <div className='grid-img-wrapper'>
+              <div className='grid-cp grid-img' />
+            </div>
+            <div className='grid-header'>Cuveé Paul 2018</div>
+            <Link to='/vinuri/cuvee-paul' className='grid-btn'>
+              Detalii
+            </Link>
+          </div>
+          <div className='grid-card'>
+            <div className='grid-layer'></div>
+            <div className='grid-img-wrapper'>
+              <div className='grid-mmr grid-img' />
+            </div>
+            <div className='grid-header'>Mister M Rezerva 2018</div>
+            <Link to='/vinuri/mister-m-rezerva' className='grid-btn'>
               Detalii
             </Link>
           </div>

@@ -26,7 +26,8 @@
   background-size: cover;
 }
 
-.bg-misterS-limited {
+.bg-misterS-limited,
+.bg-cuvee-paul {
   background-image: url(../img/bg_ladybk.svg);
   background-position: center;
   background-size: cover;
@@ -50,7 +51,8 @@
   background-size: cover;
 }
 
-.bg-redking {
+.bg-redking,
+.bg-mmr {
   background-image: url(../img/bg_rkr.svg);
   background-position: center;
   background-size: cover;

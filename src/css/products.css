@@ -94,11 +94,19 @@
   background-image: url(../img/cuvf.jpg);
 }
 
+#mister_m_rez_image {
+  background-image: url(../img/mmr.jpg);
+}
+
+#cuvee_paul_image {
+  background-image: url(../img/cp.jpg);
+}
+
 #red_king_image {
   background-image: url(../img/rkr.jpg);
 }
 
-#cuvee_paul_image {
+#cuvee_paul_port_image {
   background-image: url(../img/cpp.jpg);
 }
 
@@ -307,6 +315,14 @@ h3.wine-title {
 
 .grid-francisc {
   background-image: url('../img/cuvf.jpg');
+}
+
+.grid-mmr {
+  background-image: url('../img/mmr.jpg');
+}
+
+.grid-cp {
+  background-image: url('../img/cp.jpg');
 }
 
 .grid-redking {
