@@ -12,11 +12,12 @@ import Footer from './layout/Footer';
 import Contact from './pages/Contact';
 import Club from './pages/Club';
 import HomeNew from './pages/HomeNew';
+// import Wines from './pages/Wines';
 
 // Wines
 import UnchiuPwyw from './pages/wines/UnchiuPwyw';
 import CuveeFrancisc from './pages/wines/CuveeFrancisc';
-import RedKing from './pages/wines/RedKing';
+// import RedKing from './pages/wines/RedKing';
 import CuveePaulPort from './pages/wines/CuveePaulPort';
 import MisterS_Limited from './pages/wines/MisterS_Limited';
 import MisterMRez from './pages/wines/MisterMRezerva';
@@ -44,7 +45,7 @@ function App() {
         <Route exact path='/vinuri/cuvee-paul' component={CuveePaul} />
         <Route exact path='/vinuri/mister-m-rezerva' component={MisterMRez} />
 
-        <Route exact path='/vinuri/red-king' component={RedKing} />
+        {/* <Route exact path='/vinuri/red-king' component={RedKing} /> */}
         <Route exact path='/vinuri/cuvee-paul-port' component={CuveePaulPort} />
         <Route component={Page404} />
       </Switch>

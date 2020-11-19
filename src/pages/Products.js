@@ -417,7 +417,7 @@ function Products() {
             </div>
           </section>
         </div>
-        <div className='card-cell'>
+        {/* <div className='card-cell'>
           <section
             className='card-info'
             id='red-king'
@@ -472,12 +472,12 @@ function Products() {
               </Link>
             </div>
           </section>
-        </div>
+        </div> */}
         <div className='card-cell'>
           <section
             className='card-info'
             id='cuvee-paul-port'
-            data-aos='fade-left'
+            data-aos='fade-right'
             data-aos-offset='150'
           >
             <div className='img' id='cuvee_paul_port_image' />
@@ -582,7 +582,7 @@ function Products() {
               Detalii
             </Link>
           </div>
-          <div className='grid-card'>
+          {/* <div className='grid-card'>
             <div className='grid-layer'></div>
             <div className='grid-img-wrapper'>
               <div className='grid-redking grid-img' />
@@ -591,7 +591,7 @@ function Products() {
             <Link to='/vinuri/red-king' className='grid-btn'>
               Detalii
             </Link>
-          </div>
+          </div> */}
           <div className='grid-card'>
             <div className='grid-layer'></div>
             <div className='grid-img-wrapper'>
