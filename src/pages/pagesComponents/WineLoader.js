@@ -7,6 +7,9 @@ const WineLoader = () => {
       width='540'
       height='720'
       viewBox='0 0 540 720'
+      preserveAspectRatio='xMinYMin meet'
+      x='0'
+      y='0'
     >
       <g transform='translate(-372 -187)'>
         <rect
@@ -14,6 +17,7 @@ const WineLoader = () => {
           height='720'
           transform='translate(372 187)'
           fill='#24272B'
+          id='bg_rect'
         />
         <rect
           id='r0'

@@ -32,11 +32,11 @@ const WinePage = ({
           <Img
             src={img}
             className='wine-image'
-            /* loader={
+            loader={
               <div className='wine-loader-wraper'>
                 <WineLoader />
               </div>
-            } */
+            }
           ></Img>
         </Col>
         <Col xl={6} md={6} xs={12}>
