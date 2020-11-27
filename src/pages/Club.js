@@ -22,7 +22,12 @@ const Club = () => {
     <div className='club-body'>
       <ConfirmAgeModal />
       <div className='club-intro'>
-        <h1 data-aos='fade-up' data-aos-duration='700' data-aos-anchor='#start'>
+        <h1
+          data-aos='fade-up'
+          data-aos-duration='700'
+          data-aos-anchor='#start'
+          data-aos-delay='250'
+        >
           CLUB CRAMA FERDI
         </h1>
         <a href='#pasi' className='scroll-down'>

@@ -27,35 +27,6 @@
 
 /* ------------------------------------------------------ */
 
-/* ----------------- Loading --------------- */
-.loader-page {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  min-height: 100%;
-  z-index: 1111;
-  background: #ece9e6;
-  background: -webkit-linear-gradient(to bottom, #ffffff, #ece9e6);
-  background: linear-gradient(to bottom, #ffffff, #ece9e6);
-}
-
-.loader-page .hash-loader {
-  position: fixed;
-  top: 50vh;
-  left: 50%;
-}
-
-/* ------------------------------------------------------ */
-
-/* ---------------------- Logo Navbar ------------------- */
-
-.logo-navbar {
-  height: 35px;
-  margin-right: 10px;
-}
-
-/* ------------------------------------------------------ */
-
 /*------------------ Scrollbar customization ------------------ */
 ::-webkit-scrollbar {
   width: 12px;
@@ -98,62 +69,6 @@
 }
 
 /* ------------------------------------------------------  */
-
-/*------------------ Confirm age modal ------------------*/
-
-#confirmModal {
-  height: 100vh;
-}
-
-.red-header {
-  color: indianred;
-  position: relative;
-  font-weight: 600;
-  -webkit-animation: text-focus-in 0.3s ease;
-  animation: text-focus-in 0.3s ease;
-}
-
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-/* ------------------------------------------------------ */
-
-/* ----------------- Scroll btn --------------- */
-.back-to-top-btn {
-  position: fixed;
-  z-index: 999;
-  height: 35px;
-  top: 93%;
-  right: -50px;
-  transition: ease 0.3s right;
-}
-
-.show-home-sroll-btn {
-  right: 30px;
-}
 
 /*------------------ Navbar ------------------*/
 
@@ -385,8 +300,6 @@
 
 /* ------------------------------------------------------ */
 
-/* ------------------------------------------------------ */
-
 /*------------------ Media queries ------------------*/
 @media (max-width: 1600px) {
   .confirmModal {
@@ -420,7 +333,7 @@
     width: 55px;
   }
   .ferdi-navbar .nav-link:nth-child(3) {
-    width: 130px;
+    width: 150px;
   }
   .ferdi-navbar .nav-link:nth-child(4) {
     width: 45px;
@@ -500,5 +413,3 @@
     height: 200px;
   }
 }
-
-/* ------------------------------------------------------  */

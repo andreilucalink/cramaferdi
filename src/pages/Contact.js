@@ -17,7 +17,12 @@ const Contact = () => {
     <div className='contact-page-body'>
       <ConfirmAgeModal />
       <div className='contact-intro'>
-        <h1 data-aos='fade-up' data-aos-duration='700' data-aos-anchor='#start'>
+        <h1
+          data-aos='fade-up'
+          data-aos-duration='700'
+          data-aos-anchor='#start'
+          data-aos-delay='250'
+        >
           CONTACT
         </h1>
         <a href='#paul' className='scroll-down'>

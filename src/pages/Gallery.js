@@ -56,6 +56,7 @@ const Gallery = () => {
             data-aos='fade-up'
             data-aos-duration='700'
             data-aos-anchor='#start'
+            data-aos-delay='250'
           >
             GALERIE
           </h1>

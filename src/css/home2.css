@@ -70,16 +70,6 @@
   top: 40px;
 }
 
-/* .home-section1 .home-section-content1 .section-cutter {
-  position: absolute;
-  height: 30px;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  transition: 0.4s ease all;
-} */
-
 .home-section1 .home-section-content1 .section1-header {
   text-align: center;
   color: white;
