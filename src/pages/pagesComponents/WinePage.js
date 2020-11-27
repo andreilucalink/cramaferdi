@@ -29,7 +29,15 @@ const WinePage = ({
       </h1>
       <Row md={12} xs={12}>
         <Col xl={6} md={6} xs={12}>
-          <Img src={img} className='wine-image' loader={<WineLoader />}></Img>
+          <Img
+            src={img}
+            className='wine-image'
+            /* loader={
+              <div className='wine-loader-wraper'>
+                <WineLoader />
+              </div>
+            } */
+          ></Img>
         </Col>
         <Col xl={6} md={6} xs={12}>
           <ListGroup variant='flush'>
