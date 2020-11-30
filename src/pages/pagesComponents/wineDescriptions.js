@@ -1,7 +1,7 @@
 export const cuveePaulPort = {
   title: 'Cuvée Paul Port',
   year: '2016',
-  price: '60 RON',
+  price: '90 RON',
   description:
     'Singurul vin demidulce al Cramei Ferdi, este un cupaj format din Fetească Neagră și Cabernet Sauvignon. Prin alăturarea celor două soiuri, bineînțeles că s-a obținut un vin premium, căruia nu îi lipsesc nici corpul si nici culoarea bine conturate de Cabernet, dar nici gustul desăvârșit de fructele de pădure specifice Feteștii Negre. Cele 24 de luni petrecute în baric încununează cu succes calitatea acestui vin. Albastrul regal este culoarea capisonului de ceara cu sigiliul cramei. Anul recoltei este 2016 iar gradul alcoolic este 14,9%.',
   type: 'Demidulce',

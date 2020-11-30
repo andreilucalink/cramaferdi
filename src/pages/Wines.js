@@ -80,7 +80,7 @@ const Wines = () => {
           />
           <WineCard
             link='/vinuri/cuvee-paul-port'
-            price='60 RON'
+            price='90 RON'
             img='sm_cuveepaulport.png'
             title='Cuvée Paul Port'
             year='2016'
