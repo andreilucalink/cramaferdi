@@ -46,7 +46,7 @@ export const cuveeUPuiu = {
 export const misterS_Limited = {
   title: 'Mister S Ediţie limitată',
   year: '2018',
-  price: '60 RON',
+  price: '90 RON',
   description:
     'Noul Shiraz al Cramei Ferdi, lucrat cu multă grijă și atenție la detalii, dezvăluie un vin românesc cu mult caracter, corp și eleganță. Maturat in butoaie de stejar timp de 14 luni, vinul a căpătat arome de vanilie si condimente, cu aciditate revigorantă si taninuri care se imbină frumos. Shiraz este considerat a fi unul dintre cele mai sănătoase vinuri, datorită dozei mai mari de antioxidanți. ',
   type: 'Sec',
@@ -84,6 +84,6 @@ export const misterM_Rezerva = {
   alchool: '15%',
   color: 'Roşu',
   qty: '0,75L',
-  grapes: 'Shiraz',
+  grapes: 'Merlot',
   decantation: null,
 };
