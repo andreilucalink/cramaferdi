@@ -87,3 +87,33 @@ export const misterM_Rezerva = {
   grapes: 'Merlot',
   decantation: null,
 };
+
+export const cuveeAlexandra_Limited = {
+  title: 'Cuvée Alexandra Ediţie Limitată',
+  year: '2020',
+  price: '55 RON',
+  description:
+    'Cupajul alb bazat pe Tămâioasă Românească, Riesling Italian și Sauvignon Blanc ne oferă un curcubeu de arome unde Tămâioasa, după cum îi spune și numele vine cu accente de tămâie combinată cu fagure, busuioc și lămâie verde. Una dintre cele mai puternice arome de vin alb le dă acest soi, chiar dacă acest cupaj este sec, iar Riesling-ul Italian îl completează frumos cu note minerale și Sauvignon-ul Blanc cu note fructoase.',
+  type: 'Sec',
+  maturing: null,
+  alchool: '12,5%',
+  color: 'Alb',
+  qty: '0,75L',
+  grapes: 'Tămâioasă Românească, Riesling Italian și Sauvignon Blanc',
+  decantation: null,
+};
+
+export const madameS_Limited = {
+  title: 'Madame S. Ediţie Limitată',
+  year: '2020',
+  price: '60 RON',
+  description:
+    'Acest Sauvignon Blanc de Lume Noua cu aciditate ridicata, cu miros imbatator de flori de soc, aroma de grapefruit si pere de vara ofera la final o senzatie complexa de citrice. Aceste caracterisici conferă unicitate acestui vin.',
+  type: 'Sec',
+  maturing: null,
+  alchool: '12,3%',
+  color: 'Alb',
+  qty: '0,75L',
+  grapes: 'Sauvignon Blanc',
+  decantation: null,
+};

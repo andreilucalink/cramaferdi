@@ -53,9 +53,11 @@ const WinePage = ({
             <ListGroup.Item className='wine-list-item'>
               <b>Tip vin:</b> {type}
             </ListGroup.Item>
-            <ListGroup.Item className='wine-list-item'>
-              <b>Maturare:</b> {maturing}
-            </ListGroup.Item>
+            {maturing && (
+              <ListGroup.Item className='wine-list-item'>
+                <b>Maturare:</b> {maturing}
+              </ListGroup.Item>
+            )}
             <ListGroup.Item className='wine-list-item'>
               <b>Conţinut de alcool:</b> {alchool}
             </ListGroup.Item>

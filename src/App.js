@@ -20,6 +20,8 @@ import CuveePaulPort from './pages/wines/CuveePaulPort';
 import MisterS_Limited from './pages/wines/MisterS_Limited';
 import MisterMRez from './pages/wines/MisterMRezerva';
 import CuveePaul from './pages/wines/CuveePaul';
+import CuveeAlexandra_Limited from './pages/wines/CuveeAlexandra_Limited';
+import MadameS_Limited from './pages/wines/MadameS_Limited';
 
 function App() {
   return (
@@ -46,6 +48,17 @@ function App() {
         <Route exact path='/vinuri/cuvee-paul' component={CuveePaul} />
         <Route exact path='/vinuri/mister-m-rezerva' component={MisterMRez} />
         <Route exact path='/vinuri/cuvee-paul-port' component={CuveePaulPort} />
+        <Route
+          exact
+          path='/vinuri/cuvee-alexandra-editie-limitata'
+          component={CuveeAlexandra_Limited}
+        />
+        <Route
+          exact
+          path='/vinuri/madame-s-editie-limitata'
+          component={MadameS_Limited}
+        />
+
         <Route component={Page404} />
       </Switch>
       <Footer />

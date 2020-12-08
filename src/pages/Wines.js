@@ -41,6 +41,20 @@ const Wines = () => {
         </div>
         <Row>
           <WineCard
+            link='/vinuri/cuvee-alexandra-editie-limitata'
+            price='55 RON'
+            img='sm_cuvee_alexandra_limited_new.png'
+            title='Cuvée Alexandra Ed. Lim.'
+            year='2016'
+          />
+          <WineCard
+            link='/vinuri/madame-s-editie-limitata'
+            price='60 RON'
+            img='sm_madame_s_limited_new.png'
+            title='Madame S Ed. Lim.'
+            year='2016'
+          />
+          <WineCard
             link='/vinuri/cuvee-unchiu-puiu'
             price='60 RON'
             img='sm_unchiupuiu.png'
@@ -51,9 +65,11 @@ const Wines = () => {
             link='/vinuri/mister-s-editie-limitata'
             price='90 RON'
             img='sm_mister_s_limited.png'
-            title='Mister S Ediţie Lim.'
+            title='Mister S Ed. Lim.'
             year='2018'
           />
+        </Row>
+        <Row>
           <WineCard
             link='/vinuri/cuvee-francisc'
             price='100 RON'
@@ -61,7 +77,6 @@ const Wines = () => {
             title='Cuvee Francisc'
             year='2017'
           />
-
           <WineCard
             link='/vinuri/cuvee-paul'
             price='90 RON'
@@ -69,8 +84,6 @@ const Wines = () => {
             title='Cuvée Paul'
             year='2018'
           />
-        </Row>
-        <Row>
           <WineCard
             link='/vinuri/mister-m-rezerva'
             price='120 RON'

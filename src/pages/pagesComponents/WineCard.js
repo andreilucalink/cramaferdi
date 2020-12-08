@@ -18,10 +18,10 @@ const WineCard = ({ img, link, year, title, price }) => {
           }
         />
         <div className='wine-info'>
-          <p>{price}</p>
-          <h5>
+          <p className='price'>{price}</p>
+          <p>
             {title} {year}
-          </h5>
+          </p>
           <Link className='wine-details-btn' to={link}>
             DETALII
           </Link>

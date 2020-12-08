@@ -169,7 +169,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .wine-card .wine-description .wine-info p {
+  .wine-card .wine-description .wine-info p.price {
     font-size: 13px;
     font-weight: 600;
   }
