@@ -45,14 +45,14 @@ const Wines = () => {
             price='55 RON'
             img='sm_cuvee_alexandra_limited_new.png'
             title='Cuvée Alexandra Ed. Lim.'
-            year='2016'
+            year='2020'
           />
           <WineCard
             link='/vinuri/madame-s-editie-limitata'
             price='60 RON'
             img='sm_madame_s_limited_new.png'
             title='Madame S Ed. Lim.'
-            year='2016'
+            year='2020'
           />
           <WineCard
             link='/vinuri/cuvee-unchiu-puiu'
