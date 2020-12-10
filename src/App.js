@@ -22,6 +22,8 @@ import MisterMRez from './pages/wines/MisterMRezerva';
 import CuveePaul from './pages/wines/CuveePaul';
 import CuveeAlexandra_Limited from './pages/wines/CuveeAlexandra_Limited';
 import MadameS_Limited from './pages/wines/MadameS_Limited';
+import CuveeFerdi_Unique from './pages/wines/CuveeFerdi_Unique';
+import RoseCosmina_Limited from './pages/wines/RoseCosmina_Limited';
 
 function App() {
   return (
@@ -57,6 +59,16 @@ function App() {
           exact
           path='/vinuri/madame-s-editie-limitata'
           component={MadameS_Limited}
+        />
+        <Route
+          exact
+          path='/vinuri/rose-cosmina-editie-limitata'
+          component={RoseCosmina_Limited}
+        />
+        <Route
+          exact
+          path='/vinuri/cuvee-ferdi-editie-unica'
+          component={CuveeFerdi_Unique}
         />
 
         <Route component={Page404} />

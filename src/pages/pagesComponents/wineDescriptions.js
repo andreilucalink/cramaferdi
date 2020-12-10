@@ -18,7 +18,7 @@ export const cuveePaul = {
   year: '2018',
   price: '90 RON',
   description:
-    'Un cupaj format din Fetească Neagră și Cabernet Sauvignon. Prin alăturarea celor două soiuri s-a obținut un vin premium, cu un corp si o culoare bine conturate de Cabernet, iar gustul a fost desăvârșit de fructele de pădure si prunele deshidratate, specifice Feteștii Negre. Cele 16 luni petrecute în baric încununează cu succes calitatea acestui vin.',
+    'Un cupaj format din Fetească Neagră și Cabernet Sauvignon. Prin alăturarea celor două soiuri s-a obținut un vin premium, cu un corp si o culoare bine conturate de Cabernet, iar gustul a fost desăvârșit de fructele de pădure si prunele deshidratate, specifice Feteștii Negre. Cele 16 luni petrecute în baric încununează cu succes calitatea acestui vin.',
   type: 'Sec',
   maturing: '16 luni, baric din stejar românesc',
   alchool: '14,5%',
@@ -48,7 +48,7 @@ export const misterS_Limited = {
   year: '2018',
   price: '90 RON',
   description:
-    'Noul Shiraz al Cramei Ferdi, lucrat cu multă grijă și atenție la detalii, dezvăluie un vin românesc cu mult caracter, corp și eleganță. Maturat in butoaie de stejar timp de 14 luni, vinul a căpătat arome de vanilie si condimente, cu aciditate revigorantă si taninuri care se imbină frumos. Shiraz este considerat a fi unul dintre cele mai sănătoase vinuri, datorită dozei mai mari de antioxidanți. ',
+    'Noul Shiraz al Cramei Ferdi, lucrat cu multă grijă și atenție la detalii, dezvăluie un vin românesc cu mult caracter, corp și eleganță. Maturat in butoaie de stejar timp de 14 luni, vinul a căpătat arome de vanilie si condimente, cu aciditate revigorantă si taninuri care se imbină frumos. Shiraz este considerat a fi unul dintre cele mai sănătoase vinuri, datorită dozei mai mari de antioxidanți. ',
   type: 'Sec',
   maturing: '14 luni, baric din stejar românesc',
   alchool: '14,7%',
@@ -78,7 +78,7 @@ export const misterM_Rezerva = {
   year: '2018',
   price: '120 RON',
   description:
-    'Acest Merlot de primă clasă ne poartă printr-un carusel de arome: de la fructe de pădure până la cuișoare și cedru. Un vin bine structurat care impresionează prin tanini puternici și post-gust lung. Elegant și catifelat, a dobândit complexitate în cele 16 luni de maturare în butoaie de stejar.',
+    'Acest Merlot de primă clasă ne poartă printr-un carusel de arome: de la fructe de pădure până la cuișoare și cedru. Un vin bine structurat care impresionează prin tanini puternici și post-gust lung. Elegant și catifelat, a dobândit complexitate în cele 16 luni de maturare în butoaie de stejar.',
   type: 'Sec',
   maturing: '16 luni, baric din stejar românesc',
   alchool: '15%',
@@ -93,13 +93,13 @@ export const cuveeAlexandra_Limited = {
   year: '2020',
   price: '55 RON',
   description:
-    'Cupajul alb bazat pe Tămâioasă Românească, Riesling Italian și Sauvignon Blanc ne oferă un curcubeu de arome unde Tămâioasa, după cum îi spune și numele vine cu accente de tămâie combinată cu fagure, busuioc și lămâie verde. Una dintre cele mai puternice arome de vin alb le dă acest soi, chiar dacă acest cupaj este sec, iar Riesling-ul Italian îl completează frumos cu note minerale și Sauvignon-ul Blanc cu note fructoase.',
+    'Cupajul alb bazat pe Tămâioasă Românească, Riesling Italian și Sauvignon Blanc ne oferă un curcubeu de arome unde Tămâioasa, după cum îi spune și numele vine cu accente de tămâie combinată cu fagure, busuioc și lămâie verde. Una dintre cele mai puternice arome de vin alb le dă acest soi, chiar dacă acest cupaj este sec, iar Riesling-ul Italian îl completează frumos cu note minerale și Sauvignon-ul Blanc cu note fructoase.',
   type: 'Sec',
   maturing: null,
   alchool: '12,5%',
   color: 'Alb',
   qty: '0,75L',
-  grapes: 'Tămâioasă Românească, Riesling Italian și Sauvignon Blanc',
+  grapes: 'Tămâioasă Românească, Riesling Italian și Sauvignon Blanc',
   decantation: null,
 };
 
@@ -108,12 +108,42 @@ export const madameS_Limited = {
   year: '2020',
   price: '60 RON',
   description:
-    'Acest Sauvignon Blanc de Lume Noua cu aciditate ridicata, cu miros imbatator de flori de soc, aroma de grapefruit si pere de vara ofera la final o senzatie complexa de citrice. Aceste caracterisici conferă unicitate acestui vin.',
+    'Acest Sauvignon Blanc de Lume Noua cu aciditate ridicata, cu miros imbatator de flori de soc, aroma de grapefruit si pere de vara ofera la final o senzatie complexa de citrice. Aceste caracterisici conferă unicitate acestui vin.',
   type: 'Sec',
   maturing: null,
   alchool: '12,3%',
   color: 'Alb',
   qty: '0,75L',
   grapes: 'Sauvignon Blanc',
+  decantation: null,
+};
+
+export const roseCosmina_Limited = {
+  title: 'Rosé Cosmina Ediţie Limitată',
+  year: '2020',
+  price: '50 RON',
+  description:
+    'Un cupaj din trei soiuri deosebite: Merlot, Shiraz și Blaufränkisch ne aduce în prezența unui rosé de culoarea somonului cu miros fin de căpșuni proaspete. Secretului acestui rosé sec stă în combinația îndrăzneață a acestor soiuri, unde Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea ridicată și Blaufränkisch condimentează cu succes blend-ul.',
+  type: 'Sec',
+  maturing: null,
+  alchool: '12,5%',
+  color: 'Rosé',
+  qty: '0,75L',
+  grapes: 'Merlot, Shiraz, și Blaufränkisch',
+  decantation: null,
+};
+
+export const cuveeFerdi_Unique = {
+  title: 'Cuvée Ferdi Ediţie Unică',
+  year: '2018',
+  price: '190 RON',
+  description:
+    'O poezie îmbuteliată, cum ne place nouă să îi spunem. Această ediție aniversară marchează 10 ani de la primul vin făcut în Crama Ferdi. Un cupaj secret, din 4 soiuri de struguri, a cărui concepere a necesitat 6 luni până la desăvârașirea sa într-o cantitate de doar 570 de sticle, a căror etichetă specială este semnată fiecare, manual, de către făuritorul acestui vin aparte.',
+  type: 'Sec',
+  maturing: '18 luni, baric din stejar românesc',
+  alchool: '15%',
+  color: 'Roşu',
+  qty: '0,75L',
+  grapes: null,
   decantation: null,
 };

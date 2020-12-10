@@ -64,9 +64,11 @@ const WinePage = ({
             <ListGroup.Item className='wine-list-item'>
               <b>Culoare:</b> {color}
             </ListGroup.Item>
-            <ListGroup.Item className='wine-list-item'>
-              <b>Struguri:</b> {grapes}
-            </ListGroup.Item>
+            {grapes && (
+              <ListGroup.Item className='wine-list-item'>
+                <b>Struguri:</b> {grapes}
+              </ListGroup.Item>
+            )}
             {decantation && (
               <ListGroup.Item className='wine-list-item'>
                 <b>Recomandare decantare: </b>

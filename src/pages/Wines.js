@@ -41,6 +41,20 @@ const Wines = () => {
         </div>
         <Row>
           <WineCard
+            link='/vinuri/cuvee-ferdi-editie-unica'
+            price='190 RON'
+            img='sm_cuvee_ferdi_unique_new.png'
+            title='Cuvée Ferdi Ed. Unică'
+            year='2018'
+          />
+          <WineCard
+            link='/vinuri/rose-cosmina-editie-limitata'
+            price='50 RON'
+            img='sm_rose_cosmina_limited_new.png'
+            title='Rosé Cosmina Ed. Lim.'
+            year='2020'
+          />
+          <WineCard
             link='/vinuri/cuvee-alexandra-editie-limitata'
             price='55 RON'
             img='sm_cuvee_alexandra_limited_new.png'
@@ -54,6 +68,8 @@ const Wines = () => {
             title='Madame S Ed. Lim.'
             year='2020'
           />
+        </Row>
+        <Row>
           <WineCard
             link='/vinuri/cuvee-unchiu-puiu'
             price='60 RON'
@@ -68,8 +84,6 @@ const Wines = () => {
             title='Mister S Ed. Lim.'
             year='2018'
           />
-        </Row>
-        <Row>
           <WineCard
             link='/vinuri/cuvee-francisc'
             price='100 RON'
@@ -84,6 +98,8 @@ const Wines = () => {
             title='Cuvée Paul'
             year='2018'
           />
+        </Row>
+        <Row>
           <WineCard
             link='/vinuri/mister-m-rezerva'
             price='120 RON'
