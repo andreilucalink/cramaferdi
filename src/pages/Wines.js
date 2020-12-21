@@ -78,28 +78,12 @@ const Wines = () => {
             year='2018'
           />
           <WineCard
-            link='/vinuri/mister-s-editie-limitata'
-            price='90 RON'
-            img='sm_mister_s_limited.png'
-            title='Mister S Ed. Lim.'
-            year='2018'
-          />
-          <WineCard
-            link='/vinuri/cuvee-francisc'
-            price='100 RON'
-            img='sm_cuveefrancisc.png'
-            title='Cuvee Francisc'
-            year='2017'
-          />
-          <WineCard
             link='/vinuri/cuvee-paul'
             price='90 RON'
             img='sm_cuveepaul_new.png'
             title='Cuvée Paul'
             year='2018'
           />
-        </Row>
-        <Row>
           <WineCard
             link='/vinuri/mister-m-rezerva'
             price='120 RON'

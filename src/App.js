@@ -15,9 +15,7 @@ import Wines from './pages/Wines';
 
 // Wines
 import CuveeUnchiuPuiu from './pages/wines/CuveeUnchiuPuiu';
-import CuveeFrancisc from './pages/wines/CuveeFrancisc';
 import CuveePaulPort from './pages/wines/CuveePaulPort';
-import MisterS_Limited from './pages/wines/MisterS_Limited';
 import MisterMRez from './pages/wines/MisterMRezerva';
 import CuveePaul from './pages/wines/CuveePaul';
 import CuveeAlexandra_Limited from './pages/wines/CuveeAlexandra_Limited';
@@ -41,12 +39,6 @@ function App() {
           path='/vinuri/cuvee-unchiu-puiu'
           component={CuveeUnchiuPuiu}
         />
-        <Route
-          exact
-          path='/vinuri/mister-s-editie-limitata'
-          component={MisterS_Limited}
-        />
-        <Route exact path='/vinuri/cuvee-francisc' component={CuveeFrancisc} />
         <Route exact path='/vinuri/cuvee-paul' component={CuveePaul} />
         <Route exact path='/vinuri/mister-m-rezerva' component={MisterMRez} />
         <Route exact path='/vinuri/cuvee-paul-port' component={CuveePaulPort} />
