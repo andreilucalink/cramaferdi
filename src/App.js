@@ -16,12 +16,12 @@ import Wines from './pages/Wines';
 // Wines
 import CuveeUnchiuPuiu from './pages/wines/CuveeUnchiuPuiu';
 import CuveePaulPort from './pages/wines/CuveePaulPort';
-import MisterMRez from './pages/wines/MisterMRezerva';
 import CuveePaul from './pages/wines/CuveePaul';
 import CuveeAlexandra_Limited from './pages/wines/CuveeAlexandra_Limited';
 import MadameS_Limited from './pages/wines/MadameS_Limited';
 import CuveeFerdi_Unique from './pages/wines/CuveeFerdi_Unique';
 import RoseCosmina_Limited from './pages/wines/RoseCosmina_Limited';
+import RedKingRez_2018 from './pages/wines/RedKingRez_2018';
 
 function App() {
   return (
@@ -40,7 +40,11 @@ function App() {
           component={CuveeUnchiuPuiu}
         />
         <Route exact path='/vinuri/cuvee-paul' component={CuveePaul} />
-        <Route exact path='/vinuri/mister-m-rezerva' component={MisterMRez} />
+        <Route
+          exact
+          path='/vinuri/redking-rezerva-2018'
+          component={RedKingRez_2018}
+        />
         <Route exact path='/vinuri/cuvee-paul-port' component={CuveePaulPort} />
         <Route
           exact

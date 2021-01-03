@@ -21,8 +21,7 @@ const Wines = () => {
           data-aos='fade-up'
           data-aos-duration='700'
           data-aos-anchor='#start'
-          data-aos-delay='250'
-        >
+          data-aos-delay='250'>
           VINURI
         </h1>
         <a href='#wines' className='scroll-down'>
@@ -85,10 +84,10 @@ const Wines = () => {
             year='2018'
           />
           <WineCard
-            link='/vinuri/mister-m-rezerva'
-            price='120 RON'
-            img='sm_mister_m_rezerva_new.png'
-            title='Mister M Rezerva'
+            link='/vinuri/redking-rezerva-2018'
+            price='130 RON'
+            img='sm_redkingrez2018.png'
+            title='Red King Rezerva'
             year='2018'
           />
           <WineCard

@@ -147,3 +147,18 @@ export const cuveeFerdi_Unique = {
   grapes: null,
   decantation: null,
 };
+
+export const redKingRez_2018 = {
+  title: 'Red King Rezerva',
+  year: '2018',
+  price: '130 RON',
+  description:
+    'Un Cabernet Sauvignon dominant, concentrat și cu un mare potențial de învechire. Un vin super-premium, corpolent, unde gustul de coacăze negre condimentate dau tonul și unde aciditatea atinge nivelul corect. Taninii bogați fac din acest Cabernet un partener perfect pentru carnea la grill și sosurile piperate. Cele 20 de luni petrecute la baric îi rotunjesc aroma într-o ciocolată neagră. Roșul regal este culoarea capișonului de ceară cu sigiliul cramei. Anul recoltei este 2018 iar gradul alcoolic este 14.2%.',
+  type: 'Sec',
+  maturing: '20 luni, baric din stejar românesc',
+  alchool: '14,2%',
+  color: 'Roşu',
+  qty: '0,75L',
+  grapes: 'Cabernet Sauvignon',
+  decantation: 'Recomandare decantare: minim 1h.',
+};
