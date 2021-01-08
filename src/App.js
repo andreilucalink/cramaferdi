@@ -15,7 +15,6 @@ import Wines from './pages/Wines';
 
 // Wines
 import CuveeUnchiuPuiu from './pages/wines/CuveeUnchiuPuiu';
-import CuveePaulPort from './pages/wines/CuveePaulPort';
 import CuveePaul from './pages/wines/CuveePaul';
 import CuveeAlexandra_Limited from './pages/wines/CuveeAlexandra_Limited';
 import MadameS_Limited from './pages/wines/MadameS_Limited';
@@ -45,7 +44,6 @@ function App() {
           path='/vinuri/redking-rezerva-2018'
           component={RedKingRez_2018}
         />
-        <Route exact path='/vinuri/cuvee-paul-port' component={CuveePaulPort} />
         <Route
           exact
           path='/vinuri/cuvee-alexandra-editie-limitata'

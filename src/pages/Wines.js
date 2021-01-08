@@ -90,13 +90,6 @@ const Wines = () => {
             title='Red King Rezerva'
             year='2018'
           />
-          <WineCard
-            link='/vinuri/cuvee-paul-port'
-            price='90 RON'
-            img='sm_cuveepaulport.png'
-            title='Cuvée Paul Port'
-            year='2016'
-          />
         </Row>
       </Container>
     </div>
