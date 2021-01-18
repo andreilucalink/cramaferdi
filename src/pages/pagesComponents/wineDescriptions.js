@@ -140,7 +140,7 @@ export const cuveeFerdi_Unique = {
   description:
     'O poezie îmbuteliată, cum ne place nouă să îi spunem. Această ediție aniversară marchează 10 ani de la primul vin făcut în Crama Ferdi. Un cupaj secret, din 4 soiuri de struguri, a cărui concepere a necesitat 6 luni până la desăvârașirea sa într-o cantitate de doar 570 de sticle, a căror etichetă specială este semnată fiecare, manual, de către făuritorul acestui vin aparte.',
   type: 'Sec',
-  maturing: '18 luni, baric din stejar ',
+  maturing: '18 luni, baric din stejar',
   alchool: '15%',
   color: 'Roşu',
   qty: '0,75L',
@@ -155,7 +155,7 @@ export const redKingRez_2018 = {
   description:
     'Un Cabernet Sauvignon dominant, concentrat și cu un mare potențial de învechire. Un vin super-premium, corpolent, unde gustul de coacăze negre condimentate dau tonul și unde aciditatea atinge nivelul corect. Taninii bogați fac din acest Cabernet un partener perfect pentru carnea la grill și sosurile piperate. Cele 20 de luni petrecute la baric îi rotunjesc aroma într-o ciocolată neagră. Roșul regal este culoarea capișonului de ceară cu sigiliul cramei. Anul recoltei este 2018 iar gradul alcoolic este 14.2%.',
   type: 'Sec',
-  maturing: '20 luni, baric din stejar ',
+  maturing: '20 luni, baric din stejar',
   alchool: '14,2%',
   color: 'Roşu',
   qty: '0,75L',
