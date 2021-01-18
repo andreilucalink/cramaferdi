@@ -58,15 +58,15 @@ export const misterS_Limited = {
   decantation: 'minim 1h',
 };
 
-export const cuveeFrancisc = {
+export const cuveeFrancisc_2018 = {
   title: 'Cuvée Francisc',
-  year: '2017',
+  year: '2018',
   price: '100 RON',
   description:
-    'Cabernet Franc și Merlot, două soiuri de struguri care se completează perfect într-un blend ce oferă un caracter unic, un potențial bun de învechire și o comoară artizanală. Vinul este plăcut pentru aromele sale intense, aciditatea medie spre înaltă și gustul ierbos. Anul recoltei este 2017 iar maturarea a avut loc timp de 18 luni în butoaie de stejar. Gradul alcoolic este 14,9%.',
+    'Cabernet Franc și Merlot, două soiuri de struguri care se completează perfect într-un blend ce oferă un caracter unic, un potențial bun de învechire și o comoară artizanală. Vinul este plăcut pentru aromele sale intense, aciditatea medie spre înaltă și gustul ierbos. Anul recoltei este 2018 iar maturarea a avut loc timp de 18 luni în butoaie de stejar. Gradul alcoolic este 14,1%.',
   type: 'Sec',
   maturing: '18 luni, baric din stejar românesc',
-  alchool: '14,9%',
+  alchool: '14,1%',
   color: 'Roşu',
   qty: '0,75L',
   grapes: 'Cabernet Franc și Merlot',

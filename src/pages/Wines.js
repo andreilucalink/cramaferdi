@@ -70,6 +70,13 @@ const Wines = () => {
         </Row>
         <Row>
           <WineCard
+            link='/vinuri/cuvee-francisc'
+            price='100 RON'
+            img='sm_cuveefrancisc2018_new.png'
+            title='Cuvée Francisc'
+            year='2018'
+          />
+          <WineCard
             link='/vinuri/cuvee-unchiu-puiu'
             price='60 RON'
             img='sm_unchiupuiu.png'

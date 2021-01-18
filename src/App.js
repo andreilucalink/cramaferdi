@@ -21,6 +21,7 @@ import MadameS_Limited from './pages/wines/MadameS_Limited';
 import CuveeFerdi_Unique from './pages/wines/CuveeFerdi_Unique';
 import RoseCosmina_Limited from './pages/wines/RoseCosmina_Limited';
 import RedKingRez_2018 from './pages/wines/RedKingRez_2018';
+import CuveeFrancisc from './pages/wines/CuveeFrancisc';
 
 function App() {
   return (
@@ -64,7 +65,7 @@ function App() {
           path='/vinuri/cuvee-ferdi-editie-unica'
           component={CuveeFerdi_Unique}
         />
-
+        <Route exact path='/vinuri/cuvee-francisc' component={CuveeFrancisc} />
         <Route component={Page404} />
       </Switch>
       <Footer />

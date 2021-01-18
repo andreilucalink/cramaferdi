@@ -1,23 +1,23 @@
 import React from 'react';
-import { cuveeFrancisc } from '../pagesComponents/wineDescriptions';
+import { cuveeFrancisc_2018 } from '../pagesComponents/wineDescriptions';
 import WinePage from '../pagesComponents/WinePage';
-import img from '../../img/wines/cuveefrancisc.png';
+import img from '../../img/wines/cuveefrancisc2018.png';
 
 const CuveeFrancisc = () => {
   return (
     <WinePage
-      title={cuveeFrancisc.title}
-      year={cuveeFrancisc.year}
-      price={cuveeFrancisc.price}
-      description={cuveeFrancisc.description}
-      type={cuveeFrancisc.type}
-      maturing={cuveeFrancisc.maturing}
-      alchool={cuveeFrancisc.alchool}
-      color={cuveeFrancisc.color}
-      qty={cuveeFrancisc.qty}
-      grapes={cuveeFrancisc.grapes}
+      title={cuveeFrancisc_2018.title}
+      year={cuveeFrancisc_2018.year}
+      price={cuveeFrancisc_2018.price}
+      description={cuveeFrancisc_2018.description}
+      type={cuveeFrancisc_2018.type}
+      maturing={cuveeFrancisc_2018.maturing}
+      alchool={cuveeFrancisc_2018.alchool}
+      color={cuveeFrancisc_2018.color}
+      qty={cuveeFrancisc_2018.qty}
+      grapes={cuveeFrancisc_2018.grapes}
       img={img}
-      decantation={cuveeFrancisc.decantation}
+      decantation={cuveeFrancisc_2018.decantation}
     />
   );
 };
