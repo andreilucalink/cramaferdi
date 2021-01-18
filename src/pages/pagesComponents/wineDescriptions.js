@@ -5,12 +5,12 @@ export const cuveePaulPort = {
   description:
     'Singurul vin demidulce al Cramei Ferdi, este un cupaj format din Fetească Neagră și Cabernet Sauvignon. Prin alăturarea celor două soiuri, bineînțeles că s-a obținut un vin premium, căruia nu îi lipsesc nici corpul si nici culoarea bine conturate de Cabernet, dar nici gustul desăvârșit de fructele de pădure specifice Feteștii Negre. Cele 24 de luni petrecute în baric încununează cu succes calitatea acestui vin. Albastrul regal este culoarea capisonului de ceara cu sigiliul cramei. Anul recoltei este 2016 iar gradul alcoolic este 14,9%.',
   type: 'Demidulce',
-  maturing: '24 luni, baric din stejar românesc',
+  maturing: '24 luni, baric din stejar',
   alchool: '14,9%',
   color: 'Roşu',
   qty: '0,75L',
   grapes: 'Fetească Neagră şi Cabernet Sauvignon',
-  decantation: null,
+  decantation: 'minim 1h',
 };
 
 export const cuveePaul = {
@@ -20,12 +20,12 @@ export const cuveePaul = {
   description:
     'Un cupaj format din Fetească Neagră și Cabernet Sauvignon. Prin alăturarea celor două soiuri s-a obținut un vin premium, cu un corp si o culoare bine conturate de Cabernet, iar gustul a fost desăvârșit de fructele de pădure si prunele deshidratate, specifice Feteștii Negre. Cele 16 luni petrecute în baric încununează cu succes calitatea acestui vin.',
   type: 'Sec',
-  maturing: '16 luni, baric din stejar românesc',
+  maturing: '16 luni, baric din stejar',
   alchool: '14,5%',
   color: 'Roşu',
   qty: '0,75L',
   grapes: 'Fetească Neagră şi Cabernet Sauvignon',
-  decantation: null,
+  decantation: 'minim 1h',
 };
 
 export const cuveeUPuiu = {
@@ -33,14 +33,14 @@ export const cuveeUPuiu = {
   year: '2018',
   price: '60 RON',
   description:
-    'În acest cupaj am alăturat trei soiuri cu note diferite dar care împreună oferă o senzație unică: Merlot, Shiraz și Blaufränkisch ne aduc în prezența unui vin spectaculos de culoarea purpurei cu miros îmbătător de ierburi aromate. Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea ridicată și Blaufränkisch condimentează cu succes blend-ul. Maturat 6 luni în butoaie de stejar românesc.',
+    'În acest cupaj am alăturat trei soiuri cu note diferite dar care împreună oferă o senzație unică: Merlot, Shiraz și Blaufränkisch ne aduc în prezența unui vin spectaculos de culoarea purpurei cu miros îmbătător de ierburi aromate. Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea ridicată și Blaufränkisch condimentează cu succes blend-ul. Maturat 6 luni în butoaie de stejar .',
   type: 'Sec',
-  maturing: '6 luni, baric din stejar românesc',
+  maturing: '6 luni, baric din stejar',
   alchool: '14,5%',
   color: 'Roşu',
   qty: '0,75L',
   grapes: 'Merlot, Shiraz și Blaufränkisch',
-  decantation: null,
+  decantation: 'minim 1h',
 };
 
 export const misterS_Limited = {
@@ -50,7 +50,7 @@ export const misterS_Limited = {
   description:
     'Noul Shiraz al Cramei Ferdi, lucrat cu multă grijă și atenție la detalii, dezvăluie un vin românesc cu mult caracter, corp și eleganță. Maturat in butoaie de stejar timp de 14 luni, vinul a căpătat arome de vanilie si condimente, cu aciditate revigorantă si taninuri care se imbină frumos. Shiraz este considerat a fi unul dintre cele mai sănătoase vinuri, datorită dozei mai mari de antioxidanți. ',
   type: 'Sec',
-  maturing: '14 luni, baric din stejar românesc',
+  maturing: '14 luni, baric din stejar',
   alchool: '14,7%',
   color: 'Roşu',
   qty: '0,75L',
@@ -65,7 +65,7 @@ export const cuveeFrancisc_2018 = {
   description:
     'Cabernet Franc și Merlot, două soiuri de struguri care se completează perfect într-un blend ce oferă un caracter unic, un potențial bun de învechire și o comoară artizanală. Vinul este plăcut pentru aromele sale intense, aciditatea medie spre înaltă și gustul ierbos. Anul recoltei este 2018 iar maturarea a avut loc timp de 18 luni în butoaie de stejar. Gradul alcoolic este 14,1%.',
   type: 'Sec',
-  maturing: '18 luni, baric din stejar românesc',
+  maturing: '18 luni, baric din stejar',
   alchool: '14,1%',
   color: 'Roşu',
   qty: '0,75L',
@@ -80,12 +80,12 @@ export const misterM_Rezerva = {
   description:
     'Acest Merlot de primă clasă ne poartă printr-un carusel de arome: de la fructe de pădure până la cuișoare și cedru. Un vin bine structurat care impresionează prin tanini puternici și post-gust lung. Elegant și catifelat, a dobândit complexitate în cele 16 luni de maturare în butoaie de stejar.',
   type: 'Sec',
-  maturing: '16 luni, baric din stejar românesc',
+  maturing: '16 luni, baric din stejar',
   alchool: '15%',
   color: 'Roşu',
   qty: '0,75L',
   grapes: 'Merlot',
-  decantation: null,
+  decantation: 'minim 1h',
 };
 
 export const cuveeAlexandra_Limited = {
@@ -140,12 +140,12 @@ export const cuveeFerdi_Unique = {
   description:
     'O poezie îmbuteliată, cum ne place nouă să îi spunem. Această ediție aniversară marchează 10 ani de la primul vin făcut în Crama Ferdi. Un cupaj secret, din 4 soiuri de struguri, a cărui concepere a necesitat 6 luni până la desăvârașirea sa într-o cantitate de doar 570 de sticle, a căror etichetă specială este semnată fiecare, manual, de către făuritorul acestui vin aparte.',
   type: 'Sec',
-  maturing: '18 luni, baric din stejar românesc',
+  maturing: '18 luni, baric din stejar ',
   alchool: '15%',
   color: 'Roşu',
   qty: '0,75L',
   grapes: null,
-  decantation: null,
+  decantation: 'minim 1h',
 };
 
 export const redKingRez_2018 = {
@@ -155,10 +155,10 @@ export const redKingRez_2018 = {
   description:
     'Un Cabernet Sauvignon dominant, concentrat și cu un mare potențial de învechire. Un vin super-premium, corpolent, unde gustul de coacăze negre condimentate dau tonul și unde aciditatea atinge nivelul corect. Taninii bogați fac din acest Cabernet un partener perfect pentru carnea la grill și sosurile piperate. Cele 20 de luni petrecute la baric îi rotunjesc aroma într-o ciocolată neagră. Roșul regal este culoarea capișonului de ceară cu sigiliul cramei. Anul recoltei este 2018 iar gradul alcoolic este 14.2%.',
   type: 'Sec',
-  maturing: '20 luni, baric din stejar românesc',
+  maturing: '20 luni, baric din stejar ',
   alchool: '14,2%',
   color: 'Roşu',
   qty: '0,75L',
   grapes: 'Cabernet Sauvignon',
-  decantation: 'Recomandare decantare: minim 1h.',
+  decantation: 'minim 1h.',
 };
