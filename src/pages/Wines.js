@@ -77,20 +77,6 @@ const Wines = () => {
             year='2018'
           />
           <WineCard
-            link='/vinuri/cuvee-unchiu-puiu'
-            price='60 RON'
-            img='sm_unchiupuiu.png'
-            title='Cuvée Unchiu Puiu'
-            year='2018'
-          />
-          <WineCard
-            link='/vinuri/cuvee-paul'
-            price='90 RON'
-            img='sm_cuveepaul_new.png'
-            title='Cuvée Paul'
-            year='2018'
-          />
-          <WineCard
             link='/vinuri/redking-rezerva-2018'
             price='130 RON'
             img='sm_redkingrez2018.png'

@@ -14,8 +14,8 @@ import HomeNew from './pages/HomeNew';
 import Wines from './pages/Wines';
 
 // Wines
-import CuveeUnchiuPuiu from './pages/wines/CuveeUnchiuPuiu';
-import CuveePaul from './pages/wines/CuveePaul';
+// import CuveeUnchiuPuiu from './pages/wines/CuveeUnchiuPuiu';
+// import CuveePaul from './pages/wines/CuveePaul';
 import CuveeAlexandra_Limited from './pages/wines/CuveeAlexandra_Limited';
 import MadameS_Limited from './pages/wines/MadameS_Limited';
 import CuveeFerdi_Unique from './pages/wines/CuveeFerdi_Unique';
@@ -34,12 +34,6 @@ function App() {
         <Route exact path='/club' component={Club} />
         <Route exact path='/galerie' component={Gallery} />
         <Route exact path='/contact' component={Contact} />
-        <Route
-          exact
-          path='/vinuri/cuvee-unchiu-puiu'
-          component={CuveeUnchiuPuiu}
-        />
-        <Route exact path='/vinuri/cuvee-paul' component={CuveePaul} />
         <Route
           exact
           path='/vinuri/redking-rezerva-2018'
