@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Modal, Button } from 'react-bootstrap';
+import Img from 'react-image';
+import { DotLoader } from 'react-spinners';
 
 const ConfirmAgeModal = () => {
   const [show, setShow] = useState(false);
@@ -22,15 +24,14 @@ const ConfirmAgeModal = () => {
       backdrop='static'
       keyboard={false}
       centered
-      style={{ overflow: 'hidden' }}
-    >
+      style={{ overflow: 'hidden' }}>
       <Modal.Header>
         <Modal.Title>
           <h3>Confirmare vârstă</h3>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img
+        <Img
           src={require('../../img/logo_black_simple.png')}
           alt='Crama Ferdi'
           style={{
@@ -39,6 +40,29 @@ const ConfirmAgeModal = () => {
             paddingTop: '30px',
             paddingBottom: '30px',
           }}
+          loader={
+            <div
+              style={{
+                margin: 'auto',
+                display: 'block',
+                paddingTop: '30px',
+                paddingBottom: '30px',
+                width: '180px',
+                height: '200px',
+                background: 'transparent',
+                position: 'relative',
+              }}>
+              <div
+                style={{
+                  position: 'absolute',
+                  left: '50%',
+                  top: '50%',
+                  transform: 'translate(-50%,-50%)',
+                }}>
+                <DotLoader size={40} />
+              </div>
+            </div>
+          }
         />
         <h5 style={{ textAlign: 'center' }}>
           Trebuie să aveţi împliniţi <b> 18 ani</b> pentru a accesa acest site
