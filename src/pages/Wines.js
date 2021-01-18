@@ -49,21 +49,21 @@ const Wines = () => {
           <WineCard
             link='/vinuri/rose-cosmina-editie-limitata'
             price='50 RON'
-            img='sm_rose_cosmina_limited_new.png'
+            img='sm_rose_cosmina_limited.png'
             title='Rosé Cosmina Ed. Lim.'
             year='2020'
           />
           <WineCard
             link='/vinuri/cuvee-alexandra-editie-limitata'
             price='55 RON'
-            img='sm_cuvee_alexandra_limited_new.png'
+            img='sm_cuvee_alexandra_limited.png'
             title='Cuvée Alexandra Ed. Lim.'
             year='2020'
           />
           <WineCard
             link='/vinuri/madame-s-editie-limitata'
             price='60 RON'
-            img='sm_madame_s_limited_new.png'
+            img='sm_madame_s_limited.png'
             title='Madame S Ed. Lim.'
             year='2020'
           />
