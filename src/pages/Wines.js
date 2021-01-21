@@ -40,13 +40,6 @@ const Wines = () => {
         </div>
         <Row>
           <WineCard
-            link='/vinuri/cuvee-ferdi-editie-unica'
-            price='190 RON'
-            img='sm_cuvee_ferdi_unique_new.png'
-            title='Cuvée Ferdi Ed. Unică'
-            year='2018'
-          />
-          <WineCard
             link='/vinuri/rose-cosmina-editie-limitata'
             price='50 RON'
             img='sm_rose_cosmina_limited.png'
@@ -67,8 +60,6 @@ const Wines = () => {
             title='Madame S Ed. Lim.'
             year='2020'
           />
-        </Row>
-        <Row>
           <WineCard
             link='/vinuri/cuvee-francisc'
             price='100 RON'
@@ -76,6 +67,8 @@ const Wines = () => {
             title='Cuvée Francisc'
             year='2018'
           />
+        </Row>
+        <Row>
           <WineCard
             link='/vinuri/redking-rezerva-2018'
             price='130 RON'
