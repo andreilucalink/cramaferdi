@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import Img from 'react-image';
-import '../css/home2.css';
+import '../css/home.css';
 
 // Components
 import EmblaCarousel from './pagesComponents/EmblaCarousel';
@@ -39,8 +39,7 @@ const HomeNew = () => {
         <img
           src={require('../img/path_dark.svg')}
           className='path-img-dark'
-          alt='path'
-        ></img>
+          alt='path'></img>
         <div id='despre-crama'></div>
         <div className='home-section-content1'>
           <div
@@ -48,8 +47,7 @@ const HomeNew = () => {
             data-aos='fade-right'
             data-aos-duration='700'
             data-aos-delay='200'
-            dato-aos-offset='400'
-          >
+            dato-aos-offset='400'>
             <div>
               <span className='big-letter'>D</span>
               <span>ESPRE </span>
@@ -86,8 +84,7 @@ const HomeNew = () => {
             data-aos='fade-right'
             data-aos-duration='700'
             data-aos-delay='200'
-            id='_circle1'
-          >
+            id='_circle1'>
             <img
               src={require('../img/pinWH.svg')}
               alt=''
@@ -101,8 +98,7 @@ const HomeNew = () => {
             data-aos-duration='700'
             data-aos-delay='200'
             data-aos-anchor='#_circle1'
-            id='_circle2'
-          >
+            id='_circle2'>
             <img src={require('../img/wineWH.svg')} alt='' />
             <p>VINURI</p>
           </Link>
@@ -111,8 +107,7 @@ const HomeNew = () => {
             data-aos='fade-left'
             data-aos-duration='700'
             data-aos-delay='200'
-            data-aos-anchor='#_circle2'
-          >
+            data-aos-anchor='#_circle2'>
             <img src={require('../img/galleryWH.svg')} alt='' />
             <p>GALERIE</p>
           </Link>
@@ -120,8 +115,7 @@ const HomeNew = () => {
         <img
           src={require('../img/path_light.svg')}
           className='path-img-light'
-          alt=''
-        ></img>
+          alt=''></img>
       </div>
       <div className='home-section3'>
         <div className='home-section-content3'>
@@ -130,8 +124,7 @@ const HomeNew = () => {
             data-aos='fade-right'
             data-aos-duration='700'
             data-aos-delay='200'
-            data-aos-offset='200'
-          >
+            data-aos-offset='200'>
             <div>
               <span className='big-letter'>L</span>
               <span>OCAŢIA </span>
@@ -157,8 +150,7 @@ const HomeNew = () => {
             frameBorder='0'
             allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
             allowFullScreen
-            title='Video Prezentare'
-          ></iframe>
+            title='Video Prezentare'></iframe>
         </div>
       </div>
       <div className='home-section4'>
@@ -166,8 +158,7 @@ const HomeNew = () => {
           <img
             src={require('../img/path_blue.svg')}
             className='path-img-blue'
-            alt=''
-          ></img>
+            alt=''></img>
         </div>
       </div>
       <div className='home-section5'>
@@ -177,8 +168,7 @@ const HomeNew = () => {
             data-aos='fade-right'
             data-aos-duration='700'
             data-aos-delay='200'
-            data-aos-offset='200'
-          >
+            data-aos-offset='200'>
             <div>
               <span className='big-letter'>P</span>
               <span>RODUCŢIA </span>

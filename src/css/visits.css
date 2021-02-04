@@ -46,7 +46,7 @@
   margin-bottom: 3px;
 }
 
-.programari-pachete-degustari .pachete-cards {
+/* .programari-pachete-degustari .pachete-cards {
   padding-top: 30px;
   padding-bottom: 50px;
   width: 900px;
@@ -128,13 +128,96 @@
   position: absolute;
   bottom: 30px;
   text-align: center;
+} */
+
+.pachete-wrapper {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: beige; */
+  padding: 30px 0 30px 0;
 }
 
-.programari-line {
-  width: 60%;
-  margin: 25px auto 25px auto;
-  height: 1px;
-  background-color: black;
+.pachet {
+  height: 460px;
+  width: 350px;
+  position: relative;
+  text-align: center;
+  margin: 0 15px 0 15px;
+  padding: 40px 0px 30px 0px;
+  -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+}
+
+.pachet h5 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.pachet li {
+  width: 90%;
+  font-size: 14px;
+  list-style: none;
+  text-align: left;
+  padding: 5px 0px 5px 30px;
+}
+
+.pachet li i {
+  margin-right: 10px;
+}
+
+.pachet p.pachet-price {
+  position: absolute;
+  bottom: 110px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  width: 100%;
+  /* letter-spacing: 2px; */
+}
+.pachet p.private-subtitle {
+  padding: 0 15px 10px 15px;
+}
+
+.pachet p.pachet-description-private {
+  position: absolute;
+  bottom: 4px;
+  padding: 0 10px 0 10px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 20px;
+}
+.pachet p.pachet-description-private a {
+  font-weight: 600;
+  color: #fff;
+  transition: ease 0.1s;
+}
+
+.pachet p.pachet-description {
+  position: absolute;
+  font-size: 12px;
+  line-height: 20px;
+  bottom: 20px;
+  padding: 0 10px 0 10px;
+}
+
+.pachete-wrapper .card-light {
+  color: #0f2027;
+  background-color: white;
+}
+
+.pachete-wrapper .card-dark {
+  color: #fff;
+  background-color: #2c3e50;
+}
+
+.pachete-wrapper .card-private {
+  color: #fff;
+  background-color: #0f2027;
 }
 
 @media (max-width: 1150px) {
@@ -159,16 +242,21 @@
     margin-bottom: 8px;
     margin-top: 25px;
   }
+}
 
-  .programari-pachete-degustari .pachete-cards {
-    width: 100%;
+@media screen and (max-width: 991px) {
+  .pachete-wrapper {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-
-  .programari-pachete-degustari .pachete-cards .pachet-light {
-    margin-bottom: 50px;
+  .pachet {
+    margin-bottom: 30px;
+    width: 400px;
+  }
+  .pachet p.pachet-description {
+    padding: 0 30px 0 30px;
+  }
+  .pachet p.pachet-description-private {
+    padding: 0 30px 0 30px;
   }
 }
 
@@ -185,29 +273,25 @@
 }
 
 @media screen and (max-width: 500px) {
-  .programari-pachete-degustari .pachete-cards {
-    padding-top: 50px;
+  .pachet {
+    width: 300px;
+    height: 420px;
+    margin: 0px 0px 30px 0px;
+  }
+  .pachet p.pachet-price {
+    bottom: 85px;
+    font-size: 16px;
   }
 
-  .programari-pachete-degustari .pachete-cards .pachet-light,
-  .programari-pachete-degustari .pachete-cards .pachet-dark {
-    max-width: 320px;
+  .pachet h5 {
+    font-size: 16px;
   }
 
-  .programari-pachete-degustari .pachete-cards .pachet-dark .pachet-price h3,
-  .programari-pachete-degustari .pachete-cards .pachet-light .pachet-price h3 {
-    font-size: 20px;
-    letter-spacing: 3px;
+  .pachet p {
+    font-size: 12px;
   }
 
-  .programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-price,
-  .programari-pachete-degustari .pachete-cards .pachet-light li.pachet-price {
-    bottom: 90px;
-  }
-
-  .programari-pachete-degustari .pachete-cards .pachet-dark li.pachet-tax,
-  .programari-pachete-degustari .pachete-cards .pachet-light li.pachet-tax {
-    font-size: 14px;
-    line-height: 1.5;
+  .pachet li {
+    font-size: 12px;
   }
 }

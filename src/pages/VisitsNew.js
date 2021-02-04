@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import '../css/visits2.css';
+import '../css/visits.css';
 import Img from 'react-image';
 
 // Components
 import ConfirmAgeModal from './pagesComponents/ConfirmAgeModal';
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const VisitsNew = () => {
   useEffect(() => {
@@ -24,9 +25,8 @@ const VisitsNew = () => {
           data-aos='fade-up'
           data-aos-duration='700'
           data-aos-anchor='#start'
-          data-aos-delay='250'
-        >
-          VIZITE ŞI DEGUSTĂRI
+          data-aos-delay='250'>
+          VIZITE ŞI DEGUSTăRI
         </h1>
         <a href='#visits' className='scroll-down'>
           <Img src={require('../img/dwn-light.svg')} alt='Scroll Down' />
@@ -42,14 +42,14 @@ const VisitsNew = () => {
             pasiunea noastră pentru vin.
           </p>
           <p>
-            Vizitele se fac organizat în aer liber, în grupuri de <b>4-12</b>{' '}
-            persoane, în baza unei programări prealabile realizate la numerele
-            de telefon sau la adresa de e-mail din pagina de contact.
+            Vizitele se fac organizat, în grupuri de <b>4-12</b> persoane, în
+            baza unei programări prealabile realizate la numerele de telefon sau
+            la adresa de e-mail din pagina de contact.
           </p>
         </Container>
-        <div className='pachete-cards'>
-          <div className='pachet-light'>
-            <h3>STANDARD</h3>
+        <Container className='pachete-wrapper'>
+          <div className='pachet card-light'>
+            <h5>standard</h5>
             <ul>
               <li>
                 <i className='fas fa-check-circle'></i>Tur al cramei
@@ -63,20 +63,16 @@ const VisitsNew = () => {
               <li>
                 <i className='fas fa-check-circle'></i>Apă şi grisine
               </li>
-              <li className='pachet-price'>
-                <h3>
-                  <p>&nbsp;&nbsp;50 RON/Persoana</p>
-                  <p>- 10 EURO -</p>
-                </h3>
-              </li>
-              <li className='pachet-tax'>
-                La achiziționarea a <b>6 sticle</b> de vin nu se mai percepe
-                taxă de degustare.
-              </li>
             </ul>
+            <p className='pachet-price'>50 RON/Persoana</p>
+            <p className='pachet-description'>
+              La achiziționarea a <b>6 sticle</b> de vin nu se mai percepe taxă
+              de degustare.
+            </p>
           </div>
-          <div className='pachet-dark'>
-            <h3>PREMIUM</h3>
+
+          <div className='pachet card-dark'>
+            <h5>premium</h5>
             <ul>
               <li>
                 <i className='fas fa-check-circle'></i>Tur al cramei
@@ -91,23 +87,44 @@ const VisitsNew = () => {
               <li>
                 <i className='fas fa-check-circle'></i>Platou ham & cheese
               </li>
-
               <li>
                 <i className='fas fa-check-circle'></i>Apă şi grisine
               </li>
-              <li className='pachet-price'>
-                <h3>
-                  <p>&nbsp;100 RON/Persoana</p>
-                  <p>- 20 EURO -</p>
-                </h3>
+            </ul>
+            <p className='pachet-price'>100 RON/Persoana</p>
+            <p className='pachet-description'>
+              La achiziționarea a <b>12 sticle</b> de vin nu se mai percepe taxă
+              de degustare.
+            </p>
+          </div>
+          <div className='pachet card-private'>
+            <h5>Degustări Private</h5>
+            <p className='private-subtitle'>
+              Degustări la evenimente <br />
+              private / petreceri / team building
+            </p>
+            <ul>
+              <li>
+                <i className='fas fa-check-circle'></i>Deplasare la eveniment
               </li>
-              <li className='pachet-tax'>
-                La achiziționarea a <b>12 sticle</b> de vin nu se mai percepe
-                taxă de degustare.
+              <li>
+                <i className='fas fa-check-circle'></i>Prezentare a cramei
+              </li>
+              <li>
+                <i className='fas fa-check-circle'></i>Degustarea și prezentarea
+                a 6 vinuri
+              </li>
+              <li>
+                <i className='fas fa-check-circle'></i>Întrebări și răspunsuri
               </li>
             </ul>
+            <p className='pachet-description-private'>
+              Preţul este în funcție de numarul de persoane și locație, pentru
+              mai multe informații și oferte ne găsiți la{' '}
+              <Link to='/contact'>CONTACT</Link>
+            </p>
           </div>
-        </div>
+        </Container>
       </div>
     </div>
   );
