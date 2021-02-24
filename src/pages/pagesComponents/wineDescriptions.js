@@ -162,3 +162,18 @@ export const redKingRez_2018 = {
   grapes: 'Cabernet Sauvignon',
   decantation: 'minim 1h.',
 };
+
+export const cuveePitigaia_2018 = {
+  title: 'Cuvée Piţigaia',
+  year: '2018',
+  price: '100 RON',
+  description:
+    'Un cupaj deja bine cunoscut al Cramei Ferdi, este un tip de Bordeaux Blend, unde soiul Merlot, cu un corp catifelat, elegant și cu arome de cireșe negre îl întâlnește pe regele vinurilor, Cabernet Sauvignon, care îi ridică aciditatea, îi îmbogățește taninii și corpul, la care se adaugă nuanța de grena închis, precum și aromele de piper verde și ciocolată. Acest vin cucerește cu o distincție anume și cu un postgust lung, după ce s-a odihnit la baric 20 de luni, având astfel un potențial mare de învechire.',
+  type: 'Sec',
+  maturing: '20 luni, baric din stejar',
+  alchool: '15%',
+  color: 'Roşu',
+  qty: '0,75L',
+  grapes: ' Merlot și Cabernet Sauvignon',
+  decantation: 'minim 1h.',
+};

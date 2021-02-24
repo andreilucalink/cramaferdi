@@ -284,18 +284,17 @@
   display: inline-block;
   color: #f4f4f4;
   border: 2px#1b262c solid;
-  background-color: #1b262c;
+  background: linear-gradient(to left, #1b262c 50%, #f4f4f4 50%) right;
+  background-size: 200%;
   width: 110px;
   padding: 7px 0px;
   text-align: center;
-  transition: ease 0.3s all;
+  transition: 0.35s ease-out;
 }
 
 .not-found .btn-404:hover {
-  background-color: #f4f4f4;
-  border: 2px solid #1b262c;
-  font-weight: 600;
-  color: #1b262c;
+  background-position: left;
+  color: #1b263c;
 }
 
 /* ------------------------------------------------------ */
