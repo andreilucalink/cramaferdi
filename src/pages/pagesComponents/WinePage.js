@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import '../../css/winePage.css';
 import Img from 'react-image';
-import { Row, Col, ListGroup, Container } from 'react-bootstrap';
+import { Row, Col, ListGroup, Container, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import WineLoader from '../pagesComponents/WineLoader';
+import { useState } from 'react';
 
 const WinePage = ({
   title,
@@ -18,12 +19,26 @@ const WinePage = ({
   grapes,
   img,
   decantation,
+  modalImage,
 }) => {
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
+
+  const [open, setOpen] = useState(false);
+
   return (
     <Container className='wine-page'>
+      <Modal show={open} centered size='xl' onHide={() => setOpen(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title style={{ textAlign: 'center', width: '100%' }}>
+            {title} {year}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Img src={modalImage} alt='Eticheta' className='modal-image'></Img>
+        </Modal.Body>
+      </Modal>
       <h1 className='wine-header'>
         {title} {year}{' '}
       </h1>
@@ -36,8 +51,7 @@ const WinePage = ({
               <div className='wine-loader-wraper'>
                 <WineLoader />
               </div>
-            }
-          ></Img>
+            }></Img>
         </Col>
         <Col xl={6} md={6} xs={12}>
           <ListGroup variant='flush'>
@@ -75,6 +89,16 @@ const WinePage = ({
                 {decantation}
               </ListGroup.Item>
             )}
+            <ListGroup.Item className='wine-list-item'>
+              <div
+                onClick={() => setOpen(true)}
+                variant='dark'
+                className='my-2 buton-eticheta'
+                size={'lg'}
+                style={{ display: 'inline-block' }}>
+                Vezi Eticheta
+              </div>
+            </ListGroup.Item>
           </ListGroup>
         </Col>
       </Row>

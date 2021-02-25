@@ -2,6 +2,7 @@ import React from 'react';
 import { roseCosmina_Limited } from '../pagesComponents/wineDescriptions';
 import WinePage from '../pagesComponents/WinePage';
 import img from '../../img/wines/rose_cosmina_limited.png';
+import modalImage from '../../img/etichete/RC2020.jpg';
 
 const RoseCosmina_Limited = () => {
   return (
@@ -18,6 +19,7 @@ const RoseCosmina_Limited = () => {
       grapes={roseCosmina_Limited.grapes}
       img={img}
       decantation={roseCosmina_Limited.decantation}
+      modalImage={modalImage}
     />
   );
 };

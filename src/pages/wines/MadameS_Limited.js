@@ -2,6 +2,7 @@ import React from 'react';
 import { madameS_Limited } from '../pagesComponents/wineDescriptions';
 import WinePage from '../pagesComponents/WinePage';
 import img from '../../img/wines/madame_s_limited.png';
+import modalImage from '../../img/etichete/MDS2020.jpg';
 
 const MadameS_Limited = () => {
   return (
@@ -18,6 +19,7 @@ const MadameS_Limited = () => {
       grapes={madameS_Limited.grapes}
       img={img}
       decantation={madameS_Limited.decantation}
+      modalImage={modalImage}
     />
   );
 };

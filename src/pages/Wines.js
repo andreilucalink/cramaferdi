@@ -41,7 +41,7 @@ const Wines = () => {
         <Row>
           <WineCard
             link='/vinuri/cuvee-pitigaia-2018'
-            price='50 RON'
+            price='100 RON'
             img='sm_cuveepitigaia_new.png'
             title='Cuveé Piţigaia'
             year='2018'

@@ -2,6 +2,7 @@ import React from 'react';
 import { cuveePitigaia_2018 } from '../pagesComponents/wineDescriptions';
 import WinePage from '../pagesComponents/WinePage';
 import img from '../../img/wines/cuveepitigaia.png';
+import modalImage from '../../img/etichete/CPIT2018.jpg';
 
 const CuveePitigaia = () => {
   return (
@@ -18,6 +19,7 @@ const CuveePitigaia = () => {
       grapes={cuveePitigaia_2018.grapes}
       img={img}
       decantation={cuveePitigaia_2018.decantation}
+      modalImage={modalImage}
     />
   );
 };

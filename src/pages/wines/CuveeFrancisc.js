@@ -2,6 +2,7 @@ import React from 'react';
 import { cuveeFrancisc_2018 } from '../pagesComponents/wineDescriptions';
 import WinePage from '../pagesComponents/WinePage';
 import img from '../../img/wines/cuveefrancisc2018.png';
+import modalImage from '../../img/etichete/CFR2018.jpg';
 
 const CuveeFrancisc = () => {
   return (
@@ -18,6 +19,7 @@ const CuveeFrancisc = () => {
       grapes={cuveeFrancisc_2018.grapes}
       img={img}
       decantation={cuveeFrancisc_2018.decantation}
+      modalImage={modalImage}
     />
   );
 };

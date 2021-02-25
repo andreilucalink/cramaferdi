@@ -2,6 +2,7 @@ import React from 'react';
 import { cuveeAlexandra_Limited } from '../pagesComponents/wineDescriptions';
 import WinePage from '../pagesComponents/WinePage';
 import img from '../../img/wines/cuvee_alexandra_limited.png';
+import modalImage from '../../img/etichete/CALX2020.jpg';
 
 const CuveeAlexandra_Limited = () => {
   return (
@@ -18,6 +19,7 @@ const CuveeAlexandra_Limited = () => {
       grapes={cuveeAlexandra_Limited.grapes}
       img={img}
       decantation={cuveeAlexandra_Limited.decantation}
+      modalImage={modalImage}
     />
   );
 };
