@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../css/winePage.css';
 import Img from 'react-image';
-import { Row, Col, ListGroup, Container, Modal } from 'react-bootstrap';
+import { Row, Col, ListGroup, Container, Modal, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import WineLoader from '../pagesComponents/WineLoader';
 import { useState } from 'react';
@@ -29,14 +29,18 @@ const WinePage = ({
 
   return (
     <Container className='wine-page'>
-      <Modal show={open} centered size='xl' onHide={() => setOpen(false)}>
+      <Modal show={open} centered size='lg' onHide={() => setOpen(false)}>
         <Modal.Header closeButton>
           <Modal.Title style={{ textAlign: 'center', width: '100%' }}>
             {title} {year}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Img src={modalImage} alt='Eticheta' className='modal-image'></Img>
+          <Image
+            src={modalImage}
+            alt='Eticheta'
+            fluid
+            className='modal-image'></Image>
         </Modal.Body>
       </Modal>
       <h1 className='wine-header'>

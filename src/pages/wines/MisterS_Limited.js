@@ -2,7 +2,7 @@ import React from 'react';
 import { misterS_Limited } from '../pagesComponents/wineDescriptions';
 import WinePage from '../pagesComponents/WinePage';
 import img from '../../img/wines/mister_s_limited.png';
-import modalImage from '../../img/etichete/MRSR2018.jpg';
+import modalImage from '../../img/etichete/MRSR2018.png';
 
 const MisterS_Limited = () => {
   return (

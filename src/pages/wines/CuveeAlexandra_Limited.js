@@ -2,7 +2,7 @@ import React from 'react';
 import { cuveeAlexandra_Limited } from '../pagesComponents/wineDescriptions';
 import WinePage from '../pagesComponents/WinePage';
 import img from '../../img/wines/cuvee_alexandra_limited.png';
-import modalImage from '../../img/etichete/CALX2020.jpg';
+import modalImage from '../../img/etichete/CALX2020.png';
 
 const CuveeAlexandra_Limited = () => {
   return (
