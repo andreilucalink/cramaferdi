@@ -1,7 +1,7 @@
 import React from 'react';
 import { cuveeFrancisc_2018 } from '../pagesComponents/wineDescriptions';
 import WinePage from '../pagesComponents/WinePage';
-import img from '../../img/wines/cuveefrancisc2018.png';
+import img from '../../img/wines/CFR2018.png';
 import modalImage from '../../img/etichete/CFR2018.png';
 
 const CuveeFrancisc = () => {

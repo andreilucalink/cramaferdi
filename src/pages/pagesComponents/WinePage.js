@@ -58,7 +58,7 @@ const WinePage = ({
             }></Img>
         </Col>
         <Col xl={6} md={6} xs={12}>
-          <ListGroup variant='flush'>
+          <ListGroup variant='flush wine-listgroup'>
             <ListGroup.Item className='wine-list-item'>
               <b>Descriere:</b> {description}
             </ListGroup.Item>

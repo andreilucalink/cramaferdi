@@ -42,28 +42,28 @@ const Wines = () => {
           <WineCard
             link='/vinuri/cuvee-pitigaia-2018'
             price='100 RON'
-            img='sm_cuveepitigaia_new.png'
+            img='sm_CPIT2018.png'
             title='Cuveé Piţigaia'
             year='2018'
           />
           <WineCard
             link='/vinuri/rose-cosmina-editie-limitata'
             price='50 RON'
-            img='sm_rose_cosmina_limited.png'
+            img='sm_RC2020.png'
             title='Rosé Cosmina Ed. Lim.'
             year='2020'
           />
           <WineCard
             link='/vinuri/cuvee-alexandra-editie-limitata'
             price='55 RON'
-            img='sm_cuvee_alexandra_limited.png'
+            img='sm_CALX2020.png'
             title='Cuvée Alexandra Ed. Lim.'
             year='2020'
           />
           <WineCard
             link='/vinuri/madame-s-editie-limitata'
             price='60 RON'
-            img='sm_madame_s_limited.png'
+            img='sm_MDS2020.png'
             title='Madame S Ed. Lim.'
             year='2020'
           />
@@ -72,7 +72,7 @@ const Wines = () => {
           <WineCard
             link='/vinuri/cuvee-francisc'
             price='100 RON'
-            img='sm_cuveefrancisc2018.png'
+            img='sm_CFR2018.png'
             title='Cuvée Francisc'
             year='2018'
           />
@@ -80,7 +80,7 @@ const Wines = () => {
           <WineCard
             link='/vinuri/redking-rezerva-2018'
             price='130 RON'
-            img='sm_redkingrez2018.png'
+            img='sm_RKR2018.png'
             title='Red King Rezerva'
             year='2018'
           />
