@@ -53,6 +53,7 @@ const Wines = () => {
             title='Rosé Cosmina Ed. Lim.'
             year='2020'
           />
+          git
           <WineCard
             link='/vinuri/cuvee-alexandra-editie-limitata'
             price='55 RON'
