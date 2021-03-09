@@ -17,6 +17,7 @@ import Wines from './pages/Wines';
 // import CuveeUnchiuPuiu from './pages/wines/CuveeUnchiuPuiu';
 // import CuveePaul from './pages/wines/CuveePaul';
 import CuveeAlexandra_Limited from './pages/wines/CuveeAlexandra_Limited';
+import CuveeAlexandra from './pages/wines/CuveeAlexandra';
 import MadameS_Limited from './pages/wines/MadameS_Limited';
 // import CuveeFerdi_Unique from './pages/wines/CuveeFerdi_Unique';
 import RoseCosmina_Limited from './pages/wines/RoseCosmina_Limited';
@@ -44,6 +45,11 @@ function App() {
           exact
           path='/vinuri/cuvee-alexandra-editie-limitata'
           component={CuveeAlexandra_Limited}
+        />
+        <Route
+          exact
+          path='/vinuri/cuvee-alexandra'
+          component={CuveeAlexandra}
         />
         <Route
           exact

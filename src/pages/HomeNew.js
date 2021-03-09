@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import Img from 'react-image';
 import '../css/home.css';
+import { Helmet } from 'react-helmet';
 
 // Components
 import EmblaCarousel from './pagesComponents/EmblaCarousel';
@@ -22,6 +23,9 @@ const HomeNew = () => {
   const slides = Array.from(Array(SLIDE_COUNT).keys());
   return (
     <div className='home-body'>
+      <Helmet>
+        <title>Crama Ferdi | Acasă</title>
+      </Helmet>
       <ConfirmAgeModal />
       <div className='home-intro'>
         <Img

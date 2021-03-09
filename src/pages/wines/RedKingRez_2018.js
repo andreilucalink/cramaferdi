@@ -2,7 +2,7 @@ import React from 'react';
 import { redKingRez_2018 } from '../pagesComponents/wineDescriptions';
 import WinePage from '../pagesComponents/WinePage';
 import img from '../../img/wines/RKR2018.png';
-import modalImage from '../../img/etichete/RKR2018.png';
+import modalImage from '../../img/etichete/RKR2018.jpg';
 
 const RedKingRez_2018 = () => {
   return (

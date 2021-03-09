@@ -2,6 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import '../css/wines.css';
 import Img from 'react-image';
 import { Container, Row } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
+
+// Components
 import WineCard from './pagesComponents/WineCard';
 
 const Wines = () => {
@@ -16,6 +19,9 @@ const Wines = () => {
 
   return (
     <div id='wines-page'>
+      <Helmet>
+        <title>Crama Ferdi | Vinuri</title>
+      </Helmet>
       <div className='wines-intro'>
         <h1
           data-aos='fade-up'
@@ -53,14 +59,22 @@ const Wines = () => {
             title='Rosé Cosmina Ed. Lim.'
             year='2020'
           />
-          git
           <WineCard
             link='/vinuri/cuvee-alexandra-editie-limitata'
             price='55 RON'
-            img='CALX2020.png'
+            img='CALX2020_LIM.png'
             title='Cuvée Alexandra Ed. Lim.'
             year='2020'
           />
+          <WineCard
+            link='/vinuri/cuvee-alexandra'
+            price='35 RON'
+            img='CALX2020.png'
+            title='Cuvée Alexandra'
+            year='2020'
+          />
+        </Row>
+        <Row>
           <WineCard
             link='/vinuri/madame-s-editie-limitata'
             price='60 RON'
@@ -68,8 +82,7 @@ const Wines = () => {
             title='Madame S Ed. Lim.'
             year='2020'
           />
-        </Row>
-        <Row>
+
           <WineCard
             link='/vinuri/cuvee-francisc'
             price='100 RON'

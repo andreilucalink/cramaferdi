@@ -5,6 +5,7 @@ import { Row, Col, ListGroup, Container, Modal, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import WineLoader from '../pagesComponents/WineLoader';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const WinePage = ({
   title,
@@ -29,6 +30,9 @@ const WinePage = ({
 
   return (
     <Container className='wine-page'>
+      <Helmet>
+        <title>{`Crama Ferdi | ${title}`}</title>
+      </Helmet>
       <Modal show={open} centered size='lg' onHide={() => setOpen(false)}>
         <Modal.Header closeButton>
           <Modal.Title style={{ textAlign: 'center', width: '100%' }}>

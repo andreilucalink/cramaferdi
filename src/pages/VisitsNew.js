@@ -2,11 +2,12 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import '../css/visits.css';
 import Img from 'react-image';
+import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 
 // Components
 import ConfirmAgeModal from './pagesComponents/ConfirmAgeModal';
-import { Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const VisitsNew = () => {
   useEffect(() => {
@@ -19,6 +20,9 @@ const VisitsNew = () => {
 
   return (
     <div className='visits-body'>
+      <Helmet>
+        <title>Crama Ferdi | Vizite şi degustări</title>
+      </Helmet>
       <ConfirmAgeModal />
       <div className='visits-intro'>
         <h1

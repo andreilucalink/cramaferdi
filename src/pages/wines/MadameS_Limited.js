@@ -2,7 +2,7 @@ import React from 'react';
 import { madameS_Limited } from '../pagesComponents/wineDescriptions';
 import WinePage from '../pagesComponents/WinePage';
 import img from '../../img/wines/MDS2020.png';
-import modalImage from '../../img/etichete/MDS2020.png';
+import modalImage from '../../img/etichete/MDS2020.jpg';
 
 const MadameS_Limited = () => {
   return (

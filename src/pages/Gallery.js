@@ -3,6 +3,7 @@ import '../css/gallery.css';
 import FsLightbox from 'fslightbox-react';
 import AOS from 'aos';
 import Img from 'react-image';
+import { Helmet } from 'react-helmet';
 
 // Components
 import ConfirmAgeModal from './pagesComponents/ConfirmAgeModal';
@@ -49,6 +50,9 @@ const Gallery = () => {
 
   return (
     <div id='gallery-page'>
+      <Helmet>
+        <title>Crama Ferdi | Galerie</title>
+      </Helmet>
       <ConfirmAgeModal />
       <div className='gallery-page'>
         <div className='gallery-intro'>
@@ -56,8 +60,7 @@ const Gallery = () => {
             data-aos='fade-up'
             data-aos-duration='700'
             data-aos-anchor='#start'
-            data-aos-delay='250'
-          >
+            data-aos-delay='250'>
             GALERIE
           </h1>
           <a href='#galerie' className='scroll-down'>
@@ -78,8 +81,7 @@ const Gallery = () => {
                 onClick={() => {
                   setOpen(!isOpen);
                   setCurrentIndex(1);
-                }}
-              >
+                }}>
                 <Img
                   src={require('../img/fs.svg')}
                   alt='fullscreen'
@@ -101,8 +103,7 @@ const Gallery = () => {
                 onClick={() => {
                   setOpen(!isOpen);
                   setCurrentIndex(2);
-                }}
-              >
+                }}>
                 <div className='right-panel'></div>
                 <Img
                   src={require('../img/fs.svg')}
@@ -126,8 +127,7 @@ const Gallery = () => {
                   onClick={() => {
                     setOpen(!isOpen);
                     setCurrentIndex(3);
-                  }}
-                >
+                  }}>
                   <Img
                     src={require('../img/fs.svg')}
                     alt='fullscreen'
@@ -149,8 +149,7 @@ const Gallery = () => {
                   onClick={() => {
                     setOpen(!isOpen);
                     setCurrentIndex(4);
-                  }}
-                >
+                  }}>
                   <Img
                     src={require('../img/fs.svg')}
                     alt='fullscreen'
@@ -171,8 +170,7 @@ const Gallery = () => {
                   onClick={() => {
                     setOpen(!isOpen);
                     setCurrentIndex(5);
-                  }}
-                >
+                  }}>
                   <Img
                     src={require('../img/fs.svg')}
                     alt='fullscreen'
@@ -195,8 +193,7 @@ const Gallery = () => {
                 onClick={() => {
                   setOpen(!isOpen);
                   setCurrentIndex(6);
-                }}
-              >
+                }}>
                 <Img
                   src={require('../img/fs.svg')}
                   alt='fullscreen'
@@ -217,8 +214,7 @@ const Gallery = () => {
                 onClick={() => {
                   setOpen(!isOpen);
                   setCurrentIndex(7);
-                }}
-              >
+                }}>
                 <Img
                   src={require('../img/fs.svg')}
                   alt='fullscreen'
@@ -240,8 +236,7 @@ const Gallery = () => {
                   onClick={() => {
                     setOpen(!isOpen);
                     setCurrentIndex(8);
-                  }}
-                >
+                  }}>
                   <Img
                     src={require('../img/fs.svg')}
                     alt='fullscreen'
@@ -262,8 +257,7 @@ const Gallery = () => {
                   onClick={() => {
                     setOpen(!isOpen);
                     setCurrentIndex(9);
-                  }}
-                >
+                  }}>
                   <Img
                     src={require('../img/fs.svg')}
                     alt='fullscreen'
@@ -284,8 +278,7 @@ const Gallery = () => {
                   onClick={() => {
                     setOpen(!isOpen);
                     setCurrentIndex(10);
-                  }}
-                >
+                  }}>
                   <Img
                     src={require('../img/fs.svg')}
                     alt='fullscreen'
@@ -306,8 +299,7 @@ const Gallery = () => {
                   onClick={() => {
                     setOpen(!isOpen);
                     setCurrentIndex(11);
-                  }}
-                >
+                  }}>
                   <Img
                     src={require('../img/fs.svg')}
                     alt='fullscreen'
