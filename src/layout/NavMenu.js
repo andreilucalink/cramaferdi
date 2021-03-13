@@ -77,6 +77,9 @@ const NavMenu = () => {
           <Link onClick={closeMenu} to='/galerie'>
             Galerie
           </Link>
+          <Link onClick={closeMenu} to='/cazare'>
+            Cazare
+          </Link>
           <Link onClick={closeMenu} to='/contact'>
             Contact
           </Link>

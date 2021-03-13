@@ -12,14 +12,12 @@ import Contact from './pages/Contact';
 import Club from './pages/Club';
 import HomeNew from './pages/HomeNew';
 import Wines from './pages/Wines';
+import Cazare from './pages/Cazare';
 
 // Wines
-// import CuveeUnchiuPuiu from './pages/wines/CuveeUnchiuPuiu';
-// import CuveePaul from './pages/wines/CuveePaul';
 import CuveeAlexandra_Limited from './pages/wines/CuveeAlexandra_Limited';
 import CuveeAlexandra from './pages/wines/CuveeAlexandra';
 import MadameS_Limited from './pages/wines/MadameS_Limited';
-// import CuveeFerdi_Unique from './pages/wines/CuveeFerdi_Unique';
 import RoseCosmina_Limited from './pages/wines/RoseCosmina_Limited';
 import RedKingRez_2018 from './pages/wines/RedKingRez_2018';
 import CuveeFrancisc from './pages/wines/CuveeFrancisc';
@@ -35,6 +33,7 @@ function App() {
         <Route exact path='/vizite-si-degustari' component={Visits} />
         <Route exact path='/club' component={Club} />
         <Route exact path='/galerie' component={Gallery} />
+        <Route exact path='/cazare' component={Cazare} />
         <Route exact path='/contact' component={Contact} />
         <Route
           exact

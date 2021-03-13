@@ -85,7 +85,7 @@ const HomeNew = () => {
         <div className='circle-icons'>
           <Link
             to='/vizite-si-degustari'
-            data-aos='fade-right'
+            data-aos='fade-up'
             data-aos-duration='700'
             data-aos-delay='200'
             id='_circle1'>
@@ -98,9 +98,9 @@ const HomeNew = () => {
           </Link>
           <Link
             to='/vinuri'
-            data-aos='zoom-in'
+            data-aos='fade-up'
             data-aos-duration='700'
-            data-aos-delay='200'
+            data-aos-delay='300'
             data-aos-anchor='#_circle1'
             id='_circle2'>
             <img src={require('../img/wineWH.svg')} alt='' />
@@ -108,12 +108,22 @@ const HomeNew = () => {
           </Link>
           <Link
             to='/galerie'
-            data-aos='fade-left'
+            data-aos='fade-up'
             data-aos-duration='700'
-            data-aos-delay='200'
-            data-aos-anchor='#_circle2'>
+            data-aos-delay='400'
+            data-aos-anchor='#_circle2'
+            id='_circle3'>
             <img src={require('../img/galleryWH.svg')} alt='' />
             <p>GALERIE</p>
+          </Link>
+          <Link
+            to='/cazare'
+            data-aos='fade-up'
+            data-aos-duration='700'
+            data-aos-delay='500'
+            data-aos-anchor='#_circle3'>
+            <img src={require('../img/cazareWH.svg')} alt='' />
+            <p>CAZARE</p>
           </Link>
         </div>
         <img

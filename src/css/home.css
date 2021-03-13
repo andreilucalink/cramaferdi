@@ -191,15 +191,7 @@
   /* background: #ebb811; */
 }
 
-.home-section2 .circle-icons a:nth-child(1) img {
-  background: #ebb811;
-}
-
-.home-section2 .circle-icons a:nth-child(2) img {
-  background: #ea5455;
-}
-
-.home-section2 .circle-icons a:nth-child(3) img {
+.home-section2 .circle-icons a img {
   background: #008080;
 }
 
