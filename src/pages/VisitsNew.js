@@ -30,7 +30,7 @@ const VisitsNew = () => {
           data-aos-duration='700'
           data-aos-anchor='#start'
           data-aos-delay='250'>
-          VIZITE ŞI DEGUSTăRI
+          VIZITE ŞI DEGUSTĂRI
         </h1>
         <a href='#visits' className='scroll-down'>
           <Img src={require('../img/dwn-light.svg')} alt='Scroll Down' />
