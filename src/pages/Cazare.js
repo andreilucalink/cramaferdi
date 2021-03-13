@@ -17,7 +17,7 @@ const Cazare = () => {
     <div className='cazare-body'>
       <Helmet>
         <title>Crama Ferdi | Cazare</title>
-      </Helmet>{' '}
+      </Helmet>
       <div className='cazare-intro'>
         <h1
           data-aos='fade-up'
@@ -51,31 +51,53 @@ const Cazare = () => {
             <a
               className='cazare-image-container'
               href='https://kimcountryclub.ro'
-              target='_blank'>
+              target='_blank'
+              rel='noopener noreferrer'>
               <Img src='https://kimcountryclub.ro/wp-content/uploads/2018/10/facilitati-garaj-1024x683.jpg'></Img>
             </a>
-            <div className='cazare-image-container'>
+            <a
+              className='cazare-image-container'
+              href='https://kimcountryclub.ro'
+              target='_blank'
+              rel='noopener noreferrer'>
               <Img src='https://kimcountryclub.ro/wp-content/uploads/2017/08/galerie-piscina-2.jpg'></Img>
-            </div>
-            <div className='cazare-image-container'>
+            </a>
+            <a
+              className='cazare-image-container'
+              href='https://kimcountryclub.ro'
+              target='_blank'
+              rel='noopener noreferrer'>
               <Img src='https://kimcountryclub.ro/wp-content/uploads/2018/10/locuri-in-natura-1024x683.jpg'></Img>
-            </div>
+            </a>
           </div>
           <div className='cazare-images'>
-            <div className='cazare-image-container'>
+            <a
+              className='cazare-image-container'
+              href='https://kimcountryclub.ro'
+              target='_blank'
+              rel='noopener noreferrer'>
               <Img src='https://kimcountryclub.ro/wp-content/uploads/2018/10/lounge-1024x683.jpg'></Img>
-            </div>
-            <div className='cazare-image-container'>
+            </a>
+            <a
+              className='cazare-image-container'
+              href='https://kimcountryclub.ro'
+              target='_blank'
+              rel='noopener noreferrer'>
               <Img src='https://kimcountryclub.ro/wp-content/uploads/2017/08/galerie-foto_0013_galerie-14.jpg'></Img>
-            </div>
-            <div className='cazare-image-container'>
+            </a>
+            <a
+              className='cazare-image-container'
+              href='https://kimcountryclub.ro'
+              target='_blank'
+              rel='noopener noreferrer'>
               <Img src='https://kimcountryclub.ro/wp-content/uploads/2017/08/galerie-foto_0021_galerie-6.jpg'></Img>
-            </div>
+            </a>
           </div>
           <a
             className='cazare-link'
             href='https://kimcountryclub.ro'
-            target='_blank'>
+            target='_blank'
+            rel='noopener noreferrer'>
             Detalii și rezervări
           </a>
         </div>
