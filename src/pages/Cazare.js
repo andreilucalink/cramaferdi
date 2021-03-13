@@ -4,7 +4,6 @@ import '../css/cazare.css';
 import { Helmet } from 'react-helmet';
 import { Container } from 'react-bootstrap';
 import Img from 'react-image';
-import { Link } from 'react-router-dom';
 
 const Cazare = () => {
   useEffect(() => {
