@@ -20,7 +20,6 @@ import CuveeAlexandra from './pages/wines/CuveeAlexandra';
 import MadameS_Limited from './pages/wines/MadameS_Limited';
 import RoseCosmina_Limited from './pages/wines/RoseCosmina_Limited';
 import RedKingRez_2018 from './pages/wines/RedKingRez_2018';
-import CuveeFrancisc from './pages/wines/CuveeFrancisc';
 import CuveePitigaia from './pages/wines/CuveePitigaia';
 
 function App() {
@@ -60,7 +59,6 @@ function App() {
           path='/vinuri/rose-cosmina-editie-limitata'
           component={RoseCosmina_Limited}
         />
-        <Route exact path='/vinuri/cuvee-francisc' component={CuveeFrancisc} />
         <Route
           exact
           path='/vinuri/cuvee-pitigaia-2018'
