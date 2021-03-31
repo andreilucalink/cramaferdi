@@ -192,3 +192,18 @@ export const cuveeAlexandra = {
   grapes: 'Tămaioasa Românească, Riesling Italian şi Sauvignon Blanc',
   decantation: null,
 };
+
+export const ladyBlack = {
+  title: 'Lady Black',
+  year: '2019',
+  price: '95 RON',
+  description:
+    'Feteasca Neagră cu note olfactive de cacao si condimente care te invaluie in aromele de fructe rosii, ofera o senzație gustativă inedită si surpinde plăcut prin astringenta incitanta, pe un fond de taninuri de fruct copt si lemn, cu un potențial de învechire de 5 până la 7 ani. Albastrul regal este culoarea capisonului de ceara cu sigiliul cramei. Anul recoltei este 2018 iar gradul alcoolic este 14,5%.',
+  type: 'Sec',
+  maturing: '14 luni, baric din stejar',
+  alchool: '14,5%',
+  color: 'Roşu',
+  qty: '0,75L',
+  grapes: 'Feteasca Neagră',
+  decantation: null,
+};

@@ -21,6 +21,7 @@ import MadameS_Limited from './pages/wines/MadameS_Limited';
 import RoseCosmina_Limited from './pages/wines/RoseCosmina_Limited';
 import RedKingRez_2018 from './pages/wines/RedKingRez_2018';
 import CuveePitigaia from './pages/wines/CuveePitigaia';
+import LadyBlack from './pages/wines/LadyBlack';
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
           path='/vinuri/cuvee-pitigaia-2018'
           component={CuveePitigaia}
         />
+        <Route exact path='/vinuri/lady-black' component={LadyBlack} />
         <Route component={Page404} />
       </Switch>
       <Footer />
