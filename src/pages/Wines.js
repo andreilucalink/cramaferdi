@@ -53,6 +53,13 @@ const Wines = () => {
             year='2019'
           />
           <WineCard
+            link='/vinuri/mister-s-rezerva'
+            price='95 RON'
+            img='MRSR2018_new.png'
+            title='Mister S Rezerva'
+            year='2018'
+          />
+          <WineCard
             link='/vinuri/rose-cosmina-editie-limitata'
             price='50 RON'
             img='RC2020.png'
@@ -66,6 +73,8 @@ const Wines = () => {
             title='Cuvée Alexandra'
             year='2020'
           />
+        </Row>
+        <Row>
           <WineCard
             link='/vinuri/cuvee-alexandra-editie-limitata'
             price='55 RON'
@@ -73,8 +82,6 @@ const Wines = () => {
             title='Cuvée Alexandra Ed. Lim.'
             year='2020'
           />
-        </Row>
-        <Row>
           <WineCard
             link='/vinuri/madame-s-editie-limitata'
             price='60 RON'

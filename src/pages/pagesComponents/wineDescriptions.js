@@ -207,3 +207,18 @@ export const ladyBlack = {
   grapes: 'Feteasca Neagră',
   decantation: null,
 };
+
+export const misterS_Rezerva = {
+  title: 'Mister S Rezerva',
+  year: '2018',
+  price: '130 RON',
+  description:
+    'Un Shiraz bine structurat și complex, dar în același timp elegant, cu un corp amplu, de culoare rubiniu-violet intens cu arome concentrate de afine și prune, unde taninurile și aciditatea se îmbină frumos. Sunt de asemenea caracteristice notele de carne afumată și piper. Anul recoltei este 2018 iar maturarea a avut loc timp de 22 luni în butoaie de stejar.',
+  type: 'Sec',
+  maturing: '22 luni, baric din stejar',
+  alchool: '14,8%',
+  color: 'Roşu',
+  qty: '0,75L',
+  grapes: 'Shiraz',
+  decantation: 'minim 1h',
+};
