@@ -54,7 +54,7 @@ const Wines = () => {
           />
           <WineCard
             link='/vinuri/mister-s-rezerva'
-            price='95 RON'
+            price='130 RON'
             img='MRSR2018_new.png'
             title='Mister S Rezerva'
             year='2018'
