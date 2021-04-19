@@ -18,7 +18,7 @@ export const cuveePaul = {
   year: '2018',
   price: '90 RON',
   description:
-    'Un cupaj format din Fetească Neagră și Cabernet Sauvignon. Prin alăturarea celor două soiuri s-a obținut un vin premium, cu un corp si o culoare bine conturate de Cabernet, iar gustul a fost desăvârșit de fructele de pădure si prunele deshidratate, specifice Feteștii Negre. Cele 16 luni petrecute în baric încununează cu succes calitatea acestui vin.',
+    'Un cupaj format din Fetească Neagră şi Cabernet Sauvignon. Prin alăturarea celor două soiuri s-a obținut un vin premium, cu un corp si o culoare bine conturate de Cabernet, iar gustul a fost desăvârşit de fructele de pădure si prunele deshidratate, specifice Feteştii Negre. Cele 16 luni petrecute în baric încununează cu succes calitatea acestui vin.',
   type: 'Sec',
   maturing: '16 luni, baric din stejar',
   alchool: '14,5%',
@@ -48,7 +48,7 @@ export const misterS_Limited = {
   year: '2018',
   price: '90 RON',
   description:
-    'Noul Shiraz al Cramei Ferdi, lucrat cu multă grijă și atenție la detalii, dezvăluie un vin românesc cu mult caracter, corp și eleganță. Maturat in butoaie de stejar timp de 14 luni, vinul a căpătat arome de vanilie si condimente, cu aciditate revigorantă si taninuri care se imbină frumos. Shiraz este considerat a fi unul dintre cele mai sănătoase vinuri, datorită dozei mai mari de antioxidanți. ',
+    'Noul Shiraz al Cramei Ferdi, lucrat cu multă grijă şi atenție la detalii, dezvăluie un vin românesc cu mult caracter, corp şi eleganță. Maturat in butoaie de stejar timp de 14 luni, vinul a căpătat arome de vanilie si condimente, cu aciditate revigorantă si taninuri care se imbină frumos. Shiraz este considerat a fi unul dintre cele mai sănătoase vinuri, datorită dozei mai mari de antioxidanți. ',
   type: 'Sec',
   maturing: '14 luni, baric din stejar',
   alchool: '14,7%',
@@ -78,7 +78,7 @@ export const misterM_Rezerva = {
   year: '2018',
   price: '120 RON',
   description:
-    'Acest Merlot de primă clasă ne poartă printr-un carusel de arome: de la fructe de pădure până la cuișoare și cedru. Un vin bine structurat care impresionează prin tanini puternici și post-gust lung. Elegant și catifelat, a dobândit complexitate în cele 16 luni de maturare în butoaie de stejar.',
+    'Acest Merlot de primă clasă ne poartă printr-un carusel de arome: de la fructe de pădure până la cuişoare şi cedru. Un vin bine structurat care impresionează prin tanini puternici şi post-gust lung. Elegant şi catifelat, a dobândit complexitate în cele 16 luni de maturare în butoaie de stejar.',
   type: 'Sec',
   maturing: '16 luni, baric din stejar',
   alchool: '15%',
@@ -93,13 +93,13 @@ export const cuveeAlexandra_Limited = {
   year: '2020',
   price: '55 RON',
   description:
-    'Cupajul alb bazat pe Tămâioasă Românească, Riesling Italian și Sauvignon Blanc ne oferă un curcubeu de arome unde Tămâioasa, după cum îi spune și numele vine cu accente de tămâie combinată cu fagure, busuioc și lămâie verde. Una dintre cele mai puternice arome de vin alb le dă acest soi, chiar dacă acest cupaj este sec, iar Riesling-ul Italian îl completează frumos cu note minerale și Sauvignon-ul Blanc cu note fructoase.',
+    'Cupajul alb bazat pe Tămâioasă Românească, Riesling Italian şi Sauvignon Blanc ne oferă un curcubeu de arome unde Tămâioasa, după cum îi spune şi numele vine cu accente de tămâie combinată cu fagure, busuioc şi lămâie verde. Una dintre cele mai puternice arome de vin alb le dă acest soi, chiar dacă acest cupaj este sec, iar Riesling-ul Italian îl completează frumos cu note minerale şi Sauvignon-ul Blanc cu note fructoase.',
   type: 'Sec',
   maturing: null,
   alchool: '12,5%',
   color: 'Alb',
   qty: '0,75L',
-  grapes: 'Tămâioasă Românească, Riesling Italian și Sauvignon Blanc',
+  grapes: 'Tămâioasă Românească, Riesling Italian şi Sauvignon Blanc',
   decantation: null,
 };
 
@@ -123,13 +123,13 @@ export const roseCosmina_Limited = {
   year: '2020',
   price: '50 RON',
   description:
-    'Un cupaj din trei soiuri deosebite: Merlot, Shiraz și Blaufränkisch ne aduce în prezența unui rosé de culoarea somonului cu miros fin de căpșuni proaspete. Secretului acestui rosé sec stă în combinația îndrăzneață a acestor soiuri, unde Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea ridicată și Blaufränkisch condimentează cu succes blend-ul.',
+    'Un cupaj din trei soiuri deosebite: Merlot, Shiraz şi Blaufränkisch ne aduce în prezența unui rosé de culoarea somonului cu miros fin de căpşuni proaspete. Secretului acestui rosé sec stă în combinația îndrăzneață a acestor soiuri, unde Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea ridicată şi Blaufränkisch condimentează cu succes blend-ul.',
   type: 'Sec',
   maturing: null,
   alchool: '12,5%',
   color: 'Rosé',
   qty: '0,75L',
-  grapes: 'Merlot, Shiraz, și Blaufränkisch',
+  grapes: 'Merlot, Shiraz, şi Blaufränkisch',
   decantation: null,
 };
 
@@ -138,7 +138,7 @@ export const cuveeFerdi_Unique = {
   year: '2018',
   price: '190 RON',
   description:
-    'O poezie îmbuteliată, cum ne place nouă să îi spunem. Această ediție aniversară marchează 10 ani de la primul vin făcut în Crama Ferdi. Un cupaj secret, din 4 soiuri de struguri, a cărui concepere a necesitat 6 luni până la desăvârașirea sa într-o cantitate de doar 570 de sticle, a căror etichetă specială este semnată fiecare, manual, de către făuritorul acestui vin aparte.',
+    'O poezie îmbuteliată, cum ne place nouă să îi spunem. Această ediție aniversară marchează 10 ani de la primul vin făcut în Crama Ferdi. Un cupaj secret, din 4 soiuri de struguri, a cărui concepere a necesitat 6 luni până la desăvâraşirea sa într-o cantitate de doar 570 de sticle, a căror etichetă specială este semnată fiecare, manual, de către făuritorul acestui vin aparte.',
   type: 'Sec',
   maturing: '18 luni, baric din stejar',
   alchool: '15%',
@@ -168,13 +168,13 @@ export const cuveePitigaia_2018 = {
   year: '2018',
   price: '100 RON',
   description:
-    'Un cupaj deja bine cunoscut al Cramei Ferdi, este un tip de Bordeaux Blend, unde soiul Merlot, cu un corp catifelat, elegant și cu arome de cireșe negre îl întâlnește pe regele vinurilor, Cabernet Sauvignon, care îi ridică aciditatea, îi îmbogățește taninii și corpul, la care se adaugă nuanța de grena închis, precum și aromele de piper verde și ciocolată. Acest vin cucerește cu o distincție anume și cu un postgust lung, după ce s-a odihnit la baric 20 de luni, având astfel un potențial mare de învechire.',
+    'Un cupaj deja bine cunoscut al Cramei Ferdi, este un tip de Bordeaux Blend, unde soiul Merlot, cu un corp catifelat, elegant şi cu arome de cireşe negre îl întâlneşte pe regele vinurilor, Cabernet Sauvignon, care îi ridică aciditatea, îi îmbogățeşte taninii şi corpul, la care se adaugă nuanța de grena închis, precum şi aromele de piper verde şi ciocolată. Acest vin cucereşte cu o distincție anume şi cu un postgust lung, după ce s-a odihnit la baric 20 de luni, având astfel un potențial mare de învechire.',
   type: 'Sec',
   maturing: '20 luni, baric din stejar',
   alchool: '15%',
   color: 'Roşu',
   qty: '0,75L',
-  grapes: ' Merlot și Cabernet Sauvignon',
+  grapes: ' Merlot şi Cabernet Sauvignon',
   decantation: 'minim 1h.',
 };
 
@@ -183,7 +183,7 @@ export const cuveeAlexandra = {
   year: '2020',
   price: '35 RON',
   description:
-    'Acest cupaj din trei soiuri, dominate de Tămaioasa Românească, ne introduce într-o grădină cu iarbă proaspăt cosită și flori de primăvară. Aromele de citrice și măr verde îi conferă o notă exotică. Astfel că vinul devine fresh, echilibrat, mineral, totodată complex și datorită soiului Sauvignon Blanc.',
+    'Acest cupaj din trei soiuri, dominate de Tămaioasa Românească, ne introduce într-o grădină cu iarbă proaspăt cosită şi flori de primăvară. Aromele de citrice şi măr verde îi conferă o notă exotică. Astfel că vinul devine fresh, echilibrat, mineral, totodată complex şi datorită soiului Sauvignon Blanc.',
   type: 'Sec',
   maturing: null,
   alchool: '13,1%',
@@ -198,13 +198,13 @@ export const ladyBlack = {
   year: '2019',
   price: '95 RON',
   description:
-    'Feteasca Neagră cu note olfactive de cacao si condimente care te invaluie in aromele de fructe rosii, ofera o senzație gustativă inedită si surpinde plăcut prin astringenta incitanta, pe un fond de taninuri de fruct copt si lemn, cu un potențial de învechire de 5 până la 7 ani. Albastrul regal este culoarea capisonului de ceara cu sigiliul cramei.',
+    'Feteasca Neagră cu note olfactive de cacao si condimente care te invaluie in aromele de fructe rosii, ofera o senzație gustativă inedită si surpinde plăcut prin astringenta incitanta, pe un fond de taninuri de fruct copt si lemn, cu un potențial de învechire de 5 până la 7 ani. Albastrul regal este culoarea capisonului de ceara cu sigiliul cramei.',
   type: 'Sec',
   maturing: '14 luni, baric din stejar',
   alchool: '14,5%',
   color: 'Roşu',
   qty: '0,75L',
-  grapes: 'Feteasca Neagră',
+  grapes: 'Feteasca Neagră',
   decantation: null,
 };
 
@@ -213,12 +213,26 @@ export const misterS_Rezerva = {
   year: '2018',
   price: '130 RON',
   description:
-    'Un Shiraz bine structurat și complex, dar în același timp elegant, cu un corp amplu, de culoare rubiniu-violet intens cu arome concentrate de afine și prune, unde taninurile și aciditatea se îmbină frumos. Sunt de asemenea caracteristice notele de carne afumată și piper. Anul recoltei este 2018 iar maturarea a avut loc timp de 22 luni în butoaie de stejar.',
+    'Un Shiraz bine structurat şi complex, dar în acelaşi timp elegant, cu un corp amplu, de culoare rubiniu-violet intens cu arome concentrate de afine şi prune, unde taninurile şi aciditatea se îmbină frumos. Sunt de asemenea caracteristice notele de carne afumată şi piper. Anul recoltei este 2018 iar maturarea a avut loc timp de 22 luni în butoaie de stejar.',
   type: 'Sec',
   maturing: '22 luni, baric din stejar',
   alchool: '14,8%',
   color: 'Roşu',
   qty: '0,75L',
   grapes: 'Shiraz',
+  decantation: 'minim 1h',
+};
+export const cuveeUnchiu_Puiu2019 = {
+  title: 'Cuvée Unchiu Puiu',
+  year: '2019',
+  price: '60 RON',
+  description:
+    'În acest cupaj am alăturat trei soiuri cu note diferite dar care împreună oferă o senzație unică: Merlot, Shiraz şi Blaufränkisch ne aduc în prezența unui vin deosebit de culoarea purpurei cu miros îmbătător de ierburi aromate. Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea ridicată şi Blaufränkisch condimentează cu succes blend-ul.',
+  type: 'Sec',
+  maturing: '6 luni, baric din stejar',
+  alchool: '13,9%',
+  color: 'Roşu',
+  qty: '0,75L',
+  grapes: 'Merlot, Shiraz şi Blaufränkisch',
   decantation: 'minim 1h',
 };

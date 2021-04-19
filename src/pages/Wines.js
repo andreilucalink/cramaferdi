@@ -46,6 +46,13 @@ const Wines = () => {
         </div>
         <Row>
           <WineCard
+            link='/vinuri/cuvee-unchiu-puiu-2019'
+            price='60 RON'
+            img='CUNP2019_new.png'
+            title='Cuvée Unchiu Puiu'
+            year='2019'
+          />
+          <WineCard
             link='/vinuri/lady-black'
             price='95 RON'
             img='LBK2019_new.png'
@@ -66,6 +73,8 @@ const Wines = () => {
             title='Rosé Cosmina Ed. Lim.'
             year='2020'
           />
+        </Row>
+        <Row>
           <WineCard
             link='/vinuri/cuvee-alexandra'
             price='35 RON'
@@ -73,8 +82,6 @@ const Wines = () => {
             title='Cuvée Alexandra'
             year='2020'
           />
-        </Row>
-        <Row>
           <WineCard
             link='/vinuri/cuvee-alexandra-editie-limitata'
             price='55 RON'
@@ -96,6 +103,8 @@ const Wines = () => {
             title='Cuveé Piţigaia'
             year='2018'
           />
+        </Row>
+        <Row>
           <WineCard
             link='/vinuri/redking-rezerva-2018'
             price='130 RON'
