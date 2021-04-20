@@ -97,15 +97,6 @@ const Wines = () => {
             year='2020'
           />
           <WineCard
-            link='/vinuri/cuvee-pitigaia-2018'
-            price='100 RON'
-            img='CPIT2018.png'
-            title='Cuveé Piţigaia'
-            year='2018'
-          />
-        </Row>
-        <Row>
-          <WineCard
             link='/vinuri/redking-rezerva-2018'
             price='130 RON'
             img='RKR2018.png'
