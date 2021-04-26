@@ -90,13 +90,6 @@ const Wines = () => {
             year='2020'
           />
           <WineCard
-            link='/vinuri/madame-s-editie-limitata'
-            price='60 RON'
-            img='MDS2020.png'
-            title='Madame S Ed. Lim.'
-            year='2020'
-          />
-          <WineCard
             link='/vinuri/redking-rezerva-2018'
             price='130 RON'
             img='RKR2018.png'

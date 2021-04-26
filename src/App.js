@@ -17,7 +17,6 @@ import Cazare from './pages/Cazare';
 // Wines
 import CuveeAlexandra_Limited from './pages/wines/CuveeAlexandra_Limited';
 import CuveeAlexandra from './pages/wines/CuveeAlexandra';
-import MadameS_Limited from './pages/wines/MadameS_Limited';
 import RoseCosmina_Limited from './pages/wines/RoseCosmina_Limited';
 import RedKingRez_2018 from './pages/wines/RedKingRez_2018';
 import LadyBlack from './pages/wines/LadyBlack';
@@ -50,11 +49,6 @@ function App() {
           exact
           path='/vinuri/cuvee-alexandra'
           component={CuveeAlexandra}
-        />
-        <Route
-          exact
-          path='/vinuri/madame-s-editie-limitata'
-          component={MadameS_Limited}
         />
         <Route
           exact
