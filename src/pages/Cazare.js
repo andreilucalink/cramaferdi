@@ -5,6 +5,9 @@ import { Helmet } from 'react-helmet';
 import { Container } from 'react-bootstrap';
 import Img from 'react-image';
 
+// Images
+import down from '../img/dwn-light.svg';
+
 const Cazare = () => {
   useEffect(() => {
     window.scroll(0, 0);
@@ -27,7 +30,7 @@ const Cazare = () => {
           CAZARE
         </h1>
         <a href='#cazare' className='scroll-down'>
-          <img src={require('../img/dwn-light.svg')} alt='Scroll Down' />
+          <img src={down} alt='Scroll Down' />
         </a>
         <div id='cazare'></div>
       </div>

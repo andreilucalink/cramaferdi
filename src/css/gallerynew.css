@@ -1,0 +1,119 @@
+.gallery-intro {
+  position: relative;
+  min-height: calc(100vh - 75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #134e5e;
+  background: -webkit-linear-gradient(315deg, #71b280, #134e5e);
+  background: linear-gradient(315deg, #71b280, #134e5e);
+}
+
+.gallery-intro h1 {
+  text-align: center;
+  padding: 30px 40px 30px 40px;
+  font-size: 60px;
+  border: 2px solid white;
+  letter-spacing: 8px;
+  color: white;
+}
+
+.gallery-intro .scroll-down {
+  position: absolute;
+  bottom: 30px;
+  animation: MoveUpDown 0.8s linear infinite;
+  animation-delay: 0.7s;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 45px;
+  }
+}
+
+.gallery-intro .scroll-down img {
+  height: 35px;
+}
+
+.gallery-intro #galerie {
+  position: absolute;
+  bottom: 70px;
+}
+
+.gallery--body .gallery-card {
+  margin-top: 30px;
+  background-color: #f4f4f4;
+  padding: 30px;
+  box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-card .gallery-images-row {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
+.gallery-card .gallery-images-row .gallery-image-container {
+  width: 32%;
+  overflow: hidden;
+  background: black;
+}
+
+.gallery-card .gallery-images-row img {
+  transition: ease all 0.3s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.gallery-card .gallery-images-row .gallery-image-container:hover img {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.SRLContainer {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1150px) {
+  .gallery-intro h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .gallery--body h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .gallery-card .gallery-images-row {
+    flex-direction: column;
+    padding-top: 0px;
+  }
+
+  .gallery-card .gallery-images-row img {
+    transition: none;
+    margin: 10px 0 10px 0;
+  }
+
+  .gallery-card .gallery-images-row .gallery-image-container {
+    width: 100%;
+    background: transparent;
+  }
+  .gallery-card .gallery-images-row .gallery-image-container:hover img {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  .gallery-intro h1 {
+    font-size: 20px;
+    padding: 20px;
+    letter-spacing: 5px;
+  }
+}

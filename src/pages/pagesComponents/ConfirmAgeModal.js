@@ -3,6 +3,9 @@ import { Modal, Button } from 'react-bootstrap';
 import Img from 'react-image';
 import { DotLoader } from 'react-spinners';
 
+// Images
+import logo from '../../img/logo_black_simple.png';
+
 const ConfirmAgeModal = () => {
   const [show, setShow] = useState(false);
 
@@ -32,7 +35,7 @@ const ConfirmAgeModal = () => {
       </Modal.Header>
       <Modal.Body>
         <Img
-          src={require('../../img/logo_black_simple.png')}
+          src={logo}
           alt='Crama Ferdi'
           style={{
             margin: 'auto',

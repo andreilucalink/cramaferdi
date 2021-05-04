@@ -9,6 +9,9 @@ import { Helmet } from 'react-helmet';
 // Components
 import ConfirmAgeModal from './pagesComponents/ConfirmAgeModal';
 
+// Images
+import down from '../img/dwn-light.svg';
+
 const VisitsNew = () => {
   useEffect(() => {
     window.scroll(0, 0);
@@ -33,7 +36,7 @@ const VisitsNew = () => {
           VIZITE ŞI DEGUSTĂRI
         </h1>
         <a href='#visits' className='scroll-down'>
-          <Img src={require('../img/dwn-light.svg')} alt='Scroll Down' />
+          <Img src={down} alt='Scroll Down' />
         </a>
         <div id='visits'></div>
       </div>

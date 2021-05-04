@@ -90,7 +90,6 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-
           <div className='col-xs-12 col-sm-6 col-md-6 col-lg-8 position1 img-wrapper'>
             <Img
               src={require(`../img/gallery/minified/${images[1]}`)}
@@ -113,7 +112,6 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-
           <div className='row col-lg-8 md-12' style={{ margin: 0, padding: 0 }}>
             <div className='col-xs-12 col-sm-6 col-md-6 col-lg-6 position1 img-wrapper'>
               <Img
@@ -180,7 +178,6 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-
           <div className='col-xs-12 col-sm-12 col-md-12 col-lg-4 position2 img-wrapper'>
             <Img
               src={require(`../img/gallery/minified/${images[5]}`)}

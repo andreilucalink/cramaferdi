@@ -55,7 +55,15 @@
 
 .home-section1 .home-section-content1 {
   border-bottom: 3px solid #f4f4f4;
-  background: #1b262c;
+  background-image: linear-gradient(
+    to bottom,
+    #1b262c,
+    #18252d,
+    #14252e,
+    #10242f,
+    #0b2330
+  );
+  background-image: #1b262c;
   padding: 80px 0px 100px 0px;
   margin-top: -4px;
   position: relative;
@@ -306,7 +314,15 @@
 /* ------ SECTION5 ------ */
 
 .home-section5 .home-section-content5 {
-  background-color: #204051;
+  background-image: #204051;
+  background-image: linear-gradient(
+    to bottom,
+    #204051,
+    #1b3849,
+    #153140,
+    #102a38,
+    #0b2330
+  );
   padding: 80px 0px 100px 0px;
   margin-top: -4px;
   position: relative;

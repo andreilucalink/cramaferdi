@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../img/home_logo_intro.png';
 
 function Page404() {
   useEffect(() => {
@@ -12,11 +13,7 @@ function Page404() {
         Aţi accesat o cale inexistentă <br />
         în site
       </h2>
-      <img
-        className='logo-not-found'
-        src={require('../img/home_logo_intro.png')}
-        alt='404'
-      />
+      <img className='logo-not-found' src={logo} alt='404' />
       <div className='buttons'>
         <Link to='/' className='btn-404 '>
           {' '}

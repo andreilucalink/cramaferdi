@@ -7,6 +7,16 @@ import { Helmet } from 'react-helmet';
 // Components
 import WineCard from './pagesComponents/WineCard';
 
+// Images
+import down from '../img/dwn-light.svg';
+import calx from '../img/wines/CALX2020.png';
+import calxlim from '../img/wines/CALX2020.png';
+import cunp from '../img/wines/CUNP2019_new.png';
+import cosm from '../img/wines/RC2020.png';
+import ladyblk from '../img/wines/LBK2019_new.png';
+import mrsr from '../img/wines/MRSR2018_new.png';
+import rkr from '../img/wines/RKR2018.png';
+
 const Wines = () => {
   const winesRef = useRef(null);
   useEffect(() => {
@@ -31,7 +41,7 @@ const Wines = () => {
           VINURI
         </h1>
         <a href='#wines' className='scroll-down'>
-          <Img src={require('../img/dwn-light.svg')} alt='Scroll Down' />
+          <Img src={down} alt='Scroll Down' />
         </a>
         <div id='wines' ref={winesRef}></div>
       </div>
@@ -48,28 +58,28 @@ const Wines = () => {
           <WineCard
             link='/vinuri/cuvee-unchiu-puiu-2019'
             price='60 RON'
-            img='CUNP2019_new.png'
+            img={cunp}
             title='Cuvée Unchiu Puiu'
             year='2019'
           />
           <WineCard
             link='/vinuri/lady-black'
             price='95 RON'
-            img='LBK2019_new.png'
+            img={ladyblk}
             title='Lady Black'
             year='2019'
           />
           <WineCard
             link='/vinuri/mister-s-rezerva'
             price='130 RON'
-            img='MRSR2018_new.png'
+            img={mrsr}
             title='Mister S Rezerva'
             year='2018'
           />
           <WineCard
             link='/vinuri/rose-cosmina-editie-limitata'
             price='50 RON'
-            img='RC2020.png'
+            img={cosm}
             title='Rosé Cosmina Ed. Lim.'
             year='2020'
           />
@@ -78,21 +88,21 @@ const Wines = () => {
           <WineCard
             link='/vinuri/cuvee-alexandra'
             price='35 RON'
-            img='CALX2020.png'
+            img={calx}
             title='Cuvée Alexandra'
             year='2020'
           />
           <WineCard
             link='/vinuri/cuvee-alexandra-editie-limitata'
             price='55 RON'
-            img='CALX2020_LIM.png'
+            img={calxlim}
             title='Cuvée Alexandra Ed. Lim.'
             year='2020'
           />
           <WineCard
             link='/vinuri/redking-rezerva-2018'
             price='130 RON'
-            img='RKR2018.png'
+            img={rkr}
             title='Red King Rezerva'
             year='2018'
           />

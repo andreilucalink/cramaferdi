@@ -9,10 +9,9 @@ const WineCard = ({ img, link, year, title, price }) => {
     <Col className='wine-card' lg={3} md={6} xs={12}>
       <Col className='wine-description' md={12}>
         <Img
-          src={require(`../../img/wines/${img}`)}
+          src={img}
           loader={
             <div className='loader-wrapper'>
-              {' '}
               <WineLoader />
             </div>
           }

@@ -6,6 +6,11 @@ import { Helmet } from 'react-helmet';
 // Components
 import ConfirmAgeModal from './pagesComponents/ConfirmAgeModal';
 
+// Images
+import down from '../img/dwn-light.svg';
+import phone from '../img/contact_phone.svg';
+import mail from '../img/contact_email.svg';
+
 const Contact = () => {
   useEffect(() => {
     window.scroll(0, 0);
@@ -29,7 +34,7 @@ const Contact = () => {
           CONTACT
         </h1>
         <a href='#paul' className='scroll-down'>
-          <img src={require('../img/dwn-light.svg')} alt='Scroll Down' />
+          <img src={down} alt='Scroll Down' />
         </a>
         <div id='paul'></div>
       </div>
@@ -37,7 +42,7 @@ const Contact = () => {
         <h3> PAUL MIHĂILESCU</h3>
         <div className='profile-info'>
           <a role='button' href='tel:+40-0729-884-940'>
-            <img src={require('../img/contact_phone.svg')} alt=' ' />
+            <img src={phone} alt=' ' />
             0729-884-940
           </a>
           <div className='profile-img paul-img'></div>
@@ -48,7 +53,7 @@ const Contact = () => {
           <div className='profile-img fernando-img'></div>
           <a role='button' href='mailto:office@cramaferdi.ro'>
             <span>office@cramaferdi.ro</span>
-            <img src={require('../img/contact_email.svg')} alt=' ' />
+            <img src={mail} alt=' ' />
           </a>
         </div>
         <h3>FERNANDO MIHĂILESCU</h3>
@@ -57,7 +62,7 @@ const Contact = () => {
         <h3>OFELIA MARIAN</h3>
         <div className='profile-info'>
           <a role='button' href='tel:+40-0723-768-322'>
-            <img src={require('../img/contact_phone.svg')} alt=' ' />
+            <img src={phone} alt=' ' />
             0723-768-322
           </a>
           <div className='profile-img ofelia-img'></div>

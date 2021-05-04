@@ -5,11 +5,26 @@ import Img from 'react-image';
 import '../css/home.css';
 import { Helmet } from 'react-helmet';
 
+// Images
+import homeLogo from '../img/home_logo_intro.png';
+import down from '../img/dwn.svg';
+import darkPath from '../img/path_dark.svg';
+import lightPath from '../img/path_light.svg';
+import bluePath from '../img/path_blue.svg';
+import separator from '../img/separator.svg';
+import separatorDark from '../img/separator_dk.svg';
+import overlap from '../img/overlap.png';
+import pin from '../img/pinWH.svg';
+import wine from '../img/wineWH.svg';
+import gallery from '../img/galleryWH.svg';
+import cazare from '../img/cazareWH.svg';
+
 // Components
 import EmblaCarousel from './pagesComponents/EmblaCarousel';
 import ConfirmAgeModal from './pagesComponents/ConfirmAgeModal';
 
 const HomeNew = () => {
+  console.warn(cazare);
   useEffect(() => {
     window.scroll(0, 0);
 
@@ -31,19 +46,16 @@ const HomeNew = () => {
         <Img
           data-aos='zoom-in'
           data-aos-delay='500'
-          src={require('../img/home_logo_intro.png')}
+          src={homeLogo}
           alt='Crama Ferdi'
           className='home-logo'
         />
         <a href='#despre-crama' className='scroll-down'>
-          <img src={require('../img/dwn.svg')} alt='Scroll Down' />
+          <img src={down} alt='Scroll Down' />
         </a>
       </div>
       <div className='home-section1'>
-        <img
-          src={require('../img/path_dark.svg')}
-          className='path-img-dark'
-          alt='path'></img>
+        <img src={darkPath} className='path-img-dark' alt='path'></img>
         <div id='despre-crama'></div>
         <div className='home-section-content1'>
           <div
@@ -61,11 +73,7 @@ const HomeNew = () => {
               <span>RAMĂ</span>
             </div>
           </div>
-          <img
-            src={require('../img/separator.svg')}
-            alt=''
-            className='separator'
-          />
+          <img src={separator} alt='' className='separator' />
           <p>
             <strong>Crama Ferdi</strong> este o cramă de tip boutique – premium
             care oferă iubitorului de vin privilegiul de a degusta un vin lucrat
@@ -74,11 +82,7 @@ const HomeNew = () => {
             vinurile roșii sunt maturate, de la 1 la 2 ani, în butoaie de stejar
             american, francez și românesc, reînnoite la fiecare 3 - 4 ani.
           </p>
-          <img
-            src={require('../img/overlap.png')}
-            alt=''
-            className='overlap1'
-          />
+          <img src={overlap} alt='' className='overlap1' />
         </div>
       </div>
       <div className='home-section2'>
@@ -89,11 +93,7 @@ const HomeNew = () => {
             data-aos-duration='700'
             data-aos-delay='200'
             id='_circle1'>
-            <img
-              src={require('../img/pinWH.svg')}
-              alt=''
-              className='icon-link'
-            />
+            <img src={pin} alt='' className='icon-link' />
             <p>VIZITE</p>
           </Link>
           <Link
@@ -103,7 +103,7 @@ const HomeNew = () => {
             data-aos-delay='300'
             data-aos-anchor='#_circle1'
             id='_circle2'>
-            <img src={require('../img/wineWH.svg')} alt='' />
+            <img src={wine} alt='' />
             <p>VINURI</p>
           </Link>
           <Link
@@ -113,7 +113,7 @@ const HomeNew = () => {
             data-aos-delay='400'
             data-aos-anchor='#_circle2'
             id='_circle3'>
-            <img src={require('../img/galleryWH.svg')} alt='' />
+            <img src={gallery} alt='' />
             <p>GALERIE</p>
           </Link>
           <Link
@@ -122,14 +122,11 @@ const HomeNew = () => {
             data-aos-duration='700'
             data-aos-delay='500'
             data-aos-anchor='#_circle3'>
-            <img src={require('../img/cazareWH.svg')} alt='' />
+            <img src={cazare} alt='' />
             <p>CAZARE</p>
           </Link>
         </div>
-        <img
-          src={require('../img/path_light.svg')}
-          className='path-img-light'
-          alt=''></img>
+        <img src={lightPath} className='path-img-light' alt=''></img>
       </div>
       <div className='home-section3'>
         <div className='home-section-content3'>
@@ -148,11 +145,7 @@ const HomeNew = () => {
               <span>RAMEI</span>
             </div>
           </div>
-          <img
-            src={require('../img/separator_dk.svg')}
-            alt=''
-            className='separator'
-          />
+          <img src={separatorDark} alt='' className='separator' />
           <p>
             Via se află în însorita regiune viticolă Dealu Mare, pe o suprafață
             de 3 hectare și are o vechime de 10 ani. Proprietarul cramei este și
@@ -169,10 +162,7 @@ const HomeNew = () => {
       </div>
       <div className='home-section4'>
         <div className='home-section-content4'>
-          <img
-            src={require('../img/path_blue.svg')}
-            className='path-img-blue'
-            alt=''></img>
+          <img src={bluePath} className='path-img-blue' alt=''></img>
         </div>
       </div>
       <div className='home-section5'>
@@ -192,11 +182,7 @@ const HomeNew = () => {
               <span>INURILOR</span>
             </div>
           </div>
-          <img
-            src={require('../img/separator.svg')}
-            alt=''
-            className='separator'
-          />
+          <img src={separator} alt='' className='separator' />
           <p>
             Crama produce vin din 10 soiuri de struguri, dintre care 7 roșii:
             Fetească Neagră, Cabernet Sauvignon, Cabernet Franc, Shiraz, Merlot,

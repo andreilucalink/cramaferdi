@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Page404 from './pages/Page404';
 import NavMenu from './layout/NavMenu';
 import Visits from './pages/VisitsNew';
-import Gallery from './pages/Gallery';
+// import Gallery from './pages/Gallery';
+import GalleryNew from './pages/GalleryNew';
 import Footer from './layout/Footer';
 import Contact from './pages/Contact';
 import Club from './pages/Club';
@@ -32,9 +33,10 @@ function App() {
         <Route exact path='/vinuri' component={Wines} />
         <Route exact path='/vizite-si-degustari' component={Visits} />
         <Route exact path='/club' component={Club} />
-        <Route exact path='/galerie' component={Gallery} />
+        {/* <Route exact path='/galerie' component={Gallery} /> */}
         <Route exact path='/cazare' component={Cazare} />
         <Route exact path='/contact' component={Contact} />
+        <Route exact path='/galerie' component={GalleryNew} />
         <Route
           exact
           path='/vinuri/redking-rezerva-2018'
