@@ -93,13 +93,6 @@ const Wines = () => {
             year='2020'
           />
           <WineCard
-            link='/vinuri/cuvee-alexandra-editie-limitata'
-            price='55 RON'
-            img={calxlim}
-            title='Cuvée Alexandra Ed. Lim.'
-            year='2020'
-          />
-          <WineCard
             link='/vinuri/redking-rezerva-2018'
             price='130 RON'
             img={rkr}

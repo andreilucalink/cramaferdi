@@ -16,7 +16,6 @@ import Wines from './pages/Wines';
 import Cazare from './pages/Cazare';
 
 // Wines
-import CuveeAlexandra_Limited from './pages/wines/CuveeAlexandra_Limited';
 import CuveeAlexandra from './pages/wines/CuveeAlexandra';
 import RoseCosmina_Limited from './pages/wines/RoseCosmina_Limited';
 import RedKingRez_2018 from './pages/wines/RedKingRez_2018';
@@ -33,7 +32,6 @@ function App() {
         <Route exact path='/vinuri' component={Wines} />
         <Route exact path='/vizite-si-degustari' component={Visits} />
         <Route exact path='/club' component={Club} />
-        {/* <Route exact path='/galerie' component={Gallery} /> */}
         <Route exact path='/cazare' component={Cazare} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/galerie' component={GalleryNew} />
@@ -41,11 +39,6 @@ function App() {
           exact
           path='/vinuri/redking-rezerva-2018'
           component={RedKingRez_2018}
-        />
-        <Route
-          exact
-          path='/vinuri/cuvee-alexandra-editie-limitata'
-          component={CuveeAlexandra_Limited}
         />
         <Route
           exact
