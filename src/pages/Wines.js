@@ -10,7 +10,6 @@ import WineCard from './pagesComponents/WineCard';
 // Images
 import down from '../img/dwn-light.svg';
 import calx from '../img/wines/CALX2020.png';
-import calxlim from '../img/wines/CALX2020.png';
 import cunp from '../img/wines/CUNP2019_new.png';
 import cosm from '../img/wines/RC2020.png';
 import ladyblk from '../img/wines/LBK2019_new.png';
