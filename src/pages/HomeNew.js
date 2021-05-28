@@ -153,7 +153,7 @@ const HomeNew = () => {
             își are obârșia în vie, de unde începe și selecția strugurilor.
           </p>
           <iframe
-            src='https://www.youtube.com/embed/Zs9tJ7_UaYU'
+            src='https://www.youtube.com/embed/ul99K1Hd29Q'
             frameBorder='0'
             allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
             allowFullScreen
