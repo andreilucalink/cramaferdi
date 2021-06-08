@@ -24,7 +24,6 @@ import EmblaCarousel from './pagesComponents/EmblaCarousel';
 import ConfirmAgeModal from './pagesComponents/ConfirmAgeModal';
 
 const HomeNew = () => {
-  console.warn(cazare);
   useEffect(() => {
     window.scroll(0, 0);
 
