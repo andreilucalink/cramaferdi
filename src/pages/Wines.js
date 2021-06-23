@@ -10,10 +10,10 @@ import WineCard from './pagesComponents/WineCard';
 // Images
 import down from '../img/dwn-light.svg';
 import calx from '../img/wines/CALX2020.png';
-import cunp from '../img/wines/CUNP2019_new.png';
+import cunp from '../img/wines/CUNP2019.png';
 // import cosm from '../img/wines/RC2020.png';
-import ladyblk from '../img/wines/LBK2019_new.png';
-import mrsr from '../img/wines/MRSR2018_new.png';
+// import ladyblk from '../img/wines/LBK2019_new.png';
+import mrsr from '../img/wines/MRSR2018.png';
 import rkr from '../img/wines/RKR2018.png';
 
 const Wines = () => {
@@ -62,13 +62,6 @@ const Wines = () => {
             year='2019'
           />
           <WineCard
-            link='/vinuri/lady-black'
-            price='95 RON'
-            img={ladyblk}
-            title='Lady Black'
-            year='2019'
-          />
-          <WineCard
             link='/vinuri/mister-s-rezerva'
             price='130 RON'
             img={mrsr}
@@ -82,8 +75,6 @@ const Wines = () => {
             title='Cuvée Alexandra'
             year='2020'
           />
-        </Row>
-        <Row>
           <WineCard
             link='/vinuri/redking-rezerva-2018'
             price='130 RON'
