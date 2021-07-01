@@ -21,6 +21,8 @@ const WinePage = ({
   img,
   decantation,
   modalImage,
+  medalImg,
+  medal
 }) => {
   useEffect(() => {
     window.scroll(0, 0);
@@ -48,7 +50,7 @@ const WinePage = ({
         </Modal.Body>
       </Modal>
       <h1 className='wine-header'>
-        {title} {year}{' '}
+        {title} {year}
       </h1>
       <Row md={12} xs={12}>
         <Col xl={6} md={6} xs={12}>
@@ -66,6 +68,11 @@ const WinePage = ({
             <ListGroup.Item className='wine-list-item'>
               <b>Descriere:</b> {description}
             </ListGroup.Item>
+            {medal && 
+            <ListGroup.Item className='wine-list-item'>
+              <b>Medalie:</b> {medal} <Img src={medalImg} className='medal-image'></Img>
+            </ListGroup.Item>
+            }
             <ListGroup.Item className='wine-list-item'>
               <b>Preţ:</b> {price}
             </ListGroup.Item>

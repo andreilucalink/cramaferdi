@@ -18,6 +18,11 @@
   padding-bottom: 30px;
 }
 
+.wine-page .medal-image {
+  display: inline;
+  width: 25px;
+}
+
 .wine-page .wine-image {
   width: 100%;
   /* display: block; */

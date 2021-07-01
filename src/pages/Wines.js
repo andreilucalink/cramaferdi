@@ -10,11 +10,12 @@ import WineCard from './pagesComponents/WineCard';
 // Images
 import down from '../img/dwn-light.svg';
 import calx from '../img/wines/CALX2020.png';
-import cunp from '../img/wines/CUNP2019.png';
+import cunp from '../img/wines/CUNP2019_medal.jpg';
 // import cosm from '../img/wines/RC2020.png';
 // import ladyblk from '../img/wines/LBK2019_new.png';
 import mrsr from '../img/wines/MRSR2018.png';
 import rkr from '../img/wines/RKR2018.png';
+import blau from '../img/wines/BLAUB2018_new.jpg';
 
 const Wines = () => {
   const winesRef = useRef(null);
@@ -54,6 +55,13 @@ const Wines = () => {
           </p>
         </div>
         <Row>
+        <WineCard
+            link='/vinuri/blau-burg-2018'
+            price='105 RON'
+            img={blau}
+            title='Blau Burg Ed. Limitată'
+            year='2018'
+          />
           <WineCard
             link='/vinuri/cuvee-unchiu-puiu-2019'
             price='60 RON'
@@ -75,13 +83,15 @@ const Wines = () => {
             title='Cuvée Alexandra'
             year='2020'
           />
+        </Row>
+        <Row>
           <WineCard
             link='/vinuri/redking-rezerva-2018'
             price='130 RON'
             img={rkr}
             title='Red King Rezerva'
             year='2018'
-          />
+            />
         </Row>
       </Container>
     </div>

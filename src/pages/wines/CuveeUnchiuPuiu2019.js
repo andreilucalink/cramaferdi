@@ -20,6 +20,8 @@ const CuveeUnchiuPuiu2019 = () => {
       img={img}
       decantation={cuveeUnchiu_Puiu2019.decantation}
       modalImage={modalImage}
+      medalImg={cuveeUnchiu_Puiu2019.medalImg}
+      medal={cuveeUnchiu_Puiu2019.medal}
     />
   );
 };
