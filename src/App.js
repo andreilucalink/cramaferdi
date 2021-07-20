@@ -16,7 +16,6 @@ import Wines from './pages/Wines';
 import Cazare from './pages/Cazare';
 
 // Wines
-import CuveeAlexandra from './pages/wines/CuveeAlexandra';
 import RedKingRez_2018 from './pages/wines/RedKingRez_2018';
 import MisterS_Rezerva from './pages/wines/MisterS_Rezerva';
 import CuveeUnchiuPuiu2019 from './pages/wines/CuveeUnchiuPuiu2019';
@@ -41,11 +40,6 @@ function App() {
         />
         <Route
           exact
-          path='/vinuri/cuvee-alexandra'
-          component={CuveeAlexandra}
-        />
-        <Route
-          exact
           path='/vinuri/mister-s-rezerva'
           component={MisterS_Rezerva}
         />
@@ -54,11 +48,7 @@ function App() {
           path='/vinuri/cuvee-unchiu-puiu-2019'
           component={CuveeUnchiuPuiu2019}
         />
-        <Route
-          exact
-          path='/vinuri/blau-burg-2018'
-          component={BlauBurg2018}
-        />
+        <Route exact path='/vinuri/blau-burg-2018' component={BlauBurg2018} />
         <Route component={Page404} />
       </Switch>
       <Footer />
