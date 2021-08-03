@@ -63,14 +63,14 @@ const Cazare = () => {
               href='https://kimcountryclub.ro'
               target='_blank'
               rel='noopener noreferrer'>
-              <Img src='https://kimcountryclub.ro/wp-content/uploads/2017/08/galerie-piscina-2.jpg'></Img>
+              <Img src='https://kimcountryclub.ro/wp-content/uploads/2017/08/galerie-foto_0012_galerie-15.jpg'></Img>
             </a>
             <a
               className='cazare-image-container'
               href='https://kimcountryclub.ro'
               target='_blank'
               rel='noopener noreferrer'>
-              <Img src='https://kimcountryclub.ro/wp-content/uploads/2018/10/locuri-in-natura-1024x683.jpg'></Img>
+              <Img src='https://kimcountryclub.ro/wp-content/uploads/2017/08/galerie-foto_0009_galerie-18.jpg'></Img>
             </a>
           </div>
           <div className='cazare-images'>
