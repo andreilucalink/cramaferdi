@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Page404 from './pages/Page404';
 import NavMenu from './layout/NavMenu';
 import Visits from './pages/VisitsNew';
-// import Gallery from './pages/Gallery';
 import GalleryNew from './pages/GalleryNew';
 import Footer from './layout/Footer';
 import Contact from './pages/Contact';
@@ -19,6 +18,7 @@ import Cazare from './pages/Cazare';
 import MisterS_Rezerva from './pages/wines/MisterS_Rezerva';
 import CuveeUnchiuPuiu2019 from './pages/wines/CuveeUnchiuPuiu2019';
 import BlauBurg2018 from './pages/wines/BlauBurg2018';
+import whiteQueen_Limited from './pages/wines/WhiteQueen2020_Limited';
 
 function App() {
   return (
@@ -43,6 +43,11 @@ function App() {
           component={CuveeUnchiuPuiu2019}
         />
         <Route exact path='/vinuri/blau-burg-2018' component={BlauBurg2018} />
+        <Route
+          exact
+          path='/vinuri/white-queen-2020'
+          component={whiteQueen_Limited}
+        />
         <Route component={Page404} />
       </Switch>
       <Footer />

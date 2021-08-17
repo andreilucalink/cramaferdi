@@ -16,6 +16,7 @@ import cunp from '../img/wines/CUNP2019_medal.jpg';
 import mrsr from '../img/wines/MRSR2018.png';
 // import rkr from '../img/wines/RKR2018.png';
 import blau from '../img/wines/BLAUB2018.jpg';
+import whq from '../img/wines/WHQ2020_new.jpg';
 
 const Wines = () => {
   const winesRef = useRef(null);
@@ -55,6 +56,13 @@ const Wines = () => {
           </p>
         </div>
         <Row>
+          <WineCard
+            link='/vinuri/white-queen-2020'
+            price='80 RON'
+            img={whq}
+            title='White Queen Ed. Limitată'
+            year='2020'
+          />
           <WineCard
             link='/vinuri/blau-burg-2018'
             price='105 RON'

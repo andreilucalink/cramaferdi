@@ -3,7 +3,7 @@ export const cuveePaulPort = {
   year: '2016',
   price: '90 RON',
   description:
-    'Singurul vin demidulce al Cramei Ferdi, este un cupaj format din Fetească Neagră și Cabernet Sauvignon. Prin alăturarea celor două soiuri, bineînțeles că s-a obținut un vin premium, căruia nu îi lipsesc nici corpul si nici culoarea bine conturate de Cabernet, dar nici gustul desăvârșit de fructele de pădure specifice Feteștii Negre. Cele 24 de luni petrecute în baric încununează cu succes calitatea acestui vin. Albastrul regal este culoarea capisonului de ceara cu sigiliul cramei. Anul recoltei este 2016 iar gradul alcoolic este 14,9%.',
+    'Singurul vin demidulce al Cramei Ferdi, este un cupaj format din Fetească Neagră şi Cabernet Sauvignon. Prin alăturarea celor două soiuri, bineînţeles că s-a obţinut un vin premium, căruia nu îi lipsesc nici corpul si nici culoarea bine conturate de Cabernet, dar nici gustul desăvârşit de fructele de pădure specifice Feteştii Negre. Cele 24 de luni petrecute în baric încununează cu succes calitatea acestui vin. Albastrul regal este culoarea capisonului de ceara cu sigiliul cramei. Anul recoltei este 2016 iar gradul alcoolic este 14,9%.',
   type: 'Demidulce',
   maturing: '24 luni, baric din stejar',
   alchool: '14,9%',
@@ -33,13 +33,13 @@ export const cuveeUPuiu = {
   year: '2018',
   price: '60 RON',
   description:
-    'În acest cupaj am alăturat trei soiuri cu note diferite dar care împreună oferă o senzație unică: Merlot, Shiraz și Blaufränkisch ne aduc în prezența unui vin spectaculos de culoarea purpurei cu miros îmbătător de ierburi aromate. Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea ridicată și Blaufränkisch condimentează cu succes blend-ul. Maturat 6 luni în butoaie de stejar .',
+    'În acest cupaj am alăturat trei soiuri cu note diferite dar care împreună oferă o senzaţie unică: Merlot, Shiraz şi Blaufränkisch ne aduc în prezenţa unui vin spectaculos de culoarea purpurei cu miros îmbătător de ierburi aromate. Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea ridicată şi Blaufränkisch condimentează cu succes blend-ul. Maturat 6 luni în butoaie de stejar .',
   type: 'Sec',
   maturing: '6 luni, baric din stejar',
   alchool: '14,5%',
   color: 'Roşu',
   qty: '0,75L',
-  grapes: 'Merlot, Shiraz și Blaufränkisch',
+  grapes: 'Merlot, Shiraz şi Blaufränkisch',
   decantation: 'minim 1h',
 };
 
@@ -63,13 +63,13 @@ export const cuveeFrancisc_2018 = {
   year: '2018',
   price: '100 RON',
   description:
-    'Cabernet Franc și Merlot, două soiuri de struguri care se completează perfect într-un blend ce oferă un caracter unic, un potențial bun de învechire și o comoară artizanală. Vinul este plăcut pentru aromele sale intense, aciditatea medie spre înaltă și gustul ierbos. Anul recoltei este 2018 iar maturarea a avut loc timp de 18 luni în butoaie de stejar. Gradul alcoolic este 14,1%.',
+    'Cabernet Franc şi Merlot, două soiuri de struguri care se completează perfect într-un blend ce oferă un caracter unic, un potenţial bun de învechire şi o comoară artizanală. Vinul este plăcut pentru aromele sale intense, aciditatea medie spre înaltă şi gustul ierbos. Anul recoltei este 2018 iar maturarea a avut loc timp de 18 luni în butoaie de stejar. Gradul alcoolic este 14,1%.',
   type: 'Sec',
   maturing: '18 luni, baric din stejar',
   alchool: '14,1%',
   color: 'Roşu',
   qty: '0,75L',
-  grapes: 'Cabernet Franc și Merlot',
+  grapes: 'Cabernet Franc şi Merlot',
   decantation: 'minim 1h',
 };
 
@@ -153,7 +153,7 @@ export const redKingRez_2018 = {
   year: '2018',
   price: '130 RON',
   description:
-    'Un Cabernet Sauvignon dominant, concentrat și cu un mare potențial de învechire. Un vin super-premium, corpolent, unde gustul de coacăze negre condimentate dau tonul și unde aciditatea atinge nivelul corect. Taninii bogați fac din acest Cabernet un partener perfect pentru carnea la grill și sosurile piperate. Cele 20 de luni petrecute la baric îi rotunjesc aroma într-o ciocolată neagră. Roșul regal este culoarea capișonului de ceară cu sigiliul cramei. Anul recoltei este 2018 iar gradul alcoolic este 14.2%.',
+    'Un Cabernet Sauvignon dominant, concentrat şi cu un mare potenţial de învechire. Un vin super-premium, corpolent, unde gustul de coacăze negre condimentate dau tonul şi unde aciditatea atinge nivelul corect. Taninii bogaţi fac din acest Cabernet un partener perfect pentru carnea la grill şi sosurile piperate. Cele 20 de luni petrecute la baric îi rotunjesc aroma într-o ciocolată neagră. Roşul regal este culoarea capişonului de ceară cu sigiliul cramei. Anul recoltei este 2018 iar gradul alcoolic este 14.2%.',
   type: 'Sec',
   maturing: '20 luni, baric din stejar',
   alchool: '14,2%',
@@ -222,6 +222,7 @@ export const misterS_Rezerva = {
   grapes: 'Shiraz',
   decantation: 'minim 1h',
 };
+
 export const cuveeUnchiu_Puiu2019 = {
   title: 'Cuvée Unchiu Puiu',
   year: '2019',
@@ -236,7 +237,7 @@ export const cuveeUnchiu_Puiu2019 = {
   grapes: 'Merlot, Shiraz şi Blaufränkisch',
   decantation: 'minim 1h',
   medalImg: 'https://www.iwcb.ro/wp-content/uploads/2021/05/gold-2021.png',
-  medal: 'Medalia de aur Vinarium'
+  medal: 'Medalia de aur Vinarium',
 };
 
 export const blauBurg2018 = {
@@ -252,4 +253,19 @@ export const blauBurg2018 = {
   qty: '0,75L',
   grapes: 'Blaufränkisch',
   decantation: 'minim 1h',
-}
+};
+
+export const whiteQueen_Limited = {
+  title: 'White Queen Ed. Limitată',
+  year: '2020',
+  price: '80 RON',
+  description:
+    'White Queen Ediţie Limitată 2020 este un Chardonnay fermentat şi maturat in baricuri noi, de stejar francez, cu batonaj zilnic. Astfel că White Queen este un vin untos, cu arome de fructe tropicale, care ne îndreaptă spre un postgust persistent. Un vin echilibrat, cu aciditate moderată, care oferă totodată o senzaţie de prospeţime şi un potenţial bun de învechire.',
+  type: 'Sec',
+  maturing: '8 luni, baric din stejar',
+  alchool: '14,2%',
+  color: 'Alb',
+  qty: '0,75L',
+  grapes: 'Chardonnay',
+  decantation: null,
+};
