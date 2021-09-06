@@ -198,7 +198,7 @@ export const ladyBlack = {
   year: '2019',
   price: '95 RON',
   description:
-    'Feteasca Neagră cu note olfactive de cacao si condimente care te invaluie in aromele de fructe rosii, ofera o senzaţie gustativă inedită si surpinde plăcut prin astringenta incitanta, pe un fond de taninuri de fruct copt si lemn, cu un potenţial de învechire de 5 până la 7 ani. Albastrul regal este culoarea capisonului de ceara cu sigiliul cramei.',
+    'Feteasca Neagră cu note olfactive de cacao si condimente care te invaluie in aromele de fructe rosii, ofera o senzaţie gustativă inedită si surpinde plăcut prin astringenta incitanta, pe un fond de taninuri de fruct copt si lemn, cu un potenţial de învechire de 5 până la 7 ani. Albastrul regal este culoarea capisonului de ceara cu sigiliul cramei.',
   type: 'Sec',
   maturing: '14 luni, baric din stejar',
   alchool: '14,5%',
@@ -213,7 +213,7 @@ export const misterS_Rezerva = {
   year: '2018',
   price: '130 RON',
   description:
-    'Un Shiraz bine structurat şi complex, dar în acelaşi timp elegant, cu un corp amplu, de culoare rubiniu-violet intens cu arome concentrate de afine şi prune, unde taninurile şi aciditatea se îmbină frumos. Sunt de asemenea caracteristice notele de carne afumată şi piper. Anul recoltei este 2018 iar maturarea a avut loc timp de 22 luni în butoaie de stejar.',
+    'Un Shiraz bine structurat şi complex, dar în acelaşi timp elegant, cu un corp amplu, de culoare rubiniu-violet intens cu arome concentrate de afine şi prune, unde taninurile şi aciditatea se îmbină frumos. Sunt de asemenea caracteristice notele de carne afumată şi piper. Anul recoltei este 2018 iar maturarea a avut loc timp de 22 luni în butoaie de stejar.',
   type: 'Sec',
   maturing: '22 luni, baric din stejar',
   alchool: '14,8%',
@@ -228,7 +228,7 @@ export const cuveeUnchiu_Puiu2019 = {
   year: '2019',
   price: '60 RON',
   description:
-    'În acest cupaj am alăturat trei soiuri cu note diferite dar care împreună oferă o senzaţie unică: Merlot, Shiraz şi Blaufränkisch ne aduc în prezenţa unui vin deosebit de culoarea purpurei cu miros îmbătător de ierburi aromate. Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea ridicată şi Blaufränkisch condimentează cu succes blend-ul.',
+    'În acest cupaj am alăturat trei soiuri cu note diferite dar care împreună oferă o senzaţie unică: Merlot, Shiraz şi Blaufränkisch ne aduc în prezenţa unui vin deosebit de culoarea purpurei cu miros îmbătător de ierburi aromate. Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea ridicată şi Blaufränkisch condimentează cu succes blend-ul.',
   type: 'Sec',
   maturing: '6 luni, baric din stejar',
   alchool: '13,9%',
@@ -245,7 +245,7 @@ export const blauBurg2018 = {
   year: '2018',
   price: '105 RON',
   description:
-    'Aromele gustative ale acestui soi mineral de origine germană se caracterizează prin tonuri de coacăze şi cireşe negre, dezvăluind o aciditate caracteristică lui. Blaufränkisch ne oferă un vin cu structură densă şi taninuri proeminente. Vinul impetuos dezvoltă valenţe catifelate şi consistente cu un potenţial bun de învechire, datorită timpului petrecut la baric, gustul său fiind rotunjit într-un mix de ciocolată amăruie şi piper negru.',
+    'Aromele gustative ale acestui soi mineral de origine germană se caracterizează prin tonuri de coacăze şi cireşe negre, dezvăluind o aciditate caracteristică lui. Blaufränkisch ne oferă un vin cu structură densă şi taninuri proeminente. Vinul impetuos dezvoltă valenţe catifelate şi consistente cu un potenţial bun de învechire, datorită timpului petrecut la baric, gustul său fiind rotunjit într-un mix de ciocolată amăruie şi piper negru.',
   type: 'Sec',
   maturing: '22 luni, baric din stejar',
   alchool: '15%',
@@ -268,4 +268,19 @@ export const whiteQueen_Limited = {
   qty: '0,75L',
   grapes: 'Chardonnay',
   decantation: null,
+};
+
+export const cuveeFrancisc_2019 = {
+  title: 'Cuvée Francisc',
+  year: '2019',
+  price: '110 RON',
+  description:
+    'Cabernet Franc şi Merlot, două soiuri de struguri care se completează perfect într-un blend ce oferă un caracter unic, un potenţial bun de învechire şi o comoară artizanală. Vinul este plăcut pentru aromele sale intense de afine şi mure coapte, aciditatea înaltă şi taninii mătăsoşi. Anul recoltei este 2019 iar maturarea a avut loc timp de 18 luni în butoaie de stejar.',
+  type: 'Sec',
+  maturing: '18 luni, baric din stejar',
+  alchool: '14,4%',
+  color: 'Roşu',
+  qty: '0,75L',
+  grapes: 'Cabernet Franc şi Merlot',
+  decantation: 'minim 1h',
 };

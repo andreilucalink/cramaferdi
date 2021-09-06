@@ -22,7 +22,7 @@ const WinePage = ({
   decantation,
   modalImage,
   medalImg,
-  medal
+  medal,
 }) => {
   useEffect(() => {
     window.scroll(0, 0);
@@ -35,20 +35,22 @@ const WinePage = ({
       <Helmet>
         <title>{`Crama Ferdi | ${title}`}</title>
       </Helmet>
-      <Modal show={open} centered size='lg' onHide={() => setOpen(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title style={{ textAlign: 'center', width: '100%' }}>
-            {title} {year}
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Image
-            src={modalImage}
-            alt='Eticheta'
-            fluid
-            className='modal-image'></Image>
-        </Modal.Body>
-      </Modal>
+      {modalImage && (
+        <Modal show={open} centered size='lg' onHide={() => setOpen(false)}>
+          <Modal.Header closeButton>
+            <Modal.Title style={{ textAlign: 'center', width: '100%' }}>
+              {title} {year}
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Image
+              src={modalImage}
+              alt='Eticheta'
+              fluid
+              className='modal-image'></Image>
+          </Modal.Body>
+        </Modal>
+      )}
       <h1 className='wine-header'>
         {title} {year}
       </h1>
@@ -68,11 +70,12 @@ const WinePage = ({
             <ListGroup.Item className='wine-list-item'>
               <b>Descriere:</b> {description}
             </ListGroup.Item>
-            {medal && 
-            <ListGroup.Item className='wine-list-item'>
-              <b>Medalie:</b> {medal} <Img src={medalImg} className='medal-image'></Img>
-            </ListGroup.Item>
-            }
+            {medal && (
+              <ListGroup.Item className='wine-list-item'>
+                <b>Medalie:</b> {medal}{' '}
+                <Img src={medalImg} className='medal-image'></Img>
+              </ListGroup.Item>
+            )}
             <ListGroup.Item className='wine-list-item'>
               <b>Preţ:</b> {price}
             </ListGroup.Item>
@@ -104,16 +107,18 @@ const WinePage = ({
                 {decantation}
               </ListGroup.Item>
             )}
-            <ListGroup.Item className='wine-list-item'>
-              <div
-                onClick={() => setOpen(true)}
-                variant='dark'
-                className='my-2 buton-eticheta'
-                size={'lg'}
-                style={{ display: 'inline-block' }}>
-                Vezi Eticheta
-              </div>
-            </ListGroup.Item>
+            {modalImage && (
+              <ListGroup.Item className='wine-list-item'>
+                <div
+                  onClick={() => setOpen(true)}
+                  variant='dark'
+                  className='my-2 buton-eticheta'
+                  size={'lg'}
+                  style={{ display: 'inline-block' }}>
+                  Vezi Eticheta
+                </div>
+              </ListGroup.Item>
+            )}
           </ListGroup>
         </Col>
       </Row>

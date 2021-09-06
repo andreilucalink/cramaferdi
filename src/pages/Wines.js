@@ -17,6 +17,7 @@ import mrsr from '../img/wines/MRSR2018.png';
 // import rkr from '../img/wines/RKR2018.png';
 import blau from '../img/wines/BLAUB2018.jpg';
 import whq from '../img/wines/WHQ2020_new.jpg';
+import cfr2019 from '../img/wines/CFR2019_new.jpg';
 
 const Wines = () => {
   const winesRef = useRef(null);
@@ -57,6 +58,13 @@ const Wines = () => {
         </div>
         <Row>
           <WineCard
+            link='/vinuri/cuvee-francisc-2019'
+            price='110 RON'
+            img={cfr2019}
+            title='Cuvée Francisc Ed. Limitată'
+            year='2019'
+          />
+          <WineCard
             link='/vinuri/white-queen-2020'
             price='80 RON'
             img={whq}
@@ -77,6 +85,8 @@ const Wines = () => {
             title='Cuvée Unchiu Puiu'
             year='2019'
           />
+        </Row>
+        <Row>
           <WineCard
             link='/vinuri/mister-s-rezerva'
             price='130 RON'

@@ -19,6 +19,7 @@ import MisterS_Rezerva from './pages/wines/MisterS_Rezerva';
 import CuveeUnchiuPuiu2019 from './pages/wines/CuveeUnchiuPuiu2019';
 import BlauBurg2018 from './pages/wines/BlauBurg2018';
 import whiteQueen_Limited from './pages/wines/WhiteQueen2020_Limited';
+import CuveeFrancisc2019 from './pages/wines/CuveeFrancisc2019';
 
 function App() {
   return (
@@ -41,6 +42,11 @@ function App() {
           exact
           path='/vinuri/cuvee-unchiu-puiu-2019'
           component={CuveeUnchiuPuiu2019}
+        />
+        <Route
+          exact
+          path='/vinuri/cuvee-francisc-2019'
+          component={CuveeFrancisc2019}
         />
         <Route exact path='/vinuri/blau-burg-2018' component={BlauBurg2018} />
         <Route
