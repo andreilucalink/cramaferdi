@@ -13,7 +13,7 @@ import down from "../img/dwn-light.svg";
 import cunp from "../img/wines/CUNP2019_medal.jpg";
 // import cosm from '../img/wines/RC2020.png';
 // import ladyblk from '../img/wines/LBK2019_new.png';
-import mrsr from "../img/wines/MRSR2018.png";
+// import mrsr from "../img/wines/MRSR2018.png";
 // import rkr from '../img/wines/RKR2018.png';
 import blau from "../img/wines/BLAUB2018.jpg";
 // import whq from "../img/wines/WHQ2020_new.jpg";
@@ -77,13 +77,6 @@ const Wines = () => {
                         img={cunp}
                         title="Cuvée Unchiu Puiu"
                         year="2019"
-                    />
-                    <WineCard
-                        link="/vinuri/mister-s-rezerva"
-                        price="130 RON"
-                        img={mrsr}
-                        title="Mister S Rezerva"
-                        year="2018"
                     />
                 </Row>
             </Container>

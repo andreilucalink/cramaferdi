@@ -15,7 +15,6 @@ import Wines from "./pages/Wines";
 import Cazare from "./pages/Cazare";
 
 // Wines
-import MisterS_Rezerva from "./pages/wines/MisterS_Rezerva";
 import CuveeUnchiuPuiu2019 from "./pages/wines/CuveeUnchiuPuiu2019";
 import BlauBurg2018 from "./pages/wines/BlauBurg2018";
 import CuveeFrancisc2019 from "./pages/wines/CuveeFrancisc2019";
@@ -32,11 +31,6 @@ function App() {
                 <Route exact path="/cazare" component={Cazare} />
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/galerie" component={GalleryNew} />
-                <Route
-                    exact
-                    path="/vinuri/mister-s-rezerva"
-                    component={MisterS_Rezerva}
-                />
                 <Route
                     exact
                     path="/vinuri/cuvee-unchiu-puiu-2019"
