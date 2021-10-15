@@ -9,7 +9,6 @@ import Visits from "./pages/VisitsNew";
 import GalleryNew from "./pages/GalleryNew";
 import Footer from "./layout/Footer";
 import Contact from "./pages/Contact";
-import Club from "./pages/Club";
 import HomeNew from "./pages/HomeNew";
 import Wines from "./pages/Wines";
 import Cazare from "./pages/Cazare";
@@ -18,6 +17,8 @@ import Cazare from "./pages/Cazare";
 import CuveeUnchiuPuiu2019 from "./pages/wines/CuveeUnchiuPuiu2019";
 import BlauBurg2018 from "./pages/wines/BlauBurg2018";
 import CuveeFrancisc2019 from "./pages/wines/CuveeFrancisc2019";
+import CuveePaul_Rezerva2019 from "./pages/wines/CuveePaul_Rezerva2019";
+import RedKing2019 from "./pages/wines/RedKing2019";
 
 function App() {
     return (
@@ -27,10 +28,19 @@ function App() {
                 <Route exact path="/" component={HomeNew} />
                 <Route exact path="/vinuri" component={Wines} />
                 <Route exact path="/vizite-si-degustari" component={Visits} />
-                <Route exact path="/club" component={Club} />
                 <Route exact path="/cazare" component={Cazare} />
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/galerie" component={GalleryNew} />
+                <Route
+                    exact
+                    path="/vinuri/red-king-2019"
+                    component={RedKing2019}
+                />
+                <Route
+                    exact
+                    path="/vinuri/cuvee-paul-rezerva-2019"
+                    component={CuveePaul_Rezerva2019}
+                />
                 <Route
                     exact
                     path="/vinuri/cuvee-unchiu-puiu-2019"
