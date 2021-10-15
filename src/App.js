@@ -17,8 +17,8 @@ import Cazare from "./pages/Cazare";
 import CuveeUnchiuPuiu2019 from "./pages/wines/CuveeUnchiuPuiu2019";
 import BlauBurg2018 from "./pages/wines/BlauBurg2018";
 import CuveeFrancisc2019 from "./pages/wines/CuveeFrancisc2019";
-import CuveePaul_Rezerva2019 from "./pages/wines/CuveePaul_Rezerva2019";
-import RedKing2019 from "./pages/wines/RedKing2019";
+import CuveePaulRezerva2019 from "./pages/wines/CuveePaulRezerva2019";
+import RedKing2019 from "./pages/wines/RedKing_2019";
 
 function App() {
     return (
@@ -39,7 +39,7 @@ function App() {
                 <Route
                     exact
                     path="/vinuri/cuvee-paul-rezerva-2019"
-                    component={CuveePaul_Rezerva2019}
+                    component={CuveePaulRezerva2019}
                 />
                 <Route
                     exact
