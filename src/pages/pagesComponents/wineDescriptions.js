@@ -305,7 +305,7 @@ export const cuveePaul_Rezerva = {
     year: "2019",
     price: "120 RON",
     description:
-        "Cupajul mătăsos, de culoare grena intens, între Fetească Neagră şi Cabernet Sauvignon, de această dată în gama Rezerva, este un vin corpolent şi special datorită notelor de vanilie, cacao şi fructe negre. Alături de arome, taninii puternici, aciditatea echilibrată şi postgustul lung fac acest vin memorabil. Soiul Cabernet Sauvignon înnobilează frumos Feteasca Neagră, împreună oferind senzaţii gustative de excepţie.",
+        "Cupajul mătăsos, de culoare grena intens, între Fetească Neagră şi Cabernet Sauvignon, de această dată în gama Rezerva, este un vin corpolent şi special datorită notelor de vanilie, cacao şi fructe negre. Alături de arome, taninii puternici, aciditatea echilibrată şi postgustul lung fac acest vin memorabil. Soiul Cabernet Sauvignon înnobilează frumos Feteasca Neagră, împreună oferind senzaţii gustative de excepţie. ",
     type: "Sec",
     maturing: "18 luni, baric din stejar",
     alchool: "14,8%",

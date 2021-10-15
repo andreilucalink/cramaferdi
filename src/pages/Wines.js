@@ -17,7 +17,9 @@ import cunp from "../img/wines/CUNP2019_medal.jpg";
 // import rkr from '../img/wines/RKR2018.png';
 import blau from "../img/wines/BLAUB2018.jpg";
 // import whq from "../img/wines/WHQ2020_new.jpg";
-import cfr2019 from "../img/wines/CFR2019_new.jpg";
+import cfr2019 from "../img/wines/CFR2019.jpg";
+import rk2019 from "../img/wines/RK2019_new.jpg";
+import cupr2019 from "../img/wines/CUPR2019_new.jpg";
 
 const Wines = () => {
     const winesRef = useRef(null);
@@ -58,6 +60,20 @@ const Wines = () => {
                 </div>
                 <Row>
                     <WineCard
+                        link="/vinuri/cuvee-paul-rezerva-2019"
+                        price="120 RON"
+                        img={cupr2019}
+                        title="Cuvée Paul Rezerva"
+                        year="2019"
+                    />
+                    <WineCard
+                        link="/vinuri/red-king-2019"
+                        price="100 RON"
+                        img={rk2019}
+                        title="Red King Ed. Limitată"
+                        year="2019"
+                    />
+                    <WineCard
                         link="/vinuri/cuvee-francisc-2019"
                         price="110 RON"
                         img={cfr2019}
@@ -71,6 +87,8 @@ const Wines = () => {
                         title="Blau Burg Ed. Limitată"
                         year="2018"
                     />
+                </Row>
+                <Row>
                     <WineCard
                         link="/vinuri/cuvee-unchiu-puiu-2019"
                         price="60 RON"

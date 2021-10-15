@@ -4,7 +4,7 @@ import WinePage from "../pagesComponents/WinePage";
 import img from "../../img/wines/RK2019.jpg";
 import modalImage from "../../img/etichete/RK2019.jpg";
 
-const RedKing2019 = () => {
+const RedKing_2019 = () => {
     return (
         <WinePage
             title={redKing_2019.title}
@@ -24,4 +24,4 @@ const RedKing2019 = () => {
     );
 };
 
-export default RedKing2019;
+export default RedKing_2019;

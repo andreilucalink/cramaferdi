@@ -4,7 +4,7 @@ import WinePage from "../pagesComponents/WinePage";
 import img from "../../img/wines/CUPR2019.jpg";
 import modalImage from "../../img/etichete/CUPR2019.jpg";
 
-const CuveePaul_Rezerva2019 = () => {
+const CuveePaulRezerva2019 = () => {
     return (
         <WinePage
             title={cuveePaul_Rezerva.title}
@@ -24,4 +24,4 @@ const CuveePaul_Rezerva2019 = () => {
     );
 };
 
-export default CuveePaul_Rezerva2019;
+export default CuveePaulRezerva2019;
