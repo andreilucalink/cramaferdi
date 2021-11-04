@@ -7,16 +7,18 @@ import { Helmet } from "react-helmet";
 // Components
 import WineCard from "./pagesComponents/WineCard";
 
-// Images
-import down from "../img/dwn-light.svg";
+// Older wines
 // import calx from '../img/wines/CALX2020.png';
-import cunp from "../img/wines/CUNP2019_medal.jpg";
 // import cosm from '../img/wines/RC2020.png';
 // import ladyblk from '../img/wines/LBK2019_new.png';
 // import mrsr from "../img/wines/MRSR2018.png";
 // import rkr from '../img/wines/RKR2018.png';
-import blau from "../img/wines/BLAUB2018.jpg";
 // import whq from "../img/wines/WHQ2020_new.jpg";
+// import blau from "../img/wines/BLAUB2018.jpg";
+
+// Images
+import down from "../img/dwn-light.svg";
+import cunp from "../img/wines/CUNP2019_medal.jpg";
 import cfr2019 from "../img/wines/CFR2019.jpg";
 import rk2019 from "../img/wines/RK2019_new.jpg";
 import cupr2019 from "../img/wines/CUPR2019_new.jpg";
@@ -80,15 +82,6 @@ const Wines = () => {
                         title="Cuvée Francisc Ed. Limitată"
                         year="2019"
                     />
-                    <WineCard
-                        link="/vinuri/blau-burg-2018"
-                        price="105 RON"
-                        img={blau}
-                        title="Blau Burg Ed. Limitată"
-                        year="2018"
-                    />
-                </Row>
-                <Row>
                     <WineCard
                         link="/vinuri/cuvee-unchiu-puiu-2019"
                         price="60 RON"

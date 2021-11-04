@@ -51,11 +51,6 @@ function App() {
                     path="/vinuri/cuvee-francisc-2019"
                     component={CuveeFrancisc2019}
                 />
-                <Route
-                    exact
-                    path="/vinuri/blau-burg-2018"
-                    component={BlauBurg2018}
-                />
                 <Route component={Page404} />
             </Switch>
             <Footer />
