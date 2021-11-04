@@ -15,7 +15,6 @@ import Cazare from "./pages/Cazare";
 
 // Wines
 import CuveeUnchiuPuiu2019 from "./pages/wines/CuveeUnchiuPuiu2019";
-import BlauBurg2018 from "./pages/wines/BlauBurg2018";
 import CuveeFrancisc2019 from "./pages/wines/CuveeFrancisc2019";
 import CuveePaulRezerva2019 from "./pages/wines/CuveePaulRezerva2019";
 import RedKing2019 from "./pages/wines/RedKing_2019";
