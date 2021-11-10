@@ -14,7 +14,6 @@ import Wines from "./pages/Wines";
 import Cazare from "./pages/Cazare";
 
 // Wines
-import CuveeUnchiuPuiu2019 from "./pages/wines/CuveeUnchiuPuiu2019";
 import CuveeFrancisc2019 from "./pages/wines/CuveeFrancisc2019";
 import CuveePaulRezerva2019 from "./pages/wines/CuveePaulRezerva2019";
 import RedKing2019 from "./pages/wines/RedKing_2019";
@@ -39,11 +38,6 @@ function App() {
                     exact
                     path="/vinuri/cuvee-paul-rezerva-2019"
                     component={CuveePaulRezerva2019}
-                />
-                <Route
-                    exact
-                    path="/vinuri/cuvee-unchiu-puiu-2019"
-                    component={CuveeUnchiuPuiu2019}
                 />
                 <Route
                     exact
