@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "../css/wines.css";
-import Img from "react-image";
 import { Container, Row } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 
@@ -18,10 +17,14 @@ import WineCard from "./pagesComponents/WineCard";
 // import cunp from "../img/wines/CUNP2019_medal.jpg";
 
 // Images
-import down from "../img/dwn-light.svg";
+// import down from "../img/dwn-light.svg";
 import cfr2019 from "../img/wines/CFR2019.jpg";
-import rk2019 from "../img/wines/RK2019_new.jpg";
-import cupr2019 from "../img/wines/CUPR2019_new.jpg";
+import rk2019 from "../img/wines/RK2019.jpg";
+import cupr2019 from "../img/wines/CUPR2019.jpg";
+import rc2021 from "../img/wines/RC2021_new.jpg";
+import calx2021 from "../img/wines/CALX2021_new.jpg";
+import lbkl2019 from "../img/wines/LBKL2019_new.jpg";
+import cpit2019 from "../img/wines/CPIT2019_new.jpg";
 
 const Wines = () => {
     const winesRef = useRef(null);
@@ -46,9 +49,9 @@ const Wines = () => {
                     data-aos-delay="250">
                     VINURI
                 </h1>
-                <a href="#wines" className="scroll-down">
+                {/* <a href="#wines" className="scroll-down">
                     <Img src={down} alt="Scroll Down" />
-                </a>
+                </a> */}
                 <div id="wines" ref={winesRef}></div>
             </div>
             <Container className="wines-list">
@@ -62,6 +65,36 @@ const Wines = () => {
                 </div>
                 <Row>
                     <WineCard
+                        link="/vinuri/rose-cosmina-2021"
+                        price="55 RON"
+                        img={rc2021}
+                        title="Rosé Cosmina"
+                        year="2021"
+                    />
+                    <WineCard
+                        link="/vinuri/cuvee-alexandra-2021"
+                        price="60 RON"
+                        img={calx2021}
+                        title="Cuveé Alexandra"
+                        year="2021"
+                    />
+                    <WineCard
+                        link="/vinuri/lady-black-legend-2019"
+                        price="140 RON"
+                        img={lbkl2019}
+                        title="Lady Black Legend"
+                        year="2019"
+                    />
+                    <WineCard
+                        link="/vinuri/cuvee-pitigaia-2019"
+                        price="110 RON"
+                        img={cpit2019}
+                        title="Cuveé Piţigaia"
+                        year="2019"
+                    />
+                </Row>
+                <Row>
+                    <WineCard
                         link="/vinuri/cuvee-paul-rezerva-2019"
                         price="120 RON"
                         img={cupr2019}
@@ -72,14 +105,14 @@ const Wines = () => {
                         link="/vinuri/red-king-2019"
                         price="100 RON"
                         img={rk2019}
-                        title="Red King Ed. Limitată"
+                        title="Red King "
                         year="2019"
                     />
                     <WineCard
                         link="/vinuri/cuvee-francisc-2019"
                         price="110 RON"
                         img={cfr2019}
-                        title="Cuvée Francisc Ed. Limitată"
+                        title="Cuvée Francisc"
                         year="2019"
                     />
                 </Row>

@@ -1,0 +1,462 @@
+.ferdi-home1 {
+    height: calc(100vh - 73px);
+    position: relative;
+    overflow: hidden;
+    background: black;
+}
+
+.ferdi-home1 .ferdi-home-img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.ferdi-home1 .crama-ferdi {
+    position: absolute;
+    z-index: 2;
+    width: unset;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px 40px;
+    font-size: 60px;
+    border: 2px solid white;
+    letter-spacing: 8px;
+    color: white;
+    width: max-content;
+}
+
+.ferdi-link-row {
+    padding: 50px;
+}
+
+.ferdi-image-col {
+    display: flex;
+    align-items: center;
+}
+
+.left-col {
+    padding: 0 25px 0 0;
+}
+
+.right-col {
+    padding: 0 0 0 25px;
+}
+
+.ferdi-text-col {
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+    max-width: 600px;
+    position: relative;
+}
+
+/* .link-detalii {
+    position: absolute;
+    bottom: 0px;
+} */
+
+.ferdi-image-col > img {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+        0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+        0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.ferdi-text-col > div {
+    width: 100%;
+    font-size: 20px;
+}
+
+.ferdi-text-col a {
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 5px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ferdi-text-col a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 10px;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 0%;
+    position: absolute;
+    transition: width 0.2s ease 0s, left 0.3s ease 0s;
+    width: 54px;
+}
+
+.ferdi-text-col a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.ferdi-text-col .dark-gradient:after {
+    background: #02a5b8;
+}
+.ferdi-text-col .dark-gradient:hover:after {
+    background: linear-gradient(to right, #02a5b8 0%, #0f2027 100%);
+}
+
+.ferdi-text-col a.light-gradient:after {
+    background: #8db2c0;
+}
+
+.ferdi-text-col a.light-gradient:hover:after {
+    background: linear-gradient(to right, #7697a3 0%, #f4f4f4 100%);
+}
+
+.dark-gradient {
+    background: #02a5b8;
+    background: -webkit-linear-gradient(to right, #02a5b8 0%, #0f2027 100%);
+    background: -moz-linear-gradient(to right, #02a5b8 0%, #0f2027 100%);
+    background: linear-gradient(to right, #02a5b8 0%, #0f2027 100%);
+}
+
+.light-gradient {
+    background: #8db2c0;
+    background: -webkit-linear-gradient(to right, #8db2c0 0%, #f4f4f4 100%);
+    background: -moz-linear-gradient(to right, #8db2c0 0%, #f4f4f4 100%);
+    background: linear-gradient(to right, #8db2c0 0%, #f4f4f4 100%);
+}
+
+.ferdi-text-col h1 {
+    font-size: 70px;
+}
+
+.row-gray {
+    background: #e8eaeb;
+    color: #0f2027;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.align-end {
+    justify-content: flex-end;
+}
+
+.align-start {
+    justify-content: flex-start;
+}
+
+.ferdi-home2 {
+    overflow: hidden;
+    /* background-color: #0f2027; */
+    background-color: #e8eaeb;
+    padding: 80px 0 20px 0;
+    position: relative;
+    /* background-image: url("../img/home//test.jpg"); */
+
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-attachment: fixed; */
+}
+
+.ferdi-home2-header {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0;
+    /* color: white; */
+    color: #0f2027;
+    font-weight: 600;
+    z-index: 333;
+    text-align: center;
+}
+
+.card-wrapper {
+    width: 100%;
+}
+
+.wrapper-left {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.wrapper-right {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.news-card {
+    margin: auto;
+    background-color: white;
+    max-width: 400px;
+    height: 525px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: rgb(77, 77, 77) 0px 20px 30px -10px;
+}
+
+.news-img {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.news-category {
+    margin-left: 30px;
+    margin-top: 20px;
+    width: max-content;
+    /* background-color: #8e0505; */
+    padding: 7px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.category-red {
+    background-color: #8e0505;
+}
+
+.category-pink {
+    background-color: #ff9999;
+}
+
+.category-white {
+    background-color: #8ed43d;
+}
+
+.news-header {
+    margin-left: 30px;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.news-separator {
+    height: 4px;
+
+    margin: 15px 30px;
+}
+
+.separator-red {
+    background: #8e0505;
+    background-image: linear-gradient(
+        to right,
+        #8e0505,
+        #ba485f,
+        #ce88aa,
+        #ddc5e0,
+        #ffffff
+    );
+}
+
+.separator-pink {
+    background: #ff9999;
+    background-image: linear-gradient(
+        to right,
+        #ff9999,
+        #ffb2c7,
+        #f9cde7,
+        #f6e8fa,
+        #ffffff
+    );
+}
+
+.separator-white {
+    background: linear-gradient(to right, #b2ea70, #a8ff78, #dbf9ff, #ffffff);
+}
+
+.news-footer {
+    position: relative;
+    height: max-content;
+}
+
+.news-date {
+    position: absolute;
+    left: 30px;
+}
+.news-details {
+    position: absolute;
+    right: 30px;
+    text-decoration: none;
+    color: #0f2027;
+}
+
+.news-details:hover {
+    color: #0f2027;
+}
+
+.alice-carousel__wrapper {
+    padding: 80px 0 50px 0;
+}
+
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+    transition: ease 0.3s;
+}
+.alice-carousel__prev-btn-item:hover,
+.alice-carousel__next-btn-item:hover {
+    transform: scale(1.2);
+}
+
+.ferdi-home3 {
+    overflow: hidden;
+}
+
+@media (max-width: 1150px) {
+    .wrapper-left {
+        padding-right: 20px;
+    }
+    .wrapper-right {
+        padding-left: 20px;
+    }
+
+    .news-card {
+        max-width: 400px;
+    }
+
+    .ferdi-home1 .crama-ferdi {
+        font-size: 30px;
+    }
+    .ferdi-text-col h1 {
+        font-size: 50px;
+        letter-spacing: 3px;
+    }
+    .ferdi-text-col > div {
+        font-size: 14px;
+    }
+    .ferdi-text-col a:after {
+        width: 40px;
+        bottom: 8px;
+    }
+    .alice-carousel__prev-btn-item:hover,
+    .alice-carousel__next-btn-item:hover {
+        transform: none;
+    }
+    .ferdi-home2-header {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .ferdi-home1 .ferdi-home-img {
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 900px) {
+    .news-card {
+        max-width: 350px;
+        height: 455px;
+    }
+
+    .news-category {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .news-header {
+        font-size: 25px;
+    }
+
+    .wrapper-left {
+        padding-right: 10px;
+    }
+
+    .wrapper-right {
+        padding-left: 10px;
+    }
+
+    .ferdi-text-col h1 {
+        font-size: 30px;
+    }
+    .ferdi-text-col > div {
+        font-size: 14px;
+    }
+    .ferdi-text-col a:after {
+        width: 40px;
+        bottom: 6px;
+        height: 3px;
+        width: 100%;
+    }
+    .alice-carousel__wrapper {
+        padding: 50px 0 50px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .news-card {
+        margin: auto;
+        max-width: 300px;
+        height: 400px;
+    }
+
+    .news-date,
+    .news-details {
+        font-size: 12px;
+    }
+
+    .news-header {
+        font-size: 20px;
+    }
+
+    .wrapper-left {
+        padding-right: 0px;
+    }
+
+    .wrapper-right {
+        padding-left: 0px;
+    }
+
+    .alice-carousel__prev-btn-item > svg,
+    .alice-carousel__next-btn-item > svg {
+        height: 30px;
+    }
+
+    .ferdi-home2-header {
+        font-size: 20px;
+    }
+
+    .ferdi-text-col h1 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+
+    .ferdi-text-col > div {
+        font-size: 12px;
+        margin-bottom: 20px;
+        line-height: 1.1;
+    }
+
+    .ferdi-link-row {
+        flex-direction: column-reverse;
+    }
+
+    .ferdi-image-col {
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .ferdi-text-col {
+        padding: 0px;
+    }
+
+    .ferdi-text-col a:after {
+        height: 2px;
+    }
+
+    .ferdi-home1 .crama-ferdi {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .alice-carousel__wrapper {
+        padding: 50px 0;
+    }
+}

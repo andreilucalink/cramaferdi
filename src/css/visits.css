@@ -1,214 +1,214 @@
 .visits-intro {
-  position: relative;
-  min-height: calc(100vh - 75px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #16222a;
-  background: -webkit-linear-gradient(315deg, #3a6073, #16222a);
-  background: linear-gradient(315deg, #3a6073, #16222a);
+    position: relative;
+    min-height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/home/crama.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .visits-intro h1 {
-  text-align: center;
-  padding: 30px 40px 30px 40px;
-  font-size: 60px;
-  border: 2px solid white;
-  letter-spacing: 8px;
-  color: white;
+    text-align: center;
+    padding: 30px 40px 30px 40px;
+    font-size: 60px;
+    border: 2px solid white;
+    letter-spacing: 8px;
+    color: white;
 }
 
 .visits-intro .scroll-down {
-  position: absolute;
-  bottom: 30px;
-  animation: MoveUpDown 0.8s linear infinite;
-  animation-delay: 0.7s;
+    position: absolute;
+    bottom: 30px;
+    animation: MoveUpDown 0.8s linear infinite;
+    animation-delay: 0.7s;
 }
 
 .visits-intro .scroll-down img {
-  height: 35px;
+    height: 35px;
 }
 
 .visits-intro #visits {
-  position: absolute;
-  bottom: 70px;
+    position: absolute;
+    bottom: 70px;
 }
 
 .programari-pachete-degustari .visits-header {
-  padding-top: 50px;
+    padding-top: 50px;
 }
 
 .programari-pachete-degustari .visits-header h2 {
-  font-size: 28px;
-  margin-bottom: 14px;
+    font-size: 28px;
+    margin-bottom: 14px;
 }
 
 .programari-pachete-degustari .visits-header > p.visits-description-p {
-  margin-bottom: 3px;
+    margin-bottom: 3px;
 }
 
 .pachete-wrapper {
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
-  align-items: center;
-  /* background-color: beige; */
-  padding: 30px 0 30px 0;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 30px 0;
 }
 
 .pachet {
-  height: 460px;
-  width: 350px;
-  position: relative;
-  text-align: center;
-  margin: 0 15px 0 15px;
-  padding: 40px 0px 30px 0px;
-  -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+    height: 430px;
+    width: 350px;
+    position: relative;
+    text-align: center;
+    margin: 0 15px 0 15px;
+    padding: 40px 0px 30px 0px;
+    box-shadow: rgb(77, 77, 77) 0px 20px 30px -10px;
 }
 
 .pachet h5 {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-weight: 600;
-  margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
 .pachet li {
-  width: 90%;
-  font-size: 14px;
-  list-style: none;
-  text-align: left;
-  padding: 5px 0px 5px 30px;
+    width: 90%;
+    font-size: 14px;
+    list-style: none;
+    text-align: left;
+    padding: 5px 0px 5px 30px;
 }
 
 .pachet li i {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .pachet p.pachet-price {
-  position: absolute;
-  bottom: 110px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 20px;
-  width: 100%;
-  /* letter-spacing: 2px; */
+    position: absolute;
+    bottom: 55px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
 }
 .pachet p.private-subtitle {
-  padding: 0 15px 10px 15px;
+    padding: 0 15px 10px 15px;
 }
 
 .pachet p.pachet-description-private {
-  position: absolute;
-  bottom: 4px;
-  padding: 0 10px 0 10px;
-  width: 100%;
-  font-size: 12px;
-  line-height: 20px;
+    position: absolute;
+    bottom: 4px;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
 }
 .pachet p.pachet-description-private a {
-  font-weight: 600;
-  color: #fff;
-  transition: ease 0.1s;
+    font-weight: 600;
+    color: #fff;
+    transition: ease 0.1s;
 }
 
 .pachet p.pachet-description {
-  position: absolute;
-  font-size: 12px;
-  line-height: 20px;
-  bottom: 20px;
-  padding: 0 10px 0 10px;
+    position: absolute;
+    font-size: 12px;
+    line-height: 20px;
+    bottom: 20px;
+    padding: 0 10px 0 10px;
 }
 
 .pachete-wrapper .card-light {
-  color: #0f2027;
-  background-color: white;
+    border-radius: 20px;
+    color: #0f2027;
+    background-color: #e8eaeb;
 }
 
 .pachete-wrapper .card-dark {
-  color: #fff;
-  background-color: #2c3e50;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #2c3e50;
 }
 
 .pachete-wrapper .card-private {
-  color: #fff;
-  background-color: #0f2027;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #0f2027;
 }
 
 @media (max-width: 1150px) {
-  .visits-intro h1 {
-    font-size: 30px;
-  }
+    .visits-intro h1 {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
-  .programari-pachete-degustari .visits-header {
-    text-align: center;
-  }
+    .programari-pachete-degustari .visits-header {
+        text-align: center;
+    }
 
-  .programari-pachete-degustari .visits-header h2 {
-    font-size: 20px;
-  }
-  .programari-pachete-degustari .visits-header p {
-    font-size: 13px;
-  }
+    .programari-pachete-degustari .visits-header h2 {
+        font-size: 20px;
+    }
+    .programari-pachete-degustari .visits-header p {
+        font-size: 13px;
+    }
 
-  .programari-pachete-degustari .visits-header > p.visits-description-p {
-    margin-bottom: 8px;
-    margin-top: 25px;
-  }
+    .programari-pachete-degustari .visits-header > p.visits-description-p {
+        margin-bottom: 8px;
+        margin-top: 25px;
+    }
 }
 
 @media screen and (max-width: 991px) {
-  .pachete-wrapper {
-    flex-direction: column;
-  }
-  .pachet {
-    margin-bottom: 30px;
-    width: 400px;
-  }
-  .pachet p.pachet-description {
-    padding: 0 30px 0 30px;
-  }
-  .pachet p.pachet-description-private {
-    padding: 0 30px 0 30px;
-  }
+    .pachete-wrapper {
+        flex-direction: column;
+    }
+    .pachet {
+        margin-bottom: 30px;
+        width: 400px;
+    }
+    .pachet p.pachet-description {
+        padding: 0 30px 0 30px;
+    }
+    .pachet p.pachet-description-private {
+        padding: 0 30px 0 30px;
+    }
 }
 
 @media (max-width: 650px) {
-  .visits-intro {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .visits-intro h1 {
-    font-size: 20px;
-    padding: 20px;
-    letter-spacing: 5px;
-  }
+    .visits-intro {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .visits-intro h1 {
+        font-size: 20px;
+        padding: 20px;
+        letter-spacing: 5px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-  .pachet {
-    width: 300px;
-    height: 420px;
-    margin: 0px 0px 30px 0px;
-  }
-  .pachet p.pachet-price {
-    bottom: 85px;
-    font-size: 16px;
-  }
+    .pachet {
+        width: 300px;
+        height: 400px;
+        margin: 0px 0px 30px 0px;
+    }
+    .pachet p.pachet-price {
+        bottom: 40px;
+        font-size: 16px;
+    }
 
-  .pachet h5 {
-    font-size: 16px;
-  }
+    .pachet h5 {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
 
-  .pachet p {
-    font-size: 12px;
-  }
+    .pachet p {
+        font-size: 12px;
+    }
 
-  .pachet li {
-    font-size: 12px;
-  }
+    .pachet li {
+        font-size: 12px;
+    }
 }

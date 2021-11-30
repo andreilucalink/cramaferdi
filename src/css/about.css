@@ -1,0 +1,162 @@
+.about-page {
+    overflow: hidden;
+}
+
+.about-ferdi1 {
+    height: calc(100vh - 75px);
+    position: relative;
+    overflow: hidden;
+    background: black;
+}
+
+.ferdi-about-img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    /* opacity: 0.9; */
+}
+
+.despre-noi {
+    position: absolute;
+    z-index: 2;
+    width: unset;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px 40px;
+    font-size: 60px;
+    border: 2px solid white;
+    letter-spacing: 8px;
+    color: white;
+    width: max-content;
+}
+
+.about-ferdi2 {
+    overflow: hidden;
+}
+
+.about-row {
+    padding: 80px 0;
+    overflow: hidden;
+    max-width: 100vw;
+    margin: 0px;
+}
+
+.about-col {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+.about-col > div > span {
+    font-weight: 600;
+}
+
+.about-col-right {
+    padding-right: 15%;
+    justify-content: center;
+}
+
+.about-col-left {
+    padding-left: 15%;
+    font-size: 20px;
+    line-height: 1.4;
+    overflow: hidden;
+}
+
+.about-col-right img {
+    border-radius: 50%;
+    height: 320px;
+}
+
+.about-reverse {
+    flex-direction: row-reverse;
+}
+
+.about-reverse .about-col-left {
+    padding-right: 15%;
+    padding-left: 0;
+}
+
+.about-reverse .about-col-right {
+    padding-left: 15%;
+    padding-right: 0;
+    justify-content: center;
+}
+
+/* .row-color1 {
+    background: #f6f5f5;
+    color: #0f2027;
+}
+.row-color2 {
+    background: #d3e0ea;
+}
+.row-color3 {
+    background: #1687a7;
+    color: white;
+}
+.row-color4 {
+    background: #276678;
+    color: white;
+} */
+
+@media (max-width: 1150px) {
+    .despre-noi {
+        font-size: 30px;
+    }
+    .about-col-left {
+        font-size: 16px;
+    }
+
+    .about-col-right {
+        padding-right: 10%;
+    }
+
+    .about-reverse .about-col-left {
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-col-right img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .despre-noi {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .about-row {
+        flex-direction: column-reverse;
+        margin: 0px;
+        padding: 50px 0;
+    }
+
+    .about-col-right img {
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    .about-col-left,
+    .about-col-right,
+    .about-reverse .about-col-right,
+    .about-reverse .about-col-left {
+        padding: 0;
+    }
+
+    .about-col-left {
+        overflow: visible;
+        text-align: center;
+        padding: 0 50px;
+        font-size: 12px;
+    }
+
+    .about-reverse .about-col-left {
+        font-size: 12px;
+        padding: 0 50px;
+    }
+}

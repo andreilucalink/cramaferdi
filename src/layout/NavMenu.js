@@ -69,6 +69,9 @@ const NavMenu = () => {
                     <Link onClick={closeMenu} to="/">
                         Acasă
                     </Link>
+                    <Link onClick={closeMenu} to="/despre-noi">
+                        Despre Noi
+                    </Link>
                     <Link onClick={closeMenu} to="/vinuri" id={sh2}>
                         Vinuri
                     </Link>

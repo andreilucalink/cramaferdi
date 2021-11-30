@@ -1,13 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import SimpleReactLightbox from 'simple-react-lightbox';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import SimpleReactLightbox from "simple-react-lightbox";
+import "react-alice-carousel/lib/alice-carousel.css";
+
 ReactDOM.render(
-  <SimpleReactLightbox>
-    <App />
-  </SimpleReactLightbox>,
-  document.getElementById('root')
+    <SimpleReactLightbox>
+        <App />
+    </SimpleReactLightbox>,
+    document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

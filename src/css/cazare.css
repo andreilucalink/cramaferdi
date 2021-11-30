@@ -1,139 +1,97 @@
 .cazare-body {
-  overflow: hidden;
-  scroll-behavior: smooth;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
-.cazare-intro {
-  overflow: hidden;
-  position: relative;
-  min-height: calc(100vh - 75px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #7ed6df;
-  background-image: linear-gradient(315deg, #7ed6df 0%, #195f5c 74%);
-}
-
-.cazare-intro #cazare {
-  position: absolute;
-  bottom: 70px;
-}
-
-.cazare-intro h1 {
-  text-align: center;
-  padding: 30px 40px 30px 40px;
-  font-size: 60px;
-  border: 2px solid white;
-  letter-spacing: 8px;
-  color: white;
-}
-
-.cazare-intro .scroll-down {
-  position: absolute;
-  bottom: 30px;
-  animation: MoveUpDown 0.8s linear infinite;
-  animation-delay: 0.7s;
-}
-
-.cazare-intro .scroll-down img {
-  height: 35px;
+.cazare-details {
+    padding: 50px 0;
 }
 
 .cazare-details .cazare-card {
-  margin-top: 30px;
-  background-color: #f4f4f4;
-  /* color: white; */
-  color: #1b262c;
-  padding: 30px;
-  box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    background-color: #fff;
+    color: #1b262c;
+    padding: 30px;
+    box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 .cazare-card .cazare-images {
-  display: flex;
-  padding-top: 20px;
-  justify-content: space-between;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
 }
 
 .cazare-card .cazare-images .cazare-image-container {
-  width: 32%;
-  overflow: hidden;
-  background: black;
+    width: 32%;
+    overflow: hidden;
+}
+
+.cazare-card .cazare-images .cazare-image-container-placeholder {
+    width: 32%;
+    overflow: hidden;
 }
 
 .cazare-card .cazare-images img {
-  transition: ease all 0.3s;
-  cursor: pointer;
-  width: 100%;
+    transition: ease all 0.3s;
+    cursor: pointer;
+    width: 100%;
 }
 
 .cazare-card .cazare-images .cazare-image-container:hover img {
-  transform: scale(1.2);
-  opacity: 0.8;
+    transform: scale(1.2);
+    opacity: 0.8;
 }
 
-.cazare-card .cazare-link {
-  text-decoration: none;
-  background: linear-gradient(to left, #1b262c 50%, #f4f4f4 50%) right;
-  background-size: 200%;
-  border: 2px #1b262c solid;
-  transition: 0.4s ease-out;
-  color: #f4f4f4;
-  /* padding: 8px 35px; */
-  width: 180px;
-  text-align: center;
-  padding: 5px 0;
-  margin: 20px auto 0 auto;
-  display: block;
+.cazare-card .cazare-button {
+    text-decoration: none;
+    background: linear-gradient(to left, #1b262c 50%, #f4f4f4 50%) right;
+    background-size: 200%;
+    border: 2px #1b262c solid;
+    transition: 0.4s ease-out;
+    color: #f4f4f4;
+    width: 180px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 20px auto 0 auto;
+    display: block;
 }
 
-.cazare-card .cazare-link:hover {
-  background-position: left;
-  color: #1b263c;
-}
-
-@media (max-width: 1150px) {
-  .cazare-intro h1 {
-    font-size: 30px;
-  }
+.cazare-card .cazare-button:hover {
+    background-position: left;
+    color: #1b263c;
 }
 
 @media (max-width: 768px) {
-  .cazare-details h2 {
-    font-size: 20px;
-    text-align: center;
-  }
-  .cazare-card .cazare-images {
-    flex-direction: column;
-    padding-top: 0px;
-  }
+    .cazare-details .cazare-card {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+    }
 
-  .cazare-card .cazare-images img {
-    transition: none;
-    margin: 10px 0 10px 0;
-  }
+    .cazare-details h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .cazare-card .cazare-images {
+        flex-direction: column;
+        padding-top: 0px;
+    }
 
-  .cazare-card .cazare-images .cazare-image-container {
-    width: 100%;
-    background: transparent;
-  }
+    .cazare-card .cazare-images img {
+        transition: none;
+        margin: 10px 0 10px 0;
+    }
 
-  .cazare-card .cazare-images .cazare-image-container:hover img {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
+    .cazare-card .cazare-images .cazare-image-container {
+        width: 100%;
+        background: transparent;
+    }
 
-@media (max-width: 650px) {
-  .cazare-intro {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .cazare-intro h1 {
-    font-size: 20px;
-    padding: 20px;
-    letter-spacing: 5px;
-  }
+    .cazare-card .cazare-images .cazare-image-container:hover img {
+        transform: scale(1);
+        opacity: 1;
+    }
 }

@@ -314,3 +314,63 @@ export const cuveePaul_Rezerva = {
     grapes: "Fetească Neagră şi Cabernet Sauvignon",
     decantation: "minim 1h",
 };
+
+export const roseCosmina_2021 = {
+    title: "Rosé Cosmina ",
+    year: "2021",
+    price: "55 RON",
+    description:
+        "Un cupaj din trei soiuri deosebite: Merlot, Shiraz și Blaufränkisch ne aduce în prezența unui rosé mineral de culoare trandafirie cu miros imbatator de flori albe, capsuni si citrice. Secretului acestui rosé sec stă în combinația îndrăzneață a acestor soiuri, unde Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea și Blaufränkisch condimentează cu succes blend-ul.",
+    type: "Sec",
+    maturing: "",
+    alchool: "12,9%",
+    color: "Rosé",
+    qty: "0,75L",
+    grapes: "Merlot, Shiraz și Blaufränkisch",
+    decantation: "",
+};
+
+export const cuveeAlexandra_2021 = {
+    title: "Cuvée Alexandra ",
+    year: "2021",
+    price: "60 RON",
+    description:
+        "Cupajul alb bazat pe Tămâioasă Românească și Sauvignon Blanc ne oferă un curcubeu de arome unde Tămâioasa, după cum îi spune și numele vine cu accente de tămâie combinată cu fagure, busuioc și lămâie verde. Una dintre cele mai puternice arome de vin alb le dă acest soi, chiar dacă acest cupaj este sec, Sauvignon-ul Blanc îl completează frumos cu note minerale și fructate.",
+    type: "Sec",
+    maturing: "",
+    alchool: "13,1%",
+    color: "Rosé",
+    qty: "0,75L",
+    grapes: "Tămâioasă Românească și Sauvignon Blanc",
+    decantation: "",
+};
+
+export const cuveePitigaia_2019 = {
+    title: "Cuvée Piţigaia ",
+    year: "2019",
+    price: "110 RON",
+    description:
+        "Un cupaj deja bine cunoscut al Cramei Ferdi, este un tip de Bordeaux Blend, unde soiul Merlot, cu un corp catifelat, elegant și cu arome de cireșe negre îl întâlnește pe regele vinurilor, Cabernet Sauvignon, care îi ridică aciditatea, îi îmbogățește taninii și corpul, la care se adaugă nuanța de grena închis, precum și aromele de piper verde și ciocolată. Acest vin cucerește cu o distincție anume și cu un postgust lung, după ce s-a odihnit la baric 17 de luni, având astfel un potențial mare de învechire.",
+    type: "Sec",
+    maturing: "17 luni, baric din stejar",
+    alchool: "14,8%",
+    color: "Roșu",
+    qty: "0,75L",
+    grapes: "Merlot și Cabernet Sauvignon",
+    decantation: "minim 1h",
+};
+
+export const ladyBlack_legend_2019 = {
+    title: "Lady Black Legend ",
+    year: "2019",
+    price: "140 RON",
+    description:
+        "Este Feteasca Neagră legendară a cramei, cu note olfactive de cacao și condimente care te învăluie în aromele de fructe de pădure, oferă o senzație gustativă inedită și surpinde plăcut prin taninii mătăsoși cu postgust de mure supracoapte, având un potențial de învechire de 5 până la 10 ani. Un vin complex, echilibrat și elegant care, o dată savurat, creează o atmosferă idilică. ",
+    type: "Sec",
+    maturing: "20 luni, baric din stejar",
+    alchool: "15%",
+    color: "Roșu",
+    qty: "0,75L",
+    grapes: "Fetească Neagră",
+    decantation: "minim 1h",
+};
