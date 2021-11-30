@@ -52,7 +52,7 @@ const Home = () => {
     }, []);
 
     const homeImage = window.innerWidth <= 1024 ? home_phone_img : home_img;
-    const textAnimation = window.innerWidth < 768 ? "fade-left" : "fade-right";
+    // const textAnimation = window.innerWidth < 768 ? "fade-left" : "fade-right";
 
     return (
         <>
@@ -86,16 +86,10 @@ const Home = () => {
                         <Image fluid src={wines} />
                     </Col>
                     <Col md={6} xs={12} className="ferdi-text-col right-col">
-                        <Link
-                            to="/vinuri"
-                            data-aos="fade-left"
-                            data-aos-delay="300"
-                            className="dark-gradient">
+                        <Link to="/vinuri" className="dark-gradient">
                             <h1>Vinuri</h1>
                         </Link>
-                        <div data-aos="fade-left" data-aos-delay="600">
-                            Cu rădăcini in pasiune, curaj și dăruire.
-                        </div>
+                        <div>Cu rădăcini in pasiune, curaj și dăruire.</div>
                         {/* <div className="link-detalii">
                             Detalii <i class="fas fa-arrow-right"></i>
                         </div> */}
@@ -114,14 +108,10 @@ const Home = () => {
                         className="ferdi-text-col ferdi-text-padding left-col">
                         <Link
                             to="/vizite-si-degustari"
-                            data-aos={textAnimation}
-                            data-aos-delay="300"
                             className="dark-gradient">
                             <h1>Degustări</h1>
                         </Link>
-                        <div data-aos={textAnimation} data-aos-delay="600">
-                            Vizite şi degustări la cramă.
-                        </div>
+                        <div>Vizite şi degustări la cramă.</div>
                         {/* <div>
                             Detalii <i class="fas fa-arrow-right"></i>
                         </div> */}
@@ -135,16 +125,10 @@ const Home = () => {
                         <Image fluid src={about} />
                     </Col>
                     <Col md={6} xs={12} className="ferdi-text-col right-col">
-                        <Link
-                            to="/despre-noi"
-                            data-aos="fade-left"
-                            data-aos-delay="300"
-                            className="dark-gradient">
+                        <Link to="/despre-noi" className="dark-gradient">
                             <h1>Despre noi</h1>
                         </Link>
-                        <div data-aos="fade-left" data-aos-delay="600">
-                            Când şi unde a început totul.
-                        </div>
+                        <div>Când şi unde a început totul.</div>
                         {/* <div>
                             Detalii <i class="fas fa-arrow-right"></i>
                         </div> */}

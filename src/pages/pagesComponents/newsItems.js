@@ -13,7 +13,7 @@ export const newsCards = [
             <img src={rc2021} alt="RC2021" className="news-img" />
             <div className="news-category category-pink">Vinuri</div>
             <div className="news-header">
-                Rosé Cosmina <br /> Ediţie Limitată <br /> 2021
+                Rose Cosmina <br /> Ediţie Limitată <br /> 2021
             </div>
             <div className="news-separator separator-pink"></div>
             <div className="news-footer">
@@ -29,7 +29,7 @@ export const newsCards = [
             <img src={calx2021} alt="RK2019" className="news-img" />
             <div className="news-category category-white">Vinuri</div>
             <div className="news-header">
-                Cuvée Alexandra <br /> Ediţie Limitată <br /> 2021
+                Cuvee Alexandra <br /> Ediţie Limitată <br /> 2021
             </div>
             <div className="news-separator separator-white"></div>
             <div className="news-footer">
@@ -65,7 +65,7 @@ export const newsCards = [
             <img src={cupit2019} alt="RK2019" className="news-img" />
             <div className="news-category category-red">Vinuri</div>
             <div className="news-header">
-                Cuvée Piţigaia <br />
+                Cuvee Piţigaia <br />
                 2019 <br /> <br />
             </div>
             <div className="news-separator separator-red"></div>
@@ -98,7 +98,7 @@ export const newsCards = [
             <img src={cuveePaul2019} alt="RK2019" className="news-img" />
             <div className="news-category category-red">Vinuri</div>
             <div className="news-header">
-                Cuvée Paul <br /> Rezerva <br /> 2019
+                Cuvee Paul <br /> Rezerva <br /> 2019
             </div>
             <div className="news-separator separator-red"></div>
             <div className="news-footer">
