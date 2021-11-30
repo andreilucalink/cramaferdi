@@ -29,7 +29,7 @@
 }
 
 .ferdi-link-row {
-    padding: 50px;
+    padding: 50px 50px;
 }
 
 .ferdi-image-col {
@@ -375,15 +375,18 @@
     .ferdi-text-col h1 {
         font-size: 30px;
     }
+
     .ferdi-text-col > div {
         font-size: 14px;
     }
+
     .ferdi-text-col a:after {
         width: 40px;
         bottom: 6px;
         height: 3px;
         width: 100%;
     }
+
     .alice-carousel__wrapper {
         padding: 50px 0 50px 0;
     }
@@ -423,8 +426,7 @@
     }
 
     .ferdi-text-col h1 {
-        font-size: 20px;
-        letter-spacing: 3px;
+        font-size: 18px;
         font-weight: 600;
     }
 

@@ -90,9 +90,6 @@ const Home = () => {
                             <h1>Vinuri</h1>
                         </Link>
                         <div>Cu rădăcini in pasiune, curaj și dăruire.</div>
-                        {/* <div className="link-detalii">
-                            Detalii <i class="fas fa-arrow-right"></i>
-                        </div> */}
                     </Col>
                 </Row>
                 <Row className="ferdi-link-row row-gray row-reverse">
@@ -112,9 +109,6 @@ const Home = () => {
                             <h1>Degustări</h1>
                         </Link>
                         <div>Vizite şi degustări la cramă.</div>
-                        {/* <div>
-                            Detalii <i class="fas fa-arrow-right"></i>
-                        </div> */}
                     </Col>
                 </Row>
                 <Row className="ferdi-link-row">
@@ -129,9 +123,6 @@ const Home = () => {
                             <h1>Despre noi</h1>
                         </Link>
                         <div>Când şi unde a început totul.</div>
-                        {/* <div>
-                            Detalii <i class="fas fa-arrow-right"></i>
-                        </div> */}
                     </Col>
                 </Row>
             </section>
