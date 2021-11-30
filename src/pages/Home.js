@@ -37,7 +37,7 @@ const responsive = {
 
 const Home = () => {
     useEffect(() => {
-        // window.scroll(0, 0);
+        window.scroll(0, 0);
 
         AOS.init({
             once: true,
