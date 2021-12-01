@@ -20,6 +20,10 @@ import vita from "../img/gallery/vita.jpg";
 import vita2 from "../img/gallery/vita2.jpg";
 import fp2 from "../img/gallery/fp2.jpg";
 import img_loader from "../img/gallery/img_loader.svg";
+import ev1 from "../img/gallery/ev1.jpg";
+import ev2 from "../img/gallery/ev2.jpg";
+import ev3 from "../img/gallery/ev3.jpg";
+import ev4 from "../img/gallery/ev4.jpg";
 
 const Gallery = () => {
     const [bar, setBar] = useState(true);
@@ -45,6 +49,58 @@ const Gallery = () => {
             <SRLWrapper options={options} className="gallery-page">
                 <div className="img-grid">
                     <div className="img-grid-inner">
+                        <div className="img-item">
+                            <Img
+                                src={ev1}
+                                className="img-item-inner"
+                                loader={
+                                    <img
+                                        src={img_loader}
+                                        className="img-item-inner"
+                                        alt="loader"
+                                    />
+                                }
+                            />
+                        </div>
+                        <div className="img-item">
+                            <Img
+                                src={ev2}
+                                className="img-item-inner"
+                                loader={
+                                    <img
+                                        src={img_loader}
+                                        className="img-item-inner"
+                                        alt="loader"
+                                    />
+                                }
+                            />
+                        </div>
+                        <div className="img-item">
+                            <Img
+                                src={ev3}
+                                className="img-item-inner"
+                                loader={
+                                    <img
+                                        src={img_loader}
+                                        className="img-item-inner"
+                                        alt="loader"
+                                    />
+                                }
+                            />
+                        </div>
+                        <div className="img-item">
+                            <Img
+                                src={ev4}
+                                className="img-item-inner"
+                                loader={
+                                    <img
+                                        src={img_loader}
+                                        className="img-item-inner"
+                                        alt="loader"
+                                    />
+                                }
+                            />
+                        </div>
                         <div className="img-item">
                             <Img
                                 src={crama}

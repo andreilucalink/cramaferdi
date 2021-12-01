@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Image, Row, Col } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { newsCards } from "./pagesComponents/newsItems";
 import AOS from "aos";
@@ -37,7 +37,7 @@ const responsive = {
 
 const Home = () => {
     useEffect(() => {
-        window.scroll(0, 0);
+        // window.scroll(0, 0);
 
         AOS.init({
             once: true,
@@ -78,53 +78,59 @@ const Home = () => {
                 />
             </section>
             <section className="ferdi-home3">
-                <Row className="ferdi-link-row">
-                    <Col
-                        md={6}
-                        xs={12}
-                        className="ferdi-image-col align-end left-col">
-                        <Image fluid src={wines} />
-                    </Col>
-                    <Col md={6} xs={12} className="ferdi-text-col right-col">
-                        <Link to="/vinuri" className="dark-gradient">
-                            <h1>Vinuri</h1>
+                <div className="ferdi-home-row ferdi-home-reverse-row">
+                    <div className="ferdi-left-col">
+                        <Link to="/vinuri">
+                            <Image fluid src={wines} />
                         </Link>
-                        <div>Cu rădăcini in pasiune, curaj și dăruire.</div>
-                    </Col>
-                </Row>
-                <Row className="ferdi-link-row row-gray row-reverse">
-                    <Col
-                        md={6}
-                        xs={12}
-                        className="ferdi-image-col align-start right-col">
-                        <Image fluid src={crama} />
-                    </Col>
-                    <Col
-                        md={6}
-                        xs={12}
-                        className="ferdi-text-col ferdi-text-padding left-col">
-                        <Link
-                            to="/vizite-si-degustari"
-                            className="dark-gradient">
-                            <h1>Degustări</h1>
+                    </div>
+                    <div className="ferdi-right-col">
+                        <h1 className="ferdi-home-link">
+                            <Link to="/vinuri" className="dark-gradient">
+                                Vinuri
+                            </Link>
+                        </h1>
+                        <div className="ferdi-subtitle">
+                            CU RĂDĂCINI IN PASIUNE, CURAJ ȘI DĂRUIRE.
+                        </div>
+                    </div>
+                </div>
+                <div className="ferdi-home-row row-gray">
+                    <div className="ferdi-reverse-left-col">
+                        <h1 className="ferdi-home-link">
+                            <Link
+                                to="/vizite-si-degustari"
+                                className="dark-gradient">
+                                Degustări
+                            </Link>
+                        </h1>
+                        <div className="ferdi-subtitle">
+                            VIZITE ŞI DEGUSTĂRI LA CRAMĂ.
+                        </div>
+                    </div>
+                    <div className="ferdi-reverse-right-col">
+                        <Link to="/vizite-si-degustari">
+                            <Image fluid src={crama} />
                         </Link>
-                        <div>Vizite şi degustări la cramă.</div>
-                    </Col>
-                </Row>
-                <Row className="ferdi-link-row">
-                    <Col
-                        md={6}
-                        xs={12}
-                        className="ferdi-image-col align-end left-col">
-                        <Image fluid src={about} />
-                    </Col>
-                    <Col md={6} xs={12} className="ferdi-text-col right-col">
-                        <Link to="/despre-noi" className="dark-gradient">
-                            <h1>Despre noi</h1>
+                    </div>
+                </div>
+                <div className="ferdi-home-row ferdi-home-reverse-row">
+                    <div className="ferdi-left-col">
+                        <Link to="/despre-noi">
+                            <Image fluid src={about} />
                         </Link>
-                        <div>Când şi unde a început totul.</div>
-                    </Col>
-                </Row>
+                    </div>
+                    <div className="ferdi-right-col">
+                        <h1 className="ferdi-home-link">
+                            <Link to="/vinuri" className="dark-gradient">
+                                despre noi
+                            </Link>
+                        </h1>
+                        <div className="ferdi-subtitle">
+                            CÂND ŞI UNDE A ÎNCEPUT TOTUL.
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
     );
