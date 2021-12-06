@@ -86,6 +86,16 @@
     justify-content: center;
 }
 
+.mapouter {
+    overflow: hidden;
+    height: 400px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 400px;
+}
+
 /* .row-color1 {
     background: #f6f5f5;
     color: #0f2027;

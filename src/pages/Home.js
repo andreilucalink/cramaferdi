@@ -122,7 +122,7 @@ const Home = () => {
                     </div>
                     <div className="ferdi-right-col">
                         <h1 className="ferdi-home-link">
-                            <Link to="/vinuri" className="dark-gradient">
+                            <Link to="/despre-noi" className="dark-gradient">
                                 despre noi
                             </Link>
                         </h1>
