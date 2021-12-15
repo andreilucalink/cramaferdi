@@ -15,11 +15,11 @@ import WineCard from "./pagesComponents/WineCard";
 // import whq from "../img/wines/WHQ2020_new.jpg";
 // import blau from "../img/wines/BLAUB2018.jpg";
 // import cunp from "../img/wines/CUNP2019_medal.jpg";
+// import rk2019 from "../img/wines/RK2019.jpg";
 
 // Images
 // import down from "../img/dwn-light.svg";
 import cfr2019 from "../img/wines/CFR2019.jpg";
-import rk2019 from "../img/wines/RK2019.jpg";
 import cupr2019 from "../img/wines/CUPR2019.jpg";
 import rc2021 from "../img/wines/RC2021_new.jpg";
 import calx2021 from "../img/wines/CALX2021_new.jpg";
@@ -99,13 +99,6 @@ const Wines = () => {
                         price="120 RON"
                         img={cupr2019}
                         title="Cuvée Paul Rezerva"
-                        year="2019"
-                    />
-                    <WineCard
-                        link="/vinuri/red-king-2019"
-                        price="100 RON"
-                        img={rk2019}
-                        title="Red King "
                         year="2019"
                     />
                     <WineCard

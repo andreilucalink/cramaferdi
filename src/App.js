@@ -21,7 +21,6 @@ import RoseCosmina2021 from "./pages/wines/RoseCosmina2021";
 import CuveePitigaia2019 from "./pages/wines/CuveePitigaia2019";
 import CuveeFrancisc2019 from "./pages/wines/CuveeFrancisc2019";
 import CuveePaulRezerva2019 from "./pages/wines/CuveePaulRezerva2019";
-import RedKing2019 from "./pages/wines/RedKing_2019";
 
 function App() {
     return (
@@ -54,11 +53,6 @@ function App() {
                     exact
                     path="/vinuri/rose-cosmina-2021"
                     component={RoseCosmina2021}
-                />
-                <Route
-                    exact
-                    path="/vinuri/red-king-2019"
-                    component={RedKing2019}
                 />
                 <Route
                     exact
