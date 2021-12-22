@@ -15,12 +15,10 @@ import Cazare from "./pages/Cazare";
 import About from "./pages/About";
 
 // Wines
-import LadyBlackLegend2019 from "./pages/wines/LadyBlackLegend2019";
 import CuveeAlexandra2021 from "./pages/wines/CuveeAlexandra2021";
 import RoseCosmina2021 from "./pages/wines/RoseCosmina2021";
 import CuveePitigaia2019 from "./pages/wines/CuveePitigaia2019";
 import CuveeFrancisc2019 from "./pages/wines/CuveeFrancisc2019";
-import CuveePaulRezerva2019 from "./pages/wines/CuveePaulRezerva2019";
 
 function App() {
     return (
@@ -36,11 +34,6 @@ function App() {
                 <Route exact path="/despre-noi" component={About} />
                 <Route
                     exact
-                    path="/vinuri/lady-black-legend-2019"
-                    component={LadyBlackLegend2019}
-                />
-                <Route
-                    exact
                     path="/vinuri/cuvee-alexandra-2021"
                     component={CuveeAlexandra2021}
                 />
@@ -53,11 +46,6 @@ function App() {
                     exact
                     path="/vinuri/rose-cosmina-2021"
                     component={RoseCosmina2021}
-                />
-                <Route
-                    exact
-                    path="/vinuri/cuvee-paul-rezerva-2019"
-                    component={CuveePaulRezerva2019}
                 />
                 <Route
                     exact
