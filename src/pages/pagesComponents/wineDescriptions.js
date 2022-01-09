@@ -339,7 +339,7 @@ export const cuveeAlexandra_2021 = {
     type: "Sec",
     maturing: "",
     alchool: "13,1%",
-    color: "Rosé",
+    color: "Alb",
     qty: "0,75L",
     grapes: "Tămâioasă Românească și Sauvignon Blanc",
     decantation: "",
