@@ -11,7 +11,7 @@ import Footer from "./layout/Footer";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Wines from "./pages/Wines";
-import Cazare from "./pages/Cazare";
+// import Cazare from "./pages/Cazare";
 import About from "./pages/About";
 
 // Wines
@@ -28,7 +28,7 @@ function App() {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/vinuri" component={Wines} />
                 <Route exact path="/vizite-si-degustari" component={Visits} />
-                <Route exact path="/cazare" component={Cazare} />
+                {/* <Route exact path="/cazare" component={Cazare} /> */}
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/galerie" component={Gallery} />
                 <Route exact path="/despre-noi" component={About} />
