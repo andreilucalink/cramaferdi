@@ -9,9 +9,10 @@ import WineCard from "./pagesComponents/WineCard";
 // Images
 // import down from "../img/dwn-light.svg";
 import cfr2019 from "../img/wines/CFR2019.jpg";
-import rc2021 from "../img/wines/RC2021_new.jpg";
-import calx2021 from "../img/wines/CALX2021_new.jpg";
-import cpit2019 from "../img/wines/CPIT2019_new.jpg";
+import rc2021 from "../img/wines/RC2021.jpg";
+import calx2021 from "../img/wines/CALX2021.jpg";
+import cpit2019 from "../img/wines/CPIT2019.jpg";
+import rkr2019 from "../img/wines/RKR2019_new.jpg";
 
 const Wines = () => {
     const winesRef = useRef(null);
@@ -50,7 +51,16 @@ const Wines = () => {
                         adresa de e-mail din pagina de contact.
                     </p>
                 </div>
+
                 <Row>
+                    <WineCard
+                        link="/vinuri/red-king-rezerva-2019"
+                        price="145 RON"
+                        img={rkr2019}
+                        title="Red King Rezerva"
+                        year="2019"
+                    />
+
                     <WineCard
                         link="/vinuri/rose-cosmina-2021"
                         price="55 RON"
@@ -72,6 +82,8 @@ const Wines = () => {
                         title="Cuveé Piţigaia"
                         year="2019"
                     />
+                </Row>
+                <Row>
                     <WineCard
                         link="/vinuri/cuvee-francisc-2019"
                         price="110 RON"

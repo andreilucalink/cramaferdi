@@ -374,3 +374,18 @@ export const ladyBlack_legend_2019 = {
     grapes: "Fetească Neagră",
     decantation: "minim 1h",
 };
+
+export const redKing_Rezerva2019 = {
+    title: "Red King Rezerva",
+    year: "2019",
+    price: "145 RON",
+    description:
+        "Un Cabernet Sauvignon cu gust expresiv și arome puternice de prune, coacăze și cireșe negre. Notele olfactive te învăluie în ciocolată neagră, vanilie, stejar și piper. Aciditatea excelent echilibrată, taninurile înalte dar mătăsoase și alcoolul perfect integrat oferă vinului un corp plin cu final lung și voluptuos. Maturat în butoaie de stejar timp de 20 luni, are un potențial mare de învechire.",
+    type: "Sec",
+    maturing: "20 luni, baric din stejar",
+    alchool: "15%",
+    color: "Roşu",
+    qty: "0,75L",
+    grapes: "Cabernet Sauvignon",
+    decantation: "minim 1h",
+};
