@@ -160,7 +160,7 @@
 }
 
 .news-card {
-    margin: auto;
+    /* margin: auto; */
     background-color: white;
     max-width: 400px;
     height: 525px;
@@ -314,6 +314,12 @@
     .ferdi-home1 .ferdi-home-img {
         opacity: 0.9;
     }
+    .wrapper-left {
+        padding-right: 20px;
+    }
+    .wrapper-right {
+        padding-left: 20px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -355,6 +361,11 @@
 }
 
 @media (max-width: 767px) {
+    .wrapper-left,
+    .wrapper-right {
+        padding: 0px;
+    }
+
     .news-card {
         margin: auto;
         max-width: 300px;

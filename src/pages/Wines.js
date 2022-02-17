@@ -12,7 +12,6 @@ import WineCard from "./pagesComponents/WineCard";
 import cfr2019 from "../img/wines/CFR2019.jpg";
 import rc2021 from "../img/wines/RC2021.jpg";
 import calx2021 from "../img/wines/CALX2021.jpg";
-import rkr2019 from "../img/wines/RKR2019_new.jpg";
 
 const Wines = () => {
     const winesRef = useRef(null);
@@ -53,14 +52,6 @@ const Wines = () => {
                 </div>
 
                 <Row>
-                    <WineCard
-                        link="/vinuri/red-king-rezerva-2019"
-                        price="145 RON"
-                        img={rkr2019}
-                        title="Red King Rezerva"
-                        year="2019"
-                    />
-
                     <WineCard
                         link="/vinuri/rose-cosmina-2021"
                         price="55 RON"
