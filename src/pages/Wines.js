@@ -8,7 +8,10 @@ import WineCard from "./pagesComponents/WineCard";
 
 // Images
 import rc2021 from "../img/wines/RC2021.jpg";
-import calx2021 from "../img/wines/CALX2021.jpg";
+import calx2021_lim from "../img/wines/CALX2021.jpg";
+import calx2021 from "../img/wines/CALX2021_2_new.jpg";
+import mads2021 from "../img/wines/MADS2021_new.jpg";
+import mrsr2019 from "../img/wines/MRSR2019_new.jpg";
 
 const Wines = () => {
     const winesRef = useRef(null);
@@ -33,9 +36,6 @@ const Wines = () => {
                     data-aos-delay="250">
                     VINURI
                 </h1>
-                {/* <a href="#wines" className="scroll-down">
-                    <Img src={down} alt="Scroll Down" />
-                </a> */}
                 <div id="wines" ref={winesRef}></div>
             </div>
             <Container className="wines-list">
@@ -47,20 +47,42 @@ const Wines = () => {
                         adresa de e-mail din pagina de contact.
                     </p>
                 </div>
-
                 <Row>
                     <WineCard
-                        link="/vinuri/rose-cosmina-2021"
-                        price="55 RON"
-                        img={rc2021}
-                        title="Rosé Cosmina"
+                        link="/vinuri/cuvee-alexandra-2021"
+                        price="40 RON"
+                        img={calx2021}
+                        title="Cuveé Alexandra"
                         year="2021"
                     />
                     <WineCard
-                        link="/vinuri/cuvee-alexandra-2021"
+                        link="/vinuri/madame-s-2021-editie-limitata"
                         price="60 RON"
-                        img={calx2021}
-                        title="Cuveé Alexandra"
+                        img={mads2021}
+                        title="Madame S Ed. Lim."
+                        year="2021"
+                    />
+                    <WineCard
+                        link="/vinuri/mister-s-rezerva-2019"
+                        price="150 RON"
+                        img={mrsr2019}
+                        title="Mister S Rezerva"
+                        year="2019"
+                    />
+                    <WineCard
+                        link="/vinuri/rose-cosmina-2021-editie-limitata"
+                        price="55 RON"
+                        img={rc2021}
+                        title="Rosé Cosmina Ed. Lim."
+                        year="2021"
+                    />
+                </Row>
+                <Row>
+                    <WineCard
+                        link="/vinuri/cuvee-alexandra-2021-editie-limitata"
+                        price="60 RON"
+                        img={calx2021_lim}
+                        title="Cuveé Alexandra Ed. Lim."
                         year="2021"
                     />
                 </Row>

@@ -1,8 +1,8 @@
 import React from "react";
 import { cuveeAlexandra_2021 } from "../pagesComponents/wineDescriptions";
 import WinePage from "../pagesComponents/WinePage";
-import img from "../../img/wines/CALX2021.jpg";
-import modalImage from "../../img/etichete/CALX2021.jpg";
+import img from "../../img/wines/CALX2021_2.jpg";
+import modalImage from "../../img/etichete/CALX2021_2.jpg";
 
 const CuveeAlexandra2021 = () => {
     return (

@@ -316,7 +316,7 @@ export const cuveePaul_Rezerva = {
 };
 
 export const roseCosmina_2021 = {
-    title: "Rosé Cosmina ",
+    title: "Rosé Cosmina Ediţie Limitată",
     year: "2021",
     price: "55 RON",
     description:
@@ -330,8 +330,8 @@ export const roseCosmina_2021 = {
     decantation: "",
 };
 
-export const cuveeAlexandra_2021 = {
-    title: "Cuvée Alexandra ",
+export const cuveeAlexandra_2021_limited = {
+    title: "Cuvée Alexandra Ediţie Limitată",
     year: "2021",
     price: "60 RON",
     description:
@@ -388,4 +388,49 @@ export const redKing_Rezerva2019 = {
     qty: "0,75L",
     grapes: "Cabernet Sauvignon",
     decantation: "minim 1h",
+};
+
+export const cuveeAlexandra_2021 = {
+    title: "Cuvée Alexandra",
+    year: "2021",
+    price: "40 RON",
+    description:
+        "Acest cupaj din trei soiuri dominate de Tămâioasă Românească ne introduce într-o grădină cu iarbă proaspăt cosită și flori de primăvară. Aromele de citrice și măr verde îi conferă o notă exotică. Astfel că vinul devine fresh, echilibrat, mineral, totodată complex și datorită soiului Sauvignon Blanc. Vinul conţine depuneri în sticlă.",
+    type: "Sec",
+    maturing: "",
+    alchool: "13,3%",
+    color: "Alb",
+    qty: "0,75L",
+    grapes: "Tămâioasă Românească și Sauvignon Blanc",
+    decantation: "",
+};
+
+export const misterS_Rezerva_2019 = {
+    title: "Mister S Rezerva",
+    year: "2019",
+    price: "150 RON",
+    description:
+        "Un Shiraz complex și bine structurat, de culoare intens rubinie, cu arome de mure, cireșe negre, prune coapte și piper negru, unde aciditatea echilibrată și taninurile bine integrate completează frumos corpul amplu al vinului, oferind un final lung și concentrat.",
+    type: "Sec",
+    maturing: "22 luni, baric din stejar",
+    alchool: "15%",
+    color: "Roşu",
+    qty: "0,75L",
+    grapes: "Shiraz",
+    decantation: "minim 1h",
+};
+
+export const madameS_2021_limited = {
+    title: "Madame S Ediţie Limitată",
+    year: "2021",
+    price: "60 RON",
+    description:
+        "Un Sauvignon Blanc clasic și elegant cu aciditate echilibrată, note de miere și gutui care acompaniază iubitorul de vin. Postgustul este lung, delicat și fructat. Caracterul acestui vin este relevat și de calitatea strugurilor atent îngrijiți și selecționați, oferind o experiență senzorială completă celui care alege să îl deguste.",
+    type: "Sec",
+    maturing: "",
+    alchool: "13,9%",
+    color: "Alb",
+    qty: "0,75L",
+    grapes: "Sauvignon Blanc",
+    decantation: "",
 };
