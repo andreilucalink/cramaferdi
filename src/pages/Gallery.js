@@ -24,6 +24,8 @@ import ev1 from "../img/gallery/ev1.jpg";
 import ev2 from "../img/gallery/ev2.jpg";
 import ev3 from "../img/gallery/ev3.jpg";
 import ev4 from "../img/gallery/ev4.jpg";
+import mrs_mads_calx from "../img/gallery/mrs_mads_calx.jpg";
+import mrs2019 from "../img/gallery/mrs2019.jpg";
 
 const Gallery = () => {
     const [bar, setBar] = useState(true);
@@ -49,6 +51,32 @@ const Gallery = () => {
             <SRLWrapper options={options} className="gallery-page">
                 <div className="img-grid">
                     <div className="img-grid-inner">
+                        <div className="img-item">
+                            <Img
+                                src={mrs2019}
+                                className="img-item-inner"
+                                loader={
+                                    <img
+                                        src={img_loader}
+                                        className="img-item-inner"
+                                        alt="loader"
+                                    />
+                                }
+                            />
+                        </div>
+                        <div className="img-item">
+                            <Img
+                                src={mrs_mads_calx}
+                                className="img-item-inner"
+                                loader={
+                                    <img
+                                        src={img_loader}
+                                        className="img-item-inner"
+                                        alt="loader"
+                                    />
+                                }
+                            />
+                        </div>
                         <div className="img-item">
                             <Img
                                 src={ev1}

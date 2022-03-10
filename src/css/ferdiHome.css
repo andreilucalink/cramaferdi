@@ -160,7 +160,7 @@
 }
 
 .news-card {
-    /* margin: auto; */
+    margin: auto;
     background-color: white;
     max-width: 400px;
     height: 525px;
