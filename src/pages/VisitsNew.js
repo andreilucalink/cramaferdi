@@ -68,7 +68,7 @@ const VisitsNew = () => {
                                 grisine
                             </li>
                         </ul>
-                        <p className="pachet-price">50 RON/Persoana</p>
+                        <p className="pachet-price">70 RON/Persoana</p>
                         {/* <p className="pachet-description">
                             La achiziționarea a <b>6 sticle</b> de vin nu se mai
                             percepe taxă de degustare.
@@ -99,7 +99,7 @@ const VisitsNew = () => {
                                 grisine
                             </li>
                         </ul>
-                        <p className="pachet-price">100 RON/Persoana</p>
+                        <p className="pachet-price">120 RON/Persoana</p>
                         {/* <p className="pachet-description">
                             La achiziționarea a <b>12 sticle</b> de vin nu se
                             mai percepe taxă de degustare.
