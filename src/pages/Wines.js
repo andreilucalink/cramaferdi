@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet";
 import WineCard from "./pagesComponents/WineCard";
 
 // Images
-import rc2021 from "../img/wines/RC2021.jpg";
 import calx2021_lim from "../img/wines/CALX2021.jpg";
 import calx2021 from "../img/wines/CALX2021_2_new.jpg";
 import mads2021 from "../img/wines/MADS2021_new.jpg";
@@ -69,15 +68,6 @@ const Wines = () => {
                         title="Mister S Rezerva"
                         year="2019"
                     />
-                    <WineCard
-                        link="/vinuri/rose-cosmina-2021-editie-limitata"
-                        price="55 RON"
-                        img={rc2021}
-                        title="Rosé Cosmina Ed. Lim."
-                        year="2021"
-                    />
-                </Row>
-                <Row>
                     <WineCard
                         link="/vinuri/cuvee-alexandra-2021-editie-limitata"
                         price="60 RON"
