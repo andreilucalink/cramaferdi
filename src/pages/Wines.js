@@ -70,20 +70,20 @@ const Wines = () => {
                         year="2021"
                     />
                     <WineCard
-                        link="/vinuri/mister-s-rezerva-2019"
-                        price="150 RON"
-                        img={mrsr2019}
-                        title="Mister S Rezerva"
-                        year="2019"
-                    />
-                </Row>
-                <Row>
-                    <WineCard
                         link="/vinuri/cuvee-alexandra-2021-editie-limitata"
                         price="60 RON"
                         img={calx2021_lim}
                         title="Cuveé Alexandra Ed. Lim."
                         year="2021"
+                    />
+                </Row>
+                <Row>
+                    <WineCard
+                        link="/vinuri/mister-s-rezerva-2019"
+                        price="150 RON"
+                        img={mrsr2019}
+                        title="Mister S Rezerva"
+                        year="2019"
                     />
                 </Row>
             </Container>
