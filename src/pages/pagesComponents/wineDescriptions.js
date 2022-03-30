@@ -434,3 +434,18 @@ export const madameS_2021_limited = {
     grapes: "Sauvignon Blanc",
     decantation: "",
 };
+
+export const ladyBlack_2020 = {
+    title: "Lady Black Ediţie Limitată",
+    year: "2020",
+    price: "110 RON",
+    description:
+        "O Fetească Neagră în rochie rubinie cu gust de cireșe negre îmbrăcate în ciocolată, prune afumate acoperite cu vanilie și condimente în postgustul lung și generos, ne aduce în fața unui vin concentrat cu aciditate echilibrată și alcool excelent integrat.",
+    type: "Sec",
+    maturing: "14 luni, baric din stejar",
+    alchool: "14,3%",
+    color: "Roşu",
+    qty: "0,75L",
+    grapes: "Fetească Neagră",
+    decantation: "1h",
+};

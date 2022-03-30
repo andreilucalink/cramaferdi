@@ -3,17 +3,36 @@
 import calx2021 from "../../img/home/news/CALX2021_basic.jpg";
 import mads2021 from "../../img/home/news/MADS2021.jpg";
 import mrsr2019 from "../../img/home/news/MRSR2019.jpg";
+import lbk2020 from "../../img/home/news/CPIT2019.jpg";
 
 import { Link } from "react-router-dom";
 const handleDragStart = (e) => e.preventDefault();
 export const newsCards = [
     <div className="card-wrapper" onDragStart={handleDragStart}>
         <div className="news-card">
+            <img src={lbk2020} alt="RK2019" className="news-img" />
+            <div className="news-category category-red">Vinuri</div>
+            <div className="news-header">
+                Lady Black <br />
+                Ediţie Limitată <br />
+                2020 <br />
+            </div>
+            <div className="news-separator separator-red"></div>
+            <div className="news-footer">
+                <div className="news-date">30 Mar 2021</div>
+                <Link to="/vinuri/lady-black-2020" className="news-details">
+                    Vezi mai mult...
+                </Link>
+            </div>
+        </div>
+    </div>,
+    <div className="card-wrapper" onDragStart={handleDragStart}>
+        <div className="news-card">
             <img src={calx2021} alt="RK2019" className="news-img" />
             <div className="news-category category-white">Vinuri</div>
             <div className="news-header">
                 Cuveé <br /> Alexandra
-                <br /> 2021 <br />
+                <br /> 2022 <br />
             </div>
             <div className="news-separator separator-white"></div>
             <div className="news-footer">
@@ -32,7 +51,7 @@ export const newsCards = [
             <div className="news-category category-white">Vinuri</div>
             <div className="news-header">
                 Madame S<br /> Ediţie Limitată
-                <br /> 2021 <br />
+                <br /> 2022 <br />
             </div>
             <div className="news-separator separator-white"></div>
             <div className="news-footer">
@@ -55,7 +74,7 @@ export const newsCards = [
             </div>
             <div className="news-separator separator-red"></div>
             <div className="news-footer">
-                <div className="news-date">07 Mar 2021</div>
+                <div className="news-date">07 Mar 2022</div>
                 <Link
                     to="/vinuri/mister-s-rezerva-2019"
                     className="news-details">

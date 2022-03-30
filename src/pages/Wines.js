@@ -8,9 +8,10 @@ import WineCard from "./pagesComponents/WineCard";
 
 // Images
 import calx2021_lim from "../img/wines/CALX2021.jpg";
-import calx2021 from "../img/wines/CALX2021_2_new.jpg";
-import mads2021 from "../img/wines/MADS2021_new.jpg";
-import mrsr2019 from "../img/wines/MRSR2019_new.jpg";
+import calx2021 from "../img/wines/CALX2021_2.jpg";
+import mads2021 from "../img/wines/MADS2021.jpg";
+import mrsr2019 from "../img/wines/MRSR2019.jpg";
+import lbk2020 from "../img/wines/LBK2020_new.jpg";
 
 const Wines = () => {
     const winesRef = useRef(null);
@@ -48,6 +49,13 @@ const Wines = () => {
                 </div>
                 <Row>
                     <WineCard
+                        link="/vinuri/lady-black-2020"
+                        price="110 RON"
+                        img={lbk2020}
+                        title="Lady Black Ed. Lim."
+                        year="2020"
+                    />
+                    <WineCard
                         link="/vinuri/cuvee-alexandra-2021"
                         price="40 RON"
                         img={calx2021}
@@ -68,6 +76,8 @@ const Wines = () => {
                         title="Mister S Rezerva"
                         year="2019"
                     />
+                </Row>
+                <Row>
                     <WineCard
                         link="/vinuri/cuvee-alexandra-2021-editie-limitata"
                         price="60 RON"

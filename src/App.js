@@ -19,6 +19,7 @@ import CuveeAlexandra2021_Limited from "./pages/wines/CuveeAlexandra2021_Limited
 import CuveeAlexandra2021 from "./pages/wines/CuveeAlexandra2021";
 import MisterS_Rezerva2019 from "./pages/wines/MisterS_Rezerva2019";
 import MadameS_2021_Limited from "./pages/wines/MadameS_2021_Limited";
+import LadyBlack2020 from "./pages/wines/LadyBlack2020";
 
 function App() {
     return (
@@ -32,6 +33,11 @@ function App() {
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/galerie" component={Gallery} />
                 <Route exact path="/despre-noi" component={About} />
+                <Route
+                    exact
+                    path="/vinuri/lady-black-2020"
+                    component={LadyBlack2020}
+                />
                 <Route
                     exact
                     path="/vinuri/cuvee-alexandra-2021"
