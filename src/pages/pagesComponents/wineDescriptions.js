@@ -320,13 +320,13 @@ export const roseCosmina_2021 = {
     year: "2021",
     price: "55 RON",
     description:
-        "Un cupaj din trei soiuri deosebite: Merlot, Shiraz și Blaufränkisch ne aduce în prezența unui rosé mineral de culoare trandafirie cu miros imbatator de flori albe, capsuni si citrice. Secretului acestui rosé sec stă în combinația îndrăzneață a acestor soiuri, unde Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea și Blaufränkisch condimentează cu succes blend-ul.",
+        "Un cupaj din trei soiuri deosebite: Merlot, Shiraz şi Blaufränkisch ne aduce în prezența unui rosé mineral de culoare trandafirie cu miros imbatator de flori albe, capsuni si citrice. Secretului acestui rosé sec stă în combinația îndrăzneață a acestor soiuri, unde Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aciditatea şi Blaufränkisch condimentează cu succes blend-ul.",
     type: "Sec",
     maturing: "",
     alchool: "12,9%",
     color: "Rosé",
     qty: "0,75L",
-    grapes: "Merlot, Shiraz și Blaufränkisch",
+    grapes: "Merlot, Shiraz şi Blaufränkisch",
     decantation: "",
 };
 
@@ -335,13 +335,13 @@ export const cuveeAlexandra_2021_limited = {
     year: "2021",
     price: "60 RON",
     description:
-        "Cupajul alb bazat pe Tămâioasă Românească și Sauvignon Blanc ne oferă un curcubeu de arome unde Tămâioasa, după cum îi spune și numele vine cu accente de tămâie combinată cu fagure, busuioc și lămâie verde. Una dintre cele mai puternice arome de vin alb le dă acest soi, chiar dacă acest cupaj este sec, Sauvignon-ul Blanc îl completează frumos cu note minerale și fructate.",
+        "Cupajul alb bazat pe Tămâioasă Românească şi Sauvignon Blanc ne oferă un curcubeu de arome unde Tămâioasa, după cum îi spune şi numele vine cu accente de tămâie combinată cu fagure, busuioc şi lămâie verde. Una dintre cele mai puternice arome de vin alb le dă acest soi, chiar dacă acest cupaj este sec, Sauvignon-ul Blanc îl completează frumos cu note minerale şi fructate.",
     type: "Sec",
     maturing: "",
     alchool: "13,1%",
     color: "Alb",
     qty: "0,75L",
-    grapes: "Tămâioasă Românească și Sauvignon Blanc",
+    grapes: "Tămâioasă Românească şi Sauvignon Blanc",
     decantation: "",
 };
 
@@ -350,13 +350,13 @@ export const cuveePitigaia_2019 = {
     year: "2019",
     price: "110 RON",
     description:
-        "Un cupaj deja bine cunoscut al Cramei Ferdi, este un tip de Bordeaux Blend, unde soiul Merlot, cu un corp catifelat, elegant și cu arome de cireșe negre îl întâlnește pe regele vinurilor, Cabernet Sauvignon, care îi ridică aciditatea, îi îmbogățește taninii și corpul, la care se adaugă nuanța de grena închis, precum și aromele de piper verde și ciocolată. Acest vin cucerește cu o distincție anume și cu un postgust lung, după ce s-a odihnit la baric 17 de luni, având astfel un potențial mare de învechire.",
+        "Un cupaj deja bine cunoscut al Cramei Ferdi, este un tip de Bordeaux Blend, unde soiul Merlot, cu un corp catifelat, elegant şi cu arome de cireşe negre îl întâlneşte pe regele vinurilor, Cabernet Sauvignon, care îi ridică aciditatea, îi îmbogățeşte taninii şi corpul, la care se adaugă nuanța de grena închis, precum şi aromele de piper verde şi ciocolată. Acest vin cucereşte cu o distincție anume şi cu un postgust lung, după ce s-a odihnit la baric 17 de luni, având astfel un potențial mare de învechire.",
     type: "Sec",
     maturing: "17 luni, baric din stejar",
     alchool: "14,8%",
-    color: "Roșu",
+    color: "Roşu",
     qty: "0,75L",
-    grapes: "Merlot și Cabernet Sauvignon",
+    grapes: "Merlot şi Cabernet Sauvignon",
     decantation: "minim 1h",
 };
 
@@ -365,11 +365,11 @@ export const ladyBlack_legend_2019 = {
     year: "2019",
     price: "140 RON",
     description:
-        "Este Feteasca Neagră legendară a cramei, cu note olfactive de cacao și condimente care te învăluie în aromele de fructe de pădure, oferă o senzație gustativă inedită și surpinde plăcut prin taninii mătăsoși cu postgust de mure supracoapte, având un potențial de învechire de 5 până la 10 ani. Un vin complex, echilibrat și elegant care, o dată savurat, creează o atmosferă idilică. ",
+        "Este Feteasca Neagră legendară a cramei, cu note olfactive de cacao şi condimente care te învăluie în aromele de fructe de pădure, oferă o senzație gustativă inedită şi surpinde plăcut prin taninii mătăsoşi cu postgust de mure supracoapte, având un potențial de învechire de 5 până la 10 ani. Un vin complex, echilibrat şi elegant care, o dată savurat, creează o atmosferă idilică. ",
     type: "Sec",
     maturing: "20 luni, baric din stejar",
     alchool: "15%",
-    color: "Roșu",
+    color: "Roşu",
     qty: "0,75L",
     grapes: "Fetească Neagră",
     decantation: "minim 1h",
@@ -380,7 +380,7 @@ export const redKing_Rezerva2019 = {
     year: "2019",
     price: "145 RON",
     description:
-        "Un Cabernet Sauvignon cu gust expresiv și arome puternice de prune, coacăze și cireșe negre. Notele olfactive te învăluie în ciocolată neagră, vanilie, stejar și piper. Aciditatea excelent echilibrată, taninurile înalte dar mătăsoase și alcoolul perfect integrat oferă vinului un corp plin cu final lung și voluptuos. Maturat în butoaie de stejar timp de 20 luni, are un potențial mare de învechire.",
+        "Un Cabernet Sauvignon cu gust expresiv şi arome puternice de prune, coacăze şi cireşe negre. Notele olfactive te învăluie în ciocolată neagră, vanilie, stejar şi piper. Aciditatea excelent echilibrată, taninurile înalte dar mătăsoase şi alcoolul perfect integrat oferă vinului un corp plin cu final lung şi voluptuos. Maturat în butoaie de stejar timp de 20 luni, are un potențial mare de învechire.",
     type: "Sec",
     maturing: "20 luni, baric din stejar",
     alchool: "15%",
@@ -395,13 +395,13 @@ export const cuveeAlexandra_2021 = {
     year: "2021",
     price: "40 RON",
     description:
-        "Acest cupaj din trei soiuri dominate de Tămâioasă Românească ne introduce într-o grădină cu iarbă proaspăt cosită și flori de primăvară. Aromele de citrice și măr verde îi conferă o notă exotică. Astfel că vinul devine fresh, echilibrat, mineral, totodată complex și datorită soiului Sauvignon Blanc. Vinul conţine depuneri în sticlă.",
+        "Acest cupaj din trei soiuri dominate de Tămâioasă Românească ne introduce într-o grădină cu iarbă proaspăt cosită şi flori de primăvară. Aromele de citrice şi măr verde îi conferă o notă exotică. Astfel că vinul devine fresh, echilibrat, mineral, totodată complex şi datorită soiului Sauvignon Blanc. Vinul conţine depuneri în sticlă.",
     type: "Sec",
     maturing: "",
     alchool: "13,3%",
     color: "Alb",
     qty: "0,75L",
-    grapes: "Tămâioasă Românească și Sauvignon Blanc",
+    grapes: "Tămâioasă Românească şi Sauvignon Blanc",
     decantation: "",
 };
 
@@ -410,7 +410,7 @@ export const misterS_Rezerva_2019 = {
     year: "2019",
     price: "150 RON",
     description:
-        "Un Shiraz complex și bine structurat, de culoare intens rubinie, cu arome de mure, cireșe negre, prune coapte și piper negru, unde aciditatea echilibrată și taninurile bine integrate completează frumos corpul amplu al vinului, oferind un final lung și concentrat.",
+        "Un Shiraz complex şi bine structurat, de culoare intens rubinie, cu arome de mure, cireşe negre, prune coapte şi piper negru, unde aciditatea echilibrată şi taninurile bine integrate completează frumos corpul amplu al vinului, oferind un final lung şi concentrat.",
     type: "Sec",
     maturing: "22 luni, baric din stejar",
     alchool: "15%",
@@ -425,7 +425,7 @@ export const madameS_2021_limited = {
     year: "2021",
     price: "60 RON",
     description:
-        "Un Sauvignon Blanc clasic și elegant cu aciditate echilibrată, note de miere și gutui care acompaniază iubitorul de vin. Postgustul este lung, delicat și fructat. Caracterul acestui vin este relevat și de calitatea strugurilor atent îngrijiți și selecționați, oferind o experiență senzorială completă celui care alege să îl deguste.",
+        "Un Sauvignon Blanc clasic şi elegant cu aciditate echilibrată, note de miere şi gutui care acompaniază iubitorul de vin. Postgustul este lung, delicat şi fructat. Caracterul acestui vin este relevat şi de calitatea strugurilor atent îngrijiți şi selecționați, oferind o experiență senzorială completă celui care alege să îl deguste.",
     type: "Sec",
     maturing: "",
     alchool: "13,9%",
@@ -440,7 +440,7 @@ export const ladyBlack_2020 = {
     year: "2020",
     price: "110 RON",
     description:
-        "O Fetească Neagră în rochie rubinie cu gust de cireșe negre îmbrăcate în ciocolată, prune afumate acoperite cu vanilie și condimente în postgustul lung și generos, ne aduce în fața unui vin concentrat cu aciditate echilibrată și alcool excelent integrat.",
+        "O Fetească Neagră în rochie rubinie cu gust de cireşe negre îmbrăcate în ciocolată, prune afumate acoperite cu vanilie şi condimente în postgustul lung şi generos, ne aduce în fața unui vin concentrat cu aciditate echilibrată şi alcool excelent integrat.",
     type: "Sec",
     maturing: "14 luni, baric din stejar",
     alchool: "14,3%",
@@ -448,4 +448,19 @@ export const ladyBlack_2020 = {
     qty: "0,75L",
     grapes: "Fetească Neagră",
     decantation: "1h",
+};
+
+export const cuveeUnchiu_Puiu2020 = {
+    title: "Cuvée Unchiu Puiu",
+    year: "2020",
+    price: "60 RON",
+    description:
+        "În acest cupaj am alăturat trei soiuri cu note diferite, dar care împreună oferă o senzație unică: Merlot, Shiraz şi Blaufränkisch ne aduc în prezența unui vin deosebit de culoarea purpurei cu miros fin de fructe roşii coapte şi mirodenii. Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aroma fructată şi Blaufränkisch condimentează cu succes blend-ul.",
+    type: "Sec",
+    maturing: "6 luni, baric din stejar",
+    alchool: "13,8%",
+    color: "Roşu",
+    qty: "0,75L",
+    grapes: "Merlot, Shiraz şi Blaufränkisch",
+    decantation: "minim 1h",
 };

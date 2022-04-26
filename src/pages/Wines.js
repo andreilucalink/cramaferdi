@@ -12,6 +12,7 @@ import calx2021 from "../img/wines/CALX2021_2.jpg";
 import mads2021 from "../img/wines/MADS2021.jpg";
 import mrsr2019 from "../img/wines/MRSR2019.jpg";
 import lbk2020 from "../img/wines/LBK2020_new.jpg";
+import cunp2020 from "../img/wines/CUNP2020_new.jpg";
 
 const Wines = () => {
     const winesRef = useRef(null);
@@ -43,11 +44,18 @@ const Wines = () => {
                     <h2>Vinuri cu rădăcini în pasiune, curaj și dăruire.</h2>
                     <p>
                         Pentru a comanda vinuri sau pentru degustări şi vizite
-                        la cramă, contactaţi-ne la numerele de telefon sau
+                        la cramă, contactaţi-ne la numerele de telefon sau la
                         adresa de e-mail din pagina de contact.
                     </p>
                 </div>
                 <Row>
+                    <WineCard
+                        link="/vinuri/cuvee-unchiu-puiu-2020"
+                        price="60 RON"
+                        img={cunp2020}
+                        title="Cuveé Unchiu Puiu"
+                        year="2020"
+                    />
                     <WineCard
                         link="/vinuri/lady-black-2020"
                         price="110 RON"
@@ -69,6 +77,8 @@ const Wines = () => {
                         title="Madame S Ed. Lim."
                         year="2021"
                     />
+                </Row>
+                <Row>
                     <WineCard
                         link="/vinuri/cuvee-alexandra-2021-editie-limitata"
                         price="60 RON"
@@ -76,8 +86,6 @@ const Wines = () => {
                         title="Cuveé Alexandra Ed. Lim."
                         year="2021"
                     />
-                </Row>
-                <Row>
                     <WineCard
                         link="/vinuri/mister-s-rezerva-2019"
                         price="150 RON"
