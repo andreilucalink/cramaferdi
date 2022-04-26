@@ -20,7 +20,7 @@ export const newsCards = [
             </div>
             <div className="news-separator separator-red"></div>
             <div className="news-footer">
-                <div className="news-date">26 Apr 2021</div>
+                <div className="news-date">26 Apr 2022</div>
                 <Link
                     to="/vinuri/cuvee-unchiu-puiu-2020"
                     className="news-details">
