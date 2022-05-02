@@ -17,7 +17,6 @@ import About from "./pages/About";
 // Wines
 import CuveeAlexandra2021_Limited from "./pages/wines/CuveeAlexandra2021_Limited";
 import CuveeAlexandra2021 from "./pages/wines/CuveeAlexandra2021";
-import MisterS_Rezerva2019 from "./pages/wines/MisterS_Rezerva2019";
 import MadameS_2021_Limited from "./pages/wines/MadameS_2021_Limited";
 import LadyBlack2020 from "./pages/wines/LadyBlack2020";
 import CuveeUnchiuPuiu2020 from "./pages/wines/CuveeUnchiuPuiu2020";
@@ -54,11 +53,6 @@ function App() {
                     exact
                     path="/vinuri/madame-s-2021-editie-limitata"
                     component={MadameS_2021_Limited}
-                />
-                <Route
-                    exact
-                    path="/vinuri/mister-s-rezerva-2019"
-                    component={MisterS_Rezerva2019}
                 />
                 <Route
                     exact

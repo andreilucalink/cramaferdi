@@ -2,7 +2,7 @@
 // import rc2021 from "../../img/home/news/RC2021.jpg";
 import calx2021 from "../../img/home/news/CALX2021_basic.jpg";
 import mads2021 from "../../img/home/news/MADS2021.jpg";
-import mrsr2019 from "../../img/home/news/MRSR2019.jpg";
+// import mrsr2019 from "../../img/home/news/MRSR2019.jpg";
 import lbk2020 from "../../img/home/news/CPIT2019.jpg";
 import cunp2020 from "../../img/home/news/CUNP2020.jpg";
 
@@ -85,25 +85,25 @@ export const newsCards = [
             </div>
         </div>
     </div>,
-    <div className="card-wrapper" onDragStart={handleDragStart}>
-        <div className="news-card">
-            <img src={mrsr2019} alt="wineImage" className="news-img" />
-            <div className="news-category category-red">Vinuri</div>
-            <div className="news-header">
-                Mister S <br /> Rezerva
-                <br /> 2019 <br />
-            </div>
-            <div className="news-separator separator-red"></div>
-            <div className="news-footer">
-                <div className="news-date">07 Mar 2022</div>
-                <Link
-                    to="/vinuri/mister-s-rezerva-2019"
-                    className="news-details">
-                    Vezi mai mult...
-                </Link>
-            </div>
-        </div>
-    </div>,
+    // <div className="card-wrapper" onDragStart={handleDragStart}>
+    //     <div className="news-card">
+    //         <img src={mrsr2019} alt="wineImage" className="news-img" />
+    //         <div className="news-category category-red">Vinuri</div>
+    //         <div className="news-header">
+    //             Mister S <br /> Rezerva
+    //             <br /> 2019 <br />
+    //         </div>
+    //         <div className="news-separator separator-red"></div>
+    //         <div className="news-footer">
+    //             <div className="news-date">07 Mar 2022</div>
+    //             <Link
+    //                 to="/vinuri/mister-s-rezerva-2019"
+    //                 className="news-details">
+    //                 Vezi mai mult...
+    //             </Link>
+    //         </div>
+    //     </div>
+    // </div>,
     // <div className="card-wrapper" onDragStart={handleDragStart}>
     //     <div className="news-card">
     //         <img src={rc2021} alt="RC2021" className="news-img" />

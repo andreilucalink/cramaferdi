@@ -10,7 +10,6 @@ import WineCard from "./pagesComponents/WineCard";
 import calx2021_lim from "../img/wines/CALX2021.jpg";
 import calx2021 from "../img/wines/CALX2021_2.jpg";
 import mads2021 from "../img/wines/MADS2021.jpg";
-import mrsr2019 from "../img/wines/MRSR2019.jpg";
 import lbk2020 from "../img/wines/LBK2020_new.jpg";
 import cunp2020 from "../img/wines/CUNP2020_new.jpg";
 
@@ -85,13 +84,6 @@ const Wines = () => {
                         img={calx2021_lim}
                         title="Cuveé Alexandra Ed. Lim."
                         year="2021"
-                    />
-                    <WineCard
-                        link="/vinuri/mister-s-rezerva-2019"
-                        price="150 RON"
-                        img={mrsr2019}
-                        title="Mister S Rezerva"
-                        year="2019"
                     />
                 </Row>
             </Container>
