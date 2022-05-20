@@ -6,14 +6,9 @@ import mads2021 from "../../img/home/news/MADS2021.jpg";
 import lbk2020 from "../../img/home/news/CPIT2019.jpg";
 import cunp2020 from "../../img/home/news/CUNP2020.jpg";
 import event from "../../img/home/news/event.jpg";
-import { isMobile } from "react-device-detect";
 
 import { Link } from "react-router-dom";
 const handleDragStart = (e) => e.preventDefault();
-
-const fblink = isMobile
-    ? "fb://events/1667124006985232"
-    : "https://www.facebook.com/events/1667124006985232";
 
 export const newsCards = [
     <div className="card-wrapper" onDragStart={handleDragStart}>
@@ -31,7 +26,7 @@ export const newsCards = [
             <div className="news-footer">
                 <div className="news-date">05 Iun 2022</div>
                 <a
-                    href={fblink}
+                    href="https://www.facebook.com/events/s/ferdi-wines-ileana-branistes-c/1667124006985232/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="news-details">
