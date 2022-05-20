@@ -189,6 +189,10 @@
     text-transform: uppercase;
 }
 
+.category-event {
+    background-color: #02a5b8;
+}
+
 .category-red {
     background-color: #8e0505;
 }
@@ -212,6 +216,18 @@
     height: 4px;
 
     margin: 15px 30px;
+}
+
+.separator-event {
+    background: #02a5b8;
+    background-image: linear-gradient(
+        to right,
+        #02a5b8,
+        #71b9d5,
+        #aecde8,
+        #dde4f4,
+        #ffffff
+    );
 }
 
 .separator-red {

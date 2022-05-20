@@ -5,10 +5,41 @@ import mads2021 from "../../img/home/news/MADS2021.jpg";
 // import mrsr2019 from "../../img/home/news/MRSR2019.jpg";
 import lbk2020 from "../../img/home/news/CPIT2019.jpg";
 import cunp2020 from "../../img/home/news/CUNP2020.jpg";
+import event from "../../img/home/news/event.jpg";
+import { isMobile } from "react-device-detect";
 
 import { Link } from "react-router-dom";
 const handleDragStart = (e) => e.preventDefault();
+
+const fblink = isMobile
+    ? "fb://events/1667124006985232"
+    : "https://www.facebook.com/events/1667124006985232";
+
 export const newsCards = [
+    <div className="card-wrapper" onDragStart={handleDragStart}>
+        <div className="news-card">
+            <img src={event} alt="wineImage" className="news-img" />
+            <div className="news-category category-event">Eveniment</div>
+            <div className="news-header">
+                Ferdi Wines &amp;
+                <br />
+                Ileana Branişte's
+                <br />
+                Cooking <br />
+            </div>
+            <div className="news-separator separator-event"></div>
+            <div className="news-footer">
+                <div className="news-date">05 Iun 2022</div>
+                <a
+                    href={fblink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="news-details">
+                    Vezi mai mult...
+                </a>
+            </div>
+        </div>
+    </div>,
     <div className="card-wrapper" onDragStart={handleDragStart}>
         <div className="news-card">
             <img src={cunp2020} alt="wineImage" className="news-img" />

@@ -29,7 +29,6 @@ function App() {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/vinuri" component={Wines} />
                 <Route exact path="/vizite-si-degustari" component={Visits} />
-                {/* <Route exact path="/cazare" component={Cazare} /> */}
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/galerie" component={Gallery} />
                 <Route exact path="/despre-noi" component={About} />
