@@ -34,19 +34,16 @@ const About = () => {
                 <Row className="about-row row-gray">
                     <Col className="about-col-left about-col">
                         <div data-aos="fade-up">
-                            <span>Povestea Cramei Ferdi </span> a început în
-                            anul 2009, când după ani buni de a fi un pasionat și
-                            iubitor de vinuri, Fernando Mihăilescu, a vrut să
-                            își ducă această pasiune la următorul nivel, acela
-                            de a avea propria sa crama și de a-și “făuri”
-                            vinurile după propriul gust pentru el și prietenii
-                            lui. Așa că în 2009 a construit o mică cramă în
-                            comuna Vâlcanești Județul Prahova, unde a început să
-                            experimenteze cu diverse soiuri de struguri și să
-                            creeze primele vinuri ale cramei Ferdi. Ulterior în
-                            2018 i s-a alăturat fiul său Paul Mihăilescu și
-                            împreună au evoluat această pasiune într-o mică
-                            afacere de familie.
+                            <b>Crama Ferdi</b> – o pasiune care transcende
+                            meșteșugul și se transformă în artă. Așa a luat
+                            naștere această cramă care, deși relativ tânără, are
+                            rădăcini adânci în dorința de a măiestri vinul.
+                            Crama Ferdi reprezintă, în totalitate, viziunea și
+                            conceptul proprietarului și vinificatorului cramei,
+                            Fernando Mihăilescu, cel care și-a asumat provocarea
+                            creării vinurilor într-un stil personal dar după
+                            metoda tradițională; ulterior alăturându-i-se în
+                            acest demers îndrăzneț și fiul său, Paul Mihăilescu.
                         </div>
                     </Col>
                     <Col className="about-col-right about-col">
@@ -56,19 +53,17 @@ const About = () => {
                 <Row className="about-row about-reverse">
                     <Col className="about-col-left about-col">
                         <div data-aos="fade-up">
-                            <span>Crama Ferdi </span> este o cramă boutique
-                            premium ce vinifică anual aproximativ 20.000 de
-                            sticle prin metode tradiționale. Procesul de
-                            vinificație este unul complex și de perspectivă
-                            îndelungată, vinurile roșii fiind maturate în
-                            baricurui de stejar, între un an și doi ani,
-                            reînnoite la 4 ani. Un principiu care stă la baza
-                            procesului de vinificație este acela de a obține o
-                            calitate deosebită a strugurilor noștri prin
-                            selecția atentă a acestora și tăierea lor în verde.
-                            Viile se află în regiunea Dealul Mare, în
-                            localitățile Valea Călugărească și Tohani, dar și în
-                            spatele cramei în localitatea Vâlcanești.
+                            <b>În urmă cu câțiva ani</b> ne făceam, timid, loc
+                            în zona Tohani. Prioritatea noastră a fost,
+                            întotdeauna, atingerea excelenței în producția de
+                            vinuri, știind că vinul de calitate își are obârșia
+                            în vie. Ca urmare, după un atent proces de îngrijire
+                            a viei, începem selecția pe fiecare butuc în parte
+                            iar, la final, recoltăm manual în lădițe, în vederea
+                            obținerii unor struguri de primă clasă. Sistemul de
+                            vinificație este unul de perspectivă îndelungată,
+                            având în vedere că vinurile roșii sunt maturate, de
+                            la 1 la 2 ani, în barrique-uri de stejar.
                         </div>
                     </Col>
                     <Col className="about-col-right about-col">
@@ -78,15 +73,16 @@ const About = () => {
                 <Row className="about-row row-gray">
                     <Col className="about-col-left about-col">
                         <div data-aos="fade-up">
-                            <span> Vinificăm 10 soiuri de struguri </span>
-                            dintre care 6 roșii (Fetească Neagră, Cabernet
-                            Sauvignon, Cabernet Franc, Shiraz, Merlot, Burgund
-                            Mare), care se regăsesc în diferite cupaje, unele
-                            din cele mai apreciate fiind Cuvee Paul, Cuvee
-                            Pițigaia, Cuvee Francisc dar și în monosepaje precum
-                            Lady Black, Red King, Mister S, și 4 soiuri albe:
-                            Sauvignon Blanc, Tămâioasa Românească, Riesling
-                            Italian și Chardonnay.
+                            <b>Principiul nostru «less is more»</b> se observă
+                            începând cu intervenția minimă în procesul de
+                            vinifcație, vinurile transmițând adevărata esență a
+                            terroir-ului din care provin, și finalizând cu
+                            denumirile acestora, care au legătură cu memoria
+                            afectivă a făuritorului lor. Vinurile Cramei Ferdi
+                            se disting prin naturalețe, consistență, aciditate
+                            și eleganță. Utilizarea metodei tradiționale de
+                            făcut vinul are ca rezultat o gamă de vinuri
+                            echilibrate și rafinate.
                         </div>
                     </Col>
                     <Col className="about-col-right about-col">

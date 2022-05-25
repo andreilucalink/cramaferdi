@@ -5,6 +5,12 @@ import { Helmet } from "react-helmet";
 import { Container } from "react-bootstrap";
 import Img from "react-image";
 import imgloader from "../img/cazare_loader.svg";
+import c1 from "../img/cazare/c1.jpg";
+import c2 from "../img/cazare/c2.jpg";
+import c3 from "../img/cazare/c3.jpg";
+import c4 from "../img/cazare/c4.jpg";
+import c5 from "../img/cazare/c5.jpg";
+import c6 from "../img/cazare/c6.jpg";
 
 const loader = <img src={imgloader} alt="Loading..." />;
 
@@ -49,27 +55,21 @@ const Cazare = () => {
                             href="https://kimcountryclub.ro"
                             target="_blank"
                             rel="noopener noreferrer">
-                            <Img
-                                src="https://kimcountryclub.ro/wp-content/uploads/2018/10/facilitati-garaj-1024x683.jpg"
-                                loader={loader}></Img>
+                            <Img src={c1} loader={loader}></Img>
                         </a>
                         <a
                             className="cazare-image-container"
                             href="https://kimcountryclub.ro"
                             target="_blank"
                             rel="noopener noreferrer">
-                            <Img
-                                src="https://kimcountryclub.ro/wp-content/uploads/2017/08/galerie-foto_0012_galerie-15.jpg"
-                                loader={loader}></Img>
+                            <Img src={c2} loader={loader}></Img>
                         </a>
                         <a
                             className="cazare-image-container"
                             href="https://kimcountryclub.ro"
                             target="_blank"
                             rel="noopener noreferrer">
-                            <Img
-                                src="https://kimcountryclub.ro/wp-content/uploads/2017/08/galerie-foto_0009_galerie-18.jpg"
-                                loader={loader}></Img>
+                            <Img src={c3} loader={loader}></Img>
                         </a>
                     </div>
                     <div className="cazare-images">
@@ -78,27 +78,21 @@ const Cazare = () => {
                             href="https://kimcountryclub.ro"
                             target="_blank"
                             rel="noopener noreferrer">
-                            <Img
-                                src="https://kimcountryclub.ro/wp-content/uploads/2018/10/lounge-1024x683.jpg"
-                                loader={loader}></Img>
+                            <Img src={c4} loader={loader}></Img>
                         </a>
                         <a
                             className="cazare-image-container"
                             href="https://kimcountryclub.ro"
                             target="_blank"
                             rel="noopener noreferrer">
-                            <Img
-                                src="https://kimcountryclub.ro/wp-content/uploads/2017/08/galerie-foto_0013_galerie-14.jpg"
-                                loader={loader}></Img>
+                            <Img src={c5} loader={loader}></Img>
                         </a>
                         <a
                             className="cazare-image-container"
                             href="https://kimcountryclub.ro"
                             target="_blank"
                             rel="noopener noreferrer">
-                            <Img
-                                src="https://kimcountryclub.ro/wp-content/uploads/2017/08/galerie-foto_0021_galerie-6.jpg"
-                                loader={loader}></Img>
+                            <Img src={c6} loader={loader}></Img>
                         </a>
                     </div>
                     <a
