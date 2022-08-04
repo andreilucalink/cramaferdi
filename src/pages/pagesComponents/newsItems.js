@@ -29,6 +29,7 @@ export const newsCards = [
             </div>
         </div>
     </div>,
+
     <div className="card-wrapper" onDragStart={handleDragStart}>
         <div className="news-card">
             <img src={event} alt="wineImage" className="news-img" />
