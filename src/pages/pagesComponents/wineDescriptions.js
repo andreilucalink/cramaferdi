@@ -464,3 +464,18 @@ export const cuveeUnchiu_Puiu2020 = {
     grapes: "Merlot, Shiraz şi Blaufränkisch",
     decantation: "minim 1h",
 };
+
+export const cuveeFrancisc_2020 = {
+    title: "Cuvée Francisc Ediţie Limitată",
+    year: "2020",
+    price: "110 RON",
+    description:
+        "Cabernet Franc și Merlot, două soiuri de struguri care se completează perfect într-un blend ce oferă un caracter unic, un potențial bun de învechire și o comoară artizanală. Vinul este plăcut pentru aromele sale intense de fructe de pădure coapte, aciditatea înaltă și taninii mătăsoși.",
+    type: "Sec",
+    maturing: "14 luni, baric din stejar",
+    alchool: "14,2%",
+    color: "Roşu",
+    qty: "0,75L",
+    grapes: "Cabernet Franc şi Merlot",
+    decantation: "minim 1h",
+};

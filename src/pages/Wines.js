@@ -10,8 +10,9 @@ import WineCard from "./pagesComponents/WineCard";
 import calx2021_lim from "../img/wines/CALX2021.jpg";
 import calx2021 from "../img/wines/CALX2021_2.jpg";
 import mads2021 from "../img/wines/MADS2021.jpg";
-import lbk2020 from "../img/wines/LBK2020_new.jpg";
-import cunp2020 from "../img/wines/CUNP2020_new.jpg";
+import lbk2020 from "../img/wines/LBK2020.jpg";
+import cunp2020 from "../img/wines/CUNP2020.jpg";
+import cfr2020 from "../img/wines/CFR2020_new.jpg";
 
 const Wines = () => {
     const winesRef = useRef(null);
@@ -49,6 +50,13 @@ const Wines = () => {
                 </div>
                 <Row>
                     <WineCard
+                        link="/vinuri/cuvee-francisc-2020"
+                        price="110 RON"
+                        img={cfr2020}
+                        title="Cuveé Francisc Ed. Lim."
+                        year="2020"
+                    />
+                    <WineCard
                         link="/vinuri/cuvee-unchiu-puiu-2020"
                         price="60 RON"
                         img={cunp2020}
@@ -69,6 +77,8 @@ const Wines = () => {
                         title="Cuveé Alexandra"
                         year="2021"
                     />
+                </Row>
+                <Row>
                     <WineCard
                         link="/vinuri/madame-s-2021-editie-limitata"
                         price="60 RON"
@@ -76,8 +86,6 @@ const Wines = () => {
                         title="Madame S Ed. Lim."
                         year="2021"
                     />
-                </Row>
-                <Row>
                     <WineCard
                         link="/vinuri/cuvee-alexandra-2021-editie-limitata"
                         price="60 RON"
