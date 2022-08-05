@@ -84,7 +84,7 @@ const VisitsNew = () => {
                             </li>
                             <li>
                                 <i className="fas fa-check-circle"></i>Degustare
-                                7 vinuri
+                                5 vinuri premium
                             </li>
                             <li>
                                 <i className="fas fa-check-circle"></i>Timp
