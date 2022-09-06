@@ -13,6 +13,42 @@ const handleDragStart = (e) => e.preventDefault();
 export const newsCards = [
     <div className="card-wrapper" onDragStart={handleDragStart}>
         <div className="news-card">
+            <img src={mads2021} alt="wineImage" className="news-img" />
+            <div className="news-category category-white">Vinuri</div>
+            <div className="news-header">
+                White Queen
+                <br /> Ediţie Limitată
+                <br /> 2021 <br />
+            </div>
+            <div className="news-separator separator-white"></div>
+            <div className="news-footer">
+                <div className="news-date">06 Sep 2022</div>
+                <Link to="/vinuri/white-queen-2021" className="news-details">
+                    Vezi mai mult...
+                </Link>
+            </div>
+        </div>
+    </div>,
+    <div className="card-wrapper" onDragStart={handleDragStart}>
+        <div className="news-card">
+            <img src={lbk2020} alt="wineImage" className="news-img" />
+            <div className="news-category category-red">Vinuri</div>
+            <div className="news-header">
+                Red King <br />
+                Ediţie Limitată <br />
+                2020 <br />
+            </div>
+            <div className="news-separator separator-red"></div>
+            <div className="news-footer">
+                <div className="news-date">06 Sep 2022</div>
+                <Link to="/vinuri/red-king-2020" className="news-details">
+                    Vezi mai mult...
+                </Link>
+            </div>
+        </div>
+    </div>,
+    <div className="card-wrapper" onDragStart={handleDragStart}>
+        <div className="news-card">
             <img src={lbk2020} alt="wineImage" className="news-img" />
             <div className="news-category category-red">Vinuri</div>
             <div className="news-header">
@@ -22,7 +58,7 @@ export const newsCards = [
             </div>
             <div className="news-separator separator-red"></div>
             <div className="news-footer">
-                <div className="news-date">4 Aug 2022</div>
+                <div className="news-date">04 Aug 2022</div>
                 <Link to="/vinuri/cuvee-francisc-2020" className="news-details">
                     Vezi mai mult...
                 </Link>

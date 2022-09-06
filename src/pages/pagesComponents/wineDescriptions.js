@@ -479,3 +479,33 @@ export const cuveeFrancisc_2020 = {
     grapes: "Cabernet Franc şi Merlot",
     decantation: "minim 1h",
 };
+
+export const redKing_2020 = {
+    title: "Red King Ediţie Limitată",
+    year: "2020",
+    price: "110 RON",
+    description:
+        "Un Cabernet Sauvignon cu gust de fructe negre coapte și mix de ierburi aromatice fine care, ne arată cât de frumos a evoluat acest vin, în timpul celor 15 luni petrecute la baric. Structural și complex, acest Cabernet este desăvârșit de notele de condimente și ciocolată.",
+    type: "Sec",
+    maturing: "15 luni, baric din stejar",
+    alchool: "14,2%",
+    color: "Roşu",
+    qty: "0,75L",
+    grapes: "Cabernet Franc şi Merlot",
+    decantation: "minim 1h",
+};
+
+export const whiteQueen_2021 = {
+    title: "White Queen Ediţie Limitată",
+    year: "2021",
+    price: "110 RON",
+    description:
+        "Un Chardonnay fermentat și maturat in baricuri noi, de stejar francez, cu batonaj zilnic. Astfel ca White Queen este un vin untos, cu arome de caise si piersici, după care descoperi un postgust lung de miere si nuci. Un vin echilibrat, cu aciditate moderată care oferă totodată o senzație de prospețime și un potențial bun de învechire.",
+    type: "Sec",
+    maturing: "8 luni, baric din stejar",
+    alchool: "13,7%",
+    color: "Alb",
+    qty: "0,75L",
+    grapes: "Cabernet Franc şi Merlot",
+    decantation: null,
+};
