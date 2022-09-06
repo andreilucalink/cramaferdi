@@ -491,7 +491,7 @@ export const redKing_2020 = {
     alchool: "14,2%",
     color: "Roşu",
     qty: "0,75L",
-    grapes: "Cabernet Franc şi Merlot",
+    grapes: "Cabernet Sauvignon",
     decantation: "minim 1h",
 };
 
@@ -506,6 +506,6 @@ export const whiteQueen_2021 = {
     alchool: "13,7%",
     color: "Alb",
     qty: "0,75L",
-    grapes: "Cabernet Franc şi Merlot",
+    grapes: "Chardonnay",
     decantation: null,
 };
