@@ -10,7 +10,7 @@ import WineCard from "./pagesComponents/WineCard";
 // import calx2021_lim from "../img/wines/CALX2021.jpg";
 import calx2021 from "../img/wines/CALX2021_2.jpg";
 import mads2021 from "../img/wines/MADS2021.jpg";
-import lbk2020 from "../img/wines/LBK2020.jpg";
+// import lbk2020 from "../img/wines/LBK2020.jpg";
 import cunp2020 from "../img/wines/CUNP2020.jpg";
 import cfr2020 from "../img/wines/CFR2020.jpg";
 import whq2021 from "../img/wines/WHQ2021_new.jpg";
@@ -81,13 +81,6 @@ const Wines = () => {
                     />
                 </Row>
                 <Row>
-                    <WineCard
-                        link="/vinuri/lady-black-2020"
-                        price="110 RON"
-                        img={lbk2020}
-                        title="Lady Black Ed. Lim."
-                        year="2020"
-                    />
                     <WineCard
                         link="/vinuri/cuvee-alexandra-2021"
                         price="40 RON"
