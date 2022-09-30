@@ -9,7 +9,7 @@ import WineCard from "./pagesComponents/WineCard";
 // Images
 // import calx2021_lim from "../img/wines/CALX2021.jpg";
 import calx2021 from "../img/wines/CALX2021_2.jpg";
-import mads2021 from "../img/wines/MADS2021.jpg";
+// import mads2021 from "../img/wines/MADS2021.jpg";
 // import lbk2020 from "../img/wines/LBK2020.jpg";
 import cunp2020 from "../img/wines/CUNP2020.jpg";
 import cfr2020 from "../img/wines/CFR2020.jpg";
@@ -86,13 +86,6 @@ const Wines = () => {
                         price="40 RON"
                         img={calx2021}
                         title="Cuveé Alexandra"
-                        year="2021"
-                    />
-                    <WineCard
-                        link="/vinuri/madame-s-2021-editie-limitata"
-                        price="60 RON"
-                        img={mads2021}
-                        title="Madame S Ed. Lim."
                         year="2021"
                     />
                 </Row>

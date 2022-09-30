@@ -147,25 +147,25 @@ export const newsCards = [
     //         </div>
     //     </div>
     // </div>,
-    <div className="card-wrapper" onDragStart={handleDragStart}>
-        <div className="news-card">
-            <img src={mads2021} alt="wineImage" className="news-img" />
-            <div className="news-category category-white">Vinuri</div>
-            <div className="news-header">
-                Madame S<br /> Ediţie Limitată
-                <br /> 2022 <br />
-            </div>
-            <div className="news-separator separator-white"></div>
-            <div className="news-footer">
-                <div className="news-date">07 Mar 2022</div>
-                <Link
-                    to="/vinuri/madame-s-2021-editie-limitata"
-                    className="news-details">
-                    Vezi mai mult...
-                </Link>
-            </div>
-        </div>
-    </div>,
+    // <div className="card-wrapper" onDragStart={handleDragStart}>
+    //     <div className="news-card">
+    //         <img src={mads2021} alt="wineImage" className="news-img" />
+    //         <div className="news-category category-white">Vinuri</div>
+    //         <div className="news-header">
+    //             Madame S<br /> Ediţie Limitată
+    //             <br /> 2022 <br />
+    //         </div>
+    //         <div className="news-separator separator-white"></div>
+    //         <div className="news-footer">
+    //             <div className="news-date">07 Mar 2022</div>
+    //             <Link
+    //                 to="/vinuri/madame-s-2021-editie-limitata"
+    //                 className="news-details">
+    //                 Vezi mai mult...
+    //             </Link>
+    //         </div>
+    //     </div>
+    // </div>,
     // <div className="card-wrapper" onDragStart={handleDragStart}>
     //     <div className="news-card">
     //         <img src={mrsr2019} alt="wineImage" className="news-img" />
