@@ -17,53 +17,43 @@ import About from "./pages/About";
 // Wines
 import CuveeAlexandra2021 from "./pages/wines/CuveeAlexandra2021";
 import CuveeUnchiuPuiu2020 from "./pages/wines/CuveeUnchiuPuiu2020";
-import CuveeFrancisc2020 from "./pages/wines/CuveeFrancisc2020";
 import WhiteQueen2021 from "./pages/wines/WhiteQueen2021";
 import RedKing2020 from "./pages/wines/RedKing2020";
 
 function App() {
-    return (
-        <Router>
-            <NavMenu />
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/vinuri" component={Wines} />
-                <Route exact path="/vizite-si-degustari" component={Visits} />
-                <Route exact path="/contact" component={Contact} />
-                <Route exact path="/galerie" component={Gallery} />
-                <Route exact path="/despre-noi" component={About} />
-                <Route exact path="/cazare" component={Cazare} />
-                <Route
-                    exact
-                    path="/vinuri/red-king-2020"
-                    component={RedKing2020}
-                />
-                <Route
-                    exact
-                    path="/vinuri/white-queen-2021"
-                    component={WhiteQueen2021}
-                />
-                <Route
-                    exact
-                    path="/vinuri/cuvee-francisc-2020"
-                    component={CuveeFrancisc2020}
-                />
-                <Route
-                    exact
-                    path="/vinuri/cuvee-unchiu-puiu-2020"
-                    component={CuveeUnchiuPuiu2020}
-                />
-                <Route
-                    exact
-                    path="/vinuri/cuvee-alexandra-2021"
-                    component={CuveeAlexandra2021}
-                />
+  return (
+    <Router>
+      <NavMenu />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/vinuri" component={Wines} />
+        <Route exact path="/vizite-si-degustari" component={Visits} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/galerie" component={Gallery} />
+        <Route exact path="/despre-noi" component={About} />
+        <Route exact path="/cazare" component={Cazare} />
+        <Route exact path="/vinuri/red-king-2020" component={RedKing2020} />
+        <Route
+          exact
+          path="/vinuri/white-queen-2021"
+          component={WhiteQueen2021}
+        />
+        <Route
+          exact
+          path="/vinuri/cuvee-unchiu-puiu-2020"
+          component={CuveeUnchiuPuiu2020}
+        />
+        <Route
+          exact
+          path="/vinuri/cuvee-alexandra-2021"
+          component={CuveeAlexandra2021}
+        />
 
-                <Route component={Page404} />
-            </Switch>
-            <Footer />
-        </Router>
-    );
+        <Route component={Page404} />
+      </Switch>
+      <Footer />
+    </Router>
+  );
 }
 
 export default App;
