@@ -1,8 +1,8 @@
 import React from "react";
 import { redKing_2020_legend } from "../pagesComponents/wineDescriptions";
 import WinePage from "../pagesComponents/WinePage";
-import img from "../../img/wines/RK2019.jpg";
-import modalImage from "../../img/etichete/RK2019.jpg";
+import img from "../../img/wines/RKL2020.jpg";
+import modalImage from "../../img/etichete/RKL2020.jpg";
 
 const RedKing2020_Legend = () => {
     return (

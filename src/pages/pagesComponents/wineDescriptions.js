@@ -513,7 +513,7 @@ export const whiteQueen_2021 = {
 export const redKing_2020_legend = {
     title: "Red King Legend",
     year: "2020",
-    price: "110 RON",
+    price: "150 RON",
     description:
         "Un Cabernet Sauvignon cu gust expresiv și arome puternice de prune, coacăze și cireșe negre. Notele olfactive te învăluie în ciocolată neagră, vanilie, stejar și piper. Aciditatea excelent echilibrată, taninurile înalte dar mătăsoase și alcoolul perfect integrat oferă vinului un corp plin, cu final lung și voluptuos. Maturat în butoaie de stejar timp de 18 luni, cu potențial mare de învechire.",
     type: "Sec",
@@ -528,7 +528,7 @@ export const redKing_2020_legend = {
 export const cuveePitigaia_2020 = {
     title: "Cuvée Piţigaia ",
     year: "2020",
-    price: "110 RON",
+    price: "120 RON",
     description:
         "Un cupaj deja bine cunoscut al Cramei Ferdi, un tip de Bordeaux Blend, unde soiul Merlot, cu un corp catifelat, elegant și cu arome de cireșe negre îl întâlnește pe regele vinurilor, Cabernet Sauvignon, care îi ridică aciditatea, îi îmbogățește taninii și corpul, la care se adaugă nuanța de grena închis, precum și aromele de piper verde și ciocolată. Acest vin cucerește cu o distincție anume și cu un postgust lung, după ce s-a odihnit în barrique 18 de luni, având astfel un potențial mare de învechire.",
     type: "Sec",

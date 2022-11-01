@@ -15,11 +15,11 @@ import Cazare from "./pages/Cazare";
 import About from "./pages/About";
 
 // Wines
-import CuveeAlexandra2021 from "./pages/wines/CuveeAlexandra2021";
 import CuveeUnchiuPuiu2020 from "./pages/wines/CuveeUnchiuPuiu2020";
 import WhiteQueen2021 from "./pages/wines/WhiteQueen2021";
 import RedKing2020 from "./pages/wines/RedKing2020";
 import RedKing2020_Legend from "./pages/wines/RedKing2020_Legend";
+import CuveePitigaia2020 from "./pages/wines/CuveePitigaia2020";
 
 function App() {
     return (
@@ -40,6 +40,11 @@ function App() {
                 />
                 <Route
                     exact
+                    path="/vinuri/cuvee-pitigaia-2020"
+                    component={CuveePitigaia2020}
+                />
+                <Route
+                    exact
                     path="/vinuri/red-king-2020-legend"
                     component={RedKing2020_Legend}
                 />
@@ -53,12 +58,6 @@ function App() {
                     path="/vinuri/cuvee-unchiu-puiu-2020"
                     component={CuveeUnchiuPuiu2020}
                 />
-                <Route
-                    exact
-                    path="/vinuri/cuvee-alexandra-2021"
-                    component={CuveeAlexandra2021}
-                />
-
                 <Route component={Page404} />
             </Switch>
             <Footer />
