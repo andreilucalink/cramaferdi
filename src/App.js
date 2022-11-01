@@ -17,7 +17,6 @@ import About from "./pages/About";
 // Wines
 import CuveeAlexandra2021 from "./pages/wines/CuveeAlexandra2021";
 import CuveeUnchiuPuiu2020 from "./pages/wines/CuveeUnchiuPuiu2020";
-import CuveeFrancisc2020 from "./pages/wines/CuveeFrancisc2020";
 import WhiteQueen2021 from "./pages/wines/WhiteQueen2021";
 import RedKing2020 from "./pages/wines/RedKing2020";
 import RedKing2020_Legend from "./pages/wines/RedKing2020_Legend";
@@ -48,11 +47,6 @@ function App() {
                     exact
                     path="/vinuri/white-queen-2021"
                     component={WhiteQueen2021}
-                />
-                <Route
-                    exact
-                    path="/vinuri/cuvee-francisc-2020"
-                    component={CuveeFrancisc2020}
                 />
                 <Route
                     exact
