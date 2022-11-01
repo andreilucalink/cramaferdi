@@ -20,6 +20,7 @@ import CuveeUnchiuPuiu2020 from "./pages/wines/CuveeUnchiuPuiu2020";
 import CuveeFrancisc2020 from "./pages/wines/CuveeFrancisc2020";
 import WhiteQueen2021 from "./pages/wines/WhiteQueen2021";
 import RedKing2020 from "./pages/wines/RedKing2020";
+import RedKing2020_Legend from "./pages/wines/RedKing2020_Legend";
 
 function App() {
     return (
@@ -37,6 +38,11 @@ function App() {
                     exact
                     path="/vinuri/red-king-2020"
                     component={RedKing2020}
+                />
+                <Route
+                    exact
+                    path="/vinuri/red-king-2020-legend"
+                    component={RedKing2020_Legend}
                 />
                 <Route
                     exact
