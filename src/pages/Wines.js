@@ -59,7 +59,7 @@ const Wines = () => {
             price="150 RON"
             img={rkl2020}
             title="Red King Legend"
-            year="2021"
+            year="2020"
           />
           <WineCard
             link="/vinuri/cuvee-pitigaia-2020"
