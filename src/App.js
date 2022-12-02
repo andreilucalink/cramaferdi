@@ -16,43 +16,47 @@ import About from "./pages/About";
 
 // Wines
 import WhiteQueen2021 from "./pages/wines/WhiteQueen2021";
-import RedKing2020 from "./pages/wines/RedKing2020";
 import RedKing2020_Legend from "./pages/wines/RedKing2020_Legend";
-import CuveePitigaia2020 from "./pages/wines/CuveePitigaia2020";
+import CuveeAlexandra2022_Limited from "./pages/wines/CuveeAlexandra2022_Limited";
+import RoseCosmina2022_Limited from "./pages/wines/RoseCosmina2022_Limited";
 
 function App() {
-  return (
-    <Router>
-      <NavMenu />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/vinuri" component={Wines} />
-        <Route exact path="/vizite-si-degustari" component={Visits} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/galerie" component={Gallery} />
-        <Route exact path="/despre-noi" component={About} />
-        <Route exact path="/cazare" component={Cazare} />
-        <Route exact path="/vinuri/red-king-2020" component={RedKing2020} />
-        <Route
-          exact
-          path="/vinuri/cuvee-pitigaia-2020"
-          component={CuveePitigaia2020}
-        />
-        <Route
-          exact
-          path="/vinuri/red-king-2020-legend"
-          component={RedKing2020_Legend}
-        />
-        <Route
-          exact
-          path="/vinuri/white-queen-2021"
-          component={WhiteQueen2021}
-        />
-        <Route component={Page404} />
-      </Switch>
-      <Footer />
-    </Router>
-  );
+    return (
+        <Router>
+            <NavMenu />
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/vinuri" component={Wines} />
+                <Route exact path="/vizite-si-degustari" component={Visits} />
+                <Route exact path="/contact" component={Contact} />
+                <Route exact path="/galerie" component={Gallery} />
+                <Route exact path="/despre-noi" component={About} />
+                <Route exact path="/cazare" component={Cazare} />
+                <Route
+                    exact
+                    path="/vinuri/cuvee-alexandra-2022"
+                    component={CuveeAlexandra2022_Limited}
+                />
+                <Route
+                    exact
+                    path="/vinuri/rose-cosmina-2022"
+                    component={RoseCosmina2022_Limited}
+                />
+                <Route
+                    exact
+                    path="/vinuri/red-king-2020-legend"
+                    component={RedKing2020_Legend}
+                />
+                <Route
+                    exact
+                    path="/vinuri/white-queen-2021"
+                    component={WhiteQueen2021}
+                />
+                <Route component={Page404} />
+            </Switch>
+            <Footer />
+        </Router>
+    );
 }
 
 export default App;

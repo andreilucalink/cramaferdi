@@ -539,3 +539,33 @@ export const cuveePitigaia_2020 = {
     grapes: "Merlot şi Cabernet Sauvignon",
     decantation: "minim 1h",
 };
+
+export const cuveeAlexandra_2022_limited = {
+    title: "Cuvée Alexandra Ediţie Limitată",
+    year: "2022",
+    price: "70 RON",
+    description:
+        "Un cupaj mineral, bine structurat și echilibrat. Tămâioasa Românească oferă notele predominante și fresh de vară. Aciditatea este ridicată datorită Sauvignon-ului Blanc, încununată de un buchet de citrice asezonate cu măr verde și un parfum floral discret dat, bineînțeles, de Rislieng-ul Italian.",
+    type: "Sec",
+    maturing: "",
+    alchool: "13,9%",
+    color: "Alb",
+    qty: "0,75L",
+    grapes: "Tămâioasă Românească, Rislieng Italian şi Sauvignon Blanc",
+    decantation: "",
+};
+
+export const roseCosmina_2022 = {
+    title: "Rosé Cosmina Ediţie Limitată",
+    year: "2022",
+    price: "60 RON",
+    description:
+        "Deja consacratul cupaj din Merlot, Shiraz și Blaufränkisch ne surprinde, an de an, prin caracterul său unic, influențat de dezvoltarea acestor soiuri împreună, într-un microclimat influențat pozitiv de râul cu același nume. Culoarea somonului, mireasma de grapefruit, aciditatea echilibrată și notele delicate de fructe roșii fac ca acest rosé să fie irezistibil.",
+    type: "Sec",
+    maturing: "",
+    alchool: "13,1%",
+    color: "Rosé",
+    qty: "0,75L",
+    grapes: "Merlot, Shiraz şi Blaufränkisch",
+    decantation: "",
+};
