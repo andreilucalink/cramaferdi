@@ -569,3 +569,18 @@ export const roseCosmina_2022 = {
     grapes: "Merlot, Shiraz şi Blaufränkisch",
     decantation: "",
 };
+
+export const misterM_2020_legend = {
+    title: "Mister M Legend",
+    year: "2020",
+    price: "150 RON",
+    description:
+        "Un Merlot de primă clasă care ne poartă printr-un carusel de arome: de la fructe de pădure până la cuișoare și cedru. Un vin bine structurat care impresionează prin tanini puternici și post-gust lung. Elegant și catifelat, a dobândit complexitate în cele 20 de luni de maturare în baricuri de stejar.",
+    type: "Sec",
+    maturing: "20 luni, baric din stejar",
+    alchool: "14,5%",
+    color: "Roşu",
+    qty: "0,75L",
+    grapes: "Merlot",
+    decantation: "minim 1h",
+};

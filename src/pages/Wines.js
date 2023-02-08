@@ -7,16 +7,11 @@ import { Helmet } from "react-helmet";
 import WineCard from "./pagesComponents/WineCard";
 
 // Images
-// import calx2021_lim from "../img/wines/CALX2021.jpg";
-// import calx2021 from "../img/wines/CALX2021_2.jpg";
-// import mads2021 from "../img/wines/MADS2021.jpg";
-// import lbk2020 from "../img/wines/LBK2020.jpg";
-// import cunp2020 from "../img/wines/CUNP2020.jpg";
-// import cfr2020 from "../img/wines/CFR2020.jpg";
 import whq2021 from "../img/wines/WHQ2021.jpg";
 import rkl2020 from "../img/wines/RKL2020.jpg";
-import calx2022 from "../img/wines/CALX2022_new.jpg";
-import rc2022 from "../img/wines/RC2022_new.jpg";
+import calx2022 from "../img/wines/CALX2022.jpg";
+import rc2022 from "../img/wines/RC2022.jpg";
+import mrml2020 from "../img/wines/MRML2020_new.jpg";
 
 const Wines = () => {
     const winesRef = useRef(null);
@@ -52,7 +47,15 @@ const Wines = () => {
                         adresa de e-mail din pagina de contact.
                     </p>
                 </div>
+
                 <Row>
+                    <WineCard
+                        link="/vinuri/mister-m-legend-2020"
+                        price="150 RON"
+                        img={mrml2020}
+                        title="Mister M Legend"
+                        year="2020"
+                    />
                     <WineCard
                         link="/vinuri/rose-cosmina-2022"
                         price="60 RON"
@@ -74,6 +77,8 @@ const Wines = () => {
                         title="Red King Legend"
                         year="2020"
                     />
+                </Row>
+                <Row>
                     <WineCard
                         link="/vinuri/white-queen-2021"
                         price="110 RON"
