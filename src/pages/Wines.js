@@ -8,10 +8,10 @@ import WineCard from "./pagesComponents/WineCard";
 
 // Images
 import whq2021 from "../img/wines/WHQ2021.jpg";
-import rkl2020 from "../img/wines/RKL2020.jpg";
 import calx2022 from "../img/wines/CALX2022.jpg";
 import rc2022 from "../img/wines/RC2022.jpg";
-import mrml2020 from "../img/wines/MRML2020_new.jpg";
+import mrml2020 from "../img/wines/MRML2020.jpg";
+import cunp2021 from "../img/wines/CUNP2021_new.jpg";
 
 const Wines = () => {
     const winesRef = useRef(null);
@@ -50,6 +50,13 @@ const Wines = () => {
 
                 <Row>
                     <WineCard
+                        link="/vinuri/cuvee-unchiu-puiu-2021"
+                        price="70 RON"
+                        img={cunp2021}
+                        title="Cuveé Unchiu Puiu"
+                        year="2021"
+                    />
+                    <WineCard
                         link="/vinuri/mister-m-legend-2020"
                         price="150 RON"
                         img={mrml2020}
@@ -69,13 +76,6 @@ const Wines = () => {
                         img={calx2022}
                         title="Cuveé Alexandra Ed. Lim."
                         year="2022"
-                    />
-                    <WineCard
-                        link="/vinuri/red-king-2020-legend"
-                        price="150 RON"
-                        img={rkl2020}
-                        title="Red King Legend"
-                        year="2020"
                     />
                 </Row>
                 <Row>

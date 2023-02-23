@@ -584,3 +584,20 @@ export const misterM_2020_legend = {
     grapes: "Merlot",
     decantation: "minim 1h",
 };
+
+export const cuveeUnchiu_Puiu2021 = {
+    title: "Cuvée Unchiu Puiu",
+    year: "2021",
+    price: "70 RON",
+    description:
+        "În acest cupaj am alăturat trei soiuri cu note diferite, dar care împreună oferă o senzație unică: Merlot, Shiraz şi Blaufränkisch ne aduc în prezența unui vin deosebit de culoarea purpurei cu miros fin de fructe roşii coapte şi mirodenii. Shiraz-ul oferă corp vinului, Merlot-ul este responsabil cu aroma fructată şi Blaufränkisch condimentează cu succes blend-ul.",
+    type: "Sec",
+    maturing: "6 luni, baric din stejar",
+    alchool: "13,6%",
+    color: "Roşu",
+    qty: "0,75L",
+    grapes: "Merlot, Shiraz şi Blaufränkisch",
+    decantation: "minim 1h",
+    // medalImg: "https://www.iwcb.ro/wp-content/uploads/2021/05/gold-2021.png",
+    // medal: "Medalia de aur Vinarium",
+};

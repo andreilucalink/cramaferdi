@@ -20,6 +20,8 @@ import RedKing2020_Legend from "./pages/wines/RedKing2020_Legend";
 import CuveeAlexandra2022_Limited from "./pages/wines/CuveeAlexandra2022_Limited";
 import RoseCosmina2022_Limited from "./pages/wines/RoseCosmina2022_Limited";
 import MisterM_Legend_2020 from "./pages/wines/MisterM_Legend2020";
+import CuveeUnchiuPuiu2021 from "./pages/wines/CuveeUnchiuPuiu2021";
+
 function App() {
     return (
         <Router>
@@ -32,6 +34,11 @@ function App() {
                 <Route exact path="/galerie" component={Gallery} />
                 <Route exact path="/despre-noi" component={About} />
                 <Route exact path="/cazare" component={Cazare} />
+                <Route
+                    exact
+                    path="/vinuri/cuvee-unchiu-puiu-2021"
+                    component={CuveeUnchiuPuiu2021}
+                />
                 <Route
                     exact
                     path="/vinuri/mister-m-legend-2020"
