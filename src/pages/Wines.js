@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet";
 import WineCard from "./pagesComponents/WineCard";
 
 // Images
-import whq2021 from "../img/wines/WHQ2021.jpg";
 import calx2022 from "../img/wines/CALX2022.jpg";
 import rc2022 from "../img/wines/RC2022.jpg";
 import mrml2020 from "../img/wines/MRML2020.jpg";
@@ -76,15 +75,6 @@ const Wines = () => {
                         img={calx2022}
                         title="Cuveé Alexandra Ed. Lim."
                         year="2022"
-                    />
-                </Row>
-                <Row>
-                    <WineCard
-                        link="/vinuri/white-queen-2021"
-                        price="110 RON"
-                        img={whq2021}
-                        title="White Queen Ed. Lim."
-                        year="2021"
                     />
                 </Row>
             </Container>

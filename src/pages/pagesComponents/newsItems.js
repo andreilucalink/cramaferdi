@@ -1,5 +1,4 @@
 import calx2021 from "../../img/home/news/CALX2021.jpg";
-import mads2021 from "../../img/home/news/MADS2021.jpg";
 import rc2022 from "../../img/home/news/RC2021.jpg";
 import rkl2020 from "../../img/home/news/MRSR2019.jpg";
 import cunp2021 from "../../img/home/news/CUNP2020.jpg";
@@ -101,24 +100,24 @@ export const newsCards = [
     //     </div>
     //   </div>
     // </div>,
-    <div className="card-wrapper" onDragStart={handleDragStart}>
-        <div className="news-card">
-            <img src={mads2021} alt="wineImage" className="news-img" />
-            <div className="news-category category-white">Vinuri</div>
-            <div className="news-header">
-                White Queen <br />
-                Ediţie Limitată <br />
-                2021 <br />
-            </div>
-            <div className="news-separator separator-white"></div>
-            <div className="news-footer">
-                <div className="news-date">06 Sep 2022</div>
-                <Link to="/vinuri/white-queen-2021" className="news-details">
-                    Vezi mai mult...
-                </Link>
-            </div>
-        </div>
-    </div>,
+    // <div className="card-wrapper" onDragStart={handleDragStart}>
+    //     <div className="news-card">
+    //         <img src={mads2021} alt="wineImage" className="news-img" />
+    //         <div className="news-category category-white">Vinuri</div>
+    //         <div className="news-header">
+    //             White Queen <br />
+    //             Ediţie Limitată <br />
+    //             2021 <br />
+    //         </div>
+    //         <div className="news-separator separator-white"></div>
+    //         <div className="news-footer">
+    //             <div className="news-date">06 Sep 2022</div>
+    //             <Link to="/vinuri/white-queen-2021" className="news-details">
+    //                 Vezi mai mult...
+    //             </Link>
+    //         </div>
+    //     </div>
+    // </div>,
     // <div className="card-wrapper" onDragStart={handleDragStart}>
     //     <div className="news-card">
     //         <img src={lbk2020} alt="wineImage" className="news-img" />

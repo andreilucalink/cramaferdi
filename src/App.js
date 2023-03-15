@@ -15,7 +15,6 @@ import Cazare from "./pages/Cazare";
 import About from "./pages/About";
 
 // Wines
-import WhiteQueen2021 from "./pages/wines/WhiteQueen2021";
 import RedKing2020_Legend from "./pages/wines/RedKing2020_Legend";
 import CuveeAlexandra2022_Limited from "./pages/wines/CuveeAlexandra2022_Limited";
 import RoseCosmina2022_Limited from "./pages/wines/RoseCosmina2022_Limited";
@@ -58,11 +57,6 @@ function App() {
                     exact
                     path="/vinuri/red-king-2020-legend"
                     component={RedKing2020_Legend}
-                />
-                <Route
-                    exact
-                    path="/vinuri/white-queen-2021"
-                    component={WhiteQueen2021}
                 />
                 <Route component={Page404} />
             </Switch>
