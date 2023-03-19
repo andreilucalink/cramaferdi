@@ -465,21 +465,6 @@ export const cuveeUnchiu_Puiu2020 = {
     decantation: "minim 1h",
 };
 
-export const cuveeFrancisc_2020 = {
-    title: "Cuvée Francisc Ediţie Limitată",
-    year: "2020",
-    price: "110 RON",
-    description:
-        "Cabernet Franc și Merlot, două soiuri de struguri care se completează perfect într-un blend ce oferă un caracter unic, un potențial bun de învechire și o comoară artizanală. Vinul este plăcut pentru aromele sale intense de fructe de pădure coapte, aciditatea înaltă și taninii mătăsoși.",
-    type: "Sec",
-    maturing: "14 luni, baric din stejar",
-    alchool: "14,2%",
-    color: "Roşu",
-    qty: "0,75L",
-    grapes: "Cabernet Franc şi Merlot",
-    decantation: "minim 1h",
-};
-
 export const redKing_2020 = {
     title: "Red King Ediţie Limitată",
     year: "2020",
@@ -600,4 +585,34 @@ export const cuveeUnchiu_Puiu2021 = {
     decantation: "minim 1h",
     // medalImg: "https://www.iwcb.ro/wp-content/uploads/2021/05/gold-2021.png",
     // medal: "Medalia de aur Vinarium",
+};
+
+export const ladyBlack_2021 = {
+    title: "Lady Black Ediţie Limitată",
+    year: "2021",
+    price: "115 RON",
+    description:
+        "O Fetească Neagră în rochie rubinie cu gust de cireșe negre îmbrăcate în ciocolată, prune afumate acoperite cu vanilie și condimente în postgustul lung și generos, ne aduce în fața unui vin concentrat cu aciditate echilibrată și alcool excelent integrat.",
+    type: "Sec",
+    maturing: "13 luni, baric din stejar",
+    alchool: "14,3%",
+    color: "Roşu",
+    qty: "0,75L",
+    grapes: "Fetească Neagră",
+    decantation: "minim 1h",
+};
+
+export const cuveeFrancisc_2021 = {
+    title: "Cuvée Francisc Ediţie Limitată",
+    year: "2021",
+    price: "120 RON",
+    description:
+        "Cabernet Franc și Merlot, două soiuri de struguri care se completează perfect într-un blend ce oferă un caracter unic, un potențial bun de învechire și o comoară artizanală. Vinul este plăcut pentru aromele sale intense de fructe de pădure coapte, aciditatea înaltă și taninii mătăsoși.",
+    type: "Sec",
+    maturing: "14 luni, baric din stejar",
+    alchool: "14,5%",
+    color: "Roşu",
+    qty: "0,75L",
+    grapes: "Cabernet Franc şi Merlot",
+    decantation: "minim 1h",
 };

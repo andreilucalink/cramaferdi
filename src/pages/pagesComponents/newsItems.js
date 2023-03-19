@@ -2,11 +2,56 @@ import calx2021 from "../../img/home/news/CALX2021.jpg";
 import rc2022 from "../../img/home/news/RC2021.jpg";
 import rkl2020 from "../../img/home/news/MRSR2019.jpg";
 import cunp2021 from "../../img/home/news/CUNP2020.jpg";
+import lbkandfrancisc2021 from "../../img/home/news/CPIT2019.jpg";
 
 import { Link } from "react-router-dom";
 const handleDragStart = (e) => e.preventDefault();
 
 export const newsCards = [
+    <div className="card-wrapper" onDragStart={handleDragStart}>
+        <div className="news-card">
+            <img
+                src={lbkandfrancisc2021}
+                alt="wineImage"
+                className="news-img"
+            />
+            <div className="news-category category-red">Vinuri</div>
+            <div className="news-header">
+                Cuvee Francisc <br />
+                Ediţie Limitată <br />
+                2021 <br />
+            </div>
+            <div className="news-separator separator-red"></div>
+            <div className="news-footer">
+                <div className="news-date">19 Mar 2023</div>
+                <Link to="/vinuri/cuvee-francisc-2021" className="news-details">
+                    Vezi mai mult...
+                </Link>
+            </div>
+        </div>
+    </div>,
+    <div className="card-wrapper" onDragStart={handleDragStart}>
+        <div className="news-card">
+            <img
+                src={lbkandfrancisc2021}
+                alt="wineImage"
+                className="news-img"
+            />
+            <div className="news-category category-red">Vinuri</div>
+            <div className="news-header">
+                Lady Black <br />
+                Ediţie Limitată <br />
+                2021 <br />
+            </div>
+            <div className="news-separator separator-red"></div>
+            <div className="news-footer">
+                <div className="news-date">19 Mar 2023</div>
+                <Link to="/vinuri/lady-black-2021" className="news-details">
+                    Vezi mai mult...
+                </Link>
+            </div>
+        </div>
+    </div>,
     <div className="card-wrapper" onDragStart={handleDragStart}>
         <div className="news-card">
             <img src={cunp2021} alt="wineImage" className="news-img" />
@@ -83,23 +128,6 @@ export const newsCards = [
             </div>
         </div>
     </div>,
-    // <div className="card-wrapper" onDragStart={handleDragStart}>
-    //   <div className="news-card">
-    //     <img src={cupit2019} alt="wineImage" className="news-img" />
-    //     <div className="news-category category-red">Vinuri</div>
-    //     <div className="news-header">
-    //       Cuvee Piţigaia <br />
-    //       2020 <br /> <br />
-    //     </div>
-    //     <div className="news-separator separator-red"></div>
-    //     <div className="news-footer">
-    //       <div className="news-date">01 Nov 2022</div>
-    //       <Link to="/vinuri/cuvee-pitigaia-2020" className="news-details">
-    //         Vezi mai mult...
-    //       </Link>
-    //     </div>
-    //   </div>
-    // </div>,
     // <div className="card-wrapper" onDragStart={handleDragStart}>
     //     <div className="news-card">
     //         <img src={mads2021} alt="wineImage" className="news-img" />

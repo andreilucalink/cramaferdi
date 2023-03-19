@@ -11,7 +11,8 @@ import calx2022 from "../img/wines/CALX2022.jpg";
 import rc2022 from "../img/wines/RC2022.jpg";
 import mrml2020 from "../img/wines/MRML2020.jpg";
 import cunp2021 from "../img/wines/CUNP2021_new.jpg";
-
+import lbk2021 from "../img/wines/LBK2021_new.jpg";
+import cfr2021 from "../img/wines/CFR2021_new.jpg";
 const Wines = () => {
     const winesRef = useRef(null);
     useEffect(() => {
@@ -49,6 +50,20 @@ const Wines = () => {
 
                 <Row>
                     <WineCard
+                        link="/vinuri/cuvee-francisc-2021"
+                        price="120 RON"
+                        img={cfr2021}
+                        title="Cuveé Francisc Ed. Lim."
+                        year="2021"
+                    />
+                    <WineCard
+                        link="/vinuri/lady-black-2021"
+                        price="115 RON"
+                        img={lbk2021}
+                        title="Lady Black Ed. Lim."
+                        year="2021"
+                    />
+                    <WineCard
                         link="/vinuri/cuvee-unchiu-puiu-2021"
                         price="70 RON"
                         img={cunp2021}
@@ -62,6 +77,8 @@ const Wines = () => {
                         title="Mister M Legend"
                         year="2020"
                     />
+                </Row>
+                <Row>
                     <WineCard
                         link="/vinuri/rose-cosmina-2022"
                         price="60 RON"
