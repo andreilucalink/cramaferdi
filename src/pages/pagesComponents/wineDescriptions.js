@@ -616,3 +616,18 @@ export const cuveeFrancisc_2021 = {
     grapes: "Cabernet Franc şi Merlot",
     decantation: "minim 1h",
 };
+
+export const misterS_Legend_2020 = {
+    title: "Mister S Legend",
+    year: "2020",
+    price: "150 RON",
+    description:
+        "Un Shiraz complex şi bine structurat, de culoare intens rubinie, cu arome de mure, cireşe negre, prune coapte şi piper negru, unde aciditatea echilibrată şi taninurile bine integrate completează frumos corpul amplu al vinului, oferind un final lung şi concentrat.",
+    type: "Sec",
+    maturing: "20 luni, baric din stejar",
+    alchool: "14,3%",
+    color: "Roşu",
+    qty: "0,75L",
+    grapes: "Shiraz",
+    decantation: "minim 1h",
+};

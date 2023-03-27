@@ -9,8 +9,8 @@ import WineCard from "./pagesComponents/WineCard";
 // Images
 import calx2022 from "../img/wines/CALX2022.jpg";
 import rc2022 from "../img/wines/RC2022.jpg";
-import mrml2020 from "../img/wines/MRML2020.jpg";
-import cunp2021 from "../img/wines/CUNP2021_new.jpg";
+import mrsl2020 from "../img/wines/MRSL2020_new.jpg";
+import cunp2021 from "../img/wines/CUNP2021.jpg";
 import lbk2021 from "../img/wines/LBK2021_new.jpg";
 import cfr2021 from "../img/wines/CFR2021_new.jpg";
 const Wines = () => {
@@ -50,6 +50,13 @@ const Wines = () => {
 
                 <Row>
                     <WineCard
+                        link="/vinuri/mister-s-legend-2020"
+                        price="150 RON"
+                        img={mrsl2020}
+                        title="Mister S Legend"
+                        year="2020"
+                    />
+                    <WineCard
                         link="/vinuri/cuvee-francisc-2021"
                         price="120 RON"
                         img={cfr2021}
@@ -69,13 +76,6 @@ const Wines = () => {
                         img={cunp2021}
                         title="Cuveé Unchiu Puiu"
                         year="2021"
-                    />
-                    <WineCard
-                        link="/vinuri/mister-m-legend-2020"
-                        price="150 RON"
-                        img={mrml2020}
-                        title="Mister M Legend"
-                        year="2020"
                     />
                 </Row>
                 <Row>
