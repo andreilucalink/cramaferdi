@@ -631,3 +631,18 @@ export const misterS_Legend_2020 = {
     grapes: "Shiraz",
     decantation: "minim 1h",
 };
+
+export const cuvee_Fario = {
+    title: "Cuvée Fario Ediţie Specială",
+    year: "2019",
+    price: "300 RON",
+    description:
+        "După mai mulți ani de căutări am ajuns la acest cupaj, Cuvee Fario 2019, care reprezintă chintesența vinurilor Ferdi. Fermentat în baricuri noi, maturat 22 de luni în baricuri de stejar și învechit doi ani la sticlă, acest blend din Shiraz, Cabernet Franc și Merlot este un vin de colecție, semnat de proprietarul și vinificatorul cramei, în doar 300 de sticle. Un vin mătăsos și delicios, produs în ediție specială, unde soiul Merlot contribuie la finețea acestuia prin taninii supli cu final vanilat. Cabernet Franc conferă un parfum intens de coacăze negre cupajului, împreună cu Shirazul robust cu valențe tipice de cireșe negre, piper și tobacco. Un vin corpolent, bogat în arome, rafinat și elegant.",
+    type: "Sec",
+    maturing: "22 luni, baric din stejar",
+    alchool: "14,7%",
+    color: "Roşu",
+    qty: "0,75L",
+    grapes: "Shiraz, Cabernet Franc și Merlot",
+    decantation: "minim 1h",
+};

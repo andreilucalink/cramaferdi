@@ -3,11 +3,30 @@ import rc2022 from "../../img/home/news/RC2021.jpg";
 import mrsl2020 from "../../img/home/news/MRSR2019.jpg";
 import cunp2021 from "../../img/home/news/CUNP2020.jpg";
 import lbkandfrancisc2021 from "../../img/home/news/CPIT2019.jpg";
+import cfse2019 from "../../img/home/news/CFSE2019.jpg";
 
 import { Link } from "react-router-dom";
 const handleDragStart = (e) => e.preventDefault();
 
 export const newsCards = [
+    <div className="card-wrapper" onDragStart={handleDragStart}>
+        <div className="news-card">
+            <img src={cfse2019} alt="wineImage" className="news-img" />
+            <div className="news-category category-red">Vinuri</div>
+            <div className="news-header">
+                Cuveé Fario <br />
+                Ediţie Specială <br />
+                2019 <br />
+            </div>
+            <div className="news-separator separator-red"></div>
+            <div className="news-footer">
+                <div className="news-date">29 Mar 2023</div>
+                <Link to="/vinuri/cuvee-fario-2019" className="news-details">
+                    Vezi mai mult...
+                </Link>
+            </div>
+        </div>
+    </div>,
     <div className="card-wrapper" onDragStart={handleDragStart}>
         <div className="news-card">
             <img src={mrsl2020} alt="wineImage" className="news-img" />
@@ -37,7 +56,7 @@ export const newsCards = [
             />
             <div className="news-category category-red">Vinuri</div>
             <div className="news-header">
-                Cuvee Francisc <br />
+                Cuveé Francisc <br />
                 Ediţie Limitată <br />
                 2021 <br />
             </div>
