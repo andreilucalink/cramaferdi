@@ -13,7 +13,6 @@ import mrsl2020 from "../img/wines/MRSL2020_new.jpg";
 import cunp2021 from "../img/wines/CUNP2021.jpg";
 import lbk2021 from "../img/wines/LBK2021.jpg";
 import cfr2021 from "../img/wines/CFR2021.jpg";
-import cfse2019 from "../img/wines/CFSE2019_new.jpg";
 const Wines = () => {
     const winesRef = useRef(null);
     useEffect(() => {
@@ -51,13 +50,6 @@ const Wines = () => {
 
                 <Row>
                     <WineCard
-                        link="/vinuri/cuvee-fario-2019"
-                        price="300 RON"
-                        img={cfse2019}
-                        title="Cuveé Fario Ed. Specială"
-                        year="2019"
-                    />
-                    <WineCard
                         link="/vinuri/mister-s-legend-2020"
                         price="150 RON"
                         img={mrsl2020}
@@ -78,8 +70,6 @@ const Wines = () => {
                         title="Lady Black Ed. Lim."
                         year="2021"
                     />
-                </Row>
-                <Row>
                     <WineCard
                         link="/vinuri/cuvee-unchiu-puiu-2021"
                         price="70 RON"
@@ -87,6 +77,8 @@ const Wines = () => {
                         title="Cuveé Unchiu Puiu"
                         year="2021"
                     />
+                </Row>
+                <Row>
                     <WineCard
                         link="/vinuri/rose-cosmina-2022"
                         price="60 RON"
