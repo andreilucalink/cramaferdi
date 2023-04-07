@@ -22,6 +22,7 @@ import MisterS_Legend2020 from "./pages/wines/MisterS_Legend2020";
 import CuveeUnchiuPuiu2021 from "./pages/wines/CuveeUnchiuPuiu2021";
 import LadyBlack2021 from "./pages/wines/LadyBlack2021";
 import CuveeFrancisc2021 from "./pages/wines/CuveeFrancisc2021";
+import MadameS2022_Limited from "./pages/wines/MadameS_2022_Limited";
 
 function App() {
     return (
@@ -36,6 +37,11 @@ function App() {
                 <Route exact path="/despre-noi" component={About} />
                 <Route exact path="/cazare" component={Cazare} />
 
+                <Route
+                    exact
+                    path="/vinuri/madame-s-2022"
+                    component={MadameS2022_Limited}
+                />
                 <Route
                     exact
                     path="/vinuri/cuvee-francisc-2021"

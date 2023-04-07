@@ -420,21 +420,6 @@ export const misterS_Rezerva_2019 = {
     decantation: "minim 1h",
 };
 
-export const madameS_2021_limited = {
-    title: "Madame S Ediţie Limitată",
-    year: "2021",
-    price: "60 RON",
-    description:
-        "Un Sauvignon Blanc clasic şi elegant cu aciditate echilibrată, note de miere şi gutui care acompaniază iubitorul de vin. Postgustul este lung, delicat şi fructat. Caracterul acestui vin este relevat şi de calitatea strugurilor atent îngrijiți şi selecționați, oferind o experiență senzorială completă celui care alege să îl deguste.",
-    type: "Sec",
-    maturing: "",
-    alchool: "13,9%",
-    color: "Alb",
-    qty: "0,75L",
-    grapes: "Sauvignon Blanc",
-    decantation: "",
-};
-
 export const ladyBlack_2020 = {
     title: "Lady Black Ediţie Limitată",
     year: "2020",
@@ -645,4 +630,19 @@ export const cuvee_Fario = {
     qty: "0,75L",
     grapes: "Shiraz, Cabernet Franc și Merlot",
     decantation: "minim 1h",
+};
+
+export const madameS_2022_limited = {
+    title: "Madame S Ediţie Limitată",
+    year: "2022",
+    price: "70 RON",
+    description:
+        "Un Sauvignon Blanc clasic şi elegant cu aciditate echilibrată, note de miere şi gutui care acompaniază iubitorul de vin. Postgustul este lung, delicat şi fructat. Caracterul acestui vin este relevat şi de calitatea strugurilor atent îngrijiți şi selecționați, oferind o experiență senzorială completă celui care alege să îl deguste.",
+    type: "Sec",
+    maturing: "",
+    alchool: "13,5%",
+    color: "Alb",
+    qty: "0,75L",
+    grapes: "Sauvignon Blanc",
+    decantation: "",
 };

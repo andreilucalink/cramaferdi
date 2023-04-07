@@ -3,11 +3,29 @@ import rc2022 from "../../img/home/news/RC2021.jpg";
 import mrsl2020 from "../../img/home/news/MRSR2019.jpg";
 import cunp2021 from "../../img/home/news/CUNP2020.jpg";
 import lbkandfrancisc2021 from "../../img/home/news/CPIT2019.jpg";
+import mads2022 from "../../img/home/news/MADS2021.jpg";
 
 import { Link } from "react-router-dom";
 const handleDragStart = (e) => e.preventDefault();
 
 export const newsCards = [
+    <div className="card-wrapper" onDragStart={handleDragStart}>
+        <div className="news-card">
+            <img src={mads2022} alt="wineImage" className="news-img" />
+            <div className="news-category category-white">Vinuri</div>
+            <div className="news-header">
+                Madame S<br /> Ediţie Limitată
+                <br /> 2022 <br />
+            </div>
+            <div className="news-separator separator-white"></div>
+            <div className="news-footer">
+                <div className="news-date">07 Apr 2023</div>
+                <Link to="/vinuri/madame-s-2022" className="news-details">
+                    Vezi mai mult...
+                </Link>
+            </div>
+        </div>
+    </div>,
     // <div className="card-wrapper" onDragStart={handleDragStart}>
     //     <div className="news-card">
     //         <img src={cfse2019} alt="wineImage" className="news-img" />
@@ -221,25 +239,6 @@ export const newsCards = [
     //         <div className="news-footer">
     //             <div className="news-date">30 Mar 2022</div>
     //             <Link to="/vinuri/lady-black-2020" className="news-details">
-    //                 Vezi mai mult...
-    //             </Link>
-    //         </div>
-    //     </div>
-    // </div>,
-    // <div className="card-wrapper" onDragStart={handleDragStart}>
-    //     <div className="news-card">
-    //         <img src={mads2021} alt="wineImage" className="news-img" />
-    //         <div className="news-category category-white">Vinuri</div>
-    //         <div className="news-header">
-    //             Madame S<br /> Ediţie Limitată
-    //             <br /> 2022 <br />
-    //         </div>
-    //         <div className="news-separator separator-white"></div>
-    //         <div className="news-footer">
-    //             <div className="news-date">07 Mar 2022</div>
-    //             <Link
-    //                 to="/vinuri/madame-s-2021-editie-limitata"
-    //                 className="news-details">
     //                 Vezi mai mult...
     //             </Link>
     //         </div>
