@@ -1,8 +1,8 @@
 import React from "react";
 import { madameS_2022_limited } from "../pagesComponents/wineDescriptions";
 import WinePage from "../pagesComponents/WinePage";
-import img from "../../img/wines/MADS2021.jpg";
-import modalImage from "../../img/etichete/MADS2021.jpg";
+import img from "../../img/wines/MADS2022.jpg";
+import modalImage from "../../img/etichete/MADS2022.jpg";
 
 const MadameS2022_Limited = () => {
     return (
