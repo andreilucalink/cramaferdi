@@ -41,40 +41,13 @@ const VisitsNew = () => {
                         10 ani, a luat naştere pasiunea noastră pentru vin.
                     </p>
                     <p>
-                        Vizitele se fac organizat, în grupuri de <b>4-12</b>{" "}
-                        persoane, în baza unei programări prealabile realizate
-                        la numerele de telefon sau la adresa de e-mail din
-                        pagina de contact.
+                        Vizitele se fac organizat, în
+                        <b> grupuri de 4-18 persoane </b> , în baza unei
+                        programări prealabile realizate la numerele de telefon
+                        sau la adresa de e-mail din pagina de contact.
                     </p>
                 </Container>
                 <Container className="pachete-wrapper">
-                    <div className="pachet card-light">
-                        <h5>standard</h5>
-                        <ul>
-                            <li>
-                                <i className="fas fa-check-circle"></i>Tur al
-                                cramei
-                            </li>
-                            <li>
-                                <i className="fas fa-check-circle"></i>Degustare
-                                5 vinuri
-                            </li>
-                            <li>
-                                <i className="fas fa-check-circle"></i>Timp
-                                alocat - 1 oră
-                            </li>
-                            <li>
-                                <i className="fas fa-check-circle"></i>Apă şi
-                                grisine
-                            </li>
-                        </ul>
-                        <p className="pachet-price">70 RON/Persoana</p>
-                        {/* <p className="pachet-description">
-                            La achiziționarea a <b>6 sticle</b> de vin nu se mai
-                            percepe taxă de degustare.
-                        </p> */}
-                    </div>
-
                     <div className="pachet card-dark">
                         <h5>premium</h5>
                         <ul>
@@ -87,8 +60,13 @@ const VisitsNew = () => {
                                 5 vinuri premium
                             </li>
                             <li>
+                                <i className="fas fa-check-circle"></i>Degustare
+                                1 vin en primeur (direct din vasul de învechire
+                                - baric sau budană)
+                            </li>
+                            <li>
                                 <i className="fas fa-check-circle"></i>Timp
-                                alocat - 1 oră şi 45 min
+                                alocat - 1 oră şi 30 min
                             </li>
                             <li>
                                 <i className="fas fa-check-circle"></i>Platou
@@ -99,7 +77,7 @@ const VisitsNew = () => {
                                 grisine
                             </li>
                         </ul>
-                        <p className="pachet-price">120 RON/Persoana</p>
+                        <p className="pachet-price">150 RON/Persoana</p>
                         {/* <p className="pachet-description">
                             La achiziționarea a <b>12 sticle</b> de vin nu se
                             mai percepe taxă de degustare.
